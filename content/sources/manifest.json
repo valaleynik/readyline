@@ -1451,6 +1451,42 @@
       "sha256": "595bafe75294117b9f4bf84969f3668c09e62e4aa45679d15c62bf14282b9959",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
+    },
+    {
+      "id": "njsa-17-33a-4",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:33A-4(a)-(b)",
+      "title": "Insurance Fraud Prevention Act: violations",
+      "act": "New Jersey Insurance Fraud Prevention Act, N.J.S.A. 17:33A",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-33a-4/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "db94b9f2565612ca660b106d7309721fc526a8b0ff14ee5f0792c6d3786df99a",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; selected clauses, footnote markers removed."
+    },
+    {
+      "id": "njsa-17-33a-5",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:33A-5(b)",
+      "title": "Insurance Fraud Prevention Act: civil penalties",
+      "act": "New Jersey Insurance Fraud Prevention Act, N.J.S.A. 17:33A",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-33a-5/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "966d8bcc9c640522947925a8128bb01121caadb48f0d88e0fce6329b19eea4c6",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; selected clauses, footnote markers removed."
+    },
+    {
+      "id": "njsa-17-33a-9",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:33A-9(a)(1),(b)",
+      "title": "Insurance Fraud Prevention Act: reporting and immunity",
+      "act": "New Jersey Insurance Fraud Prevention Act, N.J.S.A. 17:33A",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-33a-9/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "458876125ab5d89d2c9f1f8b63ecd8415e0b4375755b8cde9dae09b6ea498446",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; selected clauses, footnote markers removed."
     }
   ]
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r67",
+    "detail": "picked \"The bureau and the Office of the Insurance Fraud Prosecutor\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r67",
+    "detail": "N.J.S.A. 17:33A-9(a) says any person who believes a violation has been or is being made shall notify the bureau and the Office of the Insurance Fraud Prosecutor immediately. No other option can be defended under the Act.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r67",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r67",
+    "detail": "There are mild cues: B uses the absolute 'and no one else', and C's 'at the producer's next license renewal' plainly conflicts with the statute's 'immediately'. Neither is strong enough to give the answer away without knowing the rule, and D (county prosecutor) is a plausible distractor.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-64a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

@@ -476,6 +476,153 @@
           "explanation": "N.J.A.C. 11:4-48.7 bars a policy from providing credits for a surrender charge imposed under another contract, because such credits unfairly discriminate among contractholders based on the source of funding."
         }
       ]
+    },
+    {
+      "id": "V4-60",
+      "statement": "Knowingly making a false or misleading statement of a material fact to obtain an insurance policy violates the Insurance Fraud Prevention Act.",
+      "source": "njsa-17-33a-4",
+      "quote": "knowing that the statement contains any false or misleading information concerning any fact or thing material to an insurance application or contract",
+      "items": [
+        {
+          "id": "V4-60a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "An applicant for life insurance knowingly answers \"no\" to a question about a recent cancer diagnosis so she can get a lower rate. Under New Jersey law, this is:",
+          "options": [
+            "A violation of the Insurance Fraud Prevention Act",
+            "A matter for the incontestable clause to resolve",
+            "Allowed, unless a claim is later filed",
+            "An unfair trade practice by the insurer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17:33A-4(a)-(b) makes it a violation to make a statement to obtain an insurance policy knowing it contains false or misleading information about a material fact.",
+          "retired": "Answerable by ethics instinct alone (fraud is obviously wrong)."
+        }
+      ]
+    },
+    {
+      "id": "V4-61",
+      "statement": "A producer who knowingly urges or assists a client to give false information violates the Insurance Fraud Prevention Act.",
+      "source": "njsa-17-33a-4",
+      "quote": "knowingly assists, conspires with, or urges any person or practitioner to violate any of the provisions of this act",
+      "items": [
+        {
+          "id": "V4-61a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer tells a client to leave his recent DUI off a life application, saying \"the insurer will never check.\" Who has violated the Insurance Fraud Prevention Act if the client follows the advice?",
+          "options": [
+            "The client alone, since he signed the application",
+            "Both the client and the producer",
+            "The producer alone, since he gave the advice",
+            "Neither, unless a claim is later filed"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:33A-4(a)-(b) makes the knowing false statement a violation by the client, and makes it a separate violation to knowingly assist or urge another person to violate the act.",
+          "retired": "Answerable by ethics instinct alone (fraud is obviously wrong)."
+        }
+      ]
+    },
+    {
+      "id": "V4-62",
+      "statement": "Concealing or knowingly failing to disclose an event that affects a person's right to, or amount of, an insurance benefit violates the act.",
+      "source": "njsa-17-33a-4",
+      "quote": "Conceals or knowingly fails to disclose the occurrence of an event which affects any person's initial or continued right or entitlement",
+      "items": [
+        {
+          "id": "V4-62a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A person receiving monthly disability income benefits returns to full-time work but keeps cashing the benefit checks without telling the insurer. Under New Jersey's Insurance Fraud Prevention Act, this is:",
+          "options": [
+            "Not a violation, since he made no false statement",
+            "Not a violation, unless he signs a new claim form",
+            "A violation by the insurer for overpaying",
+            "A violation, since he concealed an event affecting his entitlement"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:33A-4(a)-(b) makes it a violation to conceal or knowingly fail to disclose an event that affects a person's continued right to, or the amount of, an insurance benefit.",
+          "retired": "Answerable by ethics instinct alone (fraud is obviously wrong)."
+        }
+      ]
+    },
+    {
+      "id": "V4-63",
+      "statement": "Civil penalties under the Insurance Fraud Prevention Act are up to $5,000 for a first violation, $10,000 for a second and $15,000 for each subsequent violation.",
+      "source": "njsa-17-33a-5",
+      "quote": "$5,000 for the first violation, $10,000 for the second violation and $15,000 for each subsequent violation",
+      "items": [
+        {
+          "id": "V4-63a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "A person commits four separate violations of New Jersey's Insurance Fraud Prevention Act. What is the maximum total civil penalty in a court action by the commissioner?",
+          "options": [
+            "$20,000",
+            "$30,000",
+            "$45,000",
+            "$60,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17:33A-5(b) sets civil penalties of up to $5,000 for the first violation, $10,000 for the second and $15,000 for each subsequent violation: $5,000 + $10,000 + $15,000 + $15,000 = $45,000.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "V4-64",
+      "statement": "Anyone who believes the Insurance Fraud Prevention Act has been violated must notify the bureau and the Office of the Insurance Fraud Prosecutor immediately after discovery.",
+      "source": "njsa-17-33a-9",
+      "quote": "shall notify the bureau and the Office of the Insurance Fraud Prosecutor immediately after discovery of the alleged violation",
+      "items": [
+        {
+          "id": "V4-64a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A New Jersey producer comes to believe that a client submitted a fraudulent claim. Under the Insurance Fraud Prevention Act, whom must be notified?",
+          "options": [
+            "The bureau and the Office of the Insurance Fraud Prosecutor",
+            "The insurer's special investigations unit, and no one else",
+            "The commissioner, at the producer's next license renewal",
+            "The county prosecutor in the client's home county"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17:33A-9(a)(1),(b) requires anyone who believes a violation occurred to notify the bureau and the Office of the Insurance Fraud Prosecutor immediately after discovery.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-65",
+      "statement": "A person who reports suspected insurance fraud in good faith and without malice is protected from civil liability for libel, privacy violation or similar claims.",
+      "source": "njsa-17-33a-9",
+      "quote": "No person shall be subject to civil liability for libel, violation of privacy or otherwise by virtue of the filing of reports",
+      "items": [
+        {
+          "id": "V4-65a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A producer reports, in good faith and without malice, a suspected fraudulent claim by a client. The investigation clears the client, who then sues the producer for libel. Under New Jersey law, the producer:",
+          "options": [
+            "Is liable, since the report proved wrong",
+            "Is protected from civil liability for the good-faith report",
+            "Is liable unless the insurer indemnifies him",
+            "Is protected only if he first warned the client"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:33A-9(a)(1),(b) protects anyone who files a required fraud report in good faith and without malice from civil liability for libel, violation of privacy or otherwise.",
+          "enemies": [
+            "V4-64a"
+          ],
+          "retired": "Answerable by ethics instinct alone (fraud is obviously wrong)."
+        }
+      ]
     }
   ]
 }
