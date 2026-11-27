@@ -218,6 +218,202 @@
           "explanation": "Per the NAIC Life Insurance Buyer's Guide, much of what was paid in the early years of a policy covered the company's cost of selling and issuing it, and a new policy may charge that cost again."
         }
       ]
+    },
+    {
+      "id": "III1-30",
+      "statement": "A producer must submit, with the application, a statement signed by the applicant and producer on whether the applicant has existing policies; if the answer is no, the producer's replacement duties are complete.",
+      "source": "njac-11-4-2-3",
+      "quote": "If the answer is \"no,\" the producer's duties with respect to replacement are complete.",
+      "items": [
+        {
+          "id": "III1-30a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A producer takes a life application, and the applicant states in the signed existing-coverage statement that she owns no other life policies or annuities. Under New Jersey's replacement rules, the producer:",
+          "options": [
+            "Still has to read the replacement notice aloud",
+            "Has to notify every insurer the applicant has used",
+            "Has to leave a policy summary of the new policy",
+            "Has completed her replacement duties"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-2.3 requires a statement signed by the applicant and producer on existing coverage. If the answer is no, the producer's duties with respect to replacement are complete."
+        }
+      ]
+    },
+    {
+      "id": "III1-31",
+      "statement": "If the applicant has existing coverage, the producer must present and offer to read the replacement notice no later than when the application is taken.",
+      "source": "njac-11-4-2-3",
+      "quote": "the producer shall present and offer to read to the applicant, not later than at the time of taking the application, a notice regarding replacements",
+      "items": [
+        {
+          "id": "III1-31a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "In a New Jersey replacement, when must the producer present the replacement notice to the applicant and offer to read it?",
+          "options": [
+            "Before the policy is delivered",
+            "Within 5 business days after the application",
+            "At the start of the free look period",
+            "No later than when the application is taken"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-2.3 requires the producer to present and offer to read the replacement notice not later than at the time of taking the application.",
+          "enemies": [
+            "III1-34a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III1-32",
+      "statement": "The replacement notice is signed by both the applicant and the producer and stays with the applicant.",
+      "source": "njac-11-4-2-3",
+      "quote": "The notice shall be signed by both the applicant and the producer",
+      "items": [
+        {
+          "id": "III1-32a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Who must sign the New Jersey replacement notice?",
+          "options": [
+            "Both the applicant and the producer",
+            "The applicant alone",
+            "The producer alone",
+            "The applicant and the existing insurer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-2.3 requires the replacement notice to be signed by both the applicant and the producer, and it remains with the applicant.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "III1-33",
+      "statement": "In a replacement, the producer must give the applicant the original or a copy of all sales material when the application is completed.",
+      "source": "njac-11-4-2-3",
+      "quote": "the producer shall give to the applicant, at the time an application for a new policy or contract is completed, the original or a copy of all sales material",
+      "items": [
+        {
+          "id": "III1-33a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer used a printed brochure and a printed, personalized illustration while replacing a client's old policy. Under New Jersey rules, when must the client receive the original or a copy of this sales material?",
+          "options": [
+            "When the new policy is delivered",
+            "When the application is completed",
+            "Within 5 business days after the sale",
+            "Only if the client asks for them"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-2.3 requires the producer, in a replacement, to give the applicant the original or a copy of all sales material at the time the application is completed. Electronic material must be printed no later than delivery."
+        }
+      ]
+    },
+    {
+      "id": "III1-34",
+      "statement": "The replacing insurer must notify each affected existing insurer within five business days of receiving a completed application indicating replacement.",
+      "source": "njac-11-4-2-4",
+      "quote": "Notify any other existing insurer that may be affected by the proposed replacement within five business days of receipt of a completed application indicating replacement",
+      "items": [
+        {
+          "id": "III1-34a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "After receiving a completed application that involves replacement, a New Jersey replacing insurer must notify the existing insurer within:",
+          "options": [
+            "3 business days",
+            "5 business days",
+            "10 calendar days",
+            "30 calendar days"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-2.4 requires the replacing insurer to notify any affected existing insurer within five business days of receiving a completed application indicating replacement.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "III1-35",
+      "statement": "In a replacement, the owner has 30 days from delivery to return the new policy for an unconditional full refund.",
+      "source": "njac-11-4-2-4",
+      "quote": "notice of the right to return the policy or contract within 30 days of the delivery",
+      "items": [
+        {
+          "id": "III1-35a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "When a new life policy replaces an existing one in New Jersey, the owner may return the new policy for a full refund within how many days of delivery?",
+          "options": [
+            "10",
+            "20",
+            "30",
+            "60"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-2.4 requires the replacing insurer to give notice of the right to return the policy within 30 days of delivery for an unconditional full refund. A non-replacement policy has a 10-day minimum.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "III3-01a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "III3-01"
+      ]
+    },
+    {
+      "id": "III1-36",
+      "statement": "When the replacing insurer is the same as or affiliated with the existing insurer, it must credit the time already elapsed under the old policy's incontestability and suicide periods.",
+      "source": "njac-11-4-2-4",
+      "quote": "the replacing insurer shall allow credit for the period of time that has elapsed under the replaced policy's or contract's incontestability and suicide period",
+      "items": [
+        {
+          "id": "III1-36a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A policyowner replaces an 18-month-old policy with a new one from the same insurer, for the same face amount. How do the new policy's contestable and suicide periods work under New Jersey rules?",
+          "options": [
+            "Both start over from the new issue date",
+            "They are waived because the insurer is the same",
+            "Time already served under the old policy counts toward both",
+            "The suicide period restarts, but the contestable period is credited"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-2.4 requires a replacing insurer that is the same as or affiliated with the existing insurer to credit the time elapsed under the replaced policy's incontestability and suicide periods, up to the old face amount."
+        }
+      ]
+    },
+    {
+      "id": "III1-37",
+      "statement": "On receiving a replacement notification, the existing insurer must tell the owner in writing within five business days of the right to receive information on the existing policy's values.",
+      "source": "njac-11-4-2-6",
+      "quote": "Notify the policy or contract owner in writing within five business days of receipt of a notice referred to in (a)1 above that the policy or contract owner has the right to receive information regarding the existing policy or contract values",
+      "items": [
+        {
+          "id": "III1-37a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "An insurer receives notice that one of its policies is about to be replaced by another company's policy. Under New Jersey rules, what is this existing insurer required to do?",
+          "options": [
+            "Within five business days, send the replacing insurer the old policy's illustration",
+            "Within five business days, tell the owner in writing to keep paying premiums on the old policy",
+            "Within thirty days, tell the owner in writing about the 30-day right to return the new policy",
+            "Within five business days, tell the owner in writing about a right to see current policy values"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-2.6 requires the existing insurer to notify the owner in writing, within five business days of receiving the replacement notice, of the right to receive information on the existing policy's values, such as an in force illustration."
+        }
+      ]
     }
   ]
 }

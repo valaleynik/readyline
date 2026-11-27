@@ -1,0 +1,164 @@
+[
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "picked \"When the application is completed\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "Options are short and parallel; no form cue points to B.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "picked \"Time already served under the old policy counts toward both\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "Options are balanced; 'both' appears in A and C, so no unique cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "picked \"Within five business days, tell the owner in writing about a right to see current policy values\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r42",
+    "detail": "Three options share the 'within five business days' frame and similar length; D is not distinguishable by form.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

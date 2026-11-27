@@ -911,6 +911,54 @@
       "sha256": "906b0e2801ed62e6c7796ce7a9084cfcbbfa421ff0ae89942626bd12fa4daa03",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from FindLaw via the browser; footnote markers removed. Excerpt: lead-in and subsection d."
+    },
+    {
+      "id": "njac-11-4-2-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-2.3",
+      "title": "Replacement: duties of producers",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-2-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ec2ffd00ab30ab1d9f450f6d1f2e899c8011e8522429ad45a29a398b0837145a",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-2-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-2.4",
+      "title": "Replacement: duties of replacing insurers",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-2-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ae3a3abb19aa74e45405533d5e0691f83b8288e2c8e33ce37a3c2daf2b292813",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-2-6",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-2.6",
+      "title": "Replacement: duties of the existing insurer",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-2-6",
+      "retrievedAt": "2026-11-27",
+      "sha256": "df1e937843fb95fd6c7a713817764230430e505bb7bf080f15a1cf41bb484ff5",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-41-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.3(b)1",
+      "title": "Individual life forms: free review period",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "41345864df00bf6d315ae0457dee0e9fb9c222d595b5d62c069e8d2bbef881e0",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
     }
   ]
 }

@@ -1,0 +1,434 @@
+[
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"Has completed her replacement duties\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "Stem tells the candidate there are no existing policies, so 'duties complete' follows by basic logic about replacement rather than by a form cue; acceptable.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-30a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"No later than when the application is taken\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "A ('before the policy is delivered') is technically satisfied by any compliant presentation, but as a deadline it is wrong; the controlling deadline is the application. Minor.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "D uses regulatory 'no later than' phrasing that slightly stands out, but not a strong cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-31a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"Both the applicant and the producer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-32a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"When the application is completed\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": false,
+    "reviewer": "blind-subagent-r41",
+    "detail": "The source requires electronically presented sales material to be provided in printed form no later than policy delivery, and a 'personalized illustration' is commonly shown on a laptop/tablet (and illustration rules often deliver revised illustrations at delivery), so a candidate could defend A for the illustration.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "blind-subagent-r41",
+    "detail": "A is arguably correct for any electronically presented material (illustration), since the stem does not say the illustration was printed.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-33a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"5 business days\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-34a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"30\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-35a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"The insurer has to credit the 18 months already elapsed\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "Option C echoes the '18 months' figure from the stem, a mild word-association cue, but B also echoes 'same insurer'; not strong enough alone.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-36a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "picked \"Tell the owner in writing about a right to see current policy values\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r41",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r41",
+    "detail": "A, C and B are implausible or improper actions (cancelling, matching premium, reporting the producer); D is the only consumer-disclosure option, which a test-wise candidate would pick from the consumer-protection theme of replacement rules.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-37a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
