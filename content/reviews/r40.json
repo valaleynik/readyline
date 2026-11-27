@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r40",
+    "detail": "picked \"Not permitted, because it unfairly discriminates within one class\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r40",
+    "detail": "N.J.S.A. 17B:30-12(c) bars unfair discrimination between individuals of the same class and equal expectation of life in rates charged. B shares the right conclusion but its reason (every applicant must pay an identical rate) is overbroad, since rates legitimately vary across classes, so a well-informed candidate would not defend it over D.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r40",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r40",
+    "detail": "D's 'within one class' echoes the stem's 'same underwriting class', but that is a mild cue, and B also says 'Not permitted', so a candidate still has to know the rule to choose between them.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-21a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

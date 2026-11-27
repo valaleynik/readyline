@@ -356,6 +356,29 @@
           "explanation": "N.J.S.A. 17:29B-4 requires the complaint record to show the total number of complaints, their classification by line of insurance, and the nature, disposition and processing time of each. The selling producer is not a required element."
         }
       ]
+    },
+    {
+      "id": "V4-30",
+      "statement": "Lower rates for policies on payroll deduction, bank draft or similar plans are not unfair discrimination if reasonably related to the savings from the plan.",
+      "source": "njsa-17b-30-14",
+      "quote": "such rate or underwriting considerations being reasonably related to the savings made by the use of such plan",
+      "items": [
+        {
+          "id": "V4-30a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "An insurer charges a slightly lower premium to policyholders who pay by monthly payroll deduction. Under New Jersey law, this is:",
+          "options": [
+            "Allowed, if the lower rate reflects the savings from the plan",
+            "An illegal rebate",
+            "Unfair discrimination between policyholders of the same class",
+            "Allowed, if the agent's commission is reduced by the same amount"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:30-14 allows lower rates on payroll deduction and similar plans when the rate is reasonably related to the savings made by using the plan."
+        }
+      ]
     }
   ]
 }

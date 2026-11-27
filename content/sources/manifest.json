@@ -851,6 +851,66 @@
       "sha256": "45a12fb637aef3445c6a2acd260f612c1e06daf7b03d5739f9faed59668e6486",
       "verifiedAgainstOfficial": true,
       "note": "Excerpts copied verbatim from the regulator's page via the browser. Tier 2: general product concepts only; anything state-specific (e.g. grace period length, tax treatment) is taken from NJ or federal law instead."
+    },
+    {
+      "id": "njsa-17b-25-2-1",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-2.1",
+      "title": "Cancellation of policy within 10 days after receipt",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-2-1/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "412a54249104b59d0811afb98eb603cfb578161b5b74b28f7c24db454e95d023",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; footnote markers removed."
+    },
+    {
+      "id": "njsa-17b-25-39",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-39",
+      "title": "Cancellation provision for certain annuities",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-39/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "5ec38cc90ffa2a21a2bf5dd04368f2e35e507941996c858f8b061c234920969e",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; footnote markers removed."
+    },
+    {
+      "id": "njsa-17b-25-10-1",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-10.1",
+      "title": "Notice of automatic premium loan",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-10-1/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "af0988323083aab3a232c57826121cdbdffd1375dd44092c65124dd1d0b7092e",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; footnote markers removed."
+    },
+    {
+      "id": "njsa-17b-30-12",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-12(a)-(c)",
+      "title": "Discrimination prohibited",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-12/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "7ffd7762646b8ea2f30cc7a5a58ec46247c9b4b7a6e9376f33f318e6693b6667",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; footnote markers removed."
+    },
+    {
+      "id": "njsa-17b-30-14",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-14",
+      "title": "Practices not deemed discrimination or rebates",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-14/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "906b0e2801ed62e6c7796ce7a9084cfcbbfa421ff0ae89942626bd12fa4daa03",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; footnote markers removed. Excerpt: lead-in and subsection d."
     }
   ]
 }

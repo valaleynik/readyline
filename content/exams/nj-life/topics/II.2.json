@@ -880,6 +880,32 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "II2-46",
+      "statement": "When a premium is paid by automatic premium loan, the insurer must mail written notice showing the loan amount and interest rate within 30 days after the end of the grace period.",
+      "source": "njsa-17b-25-10-1",
+      "quote": "The notice shall be mailed no later than 30 days after the end of the grace period of the premium paid by loan.",
+      "items": [
+        {
+          "id": "II2-46a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "When a New Jersey insurer pays a premium automatically by a policy loan to prevent lapse, it must mail the policyholder a notice showing the loan amount and interest rate no later than:",
+          "options": [
+            "10 days after the premium due date",
+            "60 days after the premium due date",
+            "The next policy anniversary",
+            "30 days after the end of the grace period"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-10.1 requires written notice by regular mail, showing the loan amount and loan interest rate, no later than 30 days after the end of the grace period of the premium paid by loan."
+        }
+      ],
+      "contrasts": [
+        "II2-42"
+      ]
     }
   ]
 }

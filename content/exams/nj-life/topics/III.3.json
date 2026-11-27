@@ -1,0 +1,157 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "III.3",
+  "facts": [
+    {
+      "id": "III3-01",
+      "statement": "An individual life policy must give the policyholder at least 10 days after receiving it to cancel for a prompt refund.",
+      "source": "njsa-17b-25-2-1",
+      "quote": "during a period of no less than 10 days after the date the policyholder receives the policy",
+      "items": [
+        {
+          "id": "III3-01a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Under New Jersey law, a new individual life policy that is not a replacement must give the policyholder a free look period of at least how many days to cancel for a refund?",
+          "options": [
+            "5",
+            "10",
+            "20",
+            "30"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-2.1 requires a period of no less than 10 days after the policyholder receives the policy to cancel and receive a prompt refund.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "III3-02",
+      "statement": "The free look period runs from the date the policyholder receives the policy, not the issue date.",
+      "source": "njsa-17b-25-2-1",
+      "quote": "after the date the policyholder receives the policy",
+      "items": [
+        {
+          "id": "III3-02a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A New Jersey life policy is issued on May 1, and the agent delivers it to the policyholder on May 8. The minimum free look period ends no earlier than:",
+          "options": [
+            "May 11",
+            "May 15",
+            "May 18",
+            "May 31"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-2.1 starts the free look period on the date the policyholder receives the policy. Ten days after May 8 is May 18.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "III3-01a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "III3-01"
+      ]
+    },
+    {
+      "id": "III3-03",
+      "statement": "A life policy cancelled during the free look gets a prompt refund of all premium paid, including policy fees and other charges.",
+      "source": "njsa-17b-25-2-1",
+      "quote": "receive from the insurer a prompt refund of any premium paid therefor, including any policy fees or other charges",
+      "items": [
+        {
+          "id": "III3-03a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A policyholder returns her new life policy with a written cancellation request on day 6 of the free look period. She paid a $1,200 premium plus a $50 policy fee. Her refund is:",
+          "options": [
+            "$0, since the policy was already issued",
+            "$1,200, since fees are not refundable",
+            "$1,250, the premium plus the policy fee",
+            "$1,200 less a pro-rata charge for 6 days of coverage"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-2.1 requires a prompt refund of any premium paid, including any policy fees or other charges, when the policy is cancelled during the free look period."
+        }
+      ]
+    },
+    {
+      "id": "III3-04",
+      "statement": "To cancel during the free look, the policyholder mails or otherwise surrenders the policy to the insurer with a written request for cancellation.",
+      "source": "njsa-17b-25-2-1",
+      "quote": "by mailing or otherwise surrendering the policy to the insurer together with a written request for cancellation",
+      "items": [
+        {
+          "id": "III3-04a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "How does a New Jersey policyholder exercise the free look right on a new life policy?",
+          "options": [
+            "By sending it back to the company with a signed note to cancel",
+            "By calling the agent and asking to cancel within the period",
+            "By simply not paying the second premium when it comes due",
+            "By filing a complaint with the Department of Banking and Insurance"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-2.1 requires mailing or otherwise surrendering the policy to the insurer together with a written request for cancellation."
+        }
+      ]
+    },
+    {
+      "id": "III3-05",
+      "statement": "Group life insurance is excluded from the individual life free look requirement.",
+      "source": "njsa-17b-25-2-1",
+      "quote": "No policy of life insurance, other than group insurance,",
+      "items": [
+        {
+          "id": "III3-05a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "New Jersey's 10-day free look requirement for life policies does NOT apply to:",
+          "options": [
+            "Industrial life insurance",
+            "Group life insurance",
+            "Variable life insurance",
+            "Juvenile life insurance"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-2.1 applies to policies of life insurance other than group insurance.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "III3-06",
+      "statement": "A directly solicited annuity must have a free look of at least 10 days after receipt, with a refund of the account value, including fees and charges.",
+      "source": "njsa-17b-25-39",
+      "quote": "the owner may cancel the annuity and receive from the insurer a prompt refund of any account value of the annuity, including any contract fees or other charges",
+      "items": [
+        {
+          "id": "III3-06a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An owner cancels a directly solicited variable annuity during its New Jersey free look period after the subaccounts lost value. The insurer must refund:",
+          "options": [
+            "The premium paid, with no reduction for losses",
+            "The premium paid, less a surrender charge",
+            "Nothing, because investment losses void the free look",
+            "Its current value, with any contract fees and charges added back"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-39 requires a prompt refund of the annuity's account value, including contract fees or other charges. A life policy free look refunds premium paid instead.",
+          "retired": "Ambiguous: candidates are taught premium-back cases (replacements, IRA-funded contracts), and the statute's section 5 exclusions are not in our sources."
+        }
+      ],
+      "contrasts": [
+        "III3-03"
+      ]
+    }
+  ]
+}

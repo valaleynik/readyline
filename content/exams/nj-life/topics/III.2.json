@@ -175,6 +175,53 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "III2-20",
+      "statement": "No one may discriminate in issuing or rating life insurance because of race, creed, color, national origin or ancestry.",
+      "source": "njsa-17b-30-12",
+      "quote": "because of race, creed, color, national origin or ancestry",
+      "items": [
+        {
+          "id": "III2-20a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "Under New Jersey law, which of these may NOT be used as a basis for charging a higher life insurance premium?",
+          "options": [
+            "The applicant's ancestry",
+            "The applicant's medical history",
+            "The applicant's hazardous hobbies",
+            "The applicant's tobacco use"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:30-12(a)-(c) bars discrimination because of race, creed, color, national origin or ancestry in issuing life insurance or fixing its rates, terms or conditions.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "III2-21",
+      "statement": "Unfair discrimination in life rates is barred between individuals of the same class and equal expectation of life; rating different risk classes differently is allowed.",
+      "source": "njsa-17b-30-12",
+      "quote": "unfair discrimination between individuals of the same class and equal expectation of life",
+      "items": [
+        {
+          "id": "III2-21a",
+          "version": 3,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "Two applicants are the same age and sex, in the same health, and in the same underwriting class. The insurer charges one of them a higher rate because of the agent who submitted the application. Under New Jersey law, this is:",
+          "options": [
+            "Permitted, since agents may negotiate rates",
+            "Not permitted, because every applicant must pay an identical rate",
+            "Permitted, if the higher rate is disclosed at delivery",
+            "Not permitted, because it unfairly discriminates within one class"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:30-12(a)-(c) bars unfair discrimination between individuals of the same class and equal expectation of life in the rates charged for life insurance."
+        }
+      ]
     }
   ]
 }
