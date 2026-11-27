@@ -50,6 +50,124 @@
           "explanation": "N.J.S.A. 17B:24-4 allows such a policy to be assigned by pledge or by transfer of title through an assignment executed by the insured or owner alone and delivered to the insurer, whether or not the assignee is the insurer."
         }
       ]
+    },
+    {
+      "id": "IV1-10",
+      "statement": "A person has an insurable interest in another's life if he expects financial advantage from that person's continued life and would suffer loss from the death.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "if he has an expectation of pecuniary advantage through the continued life, health and bodily safety of that individual",
+      "items": [
+        {
+          "id": "IV1-10a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "Under New Jersey law, which of these people has an insurable interest in Maria's life?",
+          "options": [
+            "Her close friend of 20 years",
+            "Her business partner",
+            "Her former college roommate",
+            "Her longtime next-door neighbor"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-1.1 gives an individual an insurable interest in another's life when he expects financial advantage from that person's continued life and would suffer loss from the death.",
+          "optionStyle": "category",
+          "retired": "Only option with a financial tie; guessable."
+        }
+      ]
+    },
+    {
+      "id": "IV1-11",
+      "statement": "A person liable for supporting a child or former spouse may buy a policy on that child or former spouse.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "An individual liable for the support of a child or former wife or husband may procure a policy of insurance on that child or former wife or husband.",
+      "items": [
+        {
+          "id": "IV1-11a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A divorced woman is required by her divorce decree to pay alimony to her former husband. May she buy a life policy on him under New Jersey law?",
+          "options": [
+            "No, since only the person receiving alimony may insure the payer",
+            "Yes, because of that obligation",
+            "No, since the marriage has ended",
+            "Yes, but with a court's approval"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-1.1 allows an individual liable for the support of a child or former spouse to procure insurance on that child or former spouse."
+        }
+      ]
+    },
+    {
+      "id": "IV1-12",
+      "statement": "If someone without an insurable interest collects benefits, the insured or his estate may sue to recover those benefits.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "the individual insured, or his executor or administrator, as the case may be, may maintain an action to recover those benefits from the person so receiving them",
+      "items": [
+        {
+          "id": "IV1-12a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A stranger with no insurable interest buys a policy on a man's life, names himself beneficiary and collects the death benefit. Under New Jersey law, who may sue the stranger to recover the benefits?",
+          "options": [
+            "The insurer, which may sue to recover the payment",
+            "The Department of Banking and Insurance",
+            "The insured's employer",
+            "The insured's estate, through its personal representative"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:24-1.1 lets the individual insured, or his executor or administrator, sue to recover benefits paid to a payee under a contract made without the required insurable interest."
+        }
+      ]
+    },
+    {
+      "id": "IV1-13",
+      "statement": "An insurer may rely in good faith on the applicant's statements about insurable interest and is not liable for relying on untrue ones, except as the policy provides.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "An insurer shall be entitled to rely upon all statements, declarations and representations made by an applicant for insurance relating to the insurable interest",
+      "items": [
+        {
+          "id": "IV1-13a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An applicant falsely tells the insurer he is the insured's business partner. The insurer, with no reason to doubt him, issues the policy. Later the insured's family claims the insurer should have caught the lie. Under New Jersey law, the insurer:",
+          "options": [
+            "Is not liable, since it may rely on the applicant's statements",
+            "Is liable, since it must independently verify insurable interest",
+            "Has to refund all premiums to the insured's estate",
+            "Is liable, unless the policy is past its contestable period"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-1.1 entitles the insurer to rely on the applicant's statements about insurable interest and bars legal liability, except as the policy provides, for untrue statements it relied on in good faith."
+        }
+      ]
+    },
+    {
+      "id": "IV1-14",
+      "statement": "The insurable interest requirements of 17B:24-1.1 do not apply to group life, group health, blanket insurance or group annuities.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "This section shall not apply to group life insurance, group health insurance, blanket insurance or group annuities.",
+      "items": [
+        {
+          "id": "IV1-14a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "New Jersey's statutory insurable interest requirements for life insurance do NOT apply to:",
+          "options": [
+            "Individual annuities",
+            "Group life insurance",
+            "Industrial life insurance",
+            "Juvenile life insurance"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-1.1 states that it does not apply to group life insurance, group health insurance, blanket insurance or group annuities.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }
