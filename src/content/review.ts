@@ -36,7 +36,7 @@ function allItems(): { item: ItemDraft; source: string }[] {
     if (!existsSync(dir)) continue;
     for (const f of readdirSync(dir).filter((x) => x.endsWith(".json"))) {
       const t = JSON.parse(readFileSync(join(dir, f), "utf8")) as TopicFile;
-      for (const fact of t.facts) for (const item of fact.items) out.push({ item, source: fact.source });
+      for (const fact of t.facts) for (const item of fact.items) if (!item.retired) out.push({ item, source: fact.source });
     }
   }
   return out;

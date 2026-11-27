@@ -469,6 +469,79 @@
           "group": "claim-timing"
         }
       ]
+    },
+    {
+      "id": "II2-20",
+      "statement": "After a premium default, the owner may request a paid-up nonforfeiture benefit no later than 60 days after the due date of the premium in default.",
+      "source": "njsa-17b-25-19a",
+      "quote": "upon proper request not later than 60 days after the due date of the premium in default, a paid-up nonforfeiture benefit",
+      "items": [
+        {
+          "id": "II2-20a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "After a premium default on a New Jersey ordinary life policy with cash value, the owner may choose a nonforfeiture option no later than how many days after the due date of the unpaid premium?",
+          "options": [
+            "30",
+            "31",
+            "60",
+            "90"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-19(a) requires the insurer to grant a paid-up nonforfeiture benefit, or another available option, on request no later than 60 days after the due date of the premium in default.",
+          "group": "nonforfeiture"
+        }
+      ]
+    },
+    {
+      "id": "II2-21",
+      "statement": "If the owner makes no election within 60 days, the paid-up nonforfeiture benefit specified in the policy takes effect automatically.",
+      "source": "njsa-17b-25-19a",
+      "quote": "(3) That a specified paid-up nonforfeiture benefit shall become effective as specified in the policy unless the person entitled to make such election elects another available option",
+      "items": [
+        {
+          "id": "II2-21a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.5,
+          "stem": "A policyowner stops paying premiums on a whole life policy with cash value and never responds to the insurer's notices. The policy has no automatic premium loan provision. Under New Jersey's nonforfeiture law, what happens?",
+          "options": [
+            "The policy lapses with no remaining value",
+            "The insurer mails the cash value to the owner",
+            "The insurer takes an automatic loan for future premiums",
+            "The paid-up benefit the policy specifies takes effect"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-19(a) requires that the paid-up nonforfeiture benefit specified in the policy take effect automatically unless the owner elects another option within 60 days.",
+          "group": "nonforfeiture"
+        }
+      ]
+    },
+    {
+      "id": "II2-22",
+      "statement": "For ordinary insurance, a cash surrender value must be available after premiums have been paid for at least 3 full years.",
+      "source": "njsa-17b-25-19a",
+      "quote": "after premiums have been paid for at least 3 full years in the case of ordinary insurance",
+      "items": [
+        {
+          "id": "II2-22a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "Under New Jersey's standard nonforfeiture law, an ordinary life policy must offer a cash surrender value on default once premiums have been paid for at least:",
+          "options": [
+            "1 full year",
+            "2 full years",
+            "3 full years",
+            "5 full years"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-19(a) requires a cash surrender value on surrender after a default once premiums have been paid for at least 3 full years on ordinary insurance (5 years for industrial).",
+          "optionStyle": "ordered",
+          "group": "nonforfeiture"
+        }
+      ]
     }
   ]
 }

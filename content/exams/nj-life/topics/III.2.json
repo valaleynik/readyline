@@ -1,0 +1,54 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "III.2",
+  "facts": [
+    {
+      "id": "III2-01",
+      "statement": "Written disclosure of an investigative consumer report must be mailed or delivered to the consumer no later than 3 days after the report is first requested.",
+      "source": "usc-15-1681d-ab",
+      "quote": "is made in a writing mailed, or otherwise delivered, to the consumer, not later than three days after the date on which the report was first requested",
+      "items": [
+        {
+          "id": "III2-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "An insurer orders an investigative consumer report on a life insurance applicant. Under the Fair Credit Reporting Act, written disclosure must be mailed or delivered to the applicant no later than how many days after the report is first requested?",
+          "options": [
+            "3 days",
+            "5 days",
+            "10 days",
+            "30 days"
+          ],
+          "answer": 0,
+          "explanation": "15 U.S.C. § 1681d(a)-(b) requires written disclosure of an investigative consumer report to be mailed or delivered no later than three days after the report was first requested.",
+          "group": "fcra-icr"
+        }
+      ]
+    },
+    {
+      "id": "III2-02",
+      "statement": "On written request, the consumer must be told the nature and scope of the investigation in writing within 5 days.",
+      "source": "usc-15-1681d-ab",
+      "quote": "not later than five days after the date on which the request for such disclosure was received from the consumer or such report was first requested, whichever is the later",
+      "items": [
+        {
+          "id": "III2-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "After learning of an investigative consumer report, an applicant asks in writing about the nature and scope of the investigation. Under the Fair Credit Reporting Act, the insurer must respond in writing within:",
+          "options": [
+            "3 days",
+            "5 days",
+            "10 days",
+            "30 days"
+          ],
+          "answer": 1,
+          "explanation": "15 U.S.C. § 1681d(a)-(b) requires a complete written disclosure of the nature and scope of the investigation within five days after the consumer's request is received or the report was first requested, whichever is later.",
+          "group": "fcra-icr"
+        }
+      ]
+    }
+  ]
+}

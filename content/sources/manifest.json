@@ -403,6 +403,114 @@
       "sha256": "ba962c486a3d8388b2cc10edfc6e7ac8c1a1094fcba57b2e04ad277433ab096d",
       "verifiedAgainstOfficial": false,
       "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-15-1681d-ab",
+      "kind": "statute",
+      "citation": "15 U.S.C. § 1681d(a)-(b)",
+      "title": "Investigative consumer reports: disclosure",
+      "act": "Fair Credit Reporting Act",
+      "url": "https://www.law.cornell.edu/uscode/text/15/1681d",
+      "retrievedAt": "2026-11-26",
+      "sha256": "9078d937a1b0193d0c034555b65a2064eb85f3b6425142f613b0bce0340dc6f4",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy."
+    },
+    {
+      "id": "cfr-16-310-4-c",
+      "kind": "regulation",
+      "citation": "16 C.F.R. § 310.4(c)",
+      "title": "Telemarketing calling time restrictions",
+      "act": "Telemarketing Sales Rule",
+      "url": "https://www.law.cornell.edu/cfr/text/16/310.4",
+      "retrievedAt": "2026-11-26",
+      "sha256": "ee5ed729e7335a89bd61c77c68d56dc472011f59c130d105bdc96e1b29df6458",
+      "verifiedAgainstOfficial": false,
+      "note": "Superseded for insurance items: the FTC Telemarketing Sales Rule largely does not reach the state-regulated business of insurance. Kept for the audit trail of retired items."
+    },
+    {
+      "id": "cfr-16-310-4-b1iii",
+      "kind": "regulation",
+      "citation": "16 C.F.R. § 310.4(b)(1)(iii)",
+      "title": "Do-not-call requests and registry",
+      "act": "Telemarketing Sales Rule",
+      "url": "https://www.law.cornell.edu/cfr/text/16/310.4",
+      "retrievedAt": "2026-11-26",
+      "sha256": "9680f46b11d76a689159cab21e21a8e674a51a3ca015ed63e860637585a0290c",
+      "verifiedAgainstOfficial": false,
+      "note": "Superseded for insurance items: the FTC Telemarketing Sales Rule largely does not reach the state-regulated business of insurance. Kept for the audit trail of retired items."
+    },
+    {
+      "id": "cfr-16-310-2-ebr",
+      "kind": "regulation",
+      "citation": "16 C.F.R. § 310.2",
+      "title": "Established business relationship defined",
+      "act": "Telemarketing Sales Rule",
+      "url": "https://www.law.cornell.edu/cfr/text/16/310.2",
+      "retrievedAt": "2026-11-26",
+      "sha256": "1da1a45899355eaaf9206bf6d4a9eca7648457eefe6f1ff901d4ed384ba24731",
+      "verifiedAgainstOfficial": false,
+      "note": "Superseded for insurance items: the FTC Telemarketing Sales Rule largely does not reach the state-regulated business of insurance. Kept for the audit trail of retired items."
+    },
+    {
+      "id": "cfr-47-64-1200-c",
+      "kind": "regulation",
+      "citation": "47 C.F.R. § 64.1200(c)",
+      "title": "Calling hours and national do-not-call registry",
+      "act": "FCC rules implementing the Telephone Consumer Protection Act",
+      "url": "https://www.law.cornell.edu/cfr/text/47/64.1200",
+      "retrievedAt": "2026-11-26",
+      "sha256": "69a48684be502ee640916b40447d1030399734ac4f44e3b0ba5eed9afc01514e",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the CFR."
+    },
+    {
+      "id": "cfr-47-64-1200-d3",
+      "kind": "regulation",
+      "citation": "47 C.F.R. § 64.1200(d)(3)",
+      "title": "Recording and honoring do-not-call requests",
+      "act": "FCC rules implementing the Telephone Consumer Protection Act",
+      "url": "https://www.law.cornell.edu/cfr/text/47/64.1200",
+      "retrievedAt": "2026-11-26",
+      "sha256": "58c89cde39e1351ad2e7010ab53deea62ef3910feb2b304abb5aba7b7477b270",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the CFR."
+    },
+    {
+      "id": "cfr-47-64-1200-ebr",
+      "kind": "regulation",
+      "citation": "47 C.F.R. § 64.1200(f)",
+      "title": "Established business relationship defined",
+      "act": "FCC rules implementing the Telephone Consumer Protection Act",
+      "url": "https://www.law.cornell.edu/cfr/text/47/64.1200",
+      "retrievedAt": "2026-11-26",
+      "sha256": "791ef166b473b0e329b8be3eb8e1f57c6ccaca05da3f09288a867efe8cb95a58",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the CFR."
+    },
+    {
+      "id": "cfr-47-64-1200-sol",
+      "kind": "regulation",
+      "citation": "47 C.F.R. § 64.1200(f)(15)",
+      "title": "Telephone solicitation defined",
+      "act": "FCC rules implementing the Telephone Consumer Protection Act",
+      "url": "https://www.law.cornell.edu/cfr/text/47/64.1200",
+      "retrievedAt": "2026-11-26",
+      "sha256": "701b7a90ad546172e756edd06449fe4b5c2d7714c4e74381f2fc21231e1405fd",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the CFR."
+    },
+    {
+      "id": "njsa-17b-25-19a",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-19(a)",
+      "title": "Standard nonforfeiture law: required provisions (excerpt: subsection a(1)-(4))",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-19/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "b9b7c1a350791700057d08676f812895d86c7b41824902e0dd685b145f119d1f",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt: subsection a, paragraphs (1)-(4), extracted verbatim in the browser."
     }
   ]
 }

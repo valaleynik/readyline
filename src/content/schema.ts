@@ -21,6 +21,8 @@ export interface ItemDraft {
   explanation: string;
   /** "ordered": options have a natural order and must not be shuffled. "category": options are names of practices, lines or factors, so the key may share the statute's term */
   optionStyle?: "category" | "ordered";
+  /** set when the item is withdrawn; the reason is kept for the audit trail */
+  retired?: string;
   /** items sharing a group cue each other and must never appear on the same form */
   group?: string;
   /** generator's estimate of IRT difficulty: about -1 easy, 0 medium, +1 hard */

@@ -81,6 +81,11 @@ export function validateContent(root: string): ValidationReport {
         if (!fact.items.length) err(where, "fact has no items");
 
         for (const item of fact.items) {
+          if (item.retired) {
+            if (ids.has(item.id)) err(`${file}:${item.id}`, "duplicate item id");
+            ids.add(item.id);
+            continue;
+          }
           items++;
           const w = `${file}:${item.id}`;
           if (ids.has(item.id)) err(w, "duplicate item id");

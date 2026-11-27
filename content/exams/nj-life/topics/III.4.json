@@ -1,0 +1,349 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "III.4",
+  "facts": [
+    {
+      "id": "III4-01",
+      "statement": "Without prior consent, telemarketing calls to a residence are allowed only between 8 a.m. and 9 p.m. at the called person's location.",
+      "source": "cfr-16-310-4-c",
+      "quote": "at any time other than between 8:00 a.m. and 9:00 p.m. local time at the called person's location",
+      "items": [
+        {
+          "id": "III4-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "Without prior consent, the Telemarketing Sales Rule allows outbound sales calls to a person's residence only between:",
+          "options": [
+            "7 a.m. and 10 p.m., the caller's local time",
+            "8 a.m. and 9 p.m., the caller's local time",
+            "8 a.m. and 9 p.m., the called person's local time",
+            "9 a.m. and 8 p.m., the called person's local time"
+          ],
+          "answer": 2,
+          "explanation": "16 C.F.R. § 310.4(c) bars outbound telemarketing calls to a residence, without prior consent, at any time other than 8:00 a.m. to 9:00 p.m. local time at the called person's location.",
+          "optionStyle": "ordered",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-02",
+      "statement": "A seller may call a number on the do-not-call registry if it has an established business relationship with the person, who has not asked the seller not to call.",
+      "source": "cfr-16-310-4-b1iii",
+      "quote": "(2) Can demonstrate that the seller has an established business relationship with such person",
+      "items": [
+        {
+          "id": "III4-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.1,
+          "stem": "A producer wants to call a prospect whose number is on the national do-not-call registry. Which of the following would allow the sales call?",
+          "options": [
+            "The number appears in a public phone directory",
+            "The producer is licensed in the prospect's state",
+            "The call is made by an automated system",
+            "The prospect bought a policy from the producer last year"
+          ],
+          "answer": 3,
+          "explanation": "16 C.F.R. § 310.4(b)(1)(iii)(B) permits a call to a registered number when the seller has an established business relationship with the person, such as a purchase within the past 540 days, and the person has not asked the seller not to call.",
+          "group": "dnc-exceptions",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-03",
+      "statement": "A seller may also call a registered number with the person's express written agreement to receive its calls.",
+      "source": "cfr-16-310-4-b1iii",
+      "quote": "Can demonstrate that the seller has obtained the express agreement, in writing, of such person to place calls to that person",
+      "items": [
+        {
+          "id": "III4-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "Besides an established business relationship, which of the following allows a seller to make sales calls to a number on the national do-not-call registry?",
+          "options": [
+            "The person's verbal agreement given to a lead vendor",
+            "A referral from one of the person's friends",
+            "The person's express written agreement to receive its calls",
+            "Purchase of the number from a licensed list broker"
+          ],
+          "answer": 2,
+          "explanation": "16 C.F.R. § 310.4(b)(1)(iii)(B) allows calls to a registered number if the seller has the person's express agreement, in writing, including the number and the person's signature.",
+          "group": "dnc-exceptions",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-04",
+      "statement": "A person who has told the seller not to call may not be called by that seller.",
+      "source": "cfr-16-310-4-b1iii",
+      "quote": "(A) That person previously has stated that he or she does not wish to receive an outbound telephone call made by or on behalf of the seller",
+      "items": [
+        {
+          "id": "III4-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.5,
+          "stem": "A customer who bought a policy from an agency last year tells the agency to stop calling her. Her number is not on the national registry. May the agency keep calling her with sales offers?",
+          "options": [
+            "Yes, because her number is not on the registry",
+            "Yes, because of the established business relationship",
+            "Yes, but only between 8 a.m. and 9 p.m.",
+            "No, because of her request to that seller"
+          ],
+          "answer": 3,
+          "explanation": "16 C.F.R. § 310.4(b)(1)(iii)(A) prohibits calling a person who has stated she does not wish to receive calls from that seller, whether or not she is on the registry and despite any business relationship.",
+          "group": "dnc-exceptions",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-05",
+      "statement": "An established business relationship based on a purchase lasts 540 days.",
+      "source": "cfr-16-310-2-ebr",
+      "quote": "within the 540 days immediately preceding the date of a telemarketing call",
+      "items": [
+        {
+          "id": "III4-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Under the Telemarketing Sales Rule, an established business relationship based on a person's purchase from the seller lasts for how many days after the purchase?",
+          "options": [
+            "90 days",
+            "180 days",
+            "365 days",
+            "540 days"
+          ],
+          "answer": 3,
+          "explanation": "16 C.F.R. § 310.2 defines an established business relationship to include a purchase or financial transaction within the 540 days before the call.",
+          "group": "ebr-periods",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-06",
+      "statement": "An established business relationship based on an inquiry or application lasts 90 days.",
+      "source": "cfr-16-310-2-ebr",
+      "quote": "within the 90 days immediately preceding the date of a telemarketing call",
+      "items": [
+        {
+          "id": "III4-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A prospect asked an agency about a policy but did not buy. Under the Telemarketing Sales Rule, the established business relationship created by that inquiry lasts:",
+          "options": [
+            "30 days",
+            "90 days",
+            "180 days",
+            "540 days"
+          ],
+          "answer": 1,
+          "explanation": "16 C.F.R. § 310.2 treats an inquiry or application as creating an established business relationship for the 90 days before a call.",
+          "group": "ebr-periods",
+          "retired": "Sourced to the FTC Telemarketing Sales Rule, which largely does not reach state-regulated insurance. Replaced by items sourced to the FCC's TCPA rules (47 C.F.R. 64.1200)."
+        }
+      ]
+    },
+    {
+      "id": "III4-11",
+      "statement": "No telephone solicitation may be made to a residence before 8 a.m. or after 9 p.m., local time at the called party's location.",
+      "source": "cfr-47-64-1200-c",
+      "quote": "before the hour of 8 a.m. or after 9 p.m. (local time at the called party's location)",
+      "items": [
+        {
+          "id": "III4-11a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "Under the federal telemarketing rules that apply to insurance sales calls, a producer may make a telephone solicitation to a residence only between:",
+          "options": [
+            "7 a.m. and 10 p.m., the caller's local time",
+            "8 a.m. and 9 p.m., the caller's local time",
+            "8 a.m. and 9 p.m., the called party's local time",
+            "9 a.m. and 8 p.m., the called party's local time"
+          ],
+          "answer": 2,
+          "explanation": "47 C.F.R. § 64.1200(c) bars telephone solicitations to a residential subscriber before 8 a.m. or after 9 p.m., local time at the called party's location.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "III4-12",
+      "statement": "A call to a person with whom the caller has an established business relationship is not a telephone solicitation under the do-not-call rules.",
+      "source": "cfr-47-64-1200-sol",
+      "quote": "(ii) To any person with whom the caller has an established business relationship",
+      "items": [
+        {
+          "id": "III4-12a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.2,
+          "stem": "A producer wants to call a prospect whose number is on the national do-not-call registry. Which of the following allows the sales call?",
+          "options": [
+            "The prospect's number is already in the agency's database",
+            "The prospect's neighbor referred the agency 2 months ago",
+            "The prospect visited the agency's website 6 months ago",
+            "The prospect bought a policy from the agency 10 months ago"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(f)(15) excludes from telephone solicitation a call to a person with whom the caller has an established business relationship, such as a purchase within the past 18 months.",
+          "group": "tcpa-exceptions"
+        }
+      ]
+    },
+    {
+      "id": "III4-13",
+      "statement": "A call made with the person's prior express invitation or permission is not a telephone solicitation.",
+      "source": "cfr-47-64-1200-sol",
+      "quote": "(i) To any person with that person's prior express invitation or permission",
+      "items": [
+        {
+          "id": "III4-13a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "Besides an established business relationship, which of the following takes a sales call outside the federal do-not-call restrictions?",
+          "options": [
+            "A referral from one of the person's friends",
+            "Purchase of the number from a licensed list broker",
+            "The person's listing in a professional directory",
+            "The person told the agency beforehand that it may call"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(f)(15) excludes from telephone solicitation any call to a person who gave prior express invitation or permission.",
+          "group": "tcpa-exceptions",
+          "retired": "The national registry exception requires signed, written permission (47 C.F.R. 64.1200(c)(2)), which the sourced excerpt does not show. Withheld until that paragraph is sourced."
+        }
+      ]
+    },
+    {
+      "id": "III4-14",
+      "statement": "An established business relationship based on a purchase or transaction lasts 18 months.",
+      "source": "cfr-47-64-1200-ebr",
+      "quote": "within the eighteen (18) months immediately preceding the date of the telephone call",
+      "items": [
+        {
+          "id": "III4-14a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "Under the federal do-not-call rules, an established business relationship based on a client's purchase lasts for how long after the purchase?",
+          "options": [
+            "3 months",
+            "6 months",
+            "12 months",
+            "18 months"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call.",
+          "group": "tcpa-ebr"
+        }
+      ]
+    },
+    {
+      "id": "III4-15",
+      "statement": "An established business relationship based on an inquiry or application lasts three months.",
+      "source": "cfr-47-64-1200-ebr",
+      "quote": "within the three months immediately preceding the date of the call",
+      "items": [
+        {
+          "id": "III4-15a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "A prospect asked an agency about a life policy but did not buy. Under the federal do-not-call rules, the established business relationship from that inquiry lasts:",
+          "options": [
+            "30 days",
+            "3 months",
+            "6 months",
+            "18 months"
+          ],
+          "answer": 1,
+          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on an inquiry or application within the three months before the call.",
+          "group": "tcpa-ebr"
+        }
+      ]
+    },
+    {
+      "id": "III4-16",
+      "statement": "A company must honor a consumer's do-not-call request within a reasonable time, not more than 10 business days.",
+      "source": "cfr-47-64-1200-d3",
+      "quote": "This period may not exceed ten (10) business days from the receipt of such request.",
+      "items": [
+        {
+          "id": "III4-16a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A customer asks an agency to put her on its internal do-not-call list. Under federal rules, the agency must honor the request within a reasonable time that may not exceed:",
+          "options": [
+            "24 hours",
+            "5 business days",
+            "10 business days",
+            "30 days"
+          ],
+          "answer": 2,
+          "explanation": "47 C.F.R. § 64.1200(d)(3) requires honoring a do-not-call request within a reasonable time, not to exceed 10 business days from receipt.",
+          "group": "tcpa-requests",
+          "retired": "The FCC shortened this period from 30 days to 10 business days in 2024; prep materials and possibly the exam bank still teach 30 days, so a candidate could be marked wrong for the current rule. Withheld until the exam's content is confirmed."
+        }
+      ]
+    },
+    {
+      "id": "III4-17",
+      "statement": "National do-not-call registrations must be honored indefinitely, until cancelled by the consumer or removed by the administrator.",
+      "source": "cfr-47-64-1200-c",
+      "quote": "Such do-not-call registrations must be honored indefinitely, or until the registration is cancelled by the consumer or the telephone number is removed by the database administrator.",
+      "items": [
+        {
+          "id": "III4-17a",
+          "version": 3,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "A consumer put her number on the national do-not-call registry six years ago and has done nothing since. What is the status of her registration?",
+          "options": [
+            "It expired after five years",
+            "It must be renewed before it is honored",
+            "It covers only calls from in-state sellers",
+            "It is still in effect"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(c) requires national registrations to be honored indefinitely, until the consumer cancels them or the administrator removes the number."
+        }
+      ]
+    },
+    {
+      "id": "III4-18",
+      "statement": "When a consumer asks not to be called, the caller must record the request and add the number to its do-not-call list at the time of the request.",
+      "source": "cfr-47-64-1200-d3",
+      "quote": "the person or entity must record the request and place the subscriber's name, if provided, and telephone number on the do-not-call list at the time the request is made",
+      "items": [
+        {
+          "id": "III4-18a",
+          "version": 3,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A client who bought a policy from an agency last year tells the producer on a call, \"Please don't call me with sales offers anymore.\" Her number is not on the national registry. What must the agency do?",
+          "options": [
+            "Keep calling until her number appears on the national registry",
+            "Log the request and put her number on its internal list",
+            "Stop only the producer she spoke with from calling",
+            "Wait for her written confirmation before changing anything"
+          ],
+          "answer": 1,
+          "explanation": "47 C.F.R. § 64.1200(d)(3) requires a caller that receives a do-not-call request to record it and place the number on its do-not-call list at the time the request is made.",
+          "group": "tcpa-requests"
+        }
+      ]
+    }
+  ]
+}

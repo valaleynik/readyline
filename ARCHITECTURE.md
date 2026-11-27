@@ -114,8 +114,15 @@ answer -> INSERT events -> replay(events, items) -> LearnerState (cached snapsho
 
 `npm run sim` builds synthetic learners with known true abilities, runs them through the diagnostic and practice flow, predicts their pass probability, then simulates their real exam from the true parameters. It reports ability recovery, Brier score and calibration error. The engine does not ship if these miss target.
 
+## Sourcing policy
+
+Every item traces to a government primary source, stored verbatim with a hash: New Jersey statutes for state law and policy provisions, the Internal Revenue Code for taxation, the Fair Credit Reporting Act for underwriting reports, and the FCC's TCPA rules for telemarketing. The FTC Telemarketing Sales Rule was dropped for insurance items, because the FTC's authority largely does not reach the state-regulated business of insurance.
+
+Rules that changed recently (for example the 2024 FCC change from 30 days to 10 business days for honoring do-not-call requests) are withheld when prep materials, and possibly the exam itself, may still teach the old rule. Retired items stay in the files with their reason.
+
 ## Known limits (v1)
 
 - Blueprint item counts come from a prelicensing provider's published breakdown of the PSI outline. They must be checked against the current PSI content outline before launch (`blueprint.json` marks this).
 - Item difficulty starts from a generator estimate and is calibrated as real responses arrive.
+- Group life (IV.2, VI.2) has no items yet: FindLaw's copy of N.J.S.A. 17B:27 omits the group life sections, and the official NJ Legislature site needs a different retrieval path.
 - Ability does not decay with time; memory decay is handled by FSRS at the fact level.

@@ -247,20 +247,21 @@
       "items": [
         {
           "id": "V4-11a",
-          "version": 5,
+          "version": 6,
           "kind": "scenario",
           "difficulty": 0.1,
           "stem": "An insurer's claim unit routinely denies life claims that show any red flag, without first gathering the information available to it. Which New Jersey rule does this practice violate?",
           "options": [
+            "The 45-day written notice rule for delayed claims",
             "The 60-day death claim settlement rule",
             "The 2-year incontestable provision",
-            "The entire contract provision",
             "The unfair claim settlement practices rule"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:29B-4 lists refusing to pay claims without conducting a reasonable investigation based on all available information as an unfair claim settlement practice. Requesting proof of death and investigating contestable claims are normal practice.",
           "group": "claim-practice-frequency",
-          "optionStyle": "category"
+          "optionStyle": "category",
+          "retired": "Failed the test-wise check in three review rounds; the conduct is identifiable by common sense. V4-10a and V4-12a cover the claim settlement rule."
         }
       ]
     },

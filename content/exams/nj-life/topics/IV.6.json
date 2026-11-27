@@ -153,17 +153,17 @@
       "items": [
         {
           "id": "IV6-07a",
-          "version": 1,
+          "version": 2,
           "kind": "recall",
           "difficulty": 0.6,
           "stem": "A life insurance policy issued in 2026 is classified as a modified endowment contract when it:",
           "options": [
-            "Fails the 7-year surrender test",
+            "Does not pass the 7-pay test",
+            "Builds cash value above the premiums paid",
             "Meets the 7-pay test but carries a large loan",
-            "Has a face amount over $1 million",
-            "Fails the 7-pay test"
+            "Has a face amount over $1 million"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "26 U.S.C. § 7702A(a) defines a modified endowment contract as a life contract entered into on or after June 21, 1988 that fails the 7-pay test.",
           "group": "mec"
         }

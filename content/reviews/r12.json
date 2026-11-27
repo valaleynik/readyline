@@ -1,0 +1,326 @@
+[
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"60\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-20a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"The paid-up benefit the policy specifies takes effect\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "C (automatic premium loan) is true for many real policies where the owner elected APL or the contract makes it the default. Some candidates will defend it because the stem does not rule out an APL provision.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-21a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"3 full years\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-22a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"The prospect bought a policy from the agency 10 months ago\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-12a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"It is still in effect\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-17a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "picked \"Log the request and put her number on its internal list\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-12",
+    "detail": "A, C and D all start 'Honor it' plus a limiting condition ('once', 'only', 'only after'), while B is the one option with a different structure and no restrictive qualifier. That is a strong odd-one-out cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-18a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

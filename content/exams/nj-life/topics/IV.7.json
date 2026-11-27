@@ -34,17 +34,17 @@
       "items": [
         {
           "id": "IV7-02a",
-          "version": 1,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.7,
-          "stem": "Besides terminally ill insureds, federal tax law also treats accelerated death benefits as paid by reason of death when the insured is:",
+          "stem": "Federal tax law treats accelerated death benefits favorably when the insured is terminally ill, or when the insured is:",
           "options": [
-            "Permanently unemployed",
-            "Over age 65",
             "Chronically ill",
-            "Recovering from surgery"
+            "Seriously ill",
+            "Critically ill, as the insurer defines it",
+            "Mentally ill"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "26 U.S.C. § 101(g)(1) covers amounts received on the life of an insured who is terminally ill or chronically ill.",
           "optionStyle": "category",
           "group": "adb-tax"

@@ -23,6 +23,7 @@ export function loadLiveBank(exam = "nj-life"): { bank: Bank; blueprint: Bluepri
       const t = JSON.parse(readFileSync(join(dir, f), "utf8")) as TopicFile;
       for (const fact of t.facts)
         for (const it of fact.items) {
+          if (it.retired) continue;
           if (!verified.has(it.id)) {
             drafts++;
             continue;
