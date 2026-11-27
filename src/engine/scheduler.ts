@@ -148,13 +148,18 @@ export function nextItem(
  * bank is too thin, falls back to a second wording of an already used fact.
  * Throws if the bank cannot fill a section at all, so a short mock is never served.
  */
-export function mockForm(bank: Bank, seed: number, attempts = 50): ItemMeta[] {
+/**
+ * Assemble a full exam form. Optional `cost` ranks candidates (lower is better): each slot
+ * draws only from the cheapest candidates, at random among ties. Without it, every free
+ * candidate is equally likely (the original behavior, same seeds, same forms).
+ */
+export function mockForm(bank: Bank, seed: number, attempts = 50, cost?: (item: ItemMeta) => number): ItemMeta[] {
   // Randomized greedy assembly with deterministic restarts: enemy constraints can
   // dead-end one ordering while another fills every section.
   let last: unknown;
   for (let k = 0; k < attempts; k++) {
     try {
-      return assembleForm(bank, seed + k * 7919);
+      return assembleForm(bank, seed + k * 7919, cost);
     } catch (e) {
       last = e;
     }
@@ -162,7 +167,7 @@ export function mockForm(bank: Bank, seed: number, attempts = 50): ItemMeta[] {
   throw last;
 }
 
-function assembleForm(bank: Bank, seed: number): ItemMeta[] {
+function assembleForm(bank: Bank, seed: number, cost?: (item: ItemMeta) => number): ItemMeta[] {
   const rng = createRng(seed);
   const form: ItemMeta[] = [];
   const usedFacts = new Set<string>();
@@ -183,6 +188,10 @@ function assembleForm(bank: Bank, seed: number): ItemMeta[] {
       if (!candidates.length) candidates = pool.filter(free);
       if (!candidates.length) {
         throw new Error(`bank cannot fill section ${sec.code}: needs ${sec.items}, has ${pool.length} items`);
+      }
+      if (cost) {
+        const best = Math.min(...candidates.map(cost));
+        candidates = candidates.filter((x) => cost(x) === best);
       }
       const pick = candidates[rng.int(candidates.length)]!;
       usedFacts.add(pick.factId);

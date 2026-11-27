@@ -170,3 +170,32 @@ describe("exam result UI", () => {
     expect(store.results[0]!.passed).toBe(false);
   });
 });
+
+describe("mock exam UI", () => {
+  it("start, answer, pause and resume, review, submit, see the breakdown", async () => {
+    const store = memStore();
+    let saved: object = { baselineSkipped: true };
+    const s = Object.assign(store, { loadSettings: () => saved, saveSettings: (x: object) => void (saved = x) });
+    render(<StudyApp data={data} store={s as unknown as EventStore} />);
+    fireEvent.click(await screen.findByText("Take a mock exam"));
+    expect(screen.getByText(/0 of 83 answered/)).not.toBeNull();
+    for (let i = 0; i < 5; i++) {
+      fireEvent.click(screen.getAllByRole("button").filter((b) => b.classList.contains("option"))[0]!);
+      fireEvent.click(screen.getByText("Next"));
+    }
+    expect(screen.getByText(/5 of 83 answered/)).not.toBeNull();
+    expect(document.querySelector(".verdict")).toBeNull();
+    fireEvent.click(screen.getByText("Pause (clock keeps running)"));
+    expect(screen.getByText(/In progress: 5 of 83 answered/)).not.toBeNull();
+    fireEvent.click(screen.getByText("Resume mock exam"));
+    fireEvent.click(screen.getByText("All questions"));
+    expect(screen.getByText(/78 unanswered/)).not.toBeNull();
+    await act(async () => { fireEvent.click(screen.getByText("Submit mock exam")); });
+    expect(screen.getByText(/Mock exam: \d+ of 83/)).not.toBeNull();
+    expect(document.querySelectorAll(".sections tbody tr").length).toBe(data.blueprint.sections.length);
+    expect(store.events.length).toBe(5);
+    expect(store.events.every((e: AnswerEvent) => e.context === "mock")).toBe(true);
+    fireEvent.click(screen.getByText("Back to home"));
+    expect(screen.getByText(/: review$/)).not.toBeNull();
+  });
+});

@@ -3,7 +3,8 @@
  * and uploaded in the background. The server copy is the truth once it has it.
  */
 import type { AnswerEvent } from "../engine/types";
-import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
+import type { ExamResult } from "../session/results";
+import type { MockSettings as BaselineSettings } from "../session/mock";
 import { mergeEvents } from "./merge";
 import type { Remote } from "./remote";
 

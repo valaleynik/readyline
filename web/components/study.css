@@ -133,3 +133,19 @@ form .dateField { margin-bottom: 16px; }
 .resultBanner.passed { background: var(--good-bg); color: var(--good); }
 .resultBanner.failed { background: var(--warn-bg); }
 .tookExam { display: block; margin: 24px 0 0; font-size: 14px; }
+
+.mockBox { border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; margin: 24px 0 0; display: grid; gap: 10px; justify-items: start; }
+.pastMocks { list-style: none; padding: 0; margin: 0; font-size: 14px; }
+.mockBar { display: flex; justify-content: space-between; font-size: 13px; color: var(--muted); margin-bottom: 12px; }
+.timer { font-variant-numeric: tabular-nums; font-weight: 600; color: var(--ink); }
+.timer.low { color: var(--bad); }
+.flagToggle { font-size: 13px; color: var(--muted); cursor: pointer; }
+.mockGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(40px, 1fr)); gap: 6px; margin: 12px 0; }
+.mockGrid .cell { border: 1px solid var(--line); background: transparent; color: var(--muted); border-radius: 6px; padding: 8px 0; cursor: pointer; font: inherit; font-size: 13px; }
+.mockGrid .cell.done { background: var(--panel); color: var(--ink); }
+.mockGrid .cell.flag { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.reviewTitle { font-size: 18px; margin: 24px 0 4px; }
+.missed { padding-left: 20px; display: grid; gap: 16px; margin: 8px 0 24px; }
+.missed .small { font-size: 16px; margin: 0 0 6px; }
+.missed p { margin: 4px 0; font-size: 14px; }
+.missed .cite { color: var(--muted); font-size: 12px; }

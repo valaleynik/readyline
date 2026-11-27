@@ -11,6 +11,8 @@ export interface BlueprintSection {
 }
 
 export interface Blueprint {
+  /** minutes allowed on the real exam */
+  timeMinutes: number;
   code: string;
   name: string;
   scoredItems: number;
@@ -42,7 +44,7 @@ export interface AnswerEvent {
   /** learner's self-rating before answering. Recorded for calibration; the engine does not use it yet. */
   confidence?: "sure" | "guess";
   /** where the answer was given. The engine treats every answer the same way. */
-  context?: "baseline" | "session";
+  context?: "baseline" | "session" | "mock";
 }
 
 export interface Gaussian {

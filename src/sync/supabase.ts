@@ -1,7 +1,8 @@
 /** Supabase implementation of Remote. Row level security limits every query to the signed-in user. */
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { AnswerEvent } from "../engine/types";
-import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
+import type { ExamResult } from "../session/results";
+import type { MockSettings as BaselineSettings } from "../session/mock";
 import type { InsertResult, Remote } from "./remote";
 
 interface Row {
@@ -11,7 +12,7 @@ interface Row {
   correct: boolean;
   at: number;
   confidence: "sure" | "guess" | null;
-  context: "baseline" | "session" | null;
+  context: "baseline" | "session" | "mock" | null;
 }
 
 const toEvent = (r: Row): AnswerEvent => ({
@@ -56,7 +57,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
       return "offline";
     },
     async fetchSettings() {
-      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped,result_prompt_skips,result_prompt_skipped_at").maybeSingle();
+      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped,result_prompt_skips,result_prompt_skipped_at,mocks").maybeSingle();
       if (error) throw error;
       if (!data) return null;
       return {
@@ -64,6 +65,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
         ...(data.baseline_skipped ? { baselineSkipped: true } : {}),
         ...(data.result_prompt_skips ? { resultPromptSkips: data.result_prompt_skips } : {}),
         ...(data.result_prompt_skipped_at ? { resultPromptSkippedAt: Number(data.result_prompt_skipped_at) } : {}),
+        ...(Array.isArray(data.mocks) && data.mocks.length ? { mocks: data.mocks } : {}),
       };
     },
     async saveSettings(s): Promise<InsertResult> {
@@ -73,6 +75,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
         baseline_skipped: !!s.baselineSkipped,
         result_prompt_skips: s.resultPromptSkips ?? 0,
         result_prompt_skipped_at: s.resultPromptSkippedAt ?? null,
+        mocks: s.mocks ?? [],
         updated_at: new Date().toISOString(),
       });
       return error ? "offline" : "ok";

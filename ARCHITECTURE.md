@@ -218,3 +218,14 @@ Learners report their real result (`src/session/results.ts`); it is the only gro
 - `exam_results` is append-only with a device-made id, so a retried upload never double-counts. Latest report for an exam day wins.
 - The prediction is not stored: `predictionBefore` rebuilds what the app showed from answers before exam day. Comparing those against results across users is the calibration check.
 - Migration `0002_exam_results` applied before the app deploy (the new app writes the new settings columns). Verified on the live database: retry inserts 0 rows, score 101 rejected, other users and anon see nothing, no updates or deletes.
+
+## Mock exam
+
+A full rehearsal (`src/session/mock.ts`): 83 questions in the blueprint's section mix, 210 minutes, no feedback until submit.
+
+- Stored as `{ id, startedAt, seed, answers, flagged, submittedAt }` in `study_settings.mocks`. The form itself is never stored: it is rebuilt from answers logged before `startedAt` plus the seed, so every device sees the same 83 questions.
+- Form assembly prefers never-seen questions, then questions on facts not yet met, then those seen longest ago (`mockForm` cost option; without it the engine's forms are unchanged).
+- Answers are drafts (changeable, flaggable) until submit. On submit, answered questions become events tagged `mock` and feed the model. Blanks are not logged but count as wrong. The clock runs while the app is closed; an expired mock is submitted on sight, stamped at the deadline. A guard makes submit fire once.
+- Result: score with a rough 80% range (one form has luck in it), section scores, minutes used, what the model expected before, a warning when over 15% of questions were repeats, and a review of every miss with explanation and citation.
+- Suggested (always available): once 40% of facts are studied, and again 2 to 5 days before the exam; never within 3 days of the last one.
+- Migration `0003_mock_exams` applied before deploy; verified "mock" accepted, other contexts and a non-array `mocks` rejected.

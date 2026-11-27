@@ -20,8 +20,19 @@ import {
   shouldAskResult,
   skipResultPrompt,
   type ExamResult,
-  type ResultSettings as StudySettings,
 } from "../../src/session/results";
+import {
+  activeMock,
+  mockAdvice,
+  mockDeadline,
+  mockItems,
+  mockResult,
+  startMock,
+  submitMock,
+  updateMock,
+  type MockRecord,
+  type MockSettings as StudySettings,
+} from "../../src/session/mock";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 
 export interface EventStore {
@@ -94,7 +105,9 @@ type View =
   | { kind: "feedback"; item: DisplayItem; choice: number; correct: boolean; confidence: "sure" | "guess" }
   | { kind: "done" }
   | { kind: "baseline"; item: DisplayItem; choice: number | null; n: number }
-  | { kind: "baselineDone" };
+  | { kind: "baselineDone" }
+  | { kind: "mock"; id: string; index: number; review: boolean }
+  | { kind: "mockDone"; id: string };
 
 const REASON_LABEL: Record<string, string> = {
   new_material: "New",
@@ -137,6 +150,40 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   useEffect(() => {
     if (loaded) store.saveSettings?.(settings);
   }, [settings, loaded, store]);
+
+  const answerKey = (k: string) => display.get(k)!.answer;
+  const viewMock = view.kind === "mock" || view.kind === "mockDone" ? (settings.mocks ?? []).find((m) => m.id === view.id) : undefined;
+  const mockForm_ = useMemo(
+    () => (viewMock ? mockItems(bank, events, viewMock) : []),
+    // the form depends only on the start time, the seed and answers before the start
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [bank, viewMock?.startedAt, viewMock?.seed, events.length],
+  );
+
+  function beginMock() {
+    const active = activeMock(settings);
+    const id = active?.id ?? globalThis.crypto.randomUUID();
+    if (!active) setSettings((st) => startMock(st, Date.now(), id));
+    setView({ kind: "mock", id, index: 0, review: false });
+  }
+
+  // Submitting is one-way; the clock and the button can both fire, so only the first counts.
+  const submitted = useRef(new Set<string>());
+  function finishMock(id: string) {
+    if (submitted.current.has(id)) return;
+    submitted.current.add(id);
+    const { settings: st, newEvents } = submitMock(bank, events, settings, id, Date.now(), answerKey);
+    if (newEvents.length) setEvents([...events, ...newEvents]);
+    setSettings(st);
+    setView({ kind: "mockDone", id });
+  }
+
+  // The clock keeps running when the app is closed: an expired mock is submitted on sight.
+  useEffect(() => {
+    if (!loaded) return;
+    const m = activeMock(settings);
+    if (m && Date.now() >= mockDeadline(bank, m)) finishMock(m.id);
+  });
 
   function report(r: ExamResult) {
     store.addResult?.(r);
@@ -202,7 +249,16 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (view.kind === "baseline") {
+      if (view.kind === "mock" && !view.review) {
+        const m = (settings.mocks ?? []).find((x) => x.id === view.id);
+        if (!m) return;
+        const form = mockItems(bank, events, m);
+        const it = form[view.index]!;
+        const n = Number(e.key);
+        if (n >= 1 && n <= 4) setSettings((st) => updateMock(st, m.id, (x) => ({ ...x, answers: { ...x.answers, [it.key]: n - 1 } })));
+        if ((e.key === "ArrowRight" || e.key === "n") && view.index < form.length - 1) setView({ ...view, index: view.index + 1 });
+        if ((e.key === "ArrowLeft" || e.key === "p") && view.index > 0) setView({ ...view, index: view.index - 1 });
+      } else if (view.kind === "baseline") {
         const n = Number(e.key);
         if (n >= 1 && n <= 4) setView({ ...view, choice: n - 1 });
         if (view.choice !== null && (e.key === "s" || e.key === "Enter")) submitBaseline("sure");
@@ -247,6 +303,8 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
             onBaseline={() => nextBaseline(events, state)}
             results={results}
             onReport={report}
+            onMock={beginMock}
+            onOpenMock={(id) => setView({ kind: "mockDone", id })}
           />}
         {view.kind === "question" && (
           <Question
@@ -266,6 +324,29 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
             choice={view.choice}
             onChoose={(c) => setView({ ...view, choice: c })}
             onSubmit={submitBaseline}
+          />
+        )}
+        {view.kind === "mock" && (settings.mocks ?? []).some((m) => m.id === view.id && !m.submittedAt) && (
+          <MockView
+            bank={bank}
+            display={display}
+            mock={(settings.mocks ?? []).find((m) => m.id === view.id)!}
+            form={mockForm_}
+            index={view.index}
+            review={view.review}
+            onGo={(index, review) => setView({ ...view, index, review })}
+            onChange={(f) => setSettings((st) => updateMock(st, view.id, f))}
+            onSubmit={() => finishMock(view.id)}
+            onLeave={() => setView({ kind: "home" })}
+          />
+        )}
+        {view.kind === "mockDone" && (settings.mocks ?? []).some((m) => m.id === view.id && m.submittedAt) && (
+          <MockDone
+            bank={bank}
+            data={data}
+            result={mockResult(bank, events, (settings.mocks ?? []).find((m) => m.id === view.id)!, answerKey)}
+            mock={(settings.mocks ?? []).find((m) => m.id === view.id)!}
+            onHome={() => setView({ kind: "home" })}
           />
         )}
         {view.kind === "baselineDone" && (
@@ -357,6 +438,8 @@ function Home({
   onBaseline,
   results,
   onReport,
+  onMock,
+  onOpenMock,
 }: {
   state: LearnerState;
   bank: Bank;
@@ -367,7 +450,12 @@ function Home({
   onBaseline: () => void;
   results: ExamResult[];
   onReport: (r: ExamResult) => void;
+  onMock: () => void;
+  onOpenMock: (id: string) => void;
 }) {
+  const active = activeMock(settings);
+  const advice = mockAdvice(state, bank, settings, Date.now());
+  const pastMocks = (settings.mocks ?? []).filter((m) => m.submittedAt);
   const now = Date.now();
   const ask = shouldAskResult(settings, results, now);
   const last = latestResult(results);
@@ -434,6 +522,44 @@ function Home({
       )}
       {state.answers > 0 && <PassChanceCard bank={bank} events={events} examAt={settings.examAt} />}
       {state.answers > 0 && <CalibrationGrid events={events} title="How well your confidence matches your answers" />}
+      <div className="mockBox">
+        <div className="chanceTitle">Mock exam</div>
+        {active ? (
+          <>
+            <p className="chanceNote">
+              In progress: {Object.keys(active.answers).length} of {bank.blueprint.scoredItems} answered,{" "}
+              {Math.max(0, Math.ceil((mockDeadline(bank, active) - Date.now()) / 60_000))} minutes left. The clock keeps running.
+            </p>
+            <button className="primary" onClick={onMock}>
+              Resume mock exam
+            </button>
+          </>
+        ) : (
+          <>
+            <p className="chanceNote">
+              {advice === "final"
+                ? "Recommended now: a full rehearsal a few days before the real thing."
+                : advice === "first"
+                  ? "Recommended: you've studied enough for a full practice exam to mean something."
+                  : `${bank.blueprint.scoredItems} questions, ${bank.blueprint.timeMinutes / 60} hours, no feedback until you submit. Same mix as the real exam.`}
+            </p>
+            <button className={advice ? "primary" : "secondary"} onClick={onMock}>
+              Take a mock exam
+            </button>
+          </>
+        )}
+        {pastMocks.length > 0 && (
+          <ul className="pastMocks">
+            {pastMocks.map((m) => (
+              <li key={m.id}>
+                <button className="link" onClick={() => onOpenMock(m.id)}>
+                  {new Date(m.startedAt).toLocaleDateString(undefined, { month: "short", day: "numeric" })}: review
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
       {!ask &&
         (manual ? (
           <ResultForm title="Report your exam result" onSave={(r) => (onReport(r), setManual(false))} onLater={() => setManual(false)} />
@@ -742,5 +868,236 @@ function ResultForm({
         </button>
       </div>
     </div>
+  );
+}
+
+const clock = (ms: number) => {
+  const t = Math.max(0, Math.floor(ms / 1000));
+  const h = Math.floor(t / 3600);
+  const m = Math.floor((t % 3600) / 60);
+  const sec = t % 60;
+  return `${h}:${String(m).padStart(2, "0")}:${String(sec).padStart(2, "0")}`;
+};
+
+function MockView({
+  bank,
+  display,
+  mock,
+  form,
+  index,
+  review,
+  onGo,
+  onChange,
+  onSubmit,
+  onLeave,
+}: {
+  bank: Bank;
+  display: Map<string, DisplayItem>;
+  mock: MockRecord;
+  form: { key: string }[];
+  index: number;
+  review: boolean;
+  onGo: (index: number, review: boolean) => void;
+  onChange: (f: (m: MockRecord) => MockRecord) => void;
+  onSubmit: () => void;
+  onLeave: () => void;
+}) {
+  const [now, setNow] = useState(Date.now());
+  useEffect(() => {
+    const t = setInterval(() => setNow(Date.now()), 1000);
+    return () => clearInterval(t);
+  }, []);
+  const left = mockDeadline(bank, mock) - now;
+  useEffect(() => {
+    if (left <= 0) onSubmit();
+  }, [left <= 0]); // eslint-disable-line react-hooks/exhaustive-deps
+  const flagged = new Set(mock.flagged ?? []);
+  const answered = form.filter((f) => mock.answers[f.key] !== undefined).length;
+  const header = (
+    <div className="mockBar">
+      <span>
+        Mock exam · {answered} of {form.length} answered
+      </span>
+      <span className={`timer ${left < 10 * 60_000 ? "low" : ""}`} aria-label="time left">
+        {clock(left)}
+      </span>
+    </div>
+  );
+  if (review) {
+    const blank = form.length - answered;
+    return (
+      <section className="card">
+        {header}
+        <h2 className="stem">Review your answers</h2>
+        <div className="mockGrid">
+          {form.map((f, i) => (
+            <button
+              key={f.key}
+              className={`cell ${mock.answers[f.key] !== undefined ? "done" : ""} ${flagged.has(f.key) ? "flag" : ""}`}
+              onClick={() => onGo(i, false)}
+              aria-label={`Question ${i + 1}`}
+            >
+              {i + 1}
+            </button>
+          ))}
+        </div>
+        <p className="chanceNote">
+          {blank ? `${blank} unanswered: they count as wrong, like on the real exam. ` : "Every question answered. "}
+          {flagged.size ? `${flagged.size} flagged.` : ""}
+        </p>
+        <div className="row">
+          <button className="primary" onClick={onSubmit}>
+            Submit mock exam
+          </button>
+          <button className="secondary" onClick={() => onGo(index, false)}>
+            Back to questions
+          </button>
+        </div>
+      </section>
+    );
+  }
+  const item = display.get(form[index]!.key)!;
+  const choice = mock.answers[item.key];
+  return (
+    <section className="card">
+      {header}
+      <div className="meta">
+        <span className="tag">Question {index + 1}</span>
+        <label className="flagToggle">
+          <input
+            type="checkbox"
+            checked={flagged.has(item.key)}
+            onChange={(e) =>
+              onChange((m) => ({
+                ...m,
+                flagged: e.target.checked ? [...(m.flagged ?? []), item.key] : (m.flagged ?? []).filter((k) => k !== item.key),
+              }))
+            }
+          />{" "}
+          Flag for review
+        </label>
+      </div>
+      <h2 className="stem">{item.stem}</h2>
+      <ol className="options">
+        {item.options.map((o, i) => (
+          <li key={i}>
+            <button
+              className={`option ${choice === i ? "selected" : ""}`}
+              aria-pressed={choice === i}
+              onClick={() => onChange((m) => ({ ...m, answers: { ...m.answers, [item.key]: i } }))}
+            >
+              <span className="letter">{"ABCD"[i]}</span>
+              <span>{o}</span>
+            </button>
+          </li>
+        ))}
+      </ol>
+      <div className="submit">
+        <button className="secondary" disabled={index === 0} onClick={() => onGo(index - 1, false)}>
+          Previous
+        </button>
+        {index < form.length - 1 ? (
+          <button className="primary" onClick={() => onGo(index + 1, false)}>
+            Next
+          </button>
+        ) : (
+          <button className="primary" onClick={() => onGo(index, true)}>
+            Review and submit
+          </button>
+        )}
+        <button className="link" onClick={() => onGo(index, true)}>
+          All questions
+        </button>
+        <button className="link" onClick={onLeave}>
+          Pause (clock keeps running)
+        </button>
+      </div>
+    </section>
+  );
+}
+
+function MockDone({
+  bank,
+  data,
+  result: r,
+  mock,
+  onHome,
+}: {
+  bank: Bank;
+  data: ExportedBank;
+  result: ReturnType<typeof mockResult>;
+  mock: MockRecord;
+  onHome: () => void;
+}) {
+  const byKey = new Map(data.items.map((i) => [i.key, i]));
+  const n = bank.blueprint.scoredItems;
+  return (
+    <section className="home">
+      <h1>
+        Mock exam: {r.correct} of {r.total}
+      </h1>
+      <p className="lede">
+        {r.passed ? "That's a passing score" : "Below the passing line"} (passing is {r.passScore}). Your true level is likely
+        somewhere from {r.range[0]} to {r.range[1]}: one exam's worth of questions has luck in it.
+        {Number.isFinite(r.expectedBefore) ? ` Before this mock, the model expected about ${Math.round(r.expectedBefore)}.` : ""}
+      </p>
+      {r.repeats / r.total > 0.15 && (
+        <p className="resultBanner failed">
+          {r.repeats} of these questions were ones you had answered before, so this score may run high.
+        </p>
+      )}
+      <p className="chanceNote">
+        {r.answered} answered, {r.unanswered.length} left blank, {r.minutes} of {bank.blueprint.timeMinutes} minutes used.
+      </p>
+      <table className="sections">
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {r.sections.map((s) => (
+            <tr key={s.code} className={s.correct / s.asked < bank.passScore / n ? "weak" : ""}>
+              <td>
+                {s.code}. {s.name}
+              </td>
+              <td className="num">
+                {s.correct}/{s.asked}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      {r.missed.length + r.unanswered.length > 0 && (
+        <>
+          <h2 className="reviewTitle">Review: {r.missed.length + r.unanswered.length} to go over</h2>
+          <p className="chanceNote">These go into your sessions to relearn.</p>
+          <ol className="missed">
+            {[...r.missed, ...r.unanswered].map((k) => {
+              const it = byKey.get(k)!;
+              const fact = data.facts[it.factId];
+              const mine = mock.answers[k];
+              return (
+                <li key={k}>
+                  <p className="stem small">{it.stem}</p>
+                  <p>
+                    {mine === undefined ? "Left blank. " : <>Your answer: {"ABCD"[mine]}. {it.options[mine]}. </>}
+                    <strong>
+                      Correct: {"ABCD"[it.answer]}. {it.options[it.answer]}
+                    </strong>
+                  </p>
+                  <p className="explain">{it.explanation}</p>
+                  {fact && <p className="cite">{fact.citation}</p>}
+                </li>
+              );
+            })}
+          </ol>
+        </>
+      )}
+      <button className="primary" onClick={onHome}>
+        Back to home
+      </button>
+    </section>
   );
 }

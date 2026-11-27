@@ -1,6 +1,7 @@
 /** The server side of the log, behind an interface so tests and the offline preview need no network. */
 import type { AnswerEvent } from "../engine/types";
-import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
+import type { ExamResult } from "../session/results";
+import type { MockSettings as BaselineSettings } from "../session/mock";
 
 export type InsertResult = "ok" | "conflict" | "offline";
 
