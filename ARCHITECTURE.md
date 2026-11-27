@@ -240,3 +240,14 @@ Same app, same sign-in. Individuals study on their own; agencies buy seats and h
 - The function is bundled from `supabase/functions/agency-dashboard/handler.ts` by `scripts/build-functions.mjs` and reads the bank from the app's `/bank.json`, so server and app use the same questions.
 - Verified on the live database: code format, seat limit, invalid and replaced codes rejected, no self-promotion, learners see only themselves, managers see members but zero raw answers, outsiders and anon see nothing.
 - Agencies are created by hand for now (sales-led); Stripe will create them on purchase.
+
+## Roadmap (agreed 2026-11-27)
+
+1. Email and domain: buy a domain, connect Resend as Supabase's SMTP (built-in sender allows about 2 emails an hour).
+2. Design pass and onboarding: real visual design, signup with exam date, baseline screens, plus a Learn tab:
+   - lessons per topic built only from verified facts (statement, quote, contrasts), no AI-written text
+   - each lesson ends with 2 to 3 check questions logged as context "learn"
+   - no points or streaks; keep pointing back to the daily session
+   - pull sample lessons first to judge whether fact statements read well as teaching text
+3. Cleanups: V4-64a "whom" to "who" (version bump and re-review), check the primary PSI outline by hand, delete the demo learner (d300d300-0000-4000-8000-000000000001) when no longer needed.
+4. Stripe last, test mode first: one `hasAccess` check gates the app (always true until then); individual purchase and agency seats (creates the organization). Webhook signature checks and idempotency tested before going live.
