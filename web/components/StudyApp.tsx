@@ -8,9 +8,10 @@
  * same truth.
  */
 import { useEffect, useMemo, useRef, useState } from "react";
-import { Bank, readiness, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
+import { Bank, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
 import { calibration, dueFacts, progress, sessionPick, type SessionStart } from "../../src/session/daily";
 import { studyPlan, type StudyPlan } from "../../src/session/plan";
+import { passChance, type CheckName } from "../../src/session/passchance";
 import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus, type BaselineSettings as StudySettings } from "../../src/session/baseline";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 
@@ -238,10 +239,52 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   );
 }
 
-/** Readiness on exam day when a future date is set, otherwise as of now. */
-function examReadiness(state: LearnerState, bank: Bank, examAt?: number) {
-  const at = examAt && examAt > Date.now() ? examAt : undefined;
-  return readiness(state, bank, { draws: 2000, examAt: at });
+const CHECK_LABELS: Record<CheckName, string> = {
+  coverage: "Every section practiced",
+  certainty: "Enough answers to be sure about you",
+  selfCheck: "Predictions match your results",
+  recency: "Studied in the last week",
+};
+
+/** The pass chance, shown only once the model has earned it for this learner. */
+function PassChanceCard({ bank, events, examAt }: { bank: Bank; events: AnswerEvent[]; examAt?: number }) {
+  const pc = useMemo(() => passChance(events, bank, Date.now(), examAt), [events, bank, examAt]);
+  const onDay = examAt && examAt > Date.now();
+  const title = onDay ? "Chance of passing on exam day" : "Chance of passing today";
+  if (pc.show) {
+    return (
+      <div className="chance">
+        <div className="chanceTitle">{title}</div>
+        <div className="chanceValue">about {pct(pc.chance!)}</div>
+        <p className="chanceNote">
+          Likely score {pc.scoreRange![0]} to {pc.scoreRange![1]} of {pc.scoredItems}. Passing is {pc.passScore}.
+        </p>
+        <p className="chanceNote">
+          How we know: on your last {pc.check.checked} answers the model expected {pct(pc.check.predicted)} correct and you
+          got {pct(pc.check.actual)}.
+        </p>
+      </div>
+    );
+  }
+  const focus = pc.focus ? bank.blueprint.sections.find((s) => s.code === pc.focus) : null;
+  return (
+    <div className="chance locked">
+      <div className="chanceTitle">{title}</div>
+      <div className="chanceValue">Not yet</div>
+      <p className="chanceNote">
+        {pc.needMore === null
+          ? "Your recent results don't match what the model predicted, so it won't guess yet. It adjusts as you keep studying."
+          : `About ${pc.needMore} more answers${focus ? `, mostly in ${focus.code}. ${focus.name}` : ""}, and we can give you a number you can trust.`}
+      </p>
+      <ul className="checks">
+        {pc.checks.map((c) => (
+          <li key={c.name} className={c.ok ? "ok" : ""}>
+            {c.ok ? "✓" : "○"} {CHECK_LABELS[c.name]}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 
 function planLine(p: StudyPlan): string {
@@ -283,7 +326,6 @@ function Home({
   const studied = Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length;
   const totalFacts = bank.factTopic.size;
   const plan = studyPlan(state, bank, settings, Date.now());
-  const r = useMemo(() => (state.answers ? examReadiness(state, bank, settings.examAt) : null), [state, bank, settings.examAt]);
   return (
     <section className="home">
       <h1>{state.answers ? "Ready for today's session" : "Start studying for the NJ Life exam"}</h1>
@@ -328,16 +370,9 @@ function Home({
       {state.answers > 0 && (
         <div className="stats">
           <Stat label="Facts studied" value={`${studied} of ${totalFacts}`} />
-          {r && (
-            <Stat
-              label={plan.hasDate && plan.status !== "past" ? "Chance of passing on exam day" : "Chance of passing today"}
-              value={pct(r.pPass)}
-              note={`based on ${state.answers} answers`}
-            />
-          )}
-          {r && <Stat label="Expected score" value={`${Math.round(r.expectedScore)} / ${r.scoredItems}`} note={`pass is ${r.passScore}`} />}
         </div>
       )}
+      {state.answers > 0 && <PassChanceCard bank={bank} events={events} examAt={settings.examAt} />}
       {state.answers > 0 && <CalibrationGrid events={events} title="How well your confidence matches your answers" />}
     </section>
   );
@@ -483,7 +518,6 @@ function Done({
 }) {
   const p = progress(state, bank, events, session, Date.now(), SEED, quota);
   const mine = events.filter((e) => e.at >= session.startedAt);
-  const r = useMemo(() => examReadiness(state, bank, examAt), [state, bank, examAt]);
   return (
     <section className="home">
       <h1>{p.doneReason === "cap" ? "That's enough for one sitting" : "Today's list is clear"}</h1>
@@ -496,8 +530,8 @@ function Done({
         <Stat label="Answered" value={String(p.answered)} />
         <Stat label="Correct" value={p.answered ? pct(p.correct / p.answered) : "0%"} />
         <Stat label="New facts" value={String(p.newIntroduced)} />
-        <Stat label={examAt && examAt > Date.now() ? "Chance of passing on exam day" : "Chance of passing today"} value={pct(r.pPass)} />
       </div>
+      <PassChanceCard bank={bank} events={events} examAt={examAt} />
       <CalibrationGrid events={mine} title="This session: confidence vs. results" />
       <button className="primary" onClick={onHome}>
         Back to home

@@ -180,3 +180,16 @@ A 20-question placement round offered once, at signup, before any studying.
 - Questions are split across sections by exam share (at least one each), one per fact, picked where ability is least certain.
 - No feedback per question. Answers are ordinary events tagged `context: "baseline"`, so they feed the model like any other answer.
 - Result: section-by-section estimate, likely score range, weakest section first.
+
+## Pass chance gate
+
+The pass chance is hidden until the model has earned it for this learner (`src/session/passchance.ts`). All four checks must pass:
+
+- Coverage: 5+ answers in every section, and topics with 2+ answers cover 60% of exam weight.
+- Certainty: the model-uncertainty band on expected score (ability draws only, no exam-day luck) is 10 points wide or less.
+- Self-check: before each answer the engine's prediction (ability vs. difficulty, times memory) is replayed from the log. Over the last 100 answers, actual correct must be within 2 standard errors of predicted (60+ answers needed).
+- Recency: an answer in the last 7 days.
+
+Once unlocked before today, looser keep rules apply (50%, 13 points, 2.5 SE, 10 days) so the number does not flicker. Shown as "about N%", rounded to 5s, held between 5% and 95%, with the likely score range. While locked, the learner sees the checks and a rough count of answers left, with the section to work on.
+
+Simulation (learners who behave as the model assumes): unlocks at roughly 180 to 390 answers, and hides again on about 3% of later days. The real test is reported exam results.

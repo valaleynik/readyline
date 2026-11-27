@@ -15,6 +15,11 @@ export interface Readiness {
   expectedScore: number;
   /** 10th and 90th percentile of the simulated score */
   scoreInterval: [number, number];
+  /**
+   * 10th and 90th percentile of the expected score across ability draws, without
+   * exam-day luck. Its width measures how sure the model is about the learner.
+   */
+  abilityInterval: [number, number];
   passScore: number;
   scoredItems: number;
   sections: SectionReadiness[];
@@ -67,6 +72,7 @@ export function readiness(state: LearnerState, bank: Bank, opts: ReadinessOption
 
   const sections = bank.blueprint.sections;
   const scores = new Int32Array(draws);
+  const expected = new Float64Array(draws);
   const sectionHits = new Float64Array(sections.length);
   let passes = 0;
   let noDecayTotal = 0;
@@ -80,6 +86,7 @@ export function readiness(state: LearnerState, bank: Bank, opts: ReadinessOption
     }
 
     let score = 0;
+    let exp = 0;
     sections.forEach((sec, si) => {
       for (let i = 0; i < sec.items; i++) {
         const topic = sec.topics[rng.int(sec.topics.length)]!.code;
@@ -89,6 +96,7 @@ export function readiness(state: LearnerState, bank: Bank, opts: ReadinessOption
         const known = sigmoid(th - b);
         const p = c + (1 - c) * known * keep.get(topic)!;
         noDecayTotal += pCorrect(th, b, c);
+        exp += p;
         if (rng.next() < p) {
           score++;
           sectionHits[si]! += 1;
@@ -96,6 +104,7 @@ export function readiness(state: LearnerState, bank: Bank, opts: ReadinessOption
       }
     });
     scores[k] = score;
+    expected[k] = exp;
     if (score >= bank.passScore) passes++;
   }
 
@@ -103,10 +112,14 @@ export function readiness(state: LearnerState, bank: Bank, opts: ReadinessOption
   const expectedScore = sorted.reduce((s, x) => s + x, 0) / draws;
   const q = (p: number) => sorted[Math.min(draws - 1, Math.floor(p * draws))]!;
 
+  const expSorted = Array.from(expected).sort((a, b) => a - b);
+  const qe = (p: number) => expSorted[Math.min(draws - 1, Math.floor(p * draws))]!;
+
   return {
     pPass: passes / draws,
     expectedScore,
     scoreInterval: [q(0.1), q(0.9)],
+    abilityInterval: [qe(0.1), qe(0.9)],
     passScore: bank.passScore,
     scoredItems: bank.blueprint.scoredItems,
     sections: sections.map((sec, si) => ({

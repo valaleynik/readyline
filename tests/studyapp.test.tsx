@@ -38,6 +38,9 @@ describe("study loop UI", () => {
     expect(store.events.every((e: AnswerEvent) => e.confidence === "sure" || e.confidence === "guess")).toBe(true);
     expect(store.events.every((e: AnswerEvent) => e.context === "session")).toBe(true);
     expect(screen.getByText("This session: confidence vs. results")).not.toBeNull();
+    // one session is not enough evidence: the pass chance stays locked
+    expect(screen.getByText("Not yet")).not.toBeNull();
+    expect(screen.queryByText(/^about \d+%$/)).toBeNull();
   });
 
   it("setting an exam date changes the plan shown on home", async () => {
