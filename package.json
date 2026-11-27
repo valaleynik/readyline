@@ -6,7 +6,9 @@
   "scripts": {
     "test": "vitest run",
     "sim": "tsx src/sim/run.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "content": "tsx src/content/cli.ts",
+    "rebalance": "tsx src/content/rebalance.ts"
   },
   "devDependencies": {
     "@types/node": "^22.20.7",

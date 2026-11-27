@@ -1,0 +1,416 @@
+[
+  {
+    "itemId": "V3-02a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "A and B are wrong only because of the word 'only.' A first- or second-degree conviction is a ground under 17:22A-40(a)(6), since those degrees fall within 'fourth degree or higher,' so these options are partly true and hinge on one qualifier. C has slight pull because a dishonesty-related disorderly persons offense could support action under (a)(8), but it is not a listed conviction ground.",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "17:22A-40(a)(19) describes reporting 'criminal prosecutions' within 30 days of 'final disposition,' and (a)(18) requires notice within 30 days of a conviction, so a candidate could defend A (final verdict) using the folder's own statutes.",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-2",
+    "detail": "A is arguably correct under 17:22A-40(a)(18)/(19): the 30-day clock runs from conviction or final disposition of criminal prosecutions. Only the 17:22A-47(b) detail in the stem points to the pretrial hearing date.",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 2,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "retired: 17:22A-40(a)(18), 40(a)(19) and 47(b) set overlapping 30-day clocks, so a timing question here cannot be made unambiguous. Replaced by a contents question in v3.",
+    "at": "2026-11-26"
+  }
+]

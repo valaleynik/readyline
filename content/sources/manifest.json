@@ -1,0 +1,126 @@
+{
+  "note": "Text retrieved from FindLaw's copy of the New Jersey Statutes. Hash computed in the retrieving browser and re-checked after saving. Confirm against the official NJ Legislature text before launch.",
+  "sources": [
+    {
+      "id": "njsa-17-22a-29",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-29",
+      "title": "License required",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-29/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "807ed5c1e2a32edd5d62b7f9a512eb95507f1516ac123707771001a616465a76",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-31",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-31",
+      "title": "Examination",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-31/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "1807a1bd6abe260464c0e2fb092739a5a8d5fd1cb99b58f1e6b77215d6565cad",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-32",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-32",
+      "title": "Application for resident license",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-32/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "349782fe4c05cf01f066e3b093cafadd1b6dc901346c731321b4ad3668bf34f6",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-33",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-33",
+      "title": "Lines of authority; renewal; reinstatement",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-33/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "09d8247acaff8fbbffe2deb12937440cbc74d0b8f4d369f1369da4360fad6ce7",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-34",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-34",
+      "title": "Nonresident licensing",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-34/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "9864ce086c1561e60b2a598bf7591e97c9e41d9a0e431100dce89ce4c8fc49a1",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-35",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-35",
+      "title": "Exemption from examination",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-35/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "43f443d42213c997d9584cbcd8638f3a605cba89cb683755efdc7d1092f909ba",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-36",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-36",
+      "title": "Assumed names",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-36/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "9274170dba1792a29ef35215ba0434dadc492a1c402ff2c2878d29dcf72a5168",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-37",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-37",
+      "title": "Temporary licensing",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-37/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "fab6ba5d7c4f0248271c553e5212707df0fc0e38fa4a5d8a7e3260d8833ab4c7",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-40",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-40",
+      "title": "License denial, nonrenewal or revocation",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-40/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "1b116e5afc5d11b835a441335293b902977392d7ef3a654c55e23c190b77f347",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-41",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-41",
+      "title": "Commissions",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-41/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "09ca7e9726503fb062ee9bb45a64a09d500ec5020657be6df96a2a1dbbc55d56",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-22a-47",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:22A-47",
+      "title": "Reporting of actions",
+      "act": "New Jersey Insurance Producer Licensing Act of 2001",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-22a-47/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "7dc66c18aac0d6420899876e8b2629d8a2b5918f5500392f9a26ec9736d19022",
+      "verifiedAgainstOfficial": false
+    }
+  ]
+}

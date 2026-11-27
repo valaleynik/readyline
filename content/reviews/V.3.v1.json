@@ -1,0 +1,2054 @@
+[
+  {
+    "itemId": "V3-01a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01b",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01b",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01b",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01b",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-01b",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-03a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-03a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-03a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-03a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-03a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-04a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-04a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-04a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-04a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-04a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-05a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-05a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-05a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-05a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-05a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-06a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-06a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-06a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-06a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-06a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-07a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-07a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-07a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-07a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-07a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-08a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-08a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-08a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-08a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-08a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-09a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-09a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-09a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-09a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-09a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-10a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-10a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-10a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-10a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-10a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-12a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-12a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-12a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-12a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-12a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-14a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-14a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-14a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-14a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-14a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-15a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-15a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-15a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-15a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-15a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-16a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-16a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-16a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-16a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-16a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-17a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-17a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-17a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-17a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-17a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-18a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-18a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-18a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-18a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-18a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19b",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19b",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19b",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19b",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-19b",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-20a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-20a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-20a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-20a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-20a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-22a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-22a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-22a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-22a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-22a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-23a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-23a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-23a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-23a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-23a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-24a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-24a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-24a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-24a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-24a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-25a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-25a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-25a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-25a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-25a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-26a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-26a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-26a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-26a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-26a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-27a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-27a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-27a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-27a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-27a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-28a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-28a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-28a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-28a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-28a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-29a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-29a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-29a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-29a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-29a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-32a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-32a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-32a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-32a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-32a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-34a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-34a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-34a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-34a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-34a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-35a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-35a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-35a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-35a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-35a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-36a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-36a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-36a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-36a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-36a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-38a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-38a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-38a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-38a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-38a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-39a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer A, key A",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-39a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-39a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-39a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-39a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-40a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer B, key B",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-40a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-40a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-40a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-40a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-41a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer C, key C",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-41a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "no second defensible option",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-41a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-41a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-41a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "blind answer D, key D",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "17:22A-40(a)(18) separately makes it a ground for discipline to fail to notify the commissioner within 30 days of an indictment or 'the filing of any formal criminal charges'. In NJ, charges are often filed by complaint-warrant at arrest, so a candidate who knows 40(a)(18) could defend A (date of arrest) as starting a 30-day notice clock.",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 1,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-1",
+    "detail": "A (date of arrest) is arguably correct under 17:22A-40(a)(18), whose 30-day notice clock starts when formal criminal charges are filed, often at arrest.",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-42a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-33a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: stem asks for a conviction but options are qualifiers",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-13a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: stem gives away the answer",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-11a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: stem gives away the answer",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-21a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: filler distractors",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-30a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: filler distractors",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-02a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: key copies statute wording and hedge cues it",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-31a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: key copies statute wording",
+    "at": "2026-11-26"
+  },
+  {
+    "itemId": "V3-37a",
+    "version": 1,
+    "check": "human",
+    "passed": false,
+    "reviewer": "editor:claude",
+    "detail": "revised in v2: distractor D is half true",
+    "at": "2026-11-26"
+  }
+]

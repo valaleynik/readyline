@@ -37,6 +37,16 @@ sources -> source_chunks -> facts -> items -> item_reviews -> live
   6. `human`: spot check sample before promotion to `live`.
 - **Live item statistics**: difficulty (IRT b, calibrated from responses), point biserial discrimination, user reports. Automatic quarantine when an item looks miskeyed (very low p-correct among strong learners) or discriminates negatively.
 
+### Content as code
+
+The bank lives in the repo as reviewable files, so every change to a question is a diff:
+
+- `content/sources/`: verbatim statute text plus `manifest.json` with URL, retrieval date and SHA-256. The hash is computed in the retrieving browser and checked again after saving. `npm run content` fails if any source text changes.
+- `content/exams/nj-life/topics/*.json`: facts, each with an exact quote that must be a substring of its source, and the items built from them.
+- `content/reviews/*.json`: every review record, both automated and from independent agents. Reviewers get only the questions and the statute text, never the keys.
+
+`npm run content` enforces: exact quotes, cited explanations, 4 unique options with no catch-all answers, no near-duplicate stems, balanced key positions, and test-wiseness checks (a key much longer than the distractors, absolute words in distractors, a key that is the only option echoing the statute wording). An item counts as verified only when every required review has passed and it has no open warning.
+
 Item status lifecycle: `draft -> in_review -> verified -> live -> retired` (or `quarantined`). Only `live` items are served.
 
 ## Layer 2: The learner model
