@@ -1,0 +1,55 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "I.3",
+  "facts": [
+    {
+      "id": "I3-01",
+      "statement": "Term insurance pays a death benefit only if the insured dies during the term.",
+      "source": "njdobi-life-consumer",
+      "quote": "pays a death benefit only if you die in that term",
+      "items": [
+        {
+          "id": "I3-01a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0,
+          "stem": "A client buys a standard 20-year level term life policy at age 40 and is still alive when the term ends at age 60. What does the policy pay?",
+          "options": [
+            "The face amount, as a living benefit",
+            "The cash value built up over 20 years",
+            "A refund of all premiums paid",
+            "Nothing, because no death occurred during the term"
+          ],
+          "answer": 3,
+          "explanation": "Per NJ DOBI, Consumer Information: Life Insurance, term insurance pays a death benefit only if the insured dies during the term, and it does not build cash value."
+        }
+      ]
+    },
+    {
+      "id": "I3-02",
+      "statement": "Term insurance generally has lower premiums in the early years but builds no cash value.",
+      "source": "njdobi-life-consumer",
+      "quote": "Term insurance generally has lower premiums in the early years, but does not build up cash values that you can use in the future.",
+      "items": [
+        {
+          "id": "I3-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Compared with permanent life insurance, term insurance generally has:",
+          "options": [
+            "Lower early premiums and no cash value",
+            "Higher early premiums and a growing cash value",
+            "Lower early premiums and a guaranteed cash value",
+            "Higher early premiums and no cash value"
+          ],
+          "answer": 0,
+          "explanation": "Per NJ DOBI, Consumer Information: Life Insurance, term insurance generally has lower premiums in the early years and does not build up cash values."
+        }
+      ],
+      "contrasts": [
+        "I1-01"
+      ]
+    }
+  ]
+}

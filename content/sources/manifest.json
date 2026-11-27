@@ -791,6 +791,18 @@
       "sha256": "2c2b8bbe35f1bf1c2b8f2b9b1e7781ad3b96672c48f0eea4851fd1242952b422",
       "verifiedAgainstOfficial": false,
       "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "njdobi-life-consumer",
+      "kind": "manual",
+      "citation": "NJ DOBI, Consumer Information: Life Insurance",
+      "title": "Life Insurance (consumer information)",
+      "act": "New Jersey Department of Banking and Insurance",
+      "url": "https://www.nj.gov/dobi/division_consumers/insurance/life.htm",
+      "retrievedAt": "2026-11-27",
+      "sha256": "acd2e93f7b7d28a74d4c239a7704893dc2451ef4d78abd6af3f74b0a2bdc5f88",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpt copied verbatim from the official nj.gov page via the browser."
     }
   ]
 }

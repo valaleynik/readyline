@@ -1,0 +1,53 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "I.1",
+  "facts": [
+    {
+      "id": "I1-01",
+      "statement": "Permanent insurance premiums tend to be higher than term premiums because of the savings (cash value) element.",
+      "source": "njdobi-life-consumer",
+      "quote": "Because of the savings element, premiums tend to be higher than term insurance premiums.",
+      "items": [
+        {
+          "id": "I1-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "Why do permanent life policies, such as whole life, tend to cost more than term policies for the same face amount?",
+          "options": [
+            "They include a savings element that builds cash value",
+            "They pay a death benefit for a set number of years",
+            "They are exempt from state premium taxes",
+            "They require a medical exam each year"
+          ],
+          "answer": 0,
+          "explanation": "Per NJ DOBI, Consumer Information: Life Insurance, permanent insurance includes a savings element, so its premiums tend to be higher than term insurance premiums."
+        }
+      ]
+    },
+    {
+      "id": "I1-02",
+      "statement": "Universal life, variable universal life and whole life are all forms of permanent insurance.",
+      "source": "njdobi-life-consumer",
+      "quote": "Permanent insurance (such as universal life, variable universal life and whole life) provides long-term financial protection.",
+      "items": [
+        {
+          "id": "I1-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Which of these is NOT a form of permanent life insurance?",
+          "options": [
+            "Whole life",
+            "Universal life",
+            "Level term",
+            "Variable universal life"
+          ],
+          "answer": 2,
+          "explanation": "Per NJ DOBI, Consumer Information: Life Insurance, universal life, variable universal life and whole life are permanent insurance. Term insurance covers only a set term.",
+          "optionStyle": "category"
+        }
+      ]
+    }
+  ]
+}

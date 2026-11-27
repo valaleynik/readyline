@@ -687,6 +687,53 @@
           "retired": "Could not balance option forms without creating ambiguity (insurers may, but need not, segregate funds). II2-25a covers settlement agreements."
         }
       ]
+    },
+    {
+      "id": "II2-27",
+      "statement": "Once a policy is paid up, or is continued under a paid-up nonforfeiture benefit that took effect on or after the third anniversary, the insurer must pay the cash surrender value on surrender within 30 days after any policy anniversary.",
+      "source": "njsa-17b-25-19a",
+      "quote": "the insurer will pay, upon surrender of the policy within 30 days after any policy anniversary, a cash surrender value",
+      "items": [
+        {
+          "id": "II2-27a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An ordinary whole life policy has been continued as reduced paid-up insurance since its fifth anniversary. Its next anniversary is March 1. Under New Jersey's nonforfeiture law, what is the latest date after that anniversary on which the owner can surrender the policy and be owed its cash surrender value?",
+          "options": [
+            "March 15",
+            "March 31",
+            "April 30",
+            "May 1"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-19(a) requires the insurer to pay a cash surrender value on a paid-up policy, including one continued under a paid-up nonforfeiture benefit that began on or after the third anniversary, when it is surrendered within 30 days after any policy anniversary. Thirty days after a March 1 anniversary is March 31.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-28",
+      "statement": "Instead of the stipulated paid-up benefit, the insurer may substitute an actuarially equivalent alternative paid-up benefit providing a greater amount or longer period of death benefits.",
+      "source": "njsa-17b-25-19a",
+      "quote": "an actuarially equivalent alternative paid-up nonforfeiture benefit which provides a greater amount or longer period of death benefits",
+      "items": [
+        {
+          "id": "II2-28a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "New Jersey lets an insurer substitute an alternative paid-up nonforfeiture benefit for the one stipulated in the policy if the alternative is actuarially equivalent and provides:",
+          "options": [
+            "Less death benefit coverage, with a premium refund",
+            "More death benefit coverage, in amount or in duration",
+            "The same coverage, subject to new evidence of insurability",
+            "The same death benefit with a shorter premium-paying period"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-19(a) allows an actuarially equivalent alternative paid-up nonforfeiture benefit that provides a greater amount or longer period of death benefits."
+        }
+      ]
     }
   ]
 }
