@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r55",
+    "detail": "picked \"The account runs dry and the coverage ends with nothing paid\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r55",
+    "detail": "The source states directly that if cash value cannot cover fees and expenses the policy may lapse, terminating without value and paying no death benefit, and names poor investment performance and loans as causes. None of B, C or D has a defensible basis.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r55",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r55",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-20a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

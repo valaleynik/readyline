@@ -118,6 +118,125 @@
           "explanation": "Per the NAIC Life Insurance Buyer's Guide, when universal life premiums plus interest are less than the charges, the account value falls, and if it keeps dropping, coverage eventually ends."
         }
       ]
+    },
+    {
+      "id": "I2-20",
+      "statement": "Flexible-premium variable (universal) life lets premiums vary as long as they cover fees; if cash value can't cover fees and expenses, the policy may lapse without value.",
+      "source": "sec-variable-life-2",
+      "quote": "If you do not maintain sufficient cash value to pay your policy’s fees and expenses, your policy may lapse.",
+      "items": [
+        {
+          "id": "I2-20a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A variable universal life owner skips premiums for several years while her subaccounts perform poorly and she carries a policy loan. What is the main risk?",
+          "options": [
+            "The account runs dry and the coverage ends with nothing paid",
+            "The insurer bills her for all missed premiums plus interest",
+            "The death benefit drops to the total premiums she paid",
+            "The policy becomes a modified endowment contract"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC Investor.gov: Variable Life Insurance, a policy may lapse without value if the cash value cannot pay its fees and expenses, which can result from fees, poor investment performance or loans."
+        }
+      ]
+    },
+    {
+      "id": "I2-21",
+      "statement": "A variable life death benefit option may equal the face amount, the face amount plus cash value, or the face amount plus premiums paid.",
+      "source": "sec-variable-life-2",
+      "quote": "the face amount plus the cash value of your account",
+      "items": [
+        {
+          "id": "I2-21a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "A variable universal life policy has a $250,000 face amount and $40,000 of cash value. The owner chose the death benefit option equal to the face amount plus the cash value. If the insured dies now, the death benefit is:",
+          "options": [
+            "$210,000",
+            "$250,000",
+            "$270,000",
+            "$290,000"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC Investor.gov: Variable Life Insurance, one death benefit option equals the face amount plus the cash value: $250,000 plus $40,000 is $290,000.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I2-22",
+      "statement": "Net amount at risk is the face amount minus the cash value; it falls as the cash value grows.",
+      "source": "sec-variable-life-2",
+      "quote": "Your net amount of risk is the difference between your policy’s face amount and your policy’s cash value",
+      "items": [
+        {
+          "id": "I2-22a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "A level death benefit universal life policy has a $500,000 face amount and $120,000 of cash value. What is the insurer's net amount at risk?",
+          "options": [
+            "$120,000",
+            "$380,000",
+            "$500,000",
+            "$620,000"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC Investor.gov: Variable Life Insurance, net amount at risk is the difference between the face amount and the cash value: $500,000 minus $120,000 is $380,000.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I2-23",
+      "statement": "Policy loans reduce cash value, which raises the chance of lapse, and may reduce the death benefit; interest is typically owed.",
+      "source": "sec-variable-life-2",
+      "quote": "They reduce your policy’s cash value, which increases the likelihood your policy will lapse.",
+      "items": [
+        {
+          "id": "I2-23a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Which is a typical effect of taking a policy loan from a variable life policy?",
+          "options": [
+            "It is taxed as ordinary income when taken",
+            "It triggers a surrender charge",
+            "It lowers the cash value and makes lapse more likely",
+            "It increases the death benefit by the loan amount"
+          ],
+          "answer": 2,
+          "explanation": "Per the SEC Investor.gov: Variable Life Insurance, policy loans typically reduce the cash value, increasing the likelihood of lapse, may reduce the death benefit, are typically not subject to surrender charges, and are taken without paying federal taxes."
+        }
+      ]
+    },
+    {
+      "id": "I2-24",
+      "statement": "A no-lapse feature keeps the policy in force even when account value can't cover fees, but may significantly reduce the death benefit.",
+      "source": "sec-variable-life-2",
+      "quote": "A no-lapse benefit keeps your policy in effect even if you do not have sufficient account value to pay your policy’s fees and expenses.",
+      "items": [
+        {
+          "id": "I2-24a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A variable universal life policy's account value has dropped too low to cover its monthly charges, yet the policy stays in force. Which optional feature most likely explains this?",
+          "options": [
+            "A no-lapse feature",
+            "A guaranteed insurability rider",
+            "An accidental death benefit rider",
+            "An income benefit"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC Investor.gov: Variable Life Insurance, a no-lapse benefit keeps the policy in effect even if the account value cannot pay its fees and expenses, though it may significantly reduce the death benefit.",
+          "optionStyle": "category",
+          "retired": "Feature name restates the scenario (no-lapse); guessable by term matching."
+        }
+      ]
     }
   ]
 }

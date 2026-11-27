@@ -1151,6 +1151,18 @@
       "sha256": "98916b25fe46ce5325913603dbc54aca7fa1781fc1ba390daf62d37a1f17256c",
       "verifiedAgainstOfficial": true,
       "note": "Excerpt copied verbatim from investor.gov via the browser."
+    },
+    {
+      "id": "sec-variable-life-2",
+      "kind": "manual",
+      "citation": "SEC Investor.gov: Variable Life Insurance",
+      "title": "Variable Life Insurance (how it works, death benefit, loans, fees)",
+      "act": "U.S. Securities and Exchange Commission, Office of Investor Education and Advocacy",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/variable-life",
+      "retrievedAt": "2026-11-27",
+      "sha256": "fda236f6bd05f0a779ba86dc1fa00794e46e34155265bc896b230a123adb59c0",
+      "verifiedAgainstOfficial": true,
+      "note": "Second excerpt from the same page, copied verbatim via the browser."
     }
   ]
 }
