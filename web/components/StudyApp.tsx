@@ -9,12 +9,15 @@
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Bank, readiness, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
-import { calibration, dueFacts, progress, sessionPick, NEW_PER_DAY, type SessionStart } from "../../src/session/daily";
+import { calibration, dueFacts, progress, sessionPick, type SessionStart } from "../../src/session/daily";
+import { studyPlan, type StudyPlan, type StudySettings } from "../../src/session/plan";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 
 export interface EventStore {
   load(): AnswerEvent[];
   save(events: AnswerEvent[]): void;
+  loadSettings?(): StudySettings;
+  saveSettings?(s: StudySettings): void;
 }
 
 const KEY = "readyline.events.v1";
@@ -34,7 +37,23 @@ export const localStore: EventStore = {
       /* storage unavailable: the session still works in memory */
     }
   },
+  loadSettings() {
+    try {
+      const raw = globalThis.localStorage?.getItem(SETTINGS_KEY);
+      return raw ? (JSON.parse(raw) as StudySettings) : {};
+    } catch {
+      return {};
+    }
+  },
+  saveSettings(st) {
+    try {
+      globalThis.localStorage?.setItem(SETTINGS_KEY, JSON.stringify(st));
+    } catch {
+      /* in memory only */
+    }
+  },
 };
+const SETTINGS_KEY = "readyline.settings.v1";
 
 const SEED = "local-learner";
 const pct = (x: number) => `${Math.round(x * 100)}%`;
@@ -60,28 +79,37 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   const [events, setEvents] = useState<AnswerEvent[]>([]);
   const [loaded, setLoaded] = useState(false);
   const state: LearnerState = useMemo(() => replay(events, bank), [events, bank]);
+  const [settings, setSettings] = useState<StudySettings>({});
   const [session, setSession] = useState<SessionStart | null>(null);
+  /** today's quota is fixed when the session starts, so it cannot shift mid-session */
+  const [quota, setQuota] = useState(0);
   const [view, setView] = useState<View>({ kind: "home" });
   const nextBtn = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     setEvents(store.load());
+    setSettings(store.loadSettings?.() ?? {});
     setLoaded(true);
   }, [store]);
   useEffect(() => {
     if (loaded) store.save(events);
   }, [events, loaded, store]);
+  useEffect(() => {
+    if (loaded) store.saveSettings?.(settings);
+  }, [settings, loaded, store]);
 
-  function nextQuestion(evs: AnswerEvent[], st: LearnerState, s: SessionStart) {
-    const pick = sessionPick(st, bank, evs, s, Date.now(), SEED);
+  function nextQuestion(evs: AnswerEvent[], st: LearnerState, s: SessionStart, q: number) {
+    const pick = sessionPick(st, bank, evs, s, Date.now(), SEED, q);
     if (!pick) return setView({ kind: "done" });
     setView({ kind: "question", item: display.get(pick.item.key)!, reason: pick.reason, choice: null });
   }
 
   function start() {
     const s = { startAnswers: state.answers, startedAt: Date.now() };
+    const q = studyPlan(state, bank, settings, s.startedAt).newPerDay;
     setSession(s);
-    nextQuestion(events, state, s);
+    setQuota(q);
+    nextQuestion(events, state, s, q);
   }
 
   function submit(confidence: "sure" | "guess") {
@@ -100,7 +128,7 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
 
   function next() {
     if (!session) return;
-    nextQuestion(events, state, session);
+    nextQuestion(events, state, session, quota);
   }
 
   useEffect(() => {
@@ -121,7 +149,7 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   }, [view.kind]);
 
   const now = Date.now();
-  const prog = session ? progress(state, bank, events, session, now, SEED) : null;
+  const prog = session ? progress(state, bank, events, session, now, SEED, quota) : null;
 
   return (
     <div className="app">
@@ -130,12 +158,12 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
         <span className="exam">NJ Life Producer</span>
         {prog && view.kind !== "home" && (
           <span className="count">
-            {prog.answered} answered · {Math.min(prog.newIntroduced, NEW_PER_DAY)}/{NEW_PER_DAY} new · {prog.dueRemaining} due
+            {prog.answered} answered · {Math.min(prog.newIntroduced, quota)}/{quota} new · {prog.dueRemaining} due
           </span>
         )}
       </header>
       <main className="main">
-        {view.kind === "home" && loaded && <Home state={state} bank={bank} events={events} onStart={start} />}
+        {view.kind === "home" && loaded && <Home state={state} bank={bank} events={events} settings={settings} onSettings={setSettings} onStart={start} />}
         {view.kind === "question" && (
           <Question
             item={view.item}
@@ -150,33 +178,94 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
           <Feedback data={data} view={view} nextRef={nextBtn} onNext={next} />
         )}
         {view.kind === "done" && session && (
-          <Done state={state} bank={bank} events={events} session={session} onHome={() => setView({ kind: "home" })} />
+          <Done state={state} bank={bank} events={events} session={session} quota={quota} examAt={settings.examAt} onHome={() => setView({ kind: "home" })} />
         )}
       </main>
     </div>
   );
 }
 
-function Home({ state, bank, events, onStart }: { state: LearnerState; bank: Bank; events: AnswerEvent[]; onStart: () => void }) {
+/** Readiness on exam day when a future date is set, otherwise as of now. */
+function examReadiness(state: LearnerState, bank: Bank, examAt?: number) {
+  const at = examAt && examAt > Date.now() ? examAt : undefined;
+  return readiness(state, bank, { draws: 2000, examAt: at });
+}
+
+function planLine(p: StudyPlan): string {
+  if (!p.hasDate) return "No exam date set, so you get a steady 12 new facts a day.";
+  if (p.status === "past") return "Your exam date has passed. Set a new date to plan again.";
+  const when = p.daysLeft === 0 ? "today" : p.daysLeft === 1 ? "tomorrow" : `in ${p.daysLeft} days`;
+  if (p.factsRemaining === 0) return `Exam ${when}. You've seen every fact, so it's reviews from here.`;
+  if (p.status === "review_only") return `Exam ${when}. These last days are for review only, with no new material.`;
+  if (p.status === "behind")
+    return `Exam ${when}. You're behind by about ${p.daysBehind} day${p.daysBehind === 1 ? "" : "s"}: ${p.newPerDay} new facts a day to catch up.`;
+  return `Exam ${when}. On track at ${p.newPerDay} new facts a day.`;
+}
+
+const toInput = (t?: number) => {
+  if (!t) return "";
+  const d = new Date(t);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+};
+
+function Home({
+  state,
+  bank,
+  events,
+  settings,
+  onSettings,
+  onStart,
+}: {
+  state: LearnerState;
+  bank: Bank;
+  events: AnswerEvent[];
+  settings: StudySettings;
+  onSettings: (s: StudySettings) => void;
+  onStart: () => void;
+}) {
   const due = dueFacts(state, bank, Date.now()).length;
   const studied = Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length;
   const totalFacts = bank.factTopic.size;
-  const r = useMemo(() => (state.answers ? readiness(state, bank, { draws: 2000 }) : null), [state, bank]);
+  const plan = studyPlan(state, bank, settings, Date.now());
+  const r = useMemo(() => (state.answers ? examReadiness(state, bank, settings.examAt) : null), [state, bank, settings.examAt]);
   return (
     <section className="home">
       <h1>{state.answers ? "Ready for today's session" : "Start studying for the NJ Life exam"}</h1>
       <p className="lede">
         {state.answers
-          ? `${due} facts due for review, plus up to ${NEW_PER_DAY} new ones. The session ends when today's list is clear.`
-          : `Each session mixes new material with reviews timed to just before you'd forget. About 15 minutes a day.`}
+          ? `${due} facts due for review, plus up to ${plan.newPerDay} new ones. The session ends when today's list is clear.`
+          : `Each session mixes new material with reviews timed to just before you'd forget.`}
       </p>
+      <div className="plan">
+        <p className="planLine">{planLine(plan)}</p>
+        {/* Temporary: the exam date moves into onboarding. This writes the same setting. */}
+        <label className="dateField">
+          <span>Exam date (temporary field)</span>
+          <input
+            type="date"
+            value={toInput(settings.examAt)}
+            onChange={(e) => {
+              const v = e.target.value;
+              if (!v) return onSettings({});
+              const [y, m, d] = v.split("-").map(Number);
+              onSettings({ examAt: new Date(y!, m! - 1, d!, 9, 0, 0).getTime() });
+            }}
+          />
+        </label>
+      </div>
       <button className="primary" onClick={onStart} autoFocus>
         {state.answers ? "Start today's session" : "Start first session"}
       </button>
       {state.answers > 0 && (
         <div className="stats">
           <Stat label="Facts studied" value={`${studied} of ${totalFacts}`} />
-          {r && <Stat label="Chance of passing today" value={pct(r.pPass)} note={`based on ${state.answers} answers`} />}
+          {r && (
+            <Stat
+              label={plan.hasDate && plan.status !== "past" ? "Chance of passing on exam day" : "Chance of passing today"}
+              value={pct(r.pPass)}
+              note={`based on ${state.answers} answers`}
+            />
+          )}
           {r && <Stat label="Expected score" value={`${Math.round(r.expectedScore)} / ${r.scoredItems}`} note={`pass is ${r.passScore}`} />}
         </div>
       )}
@@ -311,17 +400,21 @@ function Done({
   bank,
   events,
   session,
+  quota,
+  examAt,
   onHome,
 }: {
   state: LearnerState;
   bank: Bank;
   events: AnswerEvent[];
   session: SessionStart;
+  quota: number;
+  examAt?: number;
   onHome: () => void;
 }) {
-  const p = progress(state, bank, events, session, Date.now(), SEED);
+  const p = progress(state, bank, events, session, Date.now(), SEED, quota);
   const mine = events.filter((e) => e.at >= session.startedAt);
-  const r = useMemo(() => readiness(state, bank, { draws: 2000 }), [state, bank]);
+  const r = useMemo(() => examReadiness(state, bank, examAt), [state, bank, examAt]);
   return (
     <section className="home">
       <h1>{p.doneReason === "cap" ? "That's enough for one sitting" : "Today's list is clear"}</h1>
@@ -334,7 +427,7 @@ function Done({
         <Stat label="Answered" value={String(p.answered)} />
         <Stat label="Correct" value={p.answered ? pct(p.correct / p.answered) : "0%"} />
         <Stat label="New facts" value={String(p.newIntroduced)} />
-        <Stat label="Chance of passing today" value={pct(r.pPass)} />
+        <Stat label={examAt && examAt > Date.now() ? "Chance of passing on exam day" : "Chance of passing today"} value={pct(r.pPass)} />
       </div>
       <CalibrationGrid events={mine} title="This session: confidence vs. results" />
       <button className="primary" onClick={onHome}>

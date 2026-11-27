@@ -159,3 +159,15 @@ Rules that changed recently (for example the 2024 FCC change from 30 days to 10 
 - `web/components/StudyApp.tsx` is the only UI component. The Next.js app (`web/app`) and the single-file preview (`scripts/build-preview.mjs`) both render it.
 - Stored state is the event log only. Learner state is always `replay(events)`. Confidence ("sure" / "guess") is recorded on each event for the calibration grid; the engine ignores it.
 - Engine fix found while building: the no-repeat window now covers only the last 6 hours, so a learner returning after a break sees their due reviews.
+
+### Exam date and study plan
+
+- `src/session/plan.ts` turns one setting (the exam date) into today's new-fact quota and an on-track / behind signal. It stores nothing.
+- Pace: remaining facts spread over the days before a 2-day review-only buffer, between 5 and 40 new facts a day. Above 25 a day counts as behind, with the number of extra days needed shown.
+- Readiness is measured on exam day (with forgetting) when a future date is set.
+- The session fixes its quota when it starts, so the target cannot shift mid-session.
+- The date field on the home screen is temporary. Onboarding will write the same setting.
+
+### Feature rule
+
+Every feature reads the event log, the bank and the settings, and may only add events or change a setting. No feature keeps its own copy of what the learner knows.

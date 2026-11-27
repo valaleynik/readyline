@@ -63,6 +63,7 @@ export function progress(
   start: SessionStart,
   now: number,
   seedKey = "",
+  newPerDay = NEW_PER_DAY,
 ): SessionProgress {
   const mine = sessionEvents(events, start);
   const answered = mine.length;
@@ -70,7 +71,7 @@ export function progress(
   const newIntroduced = newFactsThisSession(events, bank, start);
   const dueRemaining = dueFacts(state, bank, now).length;
   if (answered >= MAX_PER_SESSION) return { answered, correct, newIntroduced, dueRemaining, done: true, doneReason: "cap" };
-  const pick = sessionPick(state, bank, events, start, now, seedKey);
+  const pick = sessionPick(state, bank, events, start, now, seedKey, newPerDay);
   return { answered, correct, newIntroduced, dueRemaining, done: pick === null, doneReason: pick === null ? "cleared" : undefined };
 }
 
@@ -85,9 +86,11 @@ export function sessionPick(
   start: SessionStart,
   now: number,
   seedKey = "",
+  /** today's new-fact quota; the study plan sets it from the exam date */
+  newPerDay = NEW_PER_DAY,
 ): Pick | null {
   if (sessionEvents(events, start).length >= MAX_PER_SESSION) return null;
-  const quotaLeft = newFactsThisSession(events, bank, start) < NEW_PER_DAY;
+  const quotaLeft = newFactsThisSession(events, bank, start) < newPerDay;
   if (quotaLeft) {
     const p = nextItem(state, bank, "practice", now, DEFAULT_CONFIG, seedKey);
     // Extra practice means nothing is due and nothing new is worth more: the day is cleared.

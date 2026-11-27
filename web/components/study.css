@@ -99,3 +99,8 @@ button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
   .card { animation: rise 160ms ease-out; }
   @keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
 }
+
+.plan { margin: 0 0 24px; padding: 14px 16px; background: var(--panel); border-radius: 10px; display: grid; gap: 10px; }
+.planLine { margin: 0; font-weight: 600; }
+.dateField { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 14px; color: var(--muted); }
+.dateField input { font: inherit; font-size: 16px; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }

@@ -1,6 +1,8 @@
 // @vitest-environment jsdom
-import { describe, expect, it } from "vitest";
-import { act, fireEvent, render, screen } from "@testing-library/react";
+import { afterEach, describe, expect, it } from "vitest";
+import { act, cleanup, fireEvent, render, screen } from "@testing-library/react";
+
+afterEach(cleanup);
 import StudyApp, { type EventStore } from "../web/components/StudyApp";
 import bankJson from "../web/data/bank.json";
 import type { ExportedBank } from "../src/content/export";
@@ -34,6 +36,16 @@ describe("study loop UI", () => {
     expect(store.events.length).toBe(answered);
     expect(store.events.every((e: AnswerEvent) => e.confidence === "sure" || e.confidence === "guess")).toBe(true);
     expect(screen.getByText("This session: confidence vs. results")).not.toBeNull();
+  });
+
+  it("setting an exam date changes the plan shown on home", async () => {
+    render(<StudyApp data={data} store={memStore()} />);
+    expect(await screen.findByText(/No exam date set/)).not.toBeNull();
+    const input = document.querySelector('input[type="date"]') as HTMLInputElement;
+    const d = new Date(Date.now() + 30 * 86_400_000);
+    const v = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+    fireEvent.change(input, { target: { value: v } });
+    expect(await screen.findByText(/Exam in 30 days\. On track at \d+ new facts a day\./)).not.toBeNull();
   });
 
   it("submit stays disabled until an option is chosen", async () => {
