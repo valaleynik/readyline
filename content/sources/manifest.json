@@ -719,6 +719,78 @@
       "retrievedAt": "2026-11-27",
       "sha256": "9c01fdf0d78da4878b48d383f50340bb8a88ec6e862898e13ff76e297eb06aa2",
       "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "usc-26-101-j",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 101(j)",
+      "title": "Employer-owned life insurance contracts",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/101",
+      "retrievedAt": "2026-11-27",
+      "sha256": "5044a7f59e9cebf856f34b4b791af6c0d766ab26e5ddf440e546f1b873e23847",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "usc-26-72-t",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 72(t)(1)-(2)(A)",
+      "title": "10-percent additional tax on early distributions from qualified retirement plans",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/72",
+      "retrievedAt": "2026-11-27",
+      "sha256": "43fb264a8b82497d8c5bd7c1a7c87daf35ea3b53aa2913a488c8a3c8133547fc",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "usc-26-408a-d",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 408A(d)(1)-(2)",
+      "title": "Roth IRA qualified distributions",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/408A",
+      "retrievedAt": "2026-11-27",
+      "sha256": "e204f33a9d4fd3cfa399da817257dc3c97c0db58b250ae93f4195648d720be77",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "usc-26-401-a9-cv",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 401(a)(9)(C)(v)",
+      "title": "Required minimum distributions: applicable age",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/401",
+      "retrievedAt": "2026-11-27",
+      "sha256": "f109b4b8ee315071dce633e06387bad23fc71c503b5a64aa6f21225fdd13637f",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "usc-42-414-ab",
+      "kind": "statute",
+      "citation": "42 U.S.C. § 414(a)-(b)",
+      "title": "Fully and currently insured individuals",
+      "act": "Social Security Act (Title 42, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/42/414",
+      "retrievedAt": "2026-11-27",
+      "sha256": "dc0671e3e0c23d58dad8e91fb08c56a22a654bc0f6b93726807882f323d4c243",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
+    },
+    {
+      "id": "usc-42-416-l",
+      "kind": "statute",
+      "citation": "42 U.S.C. § 416(l)(1)-(2)",
+      "title": "Retirement age and early retirement age",
+      "act": "Social Security Act (Title 42, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/42/416",
+      "retrievedAt": "2026-11-27",
+      "sha256": "2c2b8bbe35f1bf1c2b8f2b9b1e7781ad3b96672c48f0eea4851fd1242952b422",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code; trailing text after the last complete clause omitted."
     }
   ]
 }

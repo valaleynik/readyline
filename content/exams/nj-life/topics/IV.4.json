@@ -49,6 +49,102 @@
           "retired": "Test-wise in two rounds: the statute's purpose wording makes the key stand out against conditional options. Business insurance needs a scenario-rich source."
         }
       ]
+    },
+    {
+      "id": "IV4-10",
+      "statement": "Absent an exception, an employer's tax-free death proceeds on employer-owned life insurance are limited to the premiums and other amounts it paid.",
+      "source": "usc-26-101-j",
+      "quote": "shall not exceed an amount equal to the sum of the premiums and other amounts paid by the policyholder for the contract",
+      "items": [
+        {
+          "id": "IV4-10a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A company owned a policy on a staff accountant who was not a director or highly compensated when the policy was issued. Notice and consent were properly obtained. He left the company and died 5 years later. How are the death proceeds the company receives treated for income tax?",
+          "options": [
+            "Taxable to the extent they exceed the premiums the company paid",
+            "Fully excluded, since notice and consent were obtained",
+            "Fully taxable, with no credit for premiums paid",
+            "Excluded, since key person coverage is tax-free"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 101(j) limits the exclusion to the premiums and other amounts paid unless an exception applies. Notice and consent alone are not enough; the insured must also fit an exception, such as being an employee within 12 months before death.",
+          "enemies": [
+            "IV4-11a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IV4-11",
+      "statement": "Employer-owned life insurance proceeds stay fully excludable, if notice and consent were met, when the insured was an employee at any time in the 12 months before death.",
+      "source": "usc-26-101-j",
+      "quote": "was an employee at any time during the 12-month period before the insured’s death",
+      "items": [
+        {
+          "id": "IV4-11a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A company with proper notice and consent owns a policy on a sales manager, who dies while still employed there. The death proceeds the company receives are:",
+          "options": [
+            "Taxable above the premiums paid, since the company owns the policy",
+            "Taxable, since the company was the beneficiary",
+            "Excluded, but reduced by the cash value at death",
+            "Fully excluded from the company's gross income"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 101(j) keeps the full exclusion, when notice and consent were met, for an insured who was an employee at any time during the 12 months before death."
+        }
+      ]
+    },
+    {
+      "id": "IV4-12",
+      "statement": "The employee's written notice and consent for employer-owned life insurance must be obtained before the contract is issued.",
+      "source": "usc-26-101-j",
+      "quote": "The notice and consent requirements of this paragraph are met if, before the issuance of the contract, the employee",
+      "items": [
+        {
+          "id": "IV4-12a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "For employer-owned life insurance, when must the employee receive written notice and give written consent?",
+          "options": [
+            "Before the policy is issued",
+            "Within 30 days after the policy is issued",
+            "Before the employer files a death claim",
+            "Within 12 months after employment ends"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 101(j) requires the employee's written notice and consent before the issuance of the contract."
+        }
+      ]
+    },
+    {
+      "id": "IV4-13",
+      "statement": "The written notice must tell the employee the maximum face amount for which he or she could be insured.",
+      "source": "usc-26-101-j",
+      "quote": "the maximum face amount for which the employee could be insured at the time the contract was issued",
+      "items": [
+        {
+          "id": "IV4-13a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Under federal tax rules on employer-owned life insurance, the employer's written notice to the employee must state:",
+          "options": [
+            "The premium the employer will pay each year",
+            "The employee's own share of the cash value",
+            "The rating class the insurer assigned",
+            "The maximum face amount for which the employee could be insured"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 101(j) requires written notice of the employer's intent to insure the employee and of the maximum face amount for which the employee could be insured.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

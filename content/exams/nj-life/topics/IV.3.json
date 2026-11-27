@@ -1,0 +1,127 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.3",
+  "facts": [
+    {
+      "id": "IV3-01",
+      "statement": "A distribution from a qualified retirement plan before an exception applies is subject to a 10% additional tax on the taxable portion.",
+      "source": "usc-26-72-t",
+      "quote": "increased by an amount equal to 10 percent of the portion of such amount which is includible in gross income",
+      "items": [
+        {
+          "id": "IV3-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "An early distribution from a qualified retirement plan, with no exception available, is generally hit with an additional tax equal to what percentage of the taxable amount?",
+          "options": [
+            "5%",
+            "10%",
+            "20%",
+            "25%"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 72(t)(1)-(2)(A) adds a tax of 10 percent of the portion of an early distribution that is includible in gross income.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV3-02",
+      "statement": "The 10% early distribution tax does not apply to distributions made on or after age 59½.",
+      "source": "usc-26-72-t",
+      "quote": "made on or after the date on which the employee attains age 59½",
+      "items": [
+        {
+          "id": "IV3-02a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "An employee who is still working for her employer takes a distribution from the company's qualified plan. She avoids the 10% early distribution tax, without relying on any other exception, once she reaches age:",
+          "options": [
+            "55",
+            "59½",
+            "62",
+            "65"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 72(t)(1)-(2)(A) exempts distributions made on or after age 59½. The age-55 exception applies only after separation from service, so it does not help an employee who is still working.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "IV3-03a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IV3-03",
+      "statement": "The 10% early distribution tax does not apply to an employee who separates from service after reaching age 55.",
+      "source": "usc-26-72-t",
+      "quote": "made to an employee after separation from service after attainment of age 55",
+      "items": [
+        {
+          "id": "IV3-03a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "An employee leaves his job at age 56 and takes a distribution from that employer's qualified plan. The 10% early distribution tax:",
+          "options": [
+            "Does not apply, since he left the job after turning 55",
+            "Applies, since he is under 59½",
+            "Applies, since the plan is a qualified plan",
+            "Does not apply, since any job change waives it"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 72(t)(1)-(2)(A) exempts distributions made to an employee after separation from service after reaching age 55."
+        }
+      ]
+    },
+    {
+      "id": "IV3-04",
+      "statement": "A Roth IRA distribution is qualified, and tax-free, only if it meets a qualifying event (such as age 59½) and comes after the 5-taxable-year period beginning with the first Roth IRA contribution year.",
+      "source": "usc-26-408a-d",
+      "quote": "made within the 5-taxable year period beginning with the first taxable year for which the individual made a contribution to a Roth IRA",
+      "items": [
+        {
+          "id": "IV3-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A client opens and funds her first Roth IRA at age 58 and withdraws earnings two years later at age 60. Is the withdrawal a qualified distribution?",
+          "options": [
+            "Yes, because she is over age 59½",
+            "Yes, because Roth IRA earnings are tax-free at any age",
+            "No, because qualified distributions begin at age 62",
+            "No, because the 5-year period has not yet run"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 408A(d)(1)-(2) excludes a distribution made within the 5-taxable-year period that begins with the first year of a Roth IRA contribution, even if the owner is over 59½."
+        }
+      ]
+    },
+    {
+      "id": "IV3-05",
+      "statement": "For people who reach 72 after 2022 and 73 before 2033, required minimum distributions are based on an applicable age of 73.",
+      "source": "usc-26-401-a9-cv",
+      "quote": "the applicable age is 73",
+      "items": [
+        {
+          "id": "IV3-05a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A retiree born in 1956 turns 72 in 2028. Under current federal law, his applicable age for required minimum distributions is:",
+          "options": [
+            "70½",
+            "72",
+            "73",
+            "75"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 401(a)(9)(C)(v) sets the applicable age at 73 for anyone who reaches 72 after December 31, 2022, and 73 before January 1, 2033. Age 75 applies to those who reach 74 after 2032.",
+          "optionStyle": "ordered"
+        }
+      ]
+    }
+  ]
+}

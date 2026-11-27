@@ -1,0 +1,108 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.5",
+  "facts": [
+    {
+      "id": "IV5-01",
+      "statement": "A worker with 40 quarters of coverage is fully insured for Social Security.",
+      "source": "usc-42-414-ab",
+      "quote": "(2) 40 quarters of coverage",
+      "items": [
+        {
+          "id": "IV5-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Under the Social Security Act, a worker becomes fully insured, whatever his or her age, once he or she has earned how many quarters of coverage?",
+          "options": [
+            "6",
+            "20",
+            "40",
+            "60"
+          ],
+          "answer": 2,
+          "explanation": "42 U.S.C. § 414(a)-(b) treats anyone with 40 quarters of coverage as fully insured.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV5-02",
+      "statement": "A worker is currently insured with at least 6 quarters of coverage in the 13-quarter period ending with the quarter of death or entitlement.",
+      "source": "usc-42-414-ab",
+      "quote": "not less than six quarters of coverage during the thirteen-quarter period",
+      "items": [
+        {
+          "id": "IV5-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A worker dies young with only a short work history. To be currently insured under Social Security, she needed at least:",
+          "options": [
+            "4 quarters of coverage in the last 8 quarters",
+            "6 quarters of coverage in the 13-quarter period ending with her death",
+            "20 quarters of coverage in the last 40 quarters",
+            "40 quarters of coverage in total"
+          ],
+          "answer": 1,
+          "explanation": "42 U.S.C. § 414(a)-(b) defines a currently insured individual as one with at least six quarters of coverage in the thirteen-quarter period ending with the quarter of death or entitlement.",
+          "optionStyle": "category"
+        }
+      ],
+      "contrasts": [
+        "IV5-01"
+      ]
+    },
+    {
+      "id": "IV5-03",
+      "statement": "For anyone who reaches early retirement age (62) after 2021, Social Security full retirement age is 67.",
+      "source": "usc-42-416-l",
+      "quote": "(E) with respect to an individual who attains early retirement age after December 31, 2021, 67 years of age.",
+      "items": [
+        {
+          "id": "IV5-03a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "A worker born in 1966 reaches age 62 in 2028. Her Social Security full retirement age is:",
+          "options": [
+            "65",
+            "66",
+            "66 and 6 months",
+            "67"
+          ],
+          "answer": 3,
+          "explanation": "42 U.S.C. § 416(l)(1)-(2) sets retirement age at 67 for anyone who reaches early retirement age after December 31, 2021.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV5-04",
+      "statement": "Early retirement age for a worker's own old-age benefit is 62 (60 for a widow's or widower's benefit).",
+      "source": "usc-42-416-l",
+      "quote": "The term “early retirement age” means age 62 in the case of an old-age, wife’s, or husband’s insurance benefit, and age 60 in the case of a widow’s",
+      "items": [
+        {
+          "id": "IV5-04a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "What is the earliest age at which a worker can start reduced Social Security retirement benefits on his own work record?",
+          "options": [
+            "55",
+            "60",
+            "62",
+            "65"
+          ],
+          "answer": 2,
+          "explanation": "42 U.S.C. § 416(l)(1)-(2) sets early retirement age at 62 for an old-age benefit. Age 60 applies to a widow's or widower's benefit, not a worker's own retirement benefit.",
+          "optionStyle": "ordered"
+        }
+      ],
+      "contrasts": [
+        "IV5-03"
+      ]
+    }
+  ]
+}
