@@ -1,0 +1,60 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "I.5",
+  "facts": [
+    {
+      "id": "I5-01",
+      "statement": "A first-to-die joint policy pays when the first insured dies; it costs less than two individual policies.",
+      "source": "akdoi-life-considerations",
+      "quote": "A first-to-die policy pays a death benefit when the first person dies.",
+      "items": [
+        {
+          "id": "I5-01a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "A married couple buys one joint life policy that pays as soon as either spouse dies. This is a:",
+          "options": [
+            "Second-to-die policy",
+            "First-to-die policy",
+            "Family income policy",
+            "Modified whole life policy"
+          ],
+          "answer": 1,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, a first-to-die policy pays a death benefit when the first insured person dies.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "I5-02",
+      "statement": "A second-to-die (survivorship) policy pays when the last insured dies and is often bought by married couples to cover federal estate taxes.",
+      "source": "akdoi-life-considerations",
+      "quote": "Second-or-later-to-die policies are often purchased by married couples who want to protect their assets from federal estate taxes.",
+      "items": [
+        {
+          "id": "I5-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A wealthy married couple wants a policy whose proceeds will arrive when estate taxes come due, after both of them have died. Which policy fits best?",
+          "options": [
+            "First-to-die",
+            "Decreasing term",
+            "Second-to-die",
+            "Credit life"
+          ],
+          "answer": 2,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, a second-to-die policy pays when the last insured dies and is often bought by married couples to protect assets from federal estate taxes.",
+          "optionStyle": "category",
+          "enemies": [
+            "I5-01a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "I5-01"
+      ]
+    }
+  ]
+}

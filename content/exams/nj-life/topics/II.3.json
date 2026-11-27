@@ -48,6 +48,58 @@
           "group": "reinstated-contest"
         }
       ]
+    },
+    {
+      "id": "II3-10",
+      "statement": "Under a typical suicide clause, if the insured dies by suicide within the first two years, the insurer pays back the premiums instead of the death benefit.",
+      "source": "akdoi-life-considerations",
+      "quote": "The insurance company must return premiums paid on the policy.",
+      "items": [
+        {
+          "id": "II3-10a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "An insured dies by suicide 14 months after a $300,000 policy was issued. The policy has a standard two-year suicide clause. The beneficiary will most likely receive:",
+          "options": [
+            "A sum equal to what the owner paid in",
+            "The full $300,000 death benefit",
+            "Nothing at all",
+            "Half of the death benefit"
+          ],
+          "answer": 0,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations and NC DOI, Standard Policy Provisions and Optional Riders, a suicide clause lets the insurer refuse the death claim for a suicide within the first two years, but the insurer must return the premiums paid."
+        }
+      ]
+    },
+    {
+      "id": "II3-11",
+      "statement": "After the suicide exclusion period ends, death by suicide is covered like any other death.",
+      "source": "ncdoi-life-provisions",
+      "quote": "if a insured commits suicide within the first two years of the insurance contract, the death benefit is limited to the total premiums paid",
+      "items": [
+        {
+          "id": "II3-11a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "An insured dies by suicide three years after his policy was issued. The policy has a standard two-year suicide clause and has stayed in force. The insurer will:",
+          "options": [
+            "Return the premiums paid instead of the face amount",
+            "Pay the full death benefit",
+            "Deny the claim, since suicide is a permanent exclusion",
+            "Pay the face amount less three years of premiums"
+          ],
+          "answer": 1,
+          "explanation": "Per NC DOI, Standard Policy Provisions and Optional Riders, the suicide clause limits the benefit to premiums paid only for a suicide within the first two years. After that period, the full death benefit is payable.",
+          "enemies": [
+            "II3-10a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "II3-10"
+      ]
     }
   ]
 }

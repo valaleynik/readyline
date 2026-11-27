@@ -50,6 +50,30 @@
           "group": "adb-tax"
         }
       ]
+    },
+    {
+      "id": "IV7-10",
+      "statement": "In a viatical settlement, the owner (viator) sells the policy to a third party, the provider, who becomes the owner, pays the premiums and collects the death benefit.",
+      "source": "akdoi-life-considerations",
+      "quote": "The buyer (the viatical settlement provider) becomes the new owner of the life insurance policy, pays future premiums, and collects the death benefit when the insured dies.",
+      "items": [
+        {
+          "id": "IV7-10a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "In a viatical settlement, who pays the future premiums and collects the death benefit?",
+          "options": [
+            "The original owner, who keeps the policy",
+            "The insurer that issued the policy",
+            "The third party that bought the policy",
+            "The insured's named beneficiary"
+          ],
+          "answer": 2,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, the viatical settlement provider becomes the new owner, pays future premiums and collects the death benefit when the insured dies.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

@@ -141,6 +141,78 @@
           "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, an accelerated death benefit lets a terminally ill insured take money from the death benefit, and the money does not have to be used for care related to the illness."
         }
       ]
+    },
+    {
+      "id": "II1-20",
+      "statement": "A rider attaches to a policy to add, subtract or modify coverage and takes precedence over the policy's original provisions.",
+      "source": "akdoi-life-considerations",
+      "quote": "A rider takes precedence over the original provisions in the policy",
+      "items": [
+        {
+          "id": "II1-20a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "If a rider attached to a life policy conflicts with one of the policy's original provisions, which controls?",
+          "options": [
+            "The original policy provision",
+            "Whichever favors the insurer",
+            "The application",
+            "The rider"
+          ],
+          "answer": 3,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, a rider is a written agreement that adds, subtracts or modifies coverage, and it takes precedence over the original provisions of the policy.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II1-21",
+      "statement": "A family rider provides term insurance on all or certain family members under the insured's policy.",
+      "source": "akdoi-life-considerations",
+      "quote": "A family rider allows you to provide term insurance on all or certain members of your family under your policy.",
+      "items": [
+        {
+          "id": "II1-21a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "A family rider added to a parent's life policy usually provides what kind of coverage on the other family members?",
+          "options": [
+            "Term insurance",
+            "Whole life insurance",
+            "Variable life insurance",
+            "Universal life insurance"
+          ],
+          "answer": 0,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, a family rider allows term insurance on all or certain family members under the policy.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II1-22",
+      "statement": "The guaranteed insurability option may suit someone with a family history of significant medical problems who cannot yet afford a larger death benefit.",
+      "source": "akdoi-life-considerations",
+      "quote": "This rider may be of value to those with a family history of significant medical problems who currently have limited income and cannot afford a larger death benefit.",
+      "items": [
+        {
+          "id": "II1-22a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A 25-year-old with a strong family history of heart disease can afford only a small policy now but expects to need much more coverage later. Which rider best protects his ability to buy that coverage?",
+          "options": [
+            "Waiver of premium",
+            "Guaranteed insurability",
+            "Accidental death benefit",
+            "Family term"
+          ],
+          "answer": 1,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, the guaranteed insurability option allows buying more death benefit at stated times without evidence of insurability, which may help someone with a family history of significant medical problems and limited current income.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

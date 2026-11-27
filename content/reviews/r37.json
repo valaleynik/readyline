@@ -1,0 +1,164 @@
+[
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "picked \"First-to-die policy\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "Stem says 'as soon as either spouse dies', which matches 'first' conceptually, but no wording overlap; requires knowing the term.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "picked \"Automatic premium loan\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "'What the owner owes against the policy' mildly hints at a loan, but a candidate still needs to know APL; not a strong cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "picked \"The third party that bought the policy\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r37",
+    "detail": "Option C is somewhat longer/more specific, but all options are similar length; no strong cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

@@ -827,6 +827,30 @@
       "sha256": "fcc2df2a628d2722d328c710191a438c9fb4e8e7760217d34b360adfb6c1d970",
       "verifiedAgainstOfficial": true,
       "note": "Excerpt copied verbatim from the NAIC site via the browser."
+    },
+    {
+      "id": "ncdoi-life-provisions",
+      "kind": "manual",
+      "citation": "NC DOI, Standard Policy Provisions and Optional Riders",
+      "title": "Standard Policy Provisions and Optional Riders",
+      "act": "North Carolina Department of Insurance (consumer information)",
+      "url": "https://www.ncdoi.gov/standard-policy-provisions-and-optional-riders",
+      "retrievedAt": "2026-11-27",
+      "sha256": "2761d80ee3a63bd99ba7a870ca6fab48c2c4979d4792f71e5f30190512a27006",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpts copied verbatim from the regulator's page via the browser. Tier 2: general product concepts only; anything state-specific (e.g. grace period length, tax treatment) is taken from NJ or federal law instead."
+    },
+    {
+      "id": "akdoi-life-considerations",
+      "kind": "manual",
+      "citation": "Alaska Division of Insurance, Life Insurance Considerations",
+      "title": "Life Insurance: Considerations",
+      "act": "Alaska Division of Insurance (consumer information)",
+      "url": "https://www.commerce.alaska.gov/web/ins/Consumers/Life/Considerations",
+      "retrievedAt": "2026-11-27",
+      "sha256": "45a12fb637aef3445c6a2acd260f612c1e06daf7b03d5739f9faed59668e6486",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpts copied verbatim from the regulator's page via the browser. Tier 2: general product concepts only; anything state-specific (e.g. grace period length, tax treatment) is taken from NJ or federal law instead."
     }
   ]
 }

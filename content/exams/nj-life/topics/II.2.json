@@ -734,6 +734,152 @@
           "explanation": "N.J.S.A. 17B:25-19(a) allows an actuarially equivalent alternative paid-up nonforfeiture benefit that provides a greater amount or longer period of death benefits."
         }
       ]
+    },
+    {
+      "id": "II2-40",
+      "statement": "Under the extended term nonforfeiture option, the policy stays in force as term coverage to a future date; how long depends on the cash value and the insured's age.",
+      "source": "ncdoi-life-provisions",
+      "quote": "The length of the extended term benefit will depend on the amount of cash value in the policy and the age of the insured.",
+      "items": [
+        {
+          "id": "II2-40a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Under the extended term nonforfeiture option, what determines how long the term coverage lasts?",
+          "options": [
+            "The face amount the owner chooses at lapse",
+            "The number of years premiums were paid, regardless of cash value",
+            "How much cash value there is and how old the insured is",
+            "The insurer's current dividend scale"
+          ],
+          "answer": 2,
+          "explanation": "Per NC DOI, Standard Policy Provisions and Optional Riders, extended term keeps the policy in force as term coverage to a future date, and its length depends on the policy's cash value and the insured's age."
+        }
+      ]
+    },
+    {
+      "id": "II2-41",
+      "statement": "Reduced paid-up insurance uses the cash value to buy a smaller paid-up permanent policy with no further premiums; extended term uses it to buy term insurance.",
+      "source": "akdoi-life-considerations",
+      "quote": "as reduced paid up insurance - the cash value is used to purchase a paid up permanent life policy (i.e., no premium payments are required)",
+      "items": [
+        {
+          "id": "II2-41a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A whole life owner can no longer pay premiums but wants coverage that lasts for life with no further payments, even if the face amount is smaller. Which nonforfeiture option fits?",
+          "options": [
+            "Extended term insurance",
+            "Cash surrender",
+            "Automatic premium loan",
+            "Reduced paid-up insurance"
+          ],
+          "answer": 3,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, reduced paid-up insurance uses the cash value to buy a paid-up permanent policy with no further premiums, while extended term buys term coverage.",
+          "optionStyle": "category"
+        }
+      ],
+      "contrasts": [
+        "II2-40"
+      ]
+    },
+    {
+      "id": "II2-42",
+      "statement": "An automatic premium loan pays an overdue premium with a policy loan, preventing lapse if the loan value is enough; the owner usually has to elect it.",
+      "source": "ncdoi-life-provisions",
+      "quote": "This prevents the policy from lapsing provided the available loan value is sufficient to pay the premium. In most cases the policyowner must choose to enact this provision.",
+      "items": [
+        {
+          "id": "II2-42a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A policyowner misses a premium and the grace period ends. The policy stays in force because the insurer paid the premium from the policy's own value, adding that amount to what the owner owes against the policy. Which provision did the owner elect?",
+          "options": [
+            "Automatic premium loan",
+            "Waiver of premium",
+            "Extended term",
+            "Reinstatement"
+          ],
+          "answer": 0,
+          "explanation": "Per NC DOI, Standard Policy Provisions and Optional Riders, an automatic premium loan collects past-due premiums through a policy loan, which keeps the policy from lapsing if the loan value is enough. The owner usually must elect it.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-43",
+      "statement": "Under the interest only settlement option, the insurer keeps the proceeds and pays the beneficiary the interest.",
+      "source": "akdoi-life-considerations",
+      "quote": "interest only option - insurance company keeps the benefits and provides payment of the interest",
+      "items": [
+        {
+          "id": "II2-43a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A beneficiary wants the insurer to hold the $200,000 death benefit and send her the earnings on it, leaving the principal intact for now. Which settlement option fits?",
+          "options": [
+            "Fixed period",
+            "Interest only",
+            "Fixed amount",
+            "Life income"
+          ],
+          "answer": 1,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, under the interest only option the insurance company keeps the benefits and pays the interest.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-44",
+      "statement": "Under the fixed period option, proceeds are paid out over a set number of months or years; under the fixed amount option, a set amount is paid each period.",
+      "source": "akdoi-life-considerations",
+      "quote": "fixed period option - benefits are paid out over a predetermined number of months or years",
+      "items": [
+        {
+          "id": "II2-44a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A beneficiary wants the death benefit paid in equal installments over exactly 10 years, with the size of each payment set by that schedule. Which settlement option fits?",
+          "options": [
+            "Fixed amount",
+            "Interest only",
+            "Fixed period",
+            "Life income"
+          ],
+          "answer": 2,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, the fixed period option pays benefits over a predetermined number of months or years, while the fixed amount option pays a specified amount each period.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-45",
+      "statement": "The life income settlement option pays benefits for the beneficiary's lifetime.",
+      "source": "akdoi-life-considerations",
+      "quote": "life income option - benefits are paid for the life of the beneficiary",
+      "items": [
+        {
+          "id": "II2-45a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "A 70-year-old widow wants payments from her husband's death benefit that she cannot outlive. Which settlement option fits best?",
+          "options": [
+            "Fixed period",
+            "Interest only",
+            "Lump sum",
+            "Life income"
+          ],
+          "answer": 3,
+          "explanation": "Per Alaska Division of Insurance, Life Insurance Considerations, the life income option pays benefits for the life of the beneficiary.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

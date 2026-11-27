@@ -1,0 +1,758 @@
+[
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"First-to-die policy\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "Stem wording 'as soon as either spouse dies' points toward 'first', and A and D are synonyms (both survivorship), so a testwise candidate can drop both; still needs basic term recognition.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-01a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Second-to-die\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "'After both of them have died' maps to second-to-die, but that is the tested knowledge rather than a form cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I5-02a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"The rider\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-20a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Term insurance\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-21a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Guaranteed insurability\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "Stem closely paraphrases the AK DOI description (family history, limited income, more coverage later) but a candidate still needs to know what GIO does.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-22a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"How much cash value there is and how old the insured is\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "Option B's absolute 'regardless of cash value' is a mild elimination cue, but not enough to identify C by form alone.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-40a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Reduced paid-up insurance\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-41a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Automatic premium loan\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r36",
+    "detail": "The stem says the insurer took the premium 'out of the cash value as a loan', and only option A contains the word 'loan'; the key is recoverable from word matching alone.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-42a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Interest only\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "'Send her the earnings on it' is a light pointer to 'interest', but the candidate must know earnings = interest option.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-43a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Fixed period\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-44a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Life income\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-45a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"A sum equal to what the owner paid in\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-10a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"Pay the full death benefit\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-11a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "picked \"The settlement provider that bought the policy\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r36",
+    "detail": "'Viatical settlement' in the stem and 'settlement provider that bought the policy' in C give a mild word echo, and C is the only option describing a new owner; moderately cued but not decisive.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV7-10a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
