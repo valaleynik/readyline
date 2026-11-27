@@ -19,6 +19,8 @@ export interface ItemDraft {
   options: [string, string, string, string];
   answer: 0 | 1 | 2 | 3;
   explanation: string;
+  /** "category": options are names of practices, lines or factors, so the key may share the statute's term */
+  optionStyle?: "category";
   /** generator's estimate of IRT difficulty: about -1 easy, 0 medium, +1 hard */
   difficulty: number;
 }
@@ -38,7 +40,7 @@ export interface TopicFile {
   facts: FactDraft[];
 }
 
-export type CheckKind = "blind_solve" | "distractor" | "ambiguity" | "citation" | "dedupe" | "human";
+export type CheckKind = "blind_solve" | "distractor" | "ambiguity" | "testwise" | "citation" | "dedupe" | "human";
 
 export interface ReviewRecord {
   itemId: string;

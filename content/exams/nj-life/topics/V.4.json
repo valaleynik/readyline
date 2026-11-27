@@ -1,0 +1,334 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "V.4",
+  "facts": [
+    {
+      "id": "V4-01",
+      "statement": "Misrepresenting policy terms or benefits, or misrepresenting to induce a policyholder to lapse, forfeit or surrender, is an unfair practice.",
+      "source": "njsa-17-29b-4",
+      "quote": "making any misrepresentation to any policyholder insured in any company for the purpose of inducing or tending to induce such policyholder to lapse, forfeit, or surrender his insurance",
+      "items": [
+        {
+          "id": "V4-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.2,
+          "stem": "A producer falsely tells a policyholder that her policy's cash value will be forfeited next year unless she surrenders it now. Which unfair trade practice is this?",
+          "options": [
+            "Defamation",
+            "Misrepresentation",
+            "Rebating",
+            "Boycott"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits misrepresentations made to a policyholder to induce a lapse, forfeiture or surrender. Lying about the policy's terms to get her to surrender is misrepresentation.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-02",
+      "statement": "Advertising or statements about the business of insurance that are untrue, deceptive or misleading are prohibited.",
+      "source": "njsa-17-29b-4",
+      "quote": "an advertisement, announcement or statement containing any assertion, representation or statement with respect to the business of insurance or with respect to any person in the conduct of his insurance business, which is untrue, deceptive or misleading",
+      "items": [
+        {
+          "id": "V4-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.3,
+          "stem": "An agency runs a radio ad claiming its policies \"can never be cancelled for any reason,\" which is untrue. Which practice does this violate?",
+          "options": [
+            "Defamation",
+            "Rebating",
+            "Unfair claim settlement",
+            "False information and advertising"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits any advertisement or statement about the business of insurance that is untrue, deceptive or misleading, in any medium including radio.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-03",
+      "statement": "Defamation is a false or maliciously critical statement about an insurer's financial condition calculated to injure someone in the insurance business.",
+      "source": "njsa-17-29b-4",
+      "quote": "which is false, or maliciously critical of or derogatory to the financial condition of an insurer, and which is calculated to injure any person engaged in the business of insurance",
+      "items": [
+        {
+          "id": "V4-03a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0,
+          "stem": "At an industry event, a producer spreads a false rumor that a competing insurer is nearly insolvent, intending to damage the insurer's reputation. This practice is called:",
+          "options": [
+            "Defamation",
+            "Twisting",
+            "Misrepresentation of policy terms",
+            "Coercion"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17:29B-4 defines defamation as a false or maliciously critical statement about an insurer's financial condition that is calculated to injure a person in the insurance business.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-04",
+      "statement": "Boycott, coercion or intimidation that restrains or monopolizes the business of insurance is an unfair practice.",
+      "source": "njsa-17-29b-4",
+      "quote": "any act of boycott, coercion or intimidation resulting in or tending to result in unreasonable restraint of, or monopoly in, the business of insurance",
+      "items": [
+        {
+          "id": "V4-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.2,
+          "stem": "Several agencies agree to refuse all business with an insurer unless it raises their commissions, restraining competition in the market. This is an example of:",
+          "options": [
+            "Rebating",
+            "Boycott, coercion and intimidation",
+            "Defamation",
+            "Unfair discrimination"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits concerted acts of boycott, coercion or intimidation that unreasonably restrain, or create a monopoly in, the business of insurance.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-05",
+      "statement": "Unfair discrimination in life insurance rates between individuals of the same class and equal expectation of life is prohibited.",
+      "source": "njsa-17-29b-4",
+      "quote": "any unfair discrimination between individuals of the same class and equal expectation of life in the rates charged for any contract of life insurance",
+      "items": [
+        {
+          "id": "V4-05a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.1,
+          "stem": "Two applicants are in the same risk class with equal life expectancy. The insurer charges one a higher life insurance rate because the agent dislikes the neighborhood he lives in. This is:",
+          "options": [
+            "Permitted underwriting judgment",
+            "Rebating",
+            "Unfair discrimination",
+            "Twisting"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits unfair discrimination in life insurance rates between individuals of the same class and equal expectation of life.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-06",
+      "statement": "Discrimination because of race, creed, color, national origin or ancestry in issuing, withholding, extending or renewing any policy is prohibited.",
+      "source": "njsa-17-29b-4",
+      "quote": "because of race, creed, color, national origin or ancestry of such person or group of persons in the issuance, withholding, extension or renewal of any policy of insurance",
+      "items": [
+        {
+          "id": "V4-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.4,
+          "stem": "Under New Jersey's unfair trade practices law, an insurer may NOT refuse to issue or renew a policy because of an applicant's:",
+          "options": [
+            "Tobacco use",
+            "Hazardous occupation",
+            "Medical history",
+            "National origin"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits discrimination because of race, creed, color, national origin or ancestry in the issuance, withholding, extension or renewal of any policy. Tobacco use, occupation and medical history are legitimate underwriting factors.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V4-07",
+      "statement": "Giving a rebate of premium, or any valuable consideration not specified in the contract, as an inducement to buy life, annuity or health insurance is a prohibited rebate.",
+      "source": "njsa-17-29b-4",
+      "quote": "any rebate of premiums payable on the contract, or any special favor or advantage in the dividends or other benefits thereon, or any valuable consideration or inducement whatsoever not specified in the contract",
+      "items": [
+        {
+          "id": "V4-07a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.5,
+          "stem": "To close a life insurance sale, a producer offers to pay the client's first month's premium out of his own pocket. This is:",
+          "options": [
+            "Rebating",
+            "Twisting",
+            "Permitted if disclosed in writing",
+            "Allowed as a marketing expense"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17:29B-4 prohibits paying any rebate of premium or other valuable consideration not specified in the contract as an inducement to buy insurance. Paying the client's premium is a rebate."
+        }
+      ]
+    },
+    {
+      "id": "V4-08",
+      "statement": "Fair and equitable bonuses or premium abatements paid to policyholders out of surplus from nonparticipating insurance are not rebates or unfair discrimination.",
+      "source": "njsa-17-29b-4",
+      "quote": "paying bonuses to policyholders or otherwise abating their premiums in whole or in part out of surplus accumulated from nonparticipating insurance; provided, that any such bonuses or abatement of premiums shall be fair and equitable to policyholders",
+      "items": [
+        {
+          "id": "V4-08a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Which of the following is NOT treated as a rebate or unfair discrimination under New Jersey law?",
+          "options": [
+            "Bonuses paid out of surplus to policyholders who buy more",
+            "Fair bonuses paid out of nonparticipating surplus",
+            "Premium abatements not specified in the contract",
+            "Surplus shares given as an inducement to buy"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:29B-4 excludes from rebating and discrimination the payment of fair and equitable bonuses or premium abatements to life policyholders out of surplus from nonparticipating insurance."
+        }
+      ]
+    },
+    {
+      "id": "V4-09",
+      "statement": "Readjusting a group policy's premium rate on loss or expense experience at the end of a policy year is permitted, retroactive only for that policy year.",
+      "source": "njsa-17-29b-4",
+      "quote": "readjustment of the rate of premium for a group policy based on the loss or expense experience thereunder, at the end of the first or any subsequent policy year of insurance thereunder, which may be made retroactive only for such policy year",
+      "items": [
+        {
+          "id": "V4-09a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.8,
+          "stem": "At the end of a policy year, a group life insurer readjusts the group's premium rate based on the group's loss experience. Under New Jersey law, this is:",
+          "options": [
+            "An illegal rebate to the group",
+            "Unfair discrimination against other groups",
+            "Permitted, retroactive only for that policy year",
+            "Permitted, retroactive for up to three prior years"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17:29B-4 treats a group premium readjustment based on loss or expense experience as neither a rebate nor discrimination, and allows it to be retroactive only for that policy year."
+        }
+      ]
+    },
+    {
+      "id": "V4-10",
+      "statement": "Improper claim handling is an unfair claim settlement practice when committed with such frequency as to indicate a general business practice.",
+      "source": "njsa-17-29b-4",
+      "quote": "Committing or performing with such frequency as to indicate a general business practice any of the following",
+      "items": [
+        {
+          "id": "V4-10a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "Under New Jersey's unfair trade practices law, improper claim handling by an insurer is an unfair claim settlement practice when it is committed:",
+          "options": [
+            "Even once, against any single claimant",
+            "With enough frequency to affect ten or more claimants",
+            "Only in ways the commissioner has published in advance",
+            "Often enough to indicate a general business practice"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:29B-4 defines unfair claim settlement practices as listed acts committed with such frequency as to indicate a general business practice."
+        }
+      ]
+    },
+    {
+      "id": "V4-11",
+      "statement": "Refusing to pay claims without a reasonable investigation based on all available information is an unfair claim settlement practice.",
+      "source": "njsa-17-29b-4",
+      "quote": "(d) Refusing to pay claims without conducting a reasonable investigation based upon all available information;",
+      "items": [
+        {
+          "id": "V4-11a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.1,
+          "stem": "Which of the following, done as a general business practice, is an unfair claim settlement practice in New Jersey?",
+          "options": [
+            "Refusing to pay claims without a reasonable investigation",
+            "Requesting proof of death before paying a life claim",
+            "Investigating claims based on all available information",
+            "Refusing to pay a claim the policy clearly excludes"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17:29B-4 lists refusing to pay claims without conducting a reasonable investigation based on all available information as an unfair claim settlement practice. Requesting proof of death and investigating contestable claims are normal practice."
+        }
+      ]
+    },
+    {
+      "id": "V4-12",
+      "statement": "Paying claims without a statement of the coverage under which payment is made is an unfair claim settlement practice.",
+      "source": "njsa-17-29b-4",
+      "quote": "(j) Making claims payments to insureds or beneficiaries not accompanied by a statement setting forth the coverage under which the payments are being made;",
+      "items": [
+        {
+          "id": "V4-12a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "An insurer routinely sends claim payments to beneficiaries without saying which coverage each payment falls under. Under New Jersey law, this is:",
+          "options": [
+            "Acceptable if the amount paid is correct",
+            "An unfair claim settlement practice",
+            "Required to protect beneficiary privacy",
+            "A violation only for health insurance claims"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17:29B-4 lists making claim payments without a statement of the coverage under which they are made as an unfair claim settlement practice."
+        }
+      ]
+    },
+    {
+      "id": "V4-13",
+      "statement": "An insurer must keep a complete record of all complaints received since its last examination.",
+      "source": "njsa-17-29b-4",
+      "quote": "Failure of any person to maintain a complete record of all the complaints which it has received since the date of its last examination.",
+      "items": [
+        {
+          "id": "V4-13a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "Under New Jersey law, an insurer must keep a complete record of all complaints it has received since:",
+          "options": [
+            "The start of the current calendar year",
+            "The date it was first licensed",
+            "Its most recent examination",
+            "The date five years before the current one"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17:29B-4 requires a complete record of all complaints received since the date of the last examination, including their number, line, nature, disposition and processing time."
+        }
+      ]
+    },
+    {
+      "id": "V4-14",
+      "statement": "For the complaint record, a complaint is any written communication primarily expressing a grievance.",
+      "source": "njsa-17-29b-4",
+      "quote": "“complaint” shall mean any written communication primarily expressing a grievance",
+      "items": [
+        {
+          "id": "V4-14a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.4,
+          "stem": "For New Jersey's complaint record requirement, a \"complaint\" is defined as:",
+          "options": [
+            "Any oral or written expression of dissatisfaction",
+            "Any grievance filed with the Department of Banking and Insurance",
+            "Any written request for policy information",
+            "A grievance expressed in writing"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:29B-4 defines a complaint, for the record-keeping requirement, as any written communication primarily expressing a grievance."
+        }
+      ]
+    }
+  ]
+}

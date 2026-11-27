@@ -11,14 +11,16 @@ import type { ItemDraft, TopicFile } from "./schema";
 
 const ordered = (opts: string[]) => opts.every((o) => /^\$?\d/.test(o.trim()));
 
-export function rebalance(files: { path: string; data: TopicFile }[]) {
+export function rebalance(files: { path: string; data: TopicFile }[], reviewed: Set<string> = new Set()) {
   const all = files.flatMap((f) => f.data.facts.flatMap((fact) => fact.items));
+  // Reviewed items are frozen: moving their options would silently invalidate the review.
+  const frozen = (it: ItemDraft) => ordered(it.options) || reviewed.has(`${it.id}@${it.version}`);
   const counts = [0, 0, 0, 0];
-  for (const it of all) if (ordered(it.options)) counts[it.answer]!++;
+  for (const it of all) if (frozen(it)) counts[it.answer]!++;
 
   let moved = 0;
   for (const it of all) {
-    if (ordered(it.options)) continue;
+    if (frozen(it)) continue;
     const target = counts.indexOf(Math.min(...counts)) as ItemDraft["answer"];
     counts[target]!++;
     if (target === it.answer) continue;
@@ -37,7 +39,20 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const files = readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => ({ path: join(dir, f), data: JSON.parse(readFileSync(join(dir, f), "utf8")) as TopicFile }));
-  const r = rebalance(files);
+  const reviewDir = fileURLToPath(new URL("../../content/reviews", import.meta.url));
+  const reviewed = new Set(
+    readdirSync(reviewDir)
+      .filter((f) => f.endsWith(".json"))
+      .flatMap((f) => JSON.parse(readFileSync(join(reviewDir, f), "utf8")) as { itemId: string; version: number }[])
+      .map((r) => `${r.itemId}@${r.version}`),
+  );
+  // Items sent out for review but not yet recorded are frozen too.
+  const pendingDir = join(reviewDir, "pending");
+  try {
+    for (const f of readdirSync(pendingDir).filter((x) => x.endsWith(".json")))
+      for (const k of JSON.parse(readFileSync(join(pendingDir, f), "utf8")) as string[]) reviewed.add(k);
+  } catch {}
+  const r = rebalance(files, reviewed);
   for (const f of files) writeFileSync(f.path, JSON.stringify(f.data, null, 2) + "\n");
   console.log(`moved ${r.moved} keys; positions A/B/C/D now ${r.counts.join("/")}`);
 }

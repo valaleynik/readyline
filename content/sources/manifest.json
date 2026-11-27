@@ -121,6 +121,72 @@
       "retrievedAt": "2026-11-26",
       "sha256": "7dc66c18aac0d6420899876e8b2629d8a2b5918f5500392f9a26ec9736d19022",
       "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17-29b-4",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17:29B-4",
+      "title": "Unfair methods of competition and unfair or deceptive acts",
+      "act": "Unfair Trade Practices Act (Title 17)",
+      "url": "https://codes.findlaw.com/nj/title-17-corporations-and-institutions-for-finance-and-insurance/nj-st-sect-17-29b-4/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "6ac88cd79a2511def8a765e46883b8cd6236c8a3c8fd05dcc93fdc3ecee813b6",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-30-3",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-3",
+      "title": "Misrepresentation and false advertising of policies",
+      "act": "Title 17B Chapter 30, Trade Practices in Life and Health Insurance and Annuities",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-3/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "80de548d954c92db963860e55bf97e9a82195fe342c4454be90bb0970cab4bca",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-30-6",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-6",
+      "title": "Misleading comparisons (twisting)",
+      "act": "Title 17B Chapter 30, Trade Practices in Life and Health Insurance and Annuities",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-6/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "7e73d87f5e8918cfdb551ecfa0a60f0534a2d377ceb2a89e36012c8c1922e8af",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-30-7",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-7",
+      "title": "Defamation",
+      "act": "Title 17B Chapter 30, Trade Practices in Life and Health Insurance and Annuities",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-7/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "6aa1d27fc89d9d301a4e780d830ce66304ed00318632c57e874e01ee25384c61",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-30-13",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-13",
+      "title": "Rebates",
+      "act": "Title 17B Chapter 30, Trade Practices in Life and Health Insurance and Annuities",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-13/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "838bb8bc6175e7863879a1c67061279df598ef74ae9eec5530fb7abf27e5fe5d",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-30-17",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:30-17",
+      "title": "Hearings, cease and desist orders, penalties",
+      "act": "Title 17B Chapter 30, Trade Practices in Life and Health Insurance and Annuities",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-30-17/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "678f66e6f8943ef516f86cacf3f8079c59430d61d9e83c1f0201cf9c2ef06238",
+      "verifiedAgainstOfficial": false
     }
   ]
 }

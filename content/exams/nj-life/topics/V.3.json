@@ -10,15 +10,15 @@
       "items": [
         {
           "id": "V3-01a",
-          "version": 1,
+          "version": 4,
           "kind": "recall",
           "difficulty": -1,
           "stem": "Under New Jersey law, a person may sell, solicit or negotiate insurance in the state only if the person is:",
           "options": [
-            "Licensed for that line of authority",
-            "Appointed by at least one insurer authorized in New Jersey",
-            "Employed by a licensed business entity",
-            "Supervised by a licensed producer for the first 90 days"
+            "Licensed for the line of authority involved",
+            "Licensed in any line of authority and appointed",
+            "Registered with the commissioner for that line",
+            "Supervised by a producer licensed for that line"
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17:22A-29 bars anyone from selling, soliciting or negotiating insurance in New Jersey unless they are licensed for that line of authority. An appointment or employer does not replace the license."
@@ -117,15 +117,15 @@
       "items": [
         {
           "id": "V3-05a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": -0.2,
           "stem": "An applicant does not show up for a scheduled New Jersey licensing exam. To be rescheduled, the applicant must:",
           "options": [
-            "Wait 6 months before reapplying",
-            "Remit all required fees and forms again",
-            "Get written permission from the commissioner",
-            "Repeat the full prelicensing course"
+            "Wait 30 days and send a written rescheduling request",
+            "Submit a new application with the full fees and forms",
+            "Pay only a rescheduling fee, since the application stays on file",
+            "Request a waiver of the examination from the commissioner"
           ],
           "answer": 1,
           "explanation": "Under N.J.S.A. 17:22A-31, an applicant who fails to appear or fails the exam may reapply, but must remit all required fees and forms before being rescheduled."
@@ -186,17 +186,17 @@
       "items": [
         {
           "id": "V3-08a",
-          "version": 1,
+          "version": 4,
           "kind": "recall",
           "difficulty": -0.4,
-          "stem": "Before approving a resident individual's application, the commissioner must find that the applicant has:",
+          "stem": "Before approving a resident individual's application for the life line, the commissioner must find that the applicant has:",
           "options": [
-            "Completed a prelicensing course for the lines applied for",
-            "Worked at least one year in an insurance office",
-            "Obtained a sponsoring appointment from an insurer",
-            "Earned a college degree in a business field"
+            "Completed a prelicensing course in any line within five years",
+            "Served an apprenticeship with a licensed life producer",
+            "Obtained a life insurer appointment before applying",
+            "Completed a prelicensing course for the life line"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "N.J.S.A. 17:22A-32 requires completion of a prelicensing course of study for the lines of authority applied for. Work experience, an appointment and a degree are not required."
         }
       ]
@@ -209,15 +209,15 @@
       "items": [
         {
           "id": "V3-09a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.3,
           "stem": "A corporation wants a New Jersey producer license so it can act as an insurance agency. Besides paying the fees, what must it do?",
           "options": [
-            "Post a surety bond with the commissioner",
+            "Designate a licensed producer to sign every policy it sells",
             "Designate a licensed producer responsible for its compliance",
-            "Have every employee pass the producer examination",
-            "Obtain approval from the Department of State"
+            "Have each officer licensed for every line the entity sells",
+            "Post a compliance bond with the commissioner"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-32 requires a business entity to pay the fees and designate a licensed producer, or producers, responsible for its compliance with New Jersey insurance law."
@@ -232,15 +232,15 @@
       "items": [
         {
           "id": "V3-10a",
-          "version": 1,
+          "version": 2,
           "kind": "recall",
           "difficulty": 0.1,
-          "stem": "Who pays for the criminal history background check required of a New Jersey producer license applicant?",
+          "stem": "Under New Jersey law, who bears the cost of the criminal history background check required of a producer license applicant?",
           "options": [
+            "The applicant's prospective employer",
             "The Department of Banking and Insurance",
-            "The insurer that will appoint the applicant",
-            "The Division of State Police",
-            "The applicant"
+            "The applicant's appointing insurer",
+            "The applicant personally"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:22A-32 states that the applicant bears the cost of the criminal history record background check, including processing costs."
@@ -255,15 +255,15 @@
       "items": [
         {
           "id": "V3-11a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": -0.5,
-          "stem": "Which of the following must a New Jersey producer license applicant submit to the commissioner?",
+          "stem": "Which of the following must an applicant for a New Jersey resident producer license submit to the commissioner?",
           "options": [
             "Fingerprints and consent to a criminal background check",
-            "A recommendation letter from a licensed producer",
-            "Proof of a surety bond",
-            "A copy of a college transcript"
+            "Fingerprints and a certified copy of a credit report",
+            "Written consent to a background check by the appointing insurer",
+            "A notarized affidavit of good moral character"
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17:22A-32 requires the applicant's name, address, fingerprints and written consent for a criminal history record background check."
@@ -278,15 +278,15 @@
       "items": [
         {
           "id": "V3-12a",
-          "version": 1,
+          "version": 3,
           "kind": "recall",
           "difficulty": -0.3,
           "stem": "Under New Jersey's lines of authority, the life line includes coverage on human lives along with benefits of:",
           "options": [
-            "Homeowners and auto",
-            "Endowment and annuities",
-            "Liability and workers compensation",
-            "Credit and title insurance"
+            "Medical expense coverage for sickness",
+            "Endowments and annuities",
+            "Long-term care coverage",
+            "Property and casualty coverage for families"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-33 defines the life line as coverage on human lives, including benefits of endowment and annuities."
@@ -301,15 +301,15 @@
       "items": [
         {
           "id": "V3-13a",
-          "version": 2,
+          "version": 4,
           "kind": "application",
           "difficulty": 0.7,
-          "stem": "A producer licensed only for the life line wants to sell a product whose value rises and falls with the investment experience of a separate account. What does New Jersey's licensing law require?",
+          "stem": "A producer licensed only for the life line wants to sell a universal life policy whose cash value is invested in market-linked subaccounts. Which additional line of authority must be on her New Jersey license?",
           "options": [
-            "Nothing more, since the life line covers all annuities",
-            "The accident and health or sickness line",
-            "The personal lines line",
-            "The variable life and variable annuity products line"
+            "Accident and health or sickness",
+            "An annuity products line",
+            "Credit",
+            "Variable life and variable annuity products"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:22A-33 lists variable life and variable annuity products, meaning products that reflect a separate account's investment experience, as their own line of authority, separate from the life line."
@@ -416,15 +416,15 @@
       "items": [
         {
           "id": "V3-18a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": -0.2,
           "stem": "A producer deployed on military service cannot complete license renewal on time. What may the producer do?",
           "options": [
-            "Nothing, since the license is automatically revoked",
-            "Transfer the license to a family member",
-            "Renew only after passing the exam again",
-            "Request a waiver of the renewal procedures"
+            "Request an extension from the testing vendor",
+            "Have a designee renew the license for the producer",
+            "Renew only after retaking the examination",
+            "Ask the commissioner to waive the renewal procedures"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:22A-33 lets a producer who cannot renew because of military service or another extenuating circumstance request a waiver of renewal procedures."
@@ -477,15 +477,15 @@
       "items": [
         {
           "id": "V3-20a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.1,
           "stem": "A Pennsylvania resident wants a New Jersey nonresident producer license. Which of the following is a requirement?",
           "options": [
-            "Passing the New Jersey licensing examination",
-            "Being a resident producer in good standing in Pennsylvania",
-            "Opening an office in New Jersey",
-            "Completing a New Jersey prelicensing course"
+            "Being licensed in Pennsylvania for at least two years",
+            "Holding a Pennsylvania resident license in good standing",
+            "Holding a resident license in any state, active or lapsed",
+            "Being licensed in Pennsylvania and passing New Jersey's law exam"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-34 grants a nonresident license to a person currently licensed as a resident producer in good standing in the home state, without a New Jersey exam or course."
@@ -500,15 +500,15 @@
       "items": [
         {
           "id": "V3-21a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.5,
           "stem": "One condition for New Jersey to grant a nonresident producer license is that the applicant's home state:",
           "options": [
-            "Has adopted New Jersey's continuing education rules",
-            "Has signed a written compact with New Jersey",
-            "Licenses New Jersey residents on the same basis",
-            "Requires the same prelicensing hours as New Jersey"
+            "Grants resident licenses to New Jersey residents who move there",
+            "Grants nonresident licenses only to producers who pass its exam",
+            "Grants nonresident licenses to New Jersey residents on the same basis",
+            "Charges the same license fees as New Jersey"
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17:22A-34 requires that the applicant's home state award nonresident licenses to New Jersey residents on the same basis, which is reciprocity."
@@ -523,15 +523,15 @@
       "items": [
         {
           "id": "V3-22a",
-          "version": 1,
+          "version": 2,
           "kind": "recall",
           "difficulty": 0.6,
           "stem": "By applying for and receiving a New Jersey nonresident license, the producer is deemed to have appointed whom as agent to receive service of legal process in New Jersey?",
           "options": [
             "The insurer that appointed the producer",
-            "The producer's home state regulator",
-            "The NAIC",
-            "The commissioner"
+            "A registered agent the producer designates in New Jersey",
+            "The producer's home state insurance regulator",
+            "The New Jersey commissioner"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:22A-34 provides that a nonresident licensee is deemed to have appointed the commissioner as agent to receive service of original legal process in New Jersey."
@@ -638,15 +638,15 @@
       "items": [
         {
           "id": "V3-27a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": -0.3,
           "stem": "A producer wants to do business as \"Garden State Coverage\" instead of under her legal name. When must she notify the commissioner?",
           "options": [
             "Within 30 days after first using it",
-            "At her next license renewal",
-            "Before using the assumed name",
-            "Only if she hires employees"
+            "When she files her next license renewal",
+            "Before she begins using the name",
+            "Within 10 days after registering it with the county"
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17:22A-36 requires a producer to notify the commissioner prior to using an assumed name."
@@ -684,17 +684,17 @@
       "items": [
         {
           "id": "V3-29a",
-          "version": 1,
+          "version": 4,
           "kind": "scenario",
           "difficulty": 0.2,
-          "stem": "A licensed producer dies suddenly. To allow time to sell the business or train new staff, the commissioner may issue a temporary license to:",
+          "stem": "A licensed producer dies suddenly. To allow time to sell the business, the commissioner may issue a temporary license under the death or disability provision to:",
           "options": [
-            "Any customer of the agency",
-            "The insurer with the most policies at the agency",
-            "Only a producer licensed in another state",
-            "The surviving spouse or court-appointed personal representative"
+            "The spouse or court-appointed representative",
+            "The producer's appointing insurer",
+            "A licensed producer the clients choose",
+            "The agency's largest client"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the surviving spouse or court-appointed personal representative of a producer who dies or becomes disabled."
         }
       ]
@@ -707,15 +707,15 @@
       "items": [
         {
           "id": "V3-30a",
-          "version": 2,
+          "version": 4,
           "kind": "scenario",
           "difficulty": 0.1,
-          "stem": "A New Jersey producer is called to active duty in the U.S. armed forces. To keep the business serviced, the commissioner may issue a temporary license to:",
+          "stem": "A producer is entering active service in the U.S. armed forces. Under the temporary license provision written for that situation, the commissioner may issue a temporary license to:",
           "options": [
-            "The producer's designee",
-            "The appointing insurer, which takes over servicing",
+            "A designee the producer names",
+            "The producer's appointing insurer",
             "The producer's clients, acting jointly",
-            "The agency's office manager, with no license needed"
+            "An unlicensed employee, with no limits on authority"
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the designee of a producer entering active service in the U.S. armed forces."
@@ -730,15 +730,15 @@
       "items": [
         {
           "id": "V3-31a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.7,
           "stem": "When the commissioner requires a temporary licensee to have a sponsor, who may serve as the sponsor?",
           "options": [
-            "A New Jersey licensed attorney",
-            "A licensed producer or insurer",
-            "A bonded surety company",
-            "A certified public accountant"
+            "A suitable family member who assumes responsibility",
+            "A licensed producer or insurer that assumes responsibility",
+            "A licensed attorney who assumes responsibility",
+            "A bonded surety that assumes responsibility"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-37 lets the commissioner require a suitable sponsor who is a licensed producer or insurer and assumes responsibility for all acts of the temporary licensee."
@@ -845,15 +845,15 @@
       "items": [
         {
           "id": "V3-36a",
-          "version": 1,
+          "version": 3,
           "kind": "scenario",
           "difficulty": 0.2,
           "stem": "The commissioner denies an application for a producer license. What is the applicant entitled to?",
           "options": [
-            "Nothing, since denials are final",
-            "The reason in writing, and a hearing on written demand",
-            "An automatic appeal to the Superior Court",
-            "A refund of all fees and a free retake"
+            "A written reason, and a review by a producer licensing board",
+            "A written reason, and a hearing if demanded in writing",
+            "A hearing, and a refund of the application fee",
+            "A hearing, and a temporary license until it ends"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-40 requires the commissioner to state the reason for a denial or nonrenewal in writing, and lets the applicant make a written demand for a hearing."
@@ -983,15 +983,15 @@
       "items": [
         {
           "id": "V3-42a",
-          "version": 3,
+          "version": 4,
           "kind": "recall",
           "difficulty": 0.6,
-          "stem": "A New Jersey producer is being criminally prosecuted. Along with the report to the commissioner, the producer must provide:",
+          "stem": "A New Jersey producer is being criminally prosecuted. The producer's report to the commissioner must include:",
           "options": [
-            "A letter of explanation from the appointing insurer",
-            "Proof that bail has been posted",
-            "A character reference from another licensed producer",
-            "A copy of the initial complaint and the order from the hearing"
+            "A letter from the producer's attorney and a bail receipt",
+            "A statement from the appointing insurer and the arrest report",
+            "A character reference and proof of current employment",
+            "The initial complaint and the order from the pretrial hearing"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:22A-47 requires a producer reporting a criminal prosecution to include a copy of the initial complaint filed, the order resulting from the hearing and any other relevant legal documents."

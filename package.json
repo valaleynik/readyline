@@ -8,7 +8,8 @@
     "sim": "tsx src/sim/run.ts",
     "typecheck": "tsc --noEmit",
     "content": "tsx src/content/cli.ts",
-    "rebalance": "tsx src/content/rebalance.ts"
+    "rebalance": "tsx src/content/rebalance.ts",
+    "review": "tsx src/content/review.ts"
   },
   "devDependencies": {
     "@types/node": "^22.20.7",
