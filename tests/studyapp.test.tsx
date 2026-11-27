@@ -112,3 +112,18 @@ describe("study loop UI with a synced store", () => {
     expect(calls).toBeLessThanOrEqual(2);
   });
 });
+
+describe("sign in", () => {
+  it("sends the link and tells the user to check their email, or shows the error", async () => {
+    const { SignIn } = await import("../web/components/AuthGate");
+    const sent: string[] = [];
+    render(<SignIn onSend={async (e) => (sent.push(e), sent.length > 1 ? null : "rate limited")} />);
+    const input = document.querySelector('input[type="email"]') as HTMLInputElement;
+    fireEvent.change(input, { target: { value: " val@example.com " } });
+    await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
+    expect(screen.getByText("rate limited")).not.toBeNull();
+    await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
+    expect(screen.getByText(/Check val@example.com/)).not.toBeNull();
+    expect(sent).toEqual(["val@example.com", "val@example.com"]);
+  });
+});

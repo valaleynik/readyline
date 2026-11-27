@@ -21,7 +21,14 @@
         "name": "next"
       }
     ],
-    "target": "es2020"
+    "target": "es2020",
+    "baseUrl": ".",
+    "paths": {
+      "@supabase/supabase-js": [
+        "./node_modules/@supabase/supabase-js",
+        "../node_modules/@supabase/supabase-js"
+      ]
+    }
   },
   "include": [
     "next-env.d.ts",

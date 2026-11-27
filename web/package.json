@@ -1,0 +1,21 @@
+{
+  "name": "readyline-web",
+  "private": true,
+  "description": "Deploy unit for the web app. Vercel builds from this folder; the engine is imported from ../src. Keep versions in step with the root package.json.",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
+    "next": "^14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.7",
+    "@types/react": "^18.3.32",
+    "@types/react-dom": "^18.3.7",
+    "typescript": "^5.9.3"
+  }
+}
