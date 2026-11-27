@@ -56,17 +56,17 @@
       "items": [
         {
           "id": "V5-03a",
-          "version": 1,
+          "version": 2,
           "kind": "recall",
           "difficulty": 0.6,
-          "stem": "For administration and assessment, the New Jersey Life and Health Insurance Guaranty Association maintains which two accounts?",
+          "stem": "For administration and assessment, New Jersey's guaranty association for life and health insurers maintains which two accounts?",
           "options": [
-            "A resident account and a nonresident account",
-            "An individual account and a group account",
             "A life insurance and annuity account, and a health account",
-            "A premium account and a claims account"
+            "A life account and a separate annuity account",
+            "A health account and a separate long-term care account",
+            "A life and health account, and an unallocated annuity account"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "N.J.S.A. 17B:32A-5 requires two accounts: the life insurance and annuity account (with life, annuity and unallocated annuity subaccounts) and the health account.",
           "optionStyle": "category"
         }
@@ -151,10 +151,10 @@
       "items": [
         {
           "id": "V5-07a",
-          "version": 1,
+          "version": 2,
           "kind": "application",
           "difficulty": 1.1,
-          "stem": "Maria has a $400,000 life policy and an annuity with a $300,000 present value, both with the same insurer, which becomes insolvent. What is the most the guaranty association can be obligated to pay in total on these benefits for her?",
+          "stem": "Maria has a $400,000 policy on her own life and an annuity with a $300,000 present value, both with the same insurer, which becomes insolvent. What is the most the guaranty association can be obligated to pay in total on these benefits for her?",
           "options": [
             "$400,000",
             "$500,000",

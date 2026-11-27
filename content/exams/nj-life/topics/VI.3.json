@@ -49,17 +49,17 @@
       "items": [
         {
           "id": "VI3-02a",
-          "version": 2,
+          "version": 3,
           "kind": "scenario",
           "difficulty": 0.1,
-          "stem": "A producer tells a prospect that a participating policy \"has paid 8% dividends every year for 20 years.\" Similar policies actually paid between 3% and 5%. Under New Jersey law, the statement is:",
+          "stem": "A producer tells a prospect that the participating policy he is selling \"comes from a line of policies that has paid 8% dividends every year for 20 years.\" Similar policies actually paid between 3% and 5%. Under New Jersey law, the statement is:",
           "options": [
             "Permitted, since dividends are not guaranteed",
+            "Misrepresentation",
             "Permitted if an illustration is also provided",
-            "Twisting",
-            "Misrepresentation"
+            "Twisting"
           ],
-          "answer": 3,
+          "answer": 1,
           "explanation": "N.J.S.A. 17B:30-3 prohibits false or misleading statements about dividends or surplus previously paid on similar policies.",
           "optionStyle": "category"
         }
@@ -96,17 +96,17 @@
       "items": [
         {
           "id": "VI3-04a",
-          "version": 2,
+          "version": 3,
           "kind": "scenario",
           "difficulty": -0.1,
           "stem": "A producer offers to give a new life insurance client half of the producer's commission on the policy. Under New Jersey law, this is:",
           "options": [
             "Commission splitting, which is legal between licensed persons",
+            "Permitted if the client signs a written waiver",
             "An illegal rebate",
-            "Permitted, because the client is not licensed",
             "A permitted marketing allowance"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "N.J.S.A. 17B:30-13 prohibits giving, as an inducement, any rebate of premiums or of any agent's, solicitor's or broker's commission on the contract."
         }
       ]

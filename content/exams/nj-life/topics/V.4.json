@@ -34,17 +34,17 @@
       "items": [
         {
           "id": "V4-02a",
-          "version": 2,
+          "version": 3,
           "kind": "scenario",
           "difficulty": -0.3,
-          "stem": "An agency's newspaper ad claims it has \"won the state's top customer service award five years running.\" No such award exists. Which unfair trade practice is this?",
+          "stem": "An agency's website and brochures tell the public it \"won the state's top customer service award five years running.\" No such award exists. Which unfair trade practice is this?",
           "options": [
-            "False information and advertising",
             "Defamation",
             "Misrepresentation of policy terms",
-            "Twisting"
+            "Unfair discrimination",
+            "False information and advertising"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "N.J.S.A. 17:29B-4 prohibits any advertisement or statement about the business of insurance that is untrue, deceptive or misleading, in any medium including radio.",
           "optionStyle": "category"
         }
@@ -82,13 +82,13 @@
       "items": [
         {
           "id": "V4-04a",
-          "version": 2,
+          "version": 3,
           "kind": "scenario",
           "difficulty": 0.2,
-          "stem": "Several insurers jointly threaten to stop writing business through any agency that also represents a new competitor, in order to keep that competitor out of the market. This is an example of:",
+          "stem": "Several insurers agree among themselves to stop writing business through any agency that also places business with a new competitor, so the competitor cannot get established. This is an example of:",
           "options": [
-            "Rebating",
             "Unfair discrimination",
+            "Twisting",
             "Defamation",
             "Boycott, coercion and intimidation"
           ],
@@ -177,17 +177,17 @@
       "items": [
         {
           "id": "V4-08a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.9,
           "stem": "Which of the following is NOT treated as a rebate or unfair discrimination under New Jersey law?",
           "options": [
-            "Fair bonuses out of surplus paid only to friends",
-            "Premium abatements given as an inducement to buy",
-            "Modest stock gifts offered as an inducement to buy",
-            "Fair bonuses paid out of nonparticipating surplus"
+            "Fair bonuses paid out of nonparticipating surplus",
+            "Fair bonuses out of surplus for policyholders who buy more",
+            "Premium reductions promised verbally but not in the contract",
+            "Insurer stock given to every new policyholder"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "N.J.S.A. 17:29B-4 excludes from rebating and discrimination the payment of fair and equitable bonuses or premium abatements to life policyholders out of surplus from nonparticipating insurance."
         }
       ]
@@ -247,17 +247,17 @@
       "items": [
         {
           "id": "V4-11a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.1,
           "stem": "Which of the following, if an insurer does it routinely, is an unfair claim settlement practice in New Jersey?",
           "options": [
-            "Denying claims before reasonably investigating them",
-            "Refusing to pay claims for losses the policy excludes",
-            "Requiring a death certificate before paying a death claim",
-            "Paying claims only after a reasonable investigation"
+            "Denying a claim filed after the policy lapsed for nonpayment",
+            "Delaying payment while awaiting a requested death certificate",
+            "Contesting a claim for a material misstatement within two years",
+            "Denying claims before reasonably investigating them"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "N.J.S.A. 17:29B-4 lists refusing to pay claims without conducting a reasonable investigation based on all available information as an unfair claim settlement practice. Requesting proof of death and investigating contestable claims are normal practice.",
           "group": "claim-practice-frequency"
         }
