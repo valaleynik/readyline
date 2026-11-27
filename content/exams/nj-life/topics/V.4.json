@@ -333,6 +333,29 @@
           "explanation": "N.J.S.A. 17:29B-4 defines a complaint, for the record-keeping requirement, as any written communication primarily expressing a grievance."
         }
       ]
+    },
+    {
+      "id": "V4-15",
+      "statement": "An insurer's complaint record must show the total number of complaints, their classification by line, the nature and disposition of each, and the time taken to process each.",
+      "source": "njsa-17-29b-4",
+      "quote": "This record shall indicate the total number of complaints, their classification by line of insurance, the nature of each complaint, the disposition of these complaints, and the time it took to process each complaint.",
+      "items": [
+        {
+          "id": "V4-15a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "Under New Jersey law, an insurer's complaint record must show each of the following EXCEPT:",
+          "options": [
+            "The nature of each complaint",
+            "How each complaint was resolved",
+            "The processing time for each complaint",
+            "The selling producer's name"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:29B-4 requires the complaint record to show the total number of complaints, their classification by line of insurance, and the nature, disposition and processing time of each. The selling producer is not a required element."
+        }
+      ]
     }
   ]
 }

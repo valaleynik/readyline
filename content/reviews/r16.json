@@ -1,0 +1,326 @@
+[
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"Its cash value rises and falls with investments the owner selects\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "The product name 'variable' maps directly onto 'rises and falls', and B and D describe fixed/guaranteed features that read as the opposite of 'variable', so word association alone gets A.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"Costs and tax consequences that outweigh short-term gains\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "All three distractors use absolute language ('cannot be changed', 'requirement to hold', 'bars'), while A is the only hedged, multi-factor, longer option; a test-wise candidate picks it by form.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"Accumulation phase\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "The stem's 'money grows' cues 'accumulation', and 'before income payments begin' excludes payout; C and D are unrelated policy provisions that a novice can drop, so only B competes and the stem rules it out.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"Zero, since the credited rate cannot go below zero\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "Odd-one-out: A, B and D all start with 'Negative' and C is the only non-negative option. C also carries its own justification ('since the credited rate cannot go below zero'), which is a strong key cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"RILAs and variable annuities\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "picked \"Change the contract's value, often reducing it\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-16",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

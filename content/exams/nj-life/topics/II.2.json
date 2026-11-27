@@ -266,6 +266,22 @@
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-8 requires the insurer to advance a loan after 3 full years' premiums have been paid and the policy has a cash surrender value.",
           "group": "policy-loans"
+        },
+        {
+          "id": "II2-10b",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.7,
+          "stem": "Mia's whole life policy has built cash value after 2 full years of premiums, and she asks for a policy loan. Under New Jersey's policy loan provision, the insurer:",
+          "options": [
+            "Must grant the loan on request",
+            "Is not yet required to offer a loan",
+            "Must lend, but only up to half the cash value",
+            "Must lend without charging interest"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-8 requires a loan to be available only after 3 full years' premiums have been paid and the policy has a cash surrender value. After 2 years, the requirement has not been triggered.",
+          "group": "policy-loans"
         }
       ]
     },
@@ -573,6 +589,29 @@
           "explanation": "N.J.S.A. 17B:25-19(a) requires a cash surrender value on surrender after a default once premiums have been paid for at least 3 full years on ordinary insurance (5 years for industrial).",
           "optionStyle": "ordered",
           "group": "nonforfeiture"
+        }
+      ]
+    },
+    {
+      "id": "II2-23",
+      "statement": "If a policy offers dividend options other than cash, it must state which option takes effect automatically when the owner makes no election.",
+      "source": "njsa-17b-25-7",
+      "quote": "the policy shall further state which option shall be automatically effective if such party shall not have elected some other option",
+      "items": [
+        {
+          "id": "II2-23a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "A participating policy offers several dividend options, and the owner never elects one. Under New Jersey law, the policy must:",
+          "options": [
+            "Forfeit the dividend to the insurer's surplus",
+            "Hold the dividend until the owner files a written request",
+            "Name a default option for that case",
+            "Let the insurer pick a different option each year"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-7 requires a policy that offers other dividend options to state which option takes effect automatically if the owner does not elect another."
         }
       ]
     }

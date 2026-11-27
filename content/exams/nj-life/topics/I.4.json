@@ -34,20 +34,21 @@
       "items": [
         {
           "id": "I4-02a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": -0.2,
-          "stem": "In a deferred annuity, the period during which money grows tax-deferred before income payments begin is called the:",
+          "stem": "In a deferred annuity, what is the period before income payments begin called?",
           "options": [
-            "Accumulation phase",
             "Payout phase",
-            "Grace period",
-            "Free-look period"
+            "Annuitization phase",
+            "Distribution phase",
+            "Accumulation phase"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "Per the SEC, Investor.gov: Annuities guide, the period during which the money is allowed to grow is the accumulation phase. Income payments begin in the payout phase.",
           "optionStyle": "category",
-          "group": "annuity-phases"
+          "group": "annuity-phases",
+          "retired": "Flagged as test-wise in two rounds: the payout-phase synonyms make the key the odd one out. The accumulation and payout phases are covered by I4-01a and I4-06a context."
         }
       ]
     },
@@ -83,19 +84,21 @@
       "items": [
         {
           "id": "I4-04a",
-          "version": 2,
+          "version": 3,
           "kind": "application",
           "difficulty": 0.6,
           "stem": "The benchmark index for Ray's fixed indexed annuity falls 12% during a one-year term. The interest credited to his annuity for that term is:",
           "options": [
+            "0%",
             "Negative 12%",
-            "Negative, but limited by a buffer",
-            "Zero, since the credited rate cannot go below zero",
-            "Negative, offset by a guaranteed minimum"
+            "Negative 1%, after a buffer",
+            "The fixed annuity's guaranteed rate"
           ],
-          "answer": 2,
+          "answer": 0,
           "explanation": "Per the SEC, Investor.gov: Annuities guide, a fixed indexed annuity's credited interest is guaranteed never to be less than zero, even if the market goes down. Negative crediting limited by a buffer describes a RILA.",
-          "group": "annuity-types"
+          "group": "annuity-types",
+          "optionStyle": "category",
+          "retired": "Ambiguous against common exam-prep teaching that indexed annuities guarantee a minimum rate; the floor concept is covered by I4-05a's contrast with RILAs."
         }
       ]
     },

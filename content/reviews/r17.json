@@ -1,0 +1,749 @@
+[
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Variable life\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-01a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"High costs and unfavorable tax effects if surrendered early\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "A is the only option that actually explains short-term unsuitability, and it is the only compound option; B and D have nothing to do with an 18-month horizon, so only C competes.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Accumulation phase\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "A, B and C (payout, annuitization, distribution) are all names for the same phase, so a candidate can rule out all three as synonyms and pick the odd one out.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"0%\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "Exam prep commonly teaches that indexed annuities carry a guaranteed minimum interest rate like fixed annuities, so a candidate could defend D as the credited amount when the index falls.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 3,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "D is arguably true under common teaching: many FIAs guarantee a minimum (often on a portion of premium), and the source frames FIAs as fixed products with a zero floor.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Is not yet required to offer a loan\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-10b",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Name a default option for that case\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-23a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"An investigative consumer report\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III2-03a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"No, because the business relationship exemption has expired\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Once he turns 18\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"She may reinstate without an exam but must pay a late penalty\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Passing New Jersey's producer licensing examination\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-20b",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Permitted, since she only referred the client\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"The producer who made the original sale\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "A, C and D all end in the parallel phrase 'of each complaint' while B breaks the pattern, so the EXCEPT answer stands out by form alone.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "picked \"Twisting\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-17",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-01c",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

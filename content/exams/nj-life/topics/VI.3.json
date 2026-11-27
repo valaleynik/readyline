@@ -38,6 +38,22 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:30-6 covers misleading comparisons made to induce a person to lapse, forfeit, surrender, terminate, retain or convert a policy, not only to replace it."
+        },
+        {
+          "id": "VI3-01c",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "A producer persuades a client to drop her whole life policy and buy a new one from a different insurer, using a comparison that leaves out the new policy's surrender charges. Under New Jersey law, this is:",
+          "options": [
+            "Rebating",
+            "Defamation",
+            "Twisting",
+            "A permitted replacement"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:30-6 prohibits incomplete or misleading comparisons made to induce someone to lapse or surrender a policy and take one out in another insurer. That is twisting.",
+          "optionStyle": "category"
         }
       ]
     },

@@ -10,19 +10,20 @@
       "items": [
         {
           "id": "I2-01a",
-          "version": 2,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0,
-          "stem": "Which feature sets variable life insurance apart from whole life and term life?",
+          "stem": "Which type of life insurance has a cash value that changes with the performance of investment options the owner picks from a menu, typically mutual funds?",
           "options": [
-            "Its cash value rises and falls with investments the owner selects",
-            "Its cash value earns a guaranteed minimum interest rate",
-            "Its death benefit is paid only if death occurs during a set term",
-            "Its premiums are fixed and its cash value grows on a set schedule"
+            "Variable life",
+            "Universal life",
+            "Whole life",
+            "Indexed universal life"
           ],
           "answer": 0,
-          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, variable life has a cash value that varies, in part, with the performance of investment options the owner chooses, typically mutual funds.",
-          "group": "variable-life"
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, variable life has a cash value that varies with the performance of investment options the owner chooses, typically mutual funds. Universal life credits interest, indexed universal life ties crediting to an index, and whole life has guaranteed values.",
+          "group": "variable-life",
+          "optionStyle": "category"
         }
       ]
     },
@@ -58,18 +59,19 @@
       "items": [
         {
           "id": "I2-03a",
-          "version": 2,
+          "version": 3,
           "kind": "application",
           "difficulty": 0.4,
           "stem": "A client wants somewhere to keep savings for 18 months. Why is variable life insurance generally unsuitable for that goal?",
           "options": [
-            "Costs and tax consequences that outweigh short-term gains",
-            "A death benefit that cannot be changed once issued",
-            "A requirement to hold the policy until age 65",
-            "A tax rule that bars short-term withdrawals"
+            "High costs and unfavorable tax effects if surrendered early",
+            "Its limited choice of death benefit options",
+            "Its minimum holding period set by federal law",
+            "Its requirement that premiums be paid monthly"
           ],
           "answer": 0,
-          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, substantial fees, expenses and tax implications generally make variable life unsuitable as a short-term savings vehicle."
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, substantial fees, expenses and tax implications generally make variable life unsuitable as a short-term savings vehicle.",
+          "retired": "Flagged as test-wise in three rounds: unsuitability reasons are hard to write without the key standing out."
         }
       ]
     }

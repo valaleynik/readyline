@@ -264,17 +264,17 @@
         },
         {
           "id": "III4-14b",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.9,
-          "stem": "A client bought a single-premium policy from an agency 20 months ago and has had no other dealings with it since. Her number is on the national do-not-call registry. May the agency make a sales call to her?",
+          "stem": "A client bought a single-premium policy from an agency, then surrendered it 20 months ago and has had no dealings with the agency since. Her number is on the national do-not-call registry. May the agency make a sales call to her?",
           "options": [
-            "Yes, because she is a past customer",
+            "No, because the business relationship exemption has expired",
+            "Yes, because she is a former customer",
             "Yes, because registrations expire after five years",
-            "Yes, as long as the call is made before 9 p.m.",
-            "No, because the 18-month business relationship has ended"
+            "Yes, as long as the call is made before 9 p.m."
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call. At 20 months with no further dealings, it has ended, so the registry applies.",
           "group": "tcpa-ebr"
         }

@@ -49,6 +49,31 @@
           "group": "fcra-icr"
         }
       ]
+    },
+    {
+      "id": "III2-03",
+      "statement": "An investigative consumer report includes information on a person's character, general reputation, personal characteristics and mode of living.",
+      "source": "usc-15-1681d-ab",
+      "quote": "an investigative consumer report including information as to his character, general reputation, personal characteristics, and mode of living",
+      "items": [
+        {
+          "id": "III2-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "To underwrite a large life policy, an insurer hires a firm to interview an applicant's neighbors and coworkers about his lifestyle and reputation. Under the Fair Credit Reporting Act, this is:",
+          "options": [
+            "A Medical Information Bureau report",
+            "A motor vehicle record",
+            "An attending physician statement",
+            "An investigative consumer report"
+          ],
+          "answer": 3,
+          "explanation": "15 U.S.C. § 1681d(a)-(b) describes an investigative consumer report as one including information on the person's character, general reputation, personal characteristics and mode of living, and it requires written disclosure to the person.",
+          "optionStyle": "category",
+          "group": "fcra-icr"
+        }
+      ]
     }
   ]
 }

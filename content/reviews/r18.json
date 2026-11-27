@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-18",
+    "detail": "picked \"The selling producer's name\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-18",
+    "detail": "N.J.S.A. 17:29B-4(10) lists total number, classification by line, nature, disposition, and time to process each complaint. Producer name is not listed; no second option is defensible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-18",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-18",
+    "detail": "D is the only option not phrased as an attribute of 'each complaint', which is a mild cue, but a producer name on a complaint log is plausible enough that the key is not strongly identifiable from form alone.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-15a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

@@ -178,17 +178,17 @@
         },
         {
           "id": "V3-07b",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": -0.6,
-          "stem": "Jordan, age 17, completes his prelicensing course and passes the New Jersey producer exam. When can the commissioner approve his resident producer license?",
+          "stem": "Jordan applies for a New Jersey resident producer license two months before his 18th birthday. When can the commissioner approve the license?",
           "options": [
-            "Once he turns 18",
             "Immediately, since he passed the exam",
+            "Once he turns 18",
             "Once he turns 21",
             "Only with a parent's written consent"
           ],
-          "answer": 0,
+          "answer": 1,
           "explanation": "N.J.S.A. 17:22A-32 requires the commissioner to find that a resident individual applicant is at least 18 years of age before approving the license."
         }
       ]
@@ -402,18 +402,18 @@
         },
         {
           "id": "V3-16b",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.7,
           "stem": "A producer's license renewal fee was due June 30. She does not pay it until May 15 of the following year. What is the result?",
           "options": [
             "She must retake the licensing exam",
-            "She may reinstate without an exam, though a late penalty may apply",
             "Her license is reinstated with no penalty",
+            "She may reinstate without an exam but must pay a late penalty",
             "She must wait 90 days and then reapply"
           ],
-          "answer": 1,
-          "explanation": "N.J.S.A. 17:22A-33 allows a lapsed license to be reinstated within 12 months of the renewal fee due date without a written exam, with a late penalty of up to double the unpaid fee."
+          "answer": 2,
+          "explanation": "N.J.S.A. 17:22A-33 allows a lapsed license to be reinstated within 12 months of the renewal fee due date without a written exam, but a penalty of up to double the unpaid renewal fee is required for a late fee."
         }
       ]
     },
@@ -523,6 +523,21 @@
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-34 grants a nonresident license to a person currently licensed as a resident producer in good standing in the home state, without a New Jersey exam or course."
+        },
+        {
+          "id": "V3-20b",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.4,
+          "stem": "Which of the following is NOT a requirement for a New Jersey nonresident producer license?",
+          "options": [
+            "A resident license in good standing in the home state",
+            "A home state that licenses New Jersey residents on the same basis",
+            "Payment of the required licensing fees",
+            "Passing New Jersey's producer licensing examination"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17:22A-34 grants a nonresident license to a producer in good standing in a home state that licenses New Jersey residents on the same basis, who files the application and pays the fees. No New Jersey exam is required."
         }
       ]
     },
@@ -1058,17 +1073,17 @@
       "items": [
         {
           "id": "V3-43a",
-          "version": 1,
+          "version": 2,
           "kind": "application",
           "difficulty": 1.2,
-          "stem": "A licensed agency pays a referral fee to an unlicensed real estate agent who only passes along a client's name and never discusses coverage. Under New Jersey's licensing law, this payment is:",
+          "stem": "A licensed agency pays a flat referral fee, owed whether or not a sale occurs, to an unlicensed real estate agent who only passes along a client's name and never discusses coverage. Under New Jersey's licensing law, this payment is:",
           "options": [
+            "Permitted, since she only referred the client",
             "Prohibited, since the real estate agent is unlicensed",
             "Permitted only if she becomes licensed within 90 days",
-            "Prohibited unless the commissioner approves it in advance",
-            "Permitted, since she only referred the client"
+            "Prohibited unless the commissioner approves it in advance"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "N.J.S.A. 17:22A-41 lets an insurer or producer pay persons who do not sell, solicit or negotiate insurance, unless the payment would violate another law, such as the rebating rules."
         }
       ]
