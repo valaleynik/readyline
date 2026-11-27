@@ -110,6 +110,9 @@
           "explanation": "N.J.S.A. 17B:32A-3(e) limits life insurance death benefits to $500,000 with respect to one life, regardless of the number of policies.",
           "group": "ga-life-limits"
         }
+      ],
+      "contrasts": [
+        "V5-09"
       ]
     },
     {
@@ -134,6 +137,9 @@
           "explanation": "N.J.S.A. 17B:32A-3(e) caps net cash surrender and net cash withdrawal values for life insurance at $100,000 with respect to one life.",
           "group": "ga-life-limits"
         }
+      ],
+      "contrasts": [
+        "V5-06"
       ]
     },
     {

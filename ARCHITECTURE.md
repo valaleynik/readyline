@@ -114,6 +114,24 @@ answer -> INSERT events -> replay(events, items) -> LearnerState (cached snapsho
 
 `npm run sim` builds synthetic learners with known true abilities, runs them through the diagnostic and practice flow, predicts their pass probability, then simulates their real exam from the true parameters. It reports ability recovery, Brier score and calibration error. The engine does not ship if these miss target.
 
+## Concepts reference
+
+Every concept below exists to fix a specific failure. Before adding a new one, check whether an existing concept already covers it.
+
+| Concept | Where | What it does | Why it exists |
+|---|---|---|---|
+| Source hash | `content/sources/manifest.json` | SHA-256 of each verbatim source text | Detects any silent change to the law text a question depends on |
+| Fact | topic files | One testable statement with an exact quote from its source | Unit of truth for content and unit of memory for the scheduler |
+| Item version | topic files | Any change to stem or options bumps the version | Old answers and reviews stay attached to what was actually shown |
+| Review record | `content/reviews/` | One record per check per item version | Audit trail; an item is verified only when all required checks pass for its current version |
+| Pending snapshot | `content/reviews/pending/` | Exact layout sent to a blind reviewer | Scoring by option text, never by letter; frozen items cannot be reordered mid-review |
+| Retired | `item.retired` | Withdraws an item and records the reason | Keeps history instead of deleting; retired items never reach the engine |
+| optionStyle | `item.optionStyle` | `ordered` keeps natural order; `category` exempts name-style options from the echo check | Prevents false warnings and wrong shuffles |
+| Group | `item.group` | Items that all cue each other; at most one per form | Symmetric cueing, such as two items with the same option set |
+| Enemies | `item.enemies` | Specific items that must not share a form | Asymmetric cueing: one item's stem reveals another's answer |
+| Contrasts | `fact.contrasts` | Facts students commonly confuse | Data only for now; used by confusing-pairs drills in the UI phase |
+| Live bank | `src/content/bank.ts` | Feeds the engine verified, non-retired items only | A draft can never reach a learner |
+
 ## Sourcing policy
 
 Every item traces to a government primary source, stored verbatim with a hash: New Jersey statutes for state law and policy provisions, the Internal Revenue Code for taxation, the Fair Credit Reporting Act for underwriting reports, and the FCC's TCPA rules for telemarketing. The FTC Telemarketing Sales Rule was dropped for insurance items, because the FTC's authority largely does not reach the state-regulated business of insurance.

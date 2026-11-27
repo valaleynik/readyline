@@ -23,6 +23,10 @@
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-3 requires a grace period of 30 days, or one month of not less than 30 days, for premiums after the first."
         }
+      ],
+      "contrasts": [
+        "II2-14",
+        "II2-20"
       ]
     },
     {
@@ -109,6 +113,9 @@
           "explanation": "N.J.S.A. 17B:25-4 makes a policy incontestable only after it has been in force during the insured's lifetime for 2 years. A death at 18 months means that period never ran, so the policy is still contestable.",
           "group": "incontestable-2yr"
         }
+      ],
+      "contrasts": [
+        "II2-16"
       ]
     },
     {
@@ -283,6 +290,9 @@
           "explanation": "N.J.S.A. 17B:25-8 requires a loan to be available only after 3 full years' premiums have been paid and the policy has a cash surrender value. After 2 years, the requirement has not been triggered.",
           "group": "loan-3yr"
         }
+      ],
+      "contrasts": [
+        "II2-22"
       ]
     },
     {
@@ -464,6 +474,9 @@
           "optionStyle": "ordered",
           "group": "settle-60"
         }
+      ],
+      "contrasts": [
+        "II2-18"
       ]
     },
     {

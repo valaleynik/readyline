@@ -34,6 +34,12 @@ export interface ItemDraft {
 
 export interface FactDraft {
   id: string;
+  /**
+   * Facts students commonly confuse with this one (for example, 30-day grace period
+   * vs. 3-year reinstatement). Data only for now: the engine will use it in the UI phase.
+   * Both facts must already exist; declare the pair on one side only.
+   */
+  contrasts?: string[];
   statement: string;
   source: string;
   /** exact substring of the source text that proves the statement */

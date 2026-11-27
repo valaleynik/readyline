@@ -144,6 +144,29 @@ export function validateContent(root: string): ValidationReport {
   }
 
   const allIds = new Set(allItems.map((i) => i.id));
+  // contrast pairs: both facts must exist, no self-pairs, no duplicate declarations
+  const factIds = new Set<string>();
+  const declared = new Set<string>();
+  const contrastDecls: { file: string; from: string; to: string }[] = [];
+  for (const exam of readdirSync(join(root, "exams"))) {
+    const topicDir = join(root, "exams", exam, "topics");
+    if (!existsSync(topicDir)) continue;
+    for (const file of readdirSync(topicDir).filter((f) => f.endsWith(".json"))) {
+      const tf = JSON.parse(readFileSync(join(topicDir, file), "utf8")) as TopicFile;
+      for (const fact of tf.facts) {
+        factIds.add(fact.id);
+        for (const c of fact.contrasts ?? []) contrastDecls.push({ file, from: fact.id, to: c });
+      }
+    }
+  }
+  for (const d of contrastDecls) {
+    const where = `${d.file}:${d.from}`;
+    if (d.from === d.to) err(where, "fact cannot contrast with itself");
+    if (!factIds.has(d.to)) err(where, `contrast ${d.to} is not a fact`);
+    const key = [d.from, d.to].sort().join("|");
+    if (declared.has(key)) err(where, `contrast with ${d.to} is declared twice`);
+    declared.add(key);
+  }
   for (const exam of readdirSync(join(root, "exams"))) {
     const topicDir = join(root, "exams", exam, "topics");
     if (!existsSync(topicDir)) continue;

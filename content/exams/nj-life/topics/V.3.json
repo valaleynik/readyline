@@ -501,6 +501,9 @@
           "explanation": "N.J.S.A. 17:22A-33 requires notice of a change of address within 30 days of the change, not at renewal.",
           "group": "address-30-days"
         }
+      ],
+      "contrasts": [
+        "V3-25"
       ]
     },
     {
@@ -631,6 +634,9 @@
           "answer": 2,
           "explanation": "N.J.S.A. 17:22A-35 exempts a previously licensed producer from prelicensing education and the exam if the application is received within 90 days of the prior license's cancellation and good standing is certified."
         }
+      ],
+      "contrasts": [
+        "V3-25"
       ]
     },
     {
@@ -739,6 +745,9 @@
           "explanation": "N.J.S.A. 17:22A-37 limits a temporary license to a period not to exceed 180 days. 180 days after March 1 is about August 28.",
           "optionStyle": "ordered"
         }
+      ],
+      "contrasts": [
+        "V3-16"
       ]
     },
     {
