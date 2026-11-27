@@ -1,0 +1,326 @@
+[
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"The premium for an immediate annuity has to be a single lump sum\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r77",
+    "detail": "Mild-to-moderate cue: A is the only option saying installments are not allowed (B, C, D all say 'allowed'), and the word 'immediate' plus the familiar SPIA label (single premium immediate annuity) points a guesser to lump sum.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"No, the same form may not be used for both\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-41a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"The owner's adult daughter\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r77",
+    "detail": "Moderate cue: A, B and D are all the contracting party or a spouse/partner, so the adult daughter is the obvious odd one out; common sense that spouses get coverage but grown children do not leads to C without knowing the rule.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"May not deny the waiver because the condition existed at issue\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r77",
+    "detail": "Strong consumer-protection cue: A, B and C all favor the insurer, D is the only pro-consumer answer, and exam takers know these NJ form rules are protective. C is also obviously unfair ('doctor it chooses... at her cost').",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-41a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"The insurer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r77",
+    "detail": "Moderate cue: fairness instinct says whoever demands the extra opinion pays, and in a consumer-protection rule the insurer is the natural answer; B and C (owner vs annuitant) also split the 'consumer pays' idea between two options, making A stand out.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-42a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "picked \"No, once waived it cannot be added back\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r77",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r77",
+    "detail": "Strong cue: B is the only 'No' among three 'Yes' variants and the only consumer-favorable answer; fairness instinct alone picks it.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-43a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

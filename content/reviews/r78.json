@@ -1,0 +1,110 @@
+[
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "picked \"Not allowed; it has to be bought with one payment\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-40a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "picked \"The annuitant's spouse\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r78",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-40a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

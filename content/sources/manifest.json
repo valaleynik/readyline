@@ -1595,6 +1595,42 @@
       "sha256": "67c1328ddb1741dbfa857b6cf33f56bc5bb2fcaad3f9581869afe3a9fa1d8d7e",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy via the browser; selected paragraphs (60.3(a) omits the fraternal-agent clauses)."
+    },
+    {
+      "id": "njac-11-4-43-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-43.3(c)3",
+      "title": "Individual annuities: general requirements",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-43-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "411f1426dd696e8422f9c35782388e568f6f7cdff928f3087fd7b12381d008b0",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-43-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-43.4(b)",
+      "title": "Individual immediate annuities",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-43-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "e80321680b249c35d96d0ff0f83ddc1cfdf75778724d90ad159edb99e36c66fb",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-43-6",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-43.6",
+      "title": "Waiver of surrender charges",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-43-6",
+      "retrievedAt": "2026-11-27",
+      "sha256": "4b5e81b1f8726877d9267f55ae1a6d0bf1454de776b22f2be3b922cbcf165ed9",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
     }
   ]
 }

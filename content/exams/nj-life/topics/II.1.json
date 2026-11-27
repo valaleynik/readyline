@@ -260,6 +260,106 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "II1-40",
+      "statement": "A nursing home waiver of annuity surrender charges is limited to confinement of the owner, the annuitant, or the owner's or annuitant's spouse or civil union partner.",
+      "source": "njac-11-4-43-6",
+      "quote": "Confinement of any other family member not identified in the contract shall not qualify for the benefit.",
+      "items": [
+        {
+          "id": "II1-40a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An annuity has a nursing home waiver of surrender charges. The contract names no other family members. Whose nursing home confinement would qualify for the waiver under New Jersey rules?",
+          "options": [
+            "The owner's adult daughter",
+            "The owner's brother",
+            "The annuitant's spouse",
+            "The annuitant's parent"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-43.6 limits the nursing home waiver to confinement of the owner, the annuitant, or the owner's or annuitant's spouse or civil union partner. Other family members do not qualify.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II1-41",
+      "statement": "A terminal illness waiver of surrender charges may not require that the condition first appear or be diagnosed after the contract is issued.",
+      "source": "njac-11-4-43-6",
+      "quote": "The form shall not require that the cause of the terminal condition first manifest itself or be diagnosed after issuance of the policy or rider",
+      "items": [
+        {
+          "id": "II1-41a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An annuity owner had early-stage cancer when she bought the contract. Years later it becomes terminal, and she asks the insurer to waive surrender charges under the terminal illness waiver. Under New Jersey rules, the insurer:",
+          "options": [
+            "May deny the waiver, since the condition existed at issue",
+            "May deny the waiver unless cancer is a listed disease",
+            "May approve it only if a doctor it chooses agrees, at her cost",
+            "May not deny the waiver because the condition existed at issue"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-43.6 bars terminal illness waivers from requiring that the condition first manifest or be diagnosed after issue, bars limiting them to specified diseases, and requires any second or third opinion to be at the insurer's expense.",
+          "retired": "Consumer-favorable answer guessable by fairness instinct."
+        }
+      ]
+    },
+    {
+      "id": "II1-42",
+      "statement": "Any second or third medical opinion an insurer requires to confirm terminal illness for a surrender charge waiver must be at the insurer's expense.",
+      "source": "njac-11-4-43-6",
+      "quote": "any requirements for a second or third medical opinion to confirm the terminal illness shall be at the insurer's expense",
+      "items": [
+        {
+          "id": "II1-42a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "When a New Jersey annuity's terminal illness waiver lets the insurer require a second medical opinion, who pays for that opinion?",
+          "options": [
+            "The insurer",
+            "The owner",
+            "The annuitant",
+            "The owner and insurer equally"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-43.6 requires the form to state that any second or third medical opinion to confirm terminal illness is at the insurer's expense.",
+          "optionStyle": "category",
+          "enemies": [
+            "II1-41a"
+          ],
+          "retired": "Consumer-favorable answer guessable by fairness instinct."
+        }
+      ]
+    },
+    {
+      "id": "II1-43",
+      "statement": "An annuity may not later recover a surrender charge that it waived for confinement, terminal illness or a penalty-free withdrawal.",
+      "source": "njac-11-4-43-6",
+      "quote": "shall not provide for retroactive assessment of a surrender charge to recover any prior surrender charge which was waived",
+      "items": [
+        {
+          "id": "II1-43a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An insurer waived a $3,000 surrender charge when an annuity owner entered a nursing home. A year later she recovers and surrenders the rest of the contract. Under New Jersey rules, may the insurer add back the $3,000 it waived?",
+          "options": [
+            "Yes, since she recovered",
+            "No, once waived it cannot be added back",
+            "Yes, if the contract is still in its surrender period",
+            "Yes, but spread over the remaining surrender years"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-43.6 bars any retroactive assessment of a surrender charge to recover a charge previously waived for confinement, terminal illness or a penalty-free withdrawal.",
+          "retired": "Consumer-favorable answer guessable by fairness instinct."
+        }
+      ]
     }
   ]
 }

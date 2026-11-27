@@ -559,6 +559,52 @@
           "optionStyle": "ordered"
         }
       ]
+    },
+    {
+      "id": "I4-40",
+      "statement": "An immediate annuity's premium must be paid in a lump sum, not in installments.",
+      "source": "njac-11-4-43-4",
+      "quote": "shall be paid in a lump sum, and shall not be funded on an installment basis",
+      "items": [
+        {
+          "id": "I4-40a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A client wants an immediate annuity but asks to pay for it in 12 monthly installments. Under New Jersey rules:",
+          "options": [
+            "Not allowed; it has to be bought with one payment",
+            "Allowed, if all payments finish within 12 months",
+            "Allowed, if the first payment is at least half",
+            "Not allowed, unless the annuitant is over 65"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-43.4(b) requires the premium for an immediate annuity to be paid in a lump sum, not funded on an installment basis. A client who wants to pay over time would use a deferred annuity."
+        }
+      ]
+    },
+    {
+      "id": "I4-41",
+      "statement": "The same contract form may not be issued as both an immediate and a deferred annuity.",
+      "source": "njac-11-4-43-3",
+      "quote": "The same contract form shall not be issued as both an immediate and a deferred annuity.",
+      "items": [
+        {
+          "id": "I4-41a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey's individual annuity form standards, may one contract form be issued as both an immediate annuity and a deferred annuity?",
+          "options": [
+            "Yes, if the owner elects at issue",
+            "No, the same form may not be used for both",
+            "Yes, if the insurer files both versions",
+            "No, unless it is a variable annuity"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-43.3(c)3 bars issuing the same contract form as both an immediate and a deferred annuity."
+        }
+      ]
     }
   ]
 }
