@@ -247,19 +247,20 @@
       "items": [
         {
           "id": "V4-11a",
-          "version": 3,
-          "kind": "recall",
+          "version": 5,
+          "kind": "scenario",
           "difficulty": 0.1,
-          "stem": "Which of the following, if an insurer does it routinely, is an unfair claim settlement practice in New Jersey?",
+          "stem": "An insurer's claim unit routinely denies life claims that show any red flag, without first gathering the information available to it. Which New Jersey rule does this practice violate?",
           "options": [
-            "Denying a claim filed after the policy lapsed for nonpayment",
-            "Delaying payment while awaiting a requested death certificate",
-            "Contesting a claim for a material misstatement within two years",
-            "Denying claims before reasonably investigating them"
+            "The 60-day death claim settlement rule",
+            "The 2-year incontestable provision",
+            "The entire contract provision",
+            "The unfair claim settlement practices rule"
           ],
           "answer": 3,
           "explanation": "N.J.S.A. 17:29B-4 lists refusing to pay claims without conducting a reasonable investigation based on all available information as an unfair claim settlement practice. Requesting proof of death and investigating contestable claims are normal practice.",
-          "group": "claim-practice-frequency"
+          "group": "claim-practice-frequency",
+          "optionStyle": "category"
         }
       ]
     },

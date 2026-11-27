@@ -1,0 +1,474 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "II.2",
+  "facts": [
+    {
+      "id": "II2-01",
+      "statement": "An individual life policy must allow a grace period of 30 days, or at the insurer's option one month of at least 30 days.",
+      "source": "njsa-17b-25-3",
+      "quote": "a grace period of 30 days, or, at the option of the insurer, of 1 month of not less than 30 days",
+      "items": [
+        {
+          "id": "II2-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.8,
+          "stem": "Under New Jersey law, the grace period for premiums after the first on an ordinary individual life policy must be at least:",
+          "options": [
+            "10 days",
+            "28 days",
+            "30 days",
+            "60 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-3 requires a grace period of 30 days, or one month of not less than 30 days, for premiums after the first."
+        }
+      ]
+    },
+    {
+      "id": "II2-02",
+      "statement": "The policy stays in full force during the grace period, and any unpaid premium may be deducted from a claim that arises during it.",
+      "source": "njsa-17b-25-3",
+      "quote": "during which period of grace the policy shall continue in full force; but if a claim arises under the policy during such period of grace, the amount of any premium due or overdue",
+      "items": [
+        {
+          "id": "II2-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.2,
+          "stem": "James misses the annual premium on his $250,000 life policy, due March 1. He dies on March 20 without paying. The policy has a 30-day grace period. What does the beneficiary receive?",
+          "options": [
+            "$250,000, less the unpaid premium",
+            "Nothing, because the premium was unpaid",
+            "$250,000, plus a refund of the last premium",
+            "Only the policy's cash surrender value"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-3 keeps the policy in full force during the grace period. If a claim arises then, the overdue premium (and any permitted interest) may be deducted from the amount payable."
+        }
+      ]
+    },
+    {
+      "id": "II2-03",
+      "statement": "Interest charged for paying during the grace period may not exceed 6% per year.",
+      "source": "njsa-17b-25-3",
+      "quote": "subject, at the option of the insurer, to an interest charge not in excess of 6% per annum for the number of days of grace",
+      "items": [
+        {
+          "id": "II2-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "If a New Jersey life insurer charges interest when a premium is paid during the grace period, the rate may not exceed:",
+          "options": [
+            "4% per year",
+            "6% per year",
+            "8% per year",
+            "10% per year"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-3 lets the insurer charge interest for the days of grace used, at no more than 6% per year."
+        }
+      ]
+    },
+    {
+      "id": "II2-04",
+      "statement": "The policy becomes incontestable, except for nonpayment of premiums, after it has been in force during the insured's lifetime for 2 years from issue.",
+      "source": "njsa-17b-25-4",
+      "quote": "shall be incontestable, except for nonpayment of premiums, after it has been in force during the lifetime of the insured for a period of 2 years from its date of issue",
+      "items": [
+        {
+          "id": "II2-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.1,
+          "stem": "A life policy has been in force for three years, and the insured is alive, when the insurer discovers he understated his weight on the application. Can the insurer now contest the policy's validity?",
+          "options": [
+            "Yes, because any misstatement voids the policy",
+            "Yes, but only if the misstatement was material",
+            "Yes, within 30 days of discovering the misstatement",
+            "No, because the 2-year contestable period has passed"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-4 makes the policy incontestable, except for nonpayment of premiums, once it has been in force during the insured's lifetime for 2 years from issue.",
+          "group": "incontestable-2yr"
+        },
+        {
+          "id": "II2-04b",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1,
+          "stem": "An insured dies 18 months after the policy was issued. The insurer then discovers a material misrepresentation on the application. Under New Jersey's incontestable provision, the insurer:",
+          "options": [
+            "May still contest, since 2 years did not pass during the insured's life",
+            "Must pay, since death makes the policy incontestable",
+            "Must pay, since only nonpayment can be contested",
+            "May contest only after obtaining a court order"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-4 makes a policy incontestable only after it has been in force during the insured's lifetime for 2 years. A death at 18 months means that period never ran, so the policy is still contestable.",
+          "group": "incontestable-2yr"
+        }
+      ]
+    },
+    {
+      "id": "II2-05",
+      "statement": "The policy, together with the application if a copy is attached, constitutes the entire contract.",
+      "source": "njsa-17b-25-5",
+      "quote": "the policy, or the policy and the application therefor if a copy of such application is attached to or endorsed upon the policy when issued, shall constitute the entire contract between the parties",
+      "items": [
+        {
+          "id": "II2-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Under the entire contract provision, the contract between the insurer and the policyowner consists of:",
+          "options": [
+            "The policy, plus the producer's sales materials",
+            "The policy, plus the application if a copy is attached",
+            "The policy, plus the insurer's bylaws",
+            "The application alone"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-5 makes the policy, with the application if a copy is attached or endorsed when issued, the entire contract. Outside documents such as bylaws or sales materials are not part of it."
+        }
+      ]
+    },
+    {
+      "id": "II2-06",
+      "statement": "Absent fraud, statements in the application are representations, not warranties.",
+      "source": "njsa-17b-25-5",
+      "quote": "all statements contained in such an application shall, in the absence of fraud, be deemed representations and not warranties",
+      "items": [
+        {
+          "id": "II2-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.3,
+          "stem": "In the absence of fraud, statements an applicant makes on a New Jersey life insurance application are treated as:",
+          "options": [
+            "Warranties",
+            "Conditions precedent",
+            "Guarantees",
+            "Representations"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-5 provides that, in the absence of fraud, statements in the application are deemed representations and not warranties.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-07",
+      "statement": "If age is misstated, benefits are what the premium would have bought at the correct age.",
+      "source": "njsa-17b-25-6",
+      "quote": "any amount payable or benefit accruing under the policy shall be such as the premium would have purchased at the correct age or ages",
+      "items": [
+        {
+          "id": "II2-07a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.1,
+          "stem": "An insured stated her age as 45 on the application. She was actually 48. After her death, the insurer discovers the error. What happens?",
+          "options": [
+            "The benefit is what the premium would buy at 48",
+            "The claim is denied for misrepresentation",
+            "The full face amount is paid as written",
+            "The premiums are refunded with interest"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-6 adjusts the amount payable to what the premium would have purchased at the correct age."
+        }
+      ]
+    },
+    {
+      "id": "II2-08",
+      "statement": "Every participating policy must let the dividend be taken in cash, among any other options the policy offers.",
+      "source": "njsa-17b-25-7",
+      "quote": "any dividend credited to the policy shall at the option of the party entitled to elect such option be either: (1) payable in cash, or (2) applied to any one of such other dividend options as may be provided by the policy",
+      "items": [
+        {
+          "id": "II2-08a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "Under New Jersey law, which dividend option must every participating ordinary life policy make available?",
+          "options": [
+            "Paid-up additions",
+            "Cash",
+            "Reduction of premiums",
+            "Accumulation at interest"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-7 requires that any dividend be payable in cash at the owner's option, or applied to other options the policy may provide. Only the cash option is mandatory.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-09",
+      "statement": "Participating ordinary policies must apportion divisible surplus annually beginning no later than the end of the third policy year.",
+      "source": "njsa-17b-25-7",
+      "quote": "beginning not later than the end of the third policy year, the insurer shall annually ascertain and apportion the divisible surplus",
+      "items": [
+        {
+          "id": "II2-09a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A participating ordinary life policy in New Jersey must begin apportioning divisible surplus annually no later than the end of which policy year?",
+          "options": [
+            "First",
+            "Second",
+            "Third",
+            "Fifth"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-7 requires annual apportionment beginning not later than the end of the third policy year. The fifth year applies only to industrial policies.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-10",
+      "statement": "A policy loan must be available once the policy has a cash value and 3 full years' premiums have been paid.",
+      "source": "njsa-17b-25-8",
+      "quote": "after 3 full years' premiums have been paid and after the policy has a cash surrender value",
+      "items": [
+        {
+          "id": "II2-10a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "A New Jersey ordinary whole life policy must offer a policy loan once it has a cash surrender value and how many full years' premiums have been paid?",
+          "options": [
+            "1",
+            "2",
+            "3",
+            "5"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-8 requires the insurer to advance a loan after 3 full years' premiums have been paid and the policy has a cash surrender value.",
+          "group": "policy-loans"
+        }
+      ]
+    },
+    {
+      "id": "II2-11",
+      "statement": "The insurer may defer a policy loan for up to 6 months, except a loan to pay a premium to the insurer.",
+      "source": "njsa-17b-25-8",
+      "quote": "The policy shall reserve to the insurer the right to defer the granting of a loan, other than for the payment of any premium to the insurer, for 6 months after application therefor.",
+      "items": [
+        {
+          "id": "II2-11a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "A New Jersey life insurer may delay granting a policy loan for up to 6 months, EXCEPT when the loan is:",
+          "options": [
+            "Requested by an assignee of record",
+            "More than half the cash surrender value",
+            "Requested within the first policy year",
+            "Used to pay a premium to the insurer"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-8 lets the insurer defer a loan for 6 months, except a loan used to pay a premium to the insurer.",
+          "group": "policy-loans"
+        }
+      ]
+    },
+    {
+      "id": "II2-12",
+      "statement": "If loan indebtedness reaches the loan value, the policy terminates only after at least 30 days' mailed notice.",
+      "source": "njsa-17b-25-8",
+      "quote": "the policy shall terminate and become void but not until at least 30 days' notice shall have been mailed by the insurer",
+      "items": [
+        {
+          "id": "II2-12a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.5,
+          "stem": "A policyowner's loan balance plus interest grows until it exceeds the policy's loan value. Before the policy can terminate, the insurer must:",
+          "options": [
+            "Mail at least 30 days' notice",
+            "Obtain the beneficiary's written consent",
+            "Convert it to reduced paid-up insurance",
+            "Wait until the next policy anniversary"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-8 allows termination when indebtedness equals or exceeds the loan value, but not until at least 30 days' notice has been mailed to the owner and any assignee of record.",
+          "group": "policy-loans"
+        }
+      ]
+    },
+    {
+      "id": "II2-13",
+      "statement": "The required policy loan provision does not apply to term insurance.",
+      "source": "njsa-17b-25-8",
+      "quote": "This section shall not apply to term insurance, or to industrial life insurance policies.",
+      "items": [
+        {
+          "id": "II2-13a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "New Jersey's required policy loan provision does NOT apply to:",
+          "options": [
+            "Ordinary whole life insurance",
+            "Term insurance",
+            "Limited-pay whole life insurance",
+            "Endowment insurance"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-8 states that the policy loan requirement does not apply to term insurance or industrial life policies.",
+          "optionStyle": "category",
+          "group": "policy-loans"
+        }
+      ]
+    },
+    {
+      "id": "II2-14",
+      "statement": "A lapsed policy may be reinstated within 3 years of the first unpaid premium's due date, unless surrendered for cash, its values are exhausted, or extended term has expired.",
+      "source": "njsa-17b-25-9",
+      "quote": "the policy will be reinstated at any time within 3 years",
+      "items": [
+        {
+          "id": "II2-14a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.4,
+          "stem": "Unless it was surrendered for cash or its values are exhausted, a lapsed New Jersey ordinary life policy may be reinstated within what period after the first unpaid premium was due?",
+          "options": [
+            "6 months",
+            "1 year",
+            "2 years",
+            "3 years"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-9 allows reinstatement within 3 years (2 years for industrial policies) from the due date of the first premium in default.",
+          "group": "reinstatement"
+        }
+      ]
+    },
+    {
+      "id": "II2-15",
+      "statement": "Reinstatement requires written application, evidence of insurability satisfactory to the insurer, payment of back premiums, and repayment or reinstatement of any policy debt, with interest.",
+      "source": "njsa-17b-25-9",
+      "quote": "upon written application therefor, the production of evidence of insurability satisfactory to the insurer, the payment of all premiums in arrears and the payment or reinstatement of any indebtedness to the insurer upon the policy",
+      "items": [
+        {
+          "id": "II2-15a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "To reinstate a lapsed New Jersey life policy, which of the following is NOT a requirement?",
+          "options": [
+            "Evidence of insurability satisfactory to the insurer",
+            "Payment of all premiums in arrears, with interest",
+            "Repayment or reinstatement of any policy loans",
+            "Approval of the reinstatement by the commissioner"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-9 requires a written application, satisfactory evidence of insurability, payment of premiums in arrears and repayment or reinstatement of any indebtedness, with interest. No commissioner approval is involved.",
+          "group": "reinstatement"
+        }
+      ]
+    },
+    {
+      "id": "II2-16",
+      "statement": "A reinstated policy can be contested for misstatements in the reinstatement only for the same period, measured from reinstatement, as after original issue.",
+      "source": "njsa-17b-25-17",
+      "quote": "A reinstated policy of life insurance may be contested on account of fraud or misrepresentation of facts material to the reinstatement only for the same period following reinstatement",
+      "items": [
+        {
+          "id": "II2-16a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A New Jersey life policy with a 2-year incontestable period is reinstated after a lapse. For how long can the insurer contest it because of misstatements in the reinstatement application?",
+          "options": [
+            "For 2 years after reinstatement",
+            "It cannot be contested at all",
+            "Only for what is left of the original 2 years",
+            "For as long as the policy stays in force"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-17 allows a reinstated policy to be contested for material misstatements in the reinstatement only for the same period, following reinstatement, as after original issue. New Jersey requires that period to be 2 years.",
+          "group": "reinstatement"
+        }
+      ]
+    },
+    {
+      "id": "II2-17",
+      "statement": "Death claims must be settled within 60 days after receipt of due proof of death.",
+      "source": "njsa-17b-25-11",
+      "quote": "settlement shall be made within 60 days after receipt of due proof of death",
+      "items": [
+        {
+          "id": "II2-17a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "For an uncontested death claim, a New Jersey life insurer must make settlement within how many days after receiving due proof of death?",
+          "options": [
+            "30",
+            "45",
+            "60",
+            "90"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-11 requires settlement within 60 days after receipt of due proof of death.",
+          "group": "claim-timing"
+        }
+      ]
+    },
+    {
+      "id": "II2-18",
+      "statement": "If a death claim needs more investigation or is denied, the claimant must be told in writing, with the reason, by the 45th day.",
+      "source": "njsa-17b-25-11",
+      "quote": "the claimant shall be notified in writing no later than the 45th calendar day following receipt",
+      "items": [
+        {
+          "id": "II2-18a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "If a New Jersey life insurer needs to investigate a death claim further, it must notify the claimant in writing, with the reason, no later than which day after receiving due proof of death?",
+          "options": [
+            "15th",
+            "30th",
+            "45th",
+            "60th"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-11 requires written notice, stating the reason, no later than the 45th calendar day when a claim needs more investigation or is denied.",
+          "group": "claim-timing"
+        }
+      ]
+    },
+    {
+      "id": "II2-19",
+      "statement": "Overdue death claim payments bear interest at the average return of the State of New Jersey Cash Management Fund.",
+      "source": "njsa-17b-25-11",
+      "quote": "Overdue payments shall bear an annual rate of interest equal to the average rate of return of the State of New Jersey Cash Management Fund",
+      "items": [
+        {
+          "id": "II2-19a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1,
+          "stem": "When a New Jersey life insurer pays a death claim late, the overdue payment:",
+          "options": [
+            "Earns no interest unless the policy provides it",
+            "Earns interest at a rate tied to a State fund",
+            "Earns interest at a flat 18% per year",
+            "Earns interest only if a court orders it"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-11 makes overdue payments bear interest at the average rate of return of the State of New Jersey Cash Management Fund for the preceding fiscal year.",
+          "group": "claim-timing"
+        }
+      ]
+    }
+  ]
+}

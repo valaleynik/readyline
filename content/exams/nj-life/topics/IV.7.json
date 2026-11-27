@@ -1,0 +1,55 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.7",
+  "facts": [
+    {
+      "id": "IV7-01",
+      "statement": "Amounts received under a life insurance contract on the life of a terminally ill insured are treated as paid by reason of death.",
+      "source": "usc-26-101-g1",
+      "quote": "(A) Any amount received under a life insurance contract on the life of an insured who is a terminally ill individual.",
+      "items": [
+        {
+          "id": "IV7-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.2,
+          "stem": "An insured who is terminally ill receives an accelerated death benefit from her life policy. Under federal tax law, the payment is treated as:",
+          "options": [
+            "Ordinary income in the year received",
+            "An amount paid by reason of the insured's death",
+            "A taxable return of the premiums paid",
+            "A policy loan that must be repaid"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 101(g)(1) treats amounts received under a life insurance contract on the life of a terminally ill insured as paid by reason of death, so they qualify for the death benefit exclusion.",
+          "group": "adb-tax"
+        }
+      ]
+    },
+    {
+      "id": "IV7-02",
+      "statement": "Amounts received on the life of a chronically ill insured are also treated as paid by reason of death.",
+      "source": "usc-26-101-g1",
+      "quote": "(B) Any amount received under a life insurance contract on the life of an insured who is a chronically ill individual.",
+      "items": [
+        {
+          "id": "IV7-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "Besides terminally ill insureds, federal tax law also treats accelerated death benefits as paid by reason of death when the insured is:",
+          "options": [
+            "Permanently unemployed",
+            "Over age 65",
+            "Chronically ill",
+            "Recovering from surgery"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 101(g)(1) covers amounts received on the life of an insured who is terminally ill or chronically ill.",
+          "optionStyle": "category",
+          "group": "adb-tax"
+        }
+      ]
+    }
+  ]
+}

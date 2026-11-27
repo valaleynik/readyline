@@ -1,0 +1,53 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "II.3",
+  "facts": [
+    {
+      "id": "II3-01",
+      "statement": "An incontestable clause bars only contests of validity. It does not stop the insurer from relying at any time on exclusions or restrictions in the policy.",
+      "source": "njsa-17b-25-16",
+      "quote": "shall not preclude the assertion at any time of defenses based upon provisions in the policy which exclude or restrict coverage",
+      "items": [
+        {
+          "id": "II3-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A life policy excludes death while piloting a private aircraft. Five years after issue, the insured dies piloting his own plane. Under New Jersey law, the insurer may:",
+          "options": [
+            "Not deny, since the policy is now incontestable",
+            "Deny only if the exclusion was in a separate rider",
+            "Not deny, since exclusions lapse after 2 years",
+            "Deny the claim under the aviation exclusion"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-16 provides that an incontestable clause bars only contests of the policy's validity. The insurer may still rely at any time on policy provisions that exclude or restrict coverage."
+        }
+      ]
+    },
+    {
+      "id": "II3-02",
+      "statement": "A reinstated policy may carry the same exclusions or restrictions that could have applied at original issue, effective from reinstatement.",
+      "source": "njsa-17b-25-17",
+      "quote": "such reinstated policy may exclude or restrict liability to the same extent that such liability could have been excluded or restricted when the policy was originally issued",
+      "items": [
+        {
+          "id": "II3-02a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1,
+          "stem": "When a New Jersey life policy is reinstated, the insurer may add an exclusion only if:",
+          "options": [
+            "It was allowable at the policy's original issue",
+            "The policyowner agrees to pay a higher premium",
+            "The commissioner approves it in advance",
+            "It applies only to the first year after reinstatement"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:25-17 allows a reinstated policy to exclude or restrict liability to the same extent as could have been done at original issue, effective from the reinstatement date.",
+          "group": "reinstatement"
+        }
+      ]
+    }
+  ]
+}

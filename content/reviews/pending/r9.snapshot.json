@@ -1,0 +1,158 @@
+[
+  {
+    "itemId": "II2-16a",
+    "version": 2,
+    "source": "njsa-17b-25-17",
+    "stem": "A New Jersey life policy with a 2-year incontestable period is reinstated after a lapse. For how long can the insurer contest it because of misstatements in the reinstatement application?",
+    "options": [
+      "For 2 years after reinstatement",
+      "It cannot be contested at all",
+      "Only for what is left of the original 2 years",
+      "For as long as the policy stays in force"
+    ],
+    "key": "For 2 years after reinstatement"
+  },
+  {
+    "itemId": "IV6-01a",
+    "version": 1,
+    "source": "usc-26-101-a1",
+    "stem": "Maria's beneficiary receives a $300,000 lump-sum death benefit from her life policy. For federal income tax purposes, the death benefit is generally:",
+    "options": [
+      "Fully taxable as ordinary income",
+      "Taxable only above the premiums Maria paid",
+      "Taxed as a long-term capital gain",
+      "Excluded from the beneficiary's gross income"
+    ],
+    "key": "Excluded from the beneficiary's gross income"
+  },
+  {
+    "itemId": "IV6-02a",
+    "version": 1,
+    "source": "usc-26-101-a2",
+    "stem": "An unrelated investor buys an existing $500,000 life policy from the insured for $60,000, then pays $40,000 in premiums before the insured dies. Under the transfer-for-value rule, how much of the death benefit is excluded from the investor's income?",
+    "options": [
+      "$0",
+      "$60,000",
+      "$100,000",
+      "$500,000"
+    ],
+    "key": "$100,000"
+  },
+  {
+    "itemId": "IV6-03a",
+    "version": 1,
+    "source": "usc-26-1035-a",
+    "stem": "Under Section 1035, which of the following exchanges can be made without recognizing gain or loss?",
+    "options": [
+      "A life insurance policy for an annuity",
+      "An annuity for a life insurance policy",
+      "An annuity for a bank certificate of deposit",
+      "A life insurance policy for mutual fund shares"
+    ],
+    "key": "A life insurance policy for an annuity"
+  },
+  {
+    "itemId": "IV6-04a",
+    "version": 1,
+    "source": "usc-26-1035-a",
+    "stem": "A client wants to exchange her deferred annuity under Section 1035 without recognizing gain. Which of the following can she receive in the exchange?",
+    "options": [
+      "A whole life policy",
+      "A term life policy",
+      "Another annuity contract",
+      "An endowment policy"
+    ],
+    "key": "Another annuity contract"
+  },
+  {
+    "itemId": "IV6-05a",
+    "version": 1,
+    "source": "usc-26-72-q",
+    "stem": "A 52-year-old withdraws $20,000 from a nonqualified deferred annuity. $8,000 of it is taxable earnings, and no exception applies. What is the additional federal penalty tax?",
+    "options": [
+      "$0",
+      "$800",
+      "$2,000",
+      "$8,000"
+    ],
+    "key": "$800"
+  },
+  {
+    "itemId": "IV6-06a",
+    "version": 1,
+    "source": "usc-26-72-q",
+    "stem": "The 10% federal penalty on premature annuity distributions does not apply to distributions made on or after the date the taxpayer reaches age:",
+    "options": [
+      "55",
+      "59½",
+      "62",
+      "65"
+    ],
+    "key": "59½"
+  },
+  {
+    "itemId": "IV6-07a",
+    "version": 1,
+    "source": "usc-26-7702a-a",
+    "stem": "A life insurance policy issued in 2026 is classified as a modified endowment contract when it:",
+    "options": [
+      "Fails the 7-year surrender test",
+      "Meets the 7-pay test but carries a large loan",
+      "Has a face amount over $1 million",
+      "Fails the 7-pay test"
+    ],
+    "key": "Fails the 7-pay test"
+  },
+  {
+    "itemId": "IV6-08a",
+    "version": 1,
+    "source": "usc-26-7702a-a",
+    "stem": "A policyowner exchanges a modified endowment contract for a new life insurance policy. For tax purposes, the new policy is:",
+    "options": [
+      "Also a modified endowment contract",
+      "A standard life policy if it passes the 7-pay test",
+      "A standard life policy once 7 years pass",
+      "A modified endowment contract only if surrendered"
+    ],
+    "key": "Also a modified endowment contract"
+  },
+  {
+    "itemId": "IV7-01a",
+    "version": 1,
+    "source": "usc-26-101-g1",
+    "stem": "An insured who is terminally ill receives an accelerated death benefit from her life policy. Under federal tax law, the payment is treated as:",
+    "options": [
+      "Ordinary income in the year received",
+      "An amount paid by reason of the insured's death",
+      "A taxable return of the premiums paid",
+      "A policy loan that must be repaid"
+    ],
+    "key": "An amount paid by reason of the insured's death"
+  },
+  {
+    "itemId": "IV7-02a",
+    "version": 1,
+    "source": "usc-26-101-g1",
+    "stem": "Besides terminally ill insureds, federal tax law also treats accelerated death benefits as paid by reason of death when the insured is:",
+    "options": [
+      "Permanently unemployed",
+      "Over age 65",
+      "Chronically ill",
+      "Recovering from surgery"
+    ],
+    "key": "Chronically ill"
+  },
+  {
+    "itemId": "V4-11a",
+    "version": 5,
+    "source": "njsa-17-29b-4",
+    "stem": "An insurer's claim unit routinely denies life claims that show any red flag, without first gathering the information available to it. Which New Jersey rule does this practice violate?",
+    "options": [
+      "The 60-day death claim settlement rule",
+      "The 2-year incontestable provision",
+      "The entire contract provision",
+      "The unfair claim settlement practices rule"
+    ],
+    "key": "The unfair claim settlement practices rule"
+  }
+]

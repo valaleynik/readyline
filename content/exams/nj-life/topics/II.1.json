@@ -1,0 +1,30 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "II.1",
+  "facts": [
+    {
+      "id": "II1-01",
+      "statement": "Disability and accidental death or dismemberment provisions are excluded from the 2-year incontestable requirement.",
+      "source": "njsa-17b-25-4",
+      "quote": "(exclusive of provisions of the policy or any contract supplemental thereto relating to disability benefits or to additional benefits in event of death by accident or accidental means or in event of dismemberment or loss of sight)",
+      "items": [
+        {
+          "id": "II1-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "New Jersey's required 2-year incontestable provision does NOT have to apply to which part of a life policy?",
+          "options": [
+            "The base death benefit",
+            "The beneficiary designation",
+            "The policy loan provision",
+            "An accidental death and dismemberment rider"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-4 excludes provisions on disability benefits and on additional benefits for accidental death, dismemberment or loss of sight from the incontestable requirement.",
+          "group": "incontestable-2yr"
+        }
+      ]
+    }
+  ]
+}

@@ -221,6 +221,188 @@
       "retrievedAt": "2026-11-26",
       "sha256": "09dc34593cda755a3a707aaa9e7f98bd3f602a3788347c0a4596f9f8ebee9468",
       "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-3",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-3",
+      "title": "Grace period",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-3/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "ab23fd2c950ea6fbe192c291c363e23401abbf3ac9961dfd2419a27ab9c2988f",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-4",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-4",
+      "title": "Incontestability",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-4/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "bd0560fee66b30e2fb4599430a8099c126589ba42e7e735d9f4fa5330da26ebb",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-5",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-5",
+      "title": "Entire contract; representations",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-5/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "ee9026e1af88a28e4bfba1b69827718417733a14b67c5c78fc9aa39f4e3b4603",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-6",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-6",
+      "title": "Misstatement of age",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-6/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "fc6e687bfc736b82b54c4912f71bd7cec41eb7b0e6a21419a725b93f9136cb18",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-7",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-7",
+      "title": "Dividends",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-7/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "e52e8241038cca058d4f0ad2be47ee2e975f219613809e7e7ce4e9c54886b4f6",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-8",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-8",
+      "title": "Policy loans",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-8/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "3c8bccaf36c3889ce03755c35d2591fdb6f52c1a27e07a790a5630b5dc637f57",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-9",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-9",
+      "title": "Reinstatement",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-9/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "a0849667f847168408c2eaa9d8d00748c2527448cbdf512ae46b5bd2de163b48",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-11",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-11",
+      "title": "Settlement of death claims",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-11/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "efa0d7714658bc3ef603d8a4ce8670b430286b59ba1f0afeb9140d8bfb500d3a",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-16",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-16",
+      "title": "Scope of incontestable clause",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-16/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "3ead908123777409dca249aa324eebe28255f8ea189ed7746b032dc130588e30",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-17",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-17",
+      "title": "Contestability of reinstated policies",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-17/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "0897ff79816b1ee0c014b71f6657396c1e622f95319a5856a5214973a4000fdb",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "usc-26-101-a1",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 101(a)(1)",
+      "title": "Life insurance death proceeds excluded from gross income",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/101",
+      "retrievedAt": "2026-11-26",
+      "sha256": "9e82b1a5ef67f45bd4ae527858b22ecab7fe26a94918276195628bbbba6e5825",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-101-a2",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 101(a)(2)",
+      "title": "Transfer for valuable consideration",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/101",
+      "retrievedAt": "2026-11-26",
+      "sha256": "1ee8485eac9a42adf107a3ba3e1b27115742643d711d946652af5d571ea5dcbd",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-101-g1",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 101(g)(1)",
+      "title": "Accelerated death benefits",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/101",
+      "retrievedAt": "2026-11-26",
+      "sha256": "a0213eed6fa915c9898bc6a619288368a675d5c9ab60c4edf555e2f02e17cb9c",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-1035-a",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 1035(a)",
+      "title": "Tax-free exchanges of insurance policies",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/1035",
+      "retrievedAt": "2026-11-26",
+      "sha256": "2cacb9888c6b48e4774b662f3a6d14437892b506df9609c4cfe606ad73ec9d1c",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-72-q",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 72(q)",
+      "title": "10% penalty on premature annuity distributions",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/72",
+      "retrievedAt": "2026-11-26",
+      "sha256": "f57805f16ec69c62770a7412358fd6c2456b8f694dbd8623f7c1f8a39e818c15",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-7702a-a",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 7702A(a)",
+      "title": "Modified endowment contract defined",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7702A",
+      "retrievedAt": "2026-11-26",
+      "sha256": "ba962c486a3d8388b2cc10edfc6e7ac8c1a1094fcba57b2e04ad277433ab096d",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
     }
   ]
 }

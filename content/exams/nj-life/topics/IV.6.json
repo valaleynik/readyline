@@ -1,0 +1,197 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.6",
+  "facts": [
+    {
+      "id": "IV6-01",
+      "statement": "Life insurance proceeds paid by reason of the insured's death are generally excluded from gross income.",
+      "source": "usc-26-101-a1",
+      "quote": "gross income does not include amounts received (whether in a single sum or otherwise) under a life insurance contract, if such amounts are paid by reason of the death of the insured",
+      "items": [
+        {
+          "id": "IV6-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.6,
+          "stem": "Maria's beneficiary receives a $300,000 lump-sum death benefit from her life policy. For federal income tax purposes, the death benefit is generally:",
+          "options": [
+            "Fully taxable as ordinary income",
+            "Taxable only above the premiums Maria paid",
+            "Taxed as a long-term capital gain",
+            "Excluded from the beneficiary's gross income"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 101(a)(1) excludes from gross income amounts received under a life insurance contract that are paid by reason of the insured's death, whether in a lump sum or otherwise."
+        }
+      ]
+    },
+    {
+      "id": "IV6-02",
+      "statement": "If a policy is transferred for valuable consideration, the exclusion is limited to the consideration paid plus later premiums paid by the transferee.",
+      "source": "usc-26-101-a2",
+      "quote": "the amount excluded from gross income by paragraph (1) shall not exceed an amount equal to the sum of the actual value of such consideration and the premiums and other amounts subsequently paid by the transferee",
+      "items": [
+        {
+          "id": "IV6-02a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.3,
+          "stem": "An unrelated investor buys an existing $500,000 life policy from the insured for $60,000, then pays $40,000 in premiums before the insured dies. Under the transfer-for-value rule, how much of the death benefit is excluded from the investor's income?",
+          "options": [
+            "$0",
+            "$60,000",
+            "$100,000",
+            "$500,000"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 101(a)(2) limits the exclusion after a transfer for value to the consideration paid plus premiums the transferee paid later: $60,000 + $40,000 = $100,000. The other $400,000 is taxable."
+        }
+      ]
+    },
+    {
+      "id": "IV6-03",
+      "statement": "Exchanging a life insurance contract for another life contract, an endowment, an annuity or a qualified long-term care contract recognizes no gain or loss.",
+      "source": "usc-26-1035-a",
+      "quote": "(1) a contract of life insurance for another contract of life insurance or for an endowment or annuity contract or for a qualified long-term care insurance contract",
+      "items": [
+        {
+          "id": "IV6-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "Under Section 1035, which of the following exchanges can be made without recognizing gain or loss?",
+          "options": [
+            "A life insurance policy for an annuity",
+            "An annuity for a life insurance policy",
+            "An annuity for a bank certificate of deposit",
+            "A life insurance policy for mutual fund shares"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 1035(a) allows a life insurance contract to be exchanged tax-free for another life contract, an endowment, an annuity or a qualified long-term care contract. An annuity cannot be exchanged tax-free for life insurance.",
+          "group": "sec-1035"
+        }
+      ]
+    },
+    {
+      "id": "IV6-04",
+      "statement": "An annuity may be exchanged without recognizing gain only for another annuity or a qualified long-term care contract.",
+      "source": "usc-26-1035-a",
+      "quote": "(3) an annuity contract for an annuity contract or for a qualified long-term care insurance contract",
+      "items": [
+        {
+          "id": "IV6-04a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.8,
+          "stem": "A client wants to exchange her deferred annuity under Section 1035 without recognizing gain. Which of the following can she receive in the exchange?",
+          "options": [
+            "A whole life policy",
+            "A term life policy",
+            "Another annuity contract",
+            "An endowment policy"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 1035(a)(3) allows an annuity to be exchanged tax-free only for another annuity or a qualified long-term care insurance contract, not for life or endowment insurance.",
+          "optionStyle": "category",
+          "group": "sec-1035"
+        }
+      ]
+    },
+    {
+      "id": "IV6-05",
+      "statement": "A taxable distribution from an annuity is generally subject to an additional 10% tax on the portion included in gross income.",
+      "source": "usc-26-72-q",
+      "quote": "increased by an amount equal to 10 percent of the portion of such amount which is includible in gross income",
+      "items": [
+        {
+          "id": "IV6-05a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A 52-year-old withdraws $20,000 from a nonqualified deferred annuity. $8,000 of it is taxable earnings, and no exception applies. What is the additional federal penalty tax?",
+          "options": [
+            "$0",
+            "$800",
+            "$2,000",
+            "$8,000"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 72(q) adds a tax of 10 percent of the portion of the distribution includible in gross income: 10% of the $8,000 taxable portion is $800.",
+          "group": "sec-72q"
+        }
+      ]
+    },
+    {
+      "id": "IV6-06",
+      "statement": "The 10% penalty does not apply to annuity distributions made on or after age 59½.",
+      "source": "usc-26-72-q",
+      "quote": "(A) made on or after the date on which the taxpayer attains age 59½,",
+      "items": [
+        {
+          "id": "IV6-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.2,
+          "stem": "The 10% federal penalty on premature annuity distributions does not apply to distributions made on or after the date the taxpayer reaches age:",
+          "options": [
+            "55",
+            "59½",
+            "62",
+            "65"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 72(q)(2)(A) exempts from the 10% penalty any distribution made on or after the date the taxpayer reaches age 59½.",
+          "group": "sec-72q"
+        }
+      ]
+    },
+    {
+      "id": "IV6-07",
+      "statement": "A contract entered into on or after June 21, 1988 that fails the 7-pay test is a modified endowment contract.",
+      "source": "usc-26-7702a-a",
+      "quote": "(A) is entered into on or after June 21, 1988, and (B) fails to meet the 7-pay test of subsection (b)",
+      "items": [
+        {
+          "id": "IV6-07a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "A life insurance policy issued in 2026 is classified as a modified endowment contract when it:",
+          "options": [
+            "Fails the 7-year surrender test",
+            "Meets the 7-pay test but carries a large loan",
+            "Has a face amount over $1 million",
+            "Fails the 7-pay test"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 7702A(a) defines a modified endowment contract as a life contract entered into on or after June 21, 1988 that fails the 7-pay test.",
+          "group": "mec"
+        }
+      ]
+    },
+    {
+      "id": "IV6-08",
+      "statement": "A contract received in exchange for a modified endowment contract is also a modified endowment contract.",
+      "source": "usc-26-7702a-a",
+      "quote": "(2) which is received in exchange for a contract described in paragraph (1) or this paragraph.",
+      "items": [
+        {
+          "id": "IV6-08a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.1,
+          "stem": "A policyowner exchanges a modified endowment contract for a new life insurance policy. For tax purposes, the new policy is:",
+          "options": [
+            "Also a modified endowment contract",
+            "A standard life policy if it passes the 7-pay test",
+            "A standard life policy once 7 years pass",
+            "A modified endowment contract only if surrendered"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 7702A(a)(2) treats any contract received in exchange for a modified endowment contract as a modified endowment contract itself.",
+          "group": "mec"
+        }
+      ]
+    }
+  ]
+}
