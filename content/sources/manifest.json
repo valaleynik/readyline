@@ -559,6 +559,65 @@
       "sha256": "baa0c5f61065be137c87d6c714e17056562ea90d7fef9abcb4ca6696b26a2e6c",
       "verifiedAgainstOfficial": true,
       "note": "Retrieved directly from the official SEC site; excerpt extracted verbatim in the browser."
+    },
+    {
+      "id": "usc-15-1681m-a",
+      "kind": "statute",
+      "citation": "15 U.S.C. § 1681m(a)",
+      "title": "Adverse action notices",
+      "act": "Fair Credit Reporting Act",
+      "url": "https://www.law.cornell.edu/uscode/text/15/1681m",
+      "retrievedAt": "2026-11-26",
+      "sha256": "29c1b9abf0e0ab71b8f18adb37218764828d7ec97077305fe2ea98ffaa291f01",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "njsa-17b-25-18-1",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-18.1",
+      "title": "Noncomplying policy forms construed as complying",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-18-1/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "0e591dc2da4f8bb7a04082c4f0cda56c182f2e9ec19d3cb58073b504e1c9592c",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-18-2b",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-18.2(b)",
+      "title": "Policy forms deemed approved after 60 days",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-18-2/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "bfd46279586d72124f543593f72c5f3315f2eb59788c100b6ce3d41885ef4d39",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt: subsection b only, extracted verbatim in the browser."
+    },
+    {
+      "id": "usc-26-264-a1",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 264(a)(1)",
+      "title": "Premiums not deductible when the taxpayer is a beneficiary",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/264",
+      "retrievedAt": "2026-11-26",
+      "sha256": "32ba81cf7f1b5ded3a132ce435a6459e7e29dd318f81ca6e448e39f501fac7ce",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
+    },
+    {
+      "id": "usc-26-72-q2bc",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 72(q)(2)(B)-(C)",
+      "title": "Death and disability exceptions to the 10% annuity penalty",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/72",
+      "retrievedAt": "2026-11-26",
+      "sha256": "22c133e52a8322405f3c4e5595876abb40fb32080c595626e8361881339a0f86",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy of the U.S. Code."
     }
   ]
 }

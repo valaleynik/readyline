@@ -210,8 +210,7 @@
             "The prospect bought a policy from the agency 10 months ago"
           ],
           "answer": 3,
-          "explanation": "47 C.F.R. § 64.1200(f)(15) excludes from telephone solicitation a call to a person with whom the caller has an established business relationship, such as a purchase within the past 18 months.",
-          "group": "tcpa-exceptions"
+          "explanation": "47 C.F.R. § 64.1200(f)(15) excludes from telephone solicitation a call to a person with whom the caller has an established business relationship, such as a purchase within the past 18 months."
         }
       ]
     },
@@ -260,7 +259,9 @@
           ],
           "answer": 3,
           "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call.",
-          "group": "tcpa-ebr"
+          "enemies": [
+            "III4-15a"
+          ]
         },
         {
           "id": "III4-14b",
@@ -275,8 +276,7 @@
             "Yes, as long as the call is made before 9 p.m."
           ],
           "answer": 0,
-          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call. At 20 months with no further dealings, it has ended, so the registry applies.",
-          "group": "tcpa-ebr"
+          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call. At 20 months with no further dealings, it has ended, so the registry applies."
         }
       ]
     },
@@ -299,8 +299,7 @@
             "18 months"
           ],
           "answer": 1,
-          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on an inquiry or application within the three months before the call.",
-          "group": "tcpa-ebr"
+          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on an inquiry or application within the three months before the call."
         }
       ]
     },
@@ -371,8 +370,7 @@
             "Wait for her written confirmation before changing anything"
           ],
           "answer": 1,
-          "explanation": "47 C.F.R. § 64.1200(d)(3) requires a caller that receives a do-not-call request to record it and place the number on its do-not-call list at the time the request is made.",
-          "group": "tcpa-requests"
+          "explanation": "47 C.F.R. § 64.1200(d)(3) requires a caller that receives a do-not-call request to record it and place the number on its do-not-call list at the time the request is made."
         }
       ]
     }

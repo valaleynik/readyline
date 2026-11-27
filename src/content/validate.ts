@@ -143,6 +143,18 @@ export function validateContent(root: string): ValidationReport {
     }
   }
 
+  const allIds = new Set(allItems.map((i) => i.id));
+  for (const exam of readdirSync(join(root, "exams"))) {
+    const topicDir = join(root, "exams", exam, "topics");
+    if (!existsSync(topicDir)) continue;
+    for (const file of readdirSync(topicDir).filter((f) => f.endsWith(".json"))) {
+      const tf = JSON.parse(readFileSync(join(topicDir, file), "utf8")) as TopicFile;
+      for (const fact of tf.facts)
+        for (const it of fact.items)
+          for (const e of it.enemies ?? []) if (!allIds.has(e) && !it.retired) err(`${file}:${it.id}`, `enemy ${e} is not an active item`);
+    }
+  }
+
   const total = positions.reduce((a, b) => a + b, 0);
   positions.forEach((p, i) => {
     if (total >= 20 && (p / total < 0.15 || p / total > 0.35))

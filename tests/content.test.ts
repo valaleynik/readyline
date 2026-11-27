@@ -48,6 +48,24 @@ describe("live bank", () => {
   });
 });
 
+describe("real bank mock exam", () => {
+  it("builds full blueprint-matched forms from verified items only, with no enemy pairs", async () => {
+    const { mockForm } = await import("../src/engine/scheduler");
+    const { bank, blueprint } = loadLiveBank();
+    for (let seed = 1; seed <= 25; seed++) {
+      const form = mockForm(bank, seed);
+      expect(form.length).toBe(blueprint.scoredItems);
+      expect(new Set(form.map((i) => i.key)).size).toBe(form.length);
+      const groups = form.map((i) => i.group).filter(Boolean);
+      expect(new Set(groups).size).toBe(groups.length);
+      for (const sec of blueprint.sections) {
+        const codes = new Set(sec.topics.map((t) => t.code));
+        expect(form.filter((i) => codes.has(i.topic)).length).toBe(sec.items);
+      }
+    }
+  });
+});
+
 describe("rebalance", () => {
   const file = (items: ItemDraft[]): { path: string; data: TopicFile } => ({
     path: "x",

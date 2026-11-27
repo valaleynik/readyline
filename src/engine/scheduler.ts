@@ -142,13 +142,34 @@ export function nextItem(
  * bank is too thin, falls back to a second wording of an already used fact.
  * Throws if the bank cannot fill a section at all, so a short mock is never served.
  */
-export function mockForm(bank: Bank, seed: number): ItemMeta[] {
+export function mockForm(bank: Bank, seed: number, attempts = 50): ItemMeta[] {
+  // Randomized greedy assembly with deterministic restarts: enemy constraints can
+  // dead-end one ordering while another fills every section.
+  let last: unknown;
+  for (let k = 0; k < attempts; k++) {
+    try {
+      return assembleForm(bank, seed + k * 7919);
+    } catch (e) {
+      last = e;
+    }
+  }
+  throw last;
+}
+
+function assembleForm(bank: Bank, seed: number): ItemMeta[] {
   const rng = createRng(seed);
   const form: ItemMeta[] = [];
   const usedFacts = new Set<string>();
   const usedItems = new Set<string>();
   const usedGroups = new Set<string>();
-  const free = (x: ItemMeta) => !usedItems.has(x.key) && !(x.group && usedGroups.has(x.group));
+  const idOf = (k: string) => k.split("@")[0]!;
+  const usedIds = new Set<string>();
+  const enemyOfUsed = new Set<string>();
+  const free = (x: ItemMeta) =>
+    !usedItems.has(x.key) &&
+    !(x.group && usedGroups.has(x.group)) &&
+    !enemyOfUsed.has(idOf(x.key)) &&
+    !(x.enemies ?? []).some((e) => usedIds.has(e));
   for (const sec of bank.blueprint.sections) {
     const pool = sec.topics.flatMap((t) => bank.byTopic.get(t.code) ?? []);
     for (let i = 0; i < sec.items; i++) {
@@ -161,6 +182,8 @@ export function mockForm(bank: Bank, seed: number): ItemMeta[] {
       usedFacts.add(pick.factId);
       usedItems.add(pick.key);
       if (pick.group) usedGroups.add(pick.group);
+      usedIds.add(idOf(pick.key));
+      for (const e of pick.enemies ?? []) enemyOfUsed.add(e);
       form.push(pick);
     }
   }

@@ -22,7 +22,9 @@
           ],
           "answer": 0,
           "explanation": "15 U.S.C. § 1681d(a)-(b) requires written disclosure of an investigative consumer report to be mailed or delivered no later than three days after the report was first requested.",
-          "group": "fcra-icr"
+          "enemies": [
+            "III2-02a"
+          ]
         }
       ]
     },
@@ -45,8 +47,7 @@
             "30 days"
           ],
           "answer": 1,
-          "explanation": "15 U.S.C. § 1681d(a)-(b) requires a complete written disclosure of the nature and scope of the investigation within five days after the consumer's request is received or the report was first requested, whichever is later.",
-          "group": "fcra-icr"
+          "explanation": "15 U.S.C. § 1681d(a)-(b) requires a complete written disclosure of the nature and scope of the investigation within five days after the consumer's request is received or the report was first requested, whichever is later."
         }
       ]
     },
@@ -70,8 +71,105 @@
           ],
           "answer": 3,
           "explanation": "15 U.S.C. § 1681d(a)-(b) describes an investigative consumer report as one including information on the person's character, general reputation, personal characteristics and mode of living, and it requires written disclosure to the person.",
-          "optionStyle": "category",
-          "group": "fcra-icr"
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "III2-04",
+      "statement": "A user that takes adverse action based in whole or part on a consumer report must notify the consumer of the adverse action.",
+      "source": "usc-15-1681m-a",
+      "quote": "If any person takes any adverse action with respect to any consumer that is based in whole or in part on any information contained in a consumer report, the person shall— (1) provide oral, written, or electronic notice of the adverse action to the consumer",
+      "items": [
+        {
+          "id": "III2-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0,
+          "stem": "An insurer declines a life insurance application based partly on information in a consumer report. Under the Fair Credit Reporting Act, the insurer must:",
+          "options": [
+            "Notify the applicant of the adverse action",
+            "Refund the application fee within 30 days",
+            "Re-underwrite the application after six months",
+            "Report the declination to the commissioner"
+          ],
+          "answer": 0,
+          "explanation": "15 U.S.C. § 1681m(a) requires anyone taking adverse action based in whole or part on a consumer report to give the consumer notice of the adverse action, along with other disclosures.",
+          "enemies": [
+            "III2-05a",
+            "III2-06a",
+            "III2-07a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III2-05",
+      "statement": "The adverse action notice must state that the consumer reporting agency did not make the decision and cannot give the specific reasons.",
+      "source": "usc-15-1681m-a",
+      "quote": "a statement that the consumer reporting agency did not make the decision to take the adverse action and is unable to provide the consumer the specific reasons why the adverse action was taken",
+      "items": [
+        {
+          "id": "III2-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "An adverse action notice based on a consumer report must include a statement that the consumer reporting agency:",
+          "options": [
+            "Did not make the decision and cannot give the reasons",
+            "Reviewed and approved the insurer's decision",
+            "Will reconsider the decision on written request",
+            "Shares legal responsibility for the decision"
+          ],
+          "answer": 0,
+          "explanation": "15 U.S.C. § 1681m(a) requires a statement that the consumer reporting agency did not make the decision and is unable to provide the specific reasons for it."
+        }
+      ]
+    },
+    {
+      "id": "III2-06",
+      "statement": "The notice must tell the consumer of the right to a free copy of the report, including the 60-day period for requesting it.",
+      "source": "usc-15-1681m-a",
+      "quote": "which notice shall include an indication of the 60-day period under that section for obtaining such a copy",
+      "items": [
+        {
+          "id": "III2-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "After an adverse action based on a consumer report, the notice must tell the applicant of the right to a free copy of the report, requested within how many days?",
+          "options": [
+            "30",
+            "45",
+            "60",
+            "90"
+          ],
+          "answer": 2,
+          "explanation": "15 U.S.C. § 1681m(a) requires notice of the right to a free copy of the consumer report, including an indication of the 60-day period for obtaining it."
+        }
+      ]
+    },
+    {
+      "id": "III2-07",
+      "statement": "The notice must tell the consumer of the right to dispute the accuracy or completeness of the report with the consumer reporting agency.",
+      "source": "usc-15-1681m-a",
+      "quote": "(B) to dispute, under section 1681i of this title, with a consumer reporting agency the accuracy or completeness of any information in a consumer report furnished by the agency",
+      "items": [
+        {
+          "id": "III2-07a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.5,
+          "stem": "An adverse action notice must tell the applicant of the right to dispute the accuracy of the consumer report with:",
+          "options": [
+            "The insurer's underwriting department",
+            "The consumer reporting agency",
+            "The state insurance commissioner",
+            "The producer who took the application"
+          ],
+          "answer": 1,
+          "explanation": "15 U.S.C. § 1681m(a) requires notice of the consumer's right to dispute the accuracy or completeness of the report with the consumer reporting agency that furnished it.",
+          "optionStyle": "category"
         }
       ]
     }

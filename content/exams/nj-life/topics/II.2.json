@@ -265,7 +265,7 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-8 requires the insurer to advance a loan after 3 full years' premiums have been paid and the policy has a cash surrender value.",
-          "group": "policy-loans"
+          "group": "loan-3yr"
         },
         {
           "id": "II2-10b",
@@ -281,7 +281,7 @@
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17B:25-8 requires a loan to be available only after 3 full years' premiums have been paid and the policy has a cash surrender value. After 2 years, the requirement has not been triggered.",
-          "group": "policy-loans"
+          "group": "loan-3yr"
         }
       ]
     },
@@ -304,8 +304,7 @@
             "Used to pay a premium to the insurer"
           ],
           "answer": 3,
-          "explanation": "N.J.S.A. 17B:25-8 lets the insurer defer a loan for 6 months, except a loan used to pay a premium to the insurer.",
-          "group": "policy-loans"
+          "explanation": "N.J.S.A. 17B:25-8 lets the insurer defer a loan for 6 months, except a loan used to pay a premium to the insurer."
         }
       ]
     },
@@ -328,8 +327,7 @@
             "Wait until the next policy anniversary"
           ],
           "answer": 0,
-          "explanation": "N.J.S.A. 17B:25-8 allows termination when indebtedness equals or exceeds the loan value, but not until at least 30 days' notice has been mailed to the owner and any assignee of record.",
-          "group": "policy-loans"
+          "explanation": "N.J.S.A. 17B:25-8 allows termination when indebtedness equals or exceeds the loan value, but not until at least 30 days' notice has been mailed to the owner and any assignee of record."
         }
       ]
     },
@@ -353,8 +351,7 @@
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17B:25-8 states that the policy loan requirement does not apply to term insurance or industrial life policies.",
-          "optionStyle": "category",
-          "group": "policy-loans"
+          "optionStyle": "category"
         }
       ]
     },
@@ -377,8 +374,7 @@
             "3 years"
           ],
           "answer": 3,
-          "explanation": "N.J.S.A. 17B:25-9 allows reinstatement within 3 years (2 years for industrial policies) from the due date of the first premium in default.",
-          "group": "reinstatement"
+          "explanation": "N.J.S.A. 17B:25-9 allows reinstatement within 3 years (2 years for industrial policies) from the due date of the first premium in default."
         }
       ]
     },
@@ -401,8 +397,7 @@
             "Approval of the reinstatement by the commissioner"
           ],
           "answer": 3,
-          "explanation": "N.J.S.A. 17B:25-9 requires a written application, satisfactory evidence of insurability, payment of premiums in arrears and repayment or reinstatement of any indebtedness, with interest. No commissioner approval is involved.",
-          "group": "reinstatement"
+          "explanation": "N.J.S.A. 17B:25-9 requires a written application, satisfactory evidence of insurability, payment of premiums in arrears and repayment or reinstatement of any indebtedness, with interest. No commissioner approval is involved."
         }
       ]
     },
@@ -426,7 +421,7 @@
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17B:25-17 allows a reinstated policy to be contested for material misstatements in the reinstatement only for the same period, following reinstatement, as after original issue. New Jersey requires that period to be 2 years.",
-          "group": "reinstatement"
+          "group": "reinstated-contest"
         }
       ]
     },
@@ -450,7 +445,7 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-11 requires settlement within 60 days after receipt of due proof of death.",
-          "group": "claim-timing"
+          "group": "settle-60"
         },
         {
           "id": "II2-17b",
@@ -467,7 +462,7 @@
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-11 requires settlement within 60 days after receipt of due proof of death. 60 days after May 1 is June 30.",
           "optionStyle": "ordered",
-          "group": "claim-timing"
+          "group": "settle-60"
         }
       ]
     },
@@ -490,8 +485,7 @@
             "60th"
           ],
           "answer": 2,
-          "explanation": "N.J.S.A. 17B:25-11 requires written notice, stating the reason, no later than the 45th calendar day when a claim needs more investigation or is denied.",
-          "group": "claim-timing"
+          "explanation": "N.J.S.A. 17B:25-11 requires written notice, stating the reason, no later than the 45th calendar day when a claim needs more investigation or is denied."
         }
       ]
     },
@@ -514,8 +508,7 @@
             "Earns interest only if a court orders it"
           ],
           "answer": 1,
-          "explanation": "N.J.S.A. 17B:25-11 makes overdue payments bear interest at the average rate of return of the State of New Jersey Cash Management Fund for the preceding fiscal year.",
-          "group": "claim-timing"
+          "explanation": "N.J.S.A. 17B:25-11 makes overdue payments bear interest at the average rate of return of the State of New Jersey Cash Management Fund for the preceding fiscal year."
         }
       ]
     },
@@ -538,8 +531,7 @@
             "90"
           ],
           "answer": 2,
-          "explanation": "N.J.S.A. 17B:25-19(a) requires the insurer to grant a paid-up nonforfeiture benefit, or another available option, on request no later than 60 days after the due date of the premium in default.",
-          "group": "nonforfeiture"
+          "explanation": "N.J.S.A. 17B:25-19(a) requires the insurer to grant a paid-up nonforfeiture benefit, or another available option, on request no later than 60 days after the due date of the premium in default."
         }
       ]
     },
@@ -562,8 +554,7 @@
             "The paid-up benefit the policy specifies takes effect"
           ],
           "answer": 3,
-          "explanation": "N.J.S.A. 17B:25-19(a) requires that the paid-up nonforfeiture benefit specified in the policy take effect automatically unless the owner elects another option within 60 days.",
-          "group": "nonforfeiture"
+          "explanation": "N.J.S.A. 17B:25-19(a) requires that the paid-up nonforfeiture benefit specified in the policy take effect automatically unless the owner elects another option within 60 days."
         }
       ]
     },
@@ -587,8 +578,7 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-19(a) requires a cash surrender value on surrender after a default once premiums have been paid for at least 3 full years on ordinary insurance (5 years for industrial).",
-          "optionStyle": "ordered",
-          "group": "nonforfeiture"
+          "optionStyle": "ordered"
         }
       ]
     },

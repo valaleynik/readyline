@@ -28,7 +28,7 @@ export function loadLiveBank(exam = "nj-life"): { bank: Bank; blueprint: Bluepri
             drafts++;
             continue;
           }
-          live.push({ key: `${it.id}@${it.version}`, factId: fact.id, topic: t.topic, b: it.difficulty, group: it.group });
+          live.push({ key: `${it.id}@${it.version}`, factId: fact.id, topic: t.topic, b: it.difficulty, group: it.group, enemies: it.enemies });
         }
     }
   }

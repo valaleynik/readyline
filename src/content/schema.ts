@@ -23,8 +23,11 @@ export interface ItemDraft {
   optionStyle?: "category" | "ordered";
   /** set when the item is withdrawn; the reason is kept for the audit trail */
   retired?: string;
-  /** items sharing a group cue each other and must never appear on the same form */
+  /** items sharing a group cue each other and must never appear on the same form.
+   *  Use only when one item's stem or key reveals the other's answer: over-grouping starves mock forms. */
   group?: string;
+  /** ids of specific items this one cues (or is cued by); never placed on the same form */
+  enemies?: string[];
   /** generator's estimate of IRT difficulty: about -1 easy, 0 medium, +1 hard */
   difficulty: number;
 }

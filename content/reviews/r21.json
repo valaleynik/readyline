@@ -1,0 +1,164 @@
+[
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "picked \"Surrender charges, plus income tax on gains and possible penalties\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "B is the only hedged, comprehensive option ('plus ... possible penalties') and copies the source's list of surrender charges, taxes and penalties, while A, C and D each have an obviously odd absolute claim ('deferred to age 65', 'waived', 'in every case', 'no tax'). A candidate who only knows that withdrawals are taxed can get there by elimination.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I4-11a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "picked \"Not deductible\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-09a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "picked \"A payment to the beneficiary after the holder's death\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "The stem says only 'deferred annuity', so a deferred annuity held as an IRA (individual retirement annuity) or in a qualified plan falls under IRC 72(t), not 72(q), and 72(t) does exempt higher-education expenses (B) and first-home purchases (C).",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "B and C are correct exceptions for IRA-funded deferred annuities under 72(t). They are wrong only for a nonqualified annuity under 72(q), and the stem does not say the annuity is nonqualified.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-21",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV6-10a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

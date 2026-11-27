@@ -94,6 +94,23 @@
           "explanation": "26 U.S.C. § 1035(a)(3) allows an annuity to be exchanged tax-free only for another annuity or a qualified long-term care insurance contract, not for life or endowment insurance.",
           "optionStyle": "category",
           "group": "sec-1035"
+        },
+        {
+          "id": "IV6-04b",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "Which of the following exchanges would NOT qualify for tax-free treatment under Section 1035?",
+          "options": [
+            "An annuity for a life policy",
+            "A life policy for another life policy",
+            "A life policy for an annuity",
+            "An annuity for another annuity"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 1035(a)(3) allows an annuity to be exchanged tax-free only for another annuity or a qualified long-term care contract. Exchanging an annuity for life insurance does not qualify.",
+          "optionStyle": "category",
+          "group": "sec-1035"
         }
       ]
     },
@@ -116,8 +133,7 @@
             "$8,000"
           ],
           "answer": 1,
-          "explanation": "26 U.S.C. § 72(q) adds a tax of 10 percent of the portion of the distribution includible in gross income: 10% of the $8,000 taxable portion is $800.",
-          "group": "sec-72q"
+          "explanation": "26 U.S.C. § 72(q) adds a tax of 10 percent of the portion of the distribution includible in gross income: 10% of the $8,000 taxable portion is $800."
         }
       ]
     },
@@ -141,7 +157,9 @@
           ],
           "answer": 1,
           "explanation": "26 U.S.C. § 72(q)(2)(A) exempts from the 10% penalty any distribution made on or after the date the taxpayer reaches age 59½.",
-          "group": "sec-72q"
+          "enemies": [
+            "IV6-06b"
+          ]
         },
         {
           "id": "IV6-06b",
@@ -156,8 +174,7 @@
             "$10,000"
           ],
           "answer": 0,
-          "explanation": "26 U.S.C. § 72(q)(2)(A) exempts from the 10% penalty any distribution made on or after the taxpayer reaches age 59½. At 61, no penalty applies.",
-          "group": "sec-72q"
+          "explanation": "26 U.S.C. § 72(q)(2)(A) exempts from the 10% penalty any distribution made on or after the taxpayer reaches age 59½. At 61, no penalty applies."
         }
       ]
     },
@@ -206,6 +223,52 @@
           "answer": 0,
           "explanation": "26 U.S.C. § 7702A(a)(2) treats any contract received in exchange for a modified endowment contract as a modified endowment contract itself.",
           "group": "mec"
+        }
+      ]
+    },
+    {
+      "id": "IV6-09",
+      "statement": "No deduction is allowed for premiums on a life insurance policy, endowment or annuity if the taxpayer is directly or indirectly a beneficiary.",
+      "source": "usc-26-264-a1",
+      "quote": "Premiums on any life insurance policy, or endowment or annuity contract, if the taxpayer is directly or indirectly a beneficiary under the policy or contract.",
+      "items": [
+        {
+          "id": "IV6-09a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.1,
+          "stem": "Carla pays $3,000 a year in premiums on a life policy on her own life, with her husband as beneficiary. On her federal income tax return, the premiums are:",
+          "options": [
+            "Fully deductible",
+            "Deductible only above 7.5% of income",
+            "Deductible as a charitable gift",
+            "Not deductible"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 264(a)(1) allows no deduction for life insurance premiums when the taxpayer is directly or indirectly a beneficiary, which is the case for a personally owned policy benefiting her family."
+        }
+      ]
+    },
+    {
+      "id": "IV6-10",
+      "statement": "The 10% penalty does not apply to annuity distributions made on or after the holder's death, or attributable to the taxpayer becoming disabled.",
+      "source": "usc-26-72-q2bc",
+      "quote": "(B) made on or after the death of the holder",
+      "items": [
+        {
+          "id": "IV6-10a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 0.8,
+          "stem": "A nonqualified deferred annuity (not an IRA or employer plan) pays out before the holder reaches age 59½. Which of the following distributions is exempt from the 10% federal penalty?",
+          "options": [
+            "A withdrawal to pay college tuition",
+            "A payment to the beneficiary after the holder's death",
+            "A withdrawal to buy a first home",
+            "A withdrawal made during the surrender charge period"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 72(q)(2)(B)-(C) exempts nonqualified annuity distributions made on or after the holder's death, or attributable to disability, from the 10% penalty. The tuition and first-home exceptions belong to the qualified-plan and IRA rules, not to nonqualified annuities."
         }
       ]
     }

@@ -29,6 +29,8 @@ export interface ItemMeta {
   b: number;
   /** items in the same enemy group cue each other and never share a form */
   group?: string;
+  /** item ids (without version) that must never share a form with this one */
+  enemies?: string[];
 }
 
 export interface AnswerEvent {

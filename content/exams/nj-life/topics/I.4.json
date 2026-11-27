@@ -71,8 +71,7 @@
             "A floor on credited interest"
           ],
           "answer": 3,
-          "explanation": "Per the SEC, Investor.gov: Annuities guide, fixed annuities guarantee at least a minimum interest rate. They may credit more, but only the minimum is guaranteed.",
-          "group": "annuity-types"
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, fixed annuities guarantee at least a minimum interest rate. They may credit more, but only the minimum is guaranteed."
         }
       ]
     },
@@ -123,7 +122,7 @@
           "answer": 1,
           "explanation": "Per the SEC, Investor.gov: Annuities guide, a RILA can credit negative interest when the index performs poorly, so the owner can lose money. A fixed indexed annuity's credited interest never falls below zero.",
           "optionStyle": "category",
-          "group": "annuity-types"
+          "group": "rila-losses"
         }
       ]
     },
@@ -147,8 +146,7 @@
           ],
           "answer": 2,
           "explanation": "Per the SEC, Investor.gov: Annuities guide, variable annuities let the owner direct contributions to a menu of mutual funds, with no limits on losses or gains.",
-          "optionStyle": "category",
-          "group": "annuity-types"
+          "optionStyle": "category"
         }
       ]
     },
@@ -219,6 +217,77 @@
           ],
           "answer": 1,
           "explanation": "Per the SEC, Investor.gov: Annuities guide, an insurer's obligations under an annuity are subject to its financial strength and claims-paying ability. Annuities are not FDIC-insured."
+        }
+      ]
+    },
+    {
+      "id": "I4-10",
+      "statement": "Annuities provide tax-deferred growth until income payments begin.",
+      "source": "sec-annuities-what",
+      "quote": "Annuities provide: tax-deferred growth until you begin receiving income payments",
+      "items": [
+        {
+          "id": "I4-10a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.3,
+          "stem": "Which feature do annuities generally provide before income payments begin?",
+          "options": [
+            "Deferral of tax on earnings",
+            "Tax-free withdrawals at any age",
+            "FDIC insurance on the account value",
+            "A guaranteed return above market rates"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, annuities provide tax-deferred growth until income payments begin."
+        }
+      ]
+    },
+    {
+      "id": "I4-11",
+      "statement": "Withdrawing an annuity's value as a lump sum may bring surrender charges, taxes and tax penalties.",
+      "source": "sec-annuities-what",
+      "quote": "you may choose to withdraw your contract’s value as a lump sum payment, although doing so may subject you to surrender charges, taxes, and tax penalties",
+      "items": [
+        {
+          "id": "I4-11a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.2,
+          "stem": "Early in the contract, an annuity owner withdraws the full contract value as a lump sum. Which costs may apply?",
+          "options": [
+            "A flat processing fee, with income tax deferred to age 65",
+            "Surrender charges, plus income tax on gains and possible penalties",
+            "Income tax on the full amount, with surrender charges waived",
+            "A market value adjustment in every case, but no tax"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, withdrawing an annuity's value as a lump sum may bring surrender charges, taxes and tax penalties.",
+          "retired": "Flagged as test-wise in two rounds: the complete, hedged key stands out against absolute distractors."
+        }
+      ]
+    },
+    {
+      "id": "I4-12",
+      "statement": "For a RILA, the insurer generally sets parameters that limit both gains and losses.",
+      "source": "sec-annuities-kinds",
+      "quote": "The insurer generally sets parameters that limit both your gains and your losses.",
+      "items": [
+        {
+          "id": "I4-12a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "In a registered index-linked annuity (RILA), the insurer generally sets parameters that:",
+          "options": [
+            "Limit gains but guarantee no losses",
+            "Limit losses but allow unlimited gains",
+            "Lock in a minimum fixed interest rate",
+            "Limit both gains and losses"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, the insurer generally sets RILA parameters that limit both gains and losses.",
+          "group": "rila-losses"
         }
       ]
     }

@@ -22,7 +22,6 @@
           ],
           "answer": 0,
           "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, variable life has a cash value that varies with the performance of investment options the owner chooses, typically mutual funds. Universal life credits interest, indexed universal life ties crediting to an index, and whole life has guaranteed values.",
-          "group": "variable-life",
           "optionStyle": "category"
         }
       ]
@@ -46,8 +45,7 @@
             "Could lose money, including the initial investment"
           ],
           "answer": 3,
-          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, a variable life policyowner can lose money, including the initial investment, if the chosen investment options perform poorly.",
-          "group": "variable-life"
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, a variable life policyowner can lose money, including the initial investment, if the chosen investment options perform poorly."
         }
       ]
     },

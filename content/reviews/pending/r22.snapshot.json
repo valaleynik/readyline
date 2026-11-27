@@ -1,0 +1,15 @@
+[
+  {
+    "itemId": "IV6-10a",
+    "version": 2,
+    "source": "usc-26-72-q2bc",
+    "stem": "A nonqualified deferred annuity (not an IRA or employer plan) pays out before the holder reaches age 59½. Which of the following distributions is exempt from the 10% federal penalty?",
+    "options": [
+      "A withdrawal to pay college tuition",
+      "A payment to the beneficiary after the holder's death",
+      "A withdrawal to buy a first home",
+      "A withdrawal made during the surrender charge period"
+    ],
+    "key": "A payment to the beneficiary after the holder's death"
+  }
+]

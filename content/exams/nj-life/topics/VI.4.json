@@ -1,0 +1,76 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "VI.4",
+  "facts": [
+    {
+      "id": "VI4-01",
+      "statement": "A policy, application, rider or endorsement delivered in New Jersey that does not comply with Title 17B is interpreted as if it did comply.",
+      "source": "njsa-17b-25-18-1",
+      "quote": "shall be deemed to be in compliance with the requirements and shall be interpreted by the courts and among the persons affected by the policy or contract as if that policy or contract form were in compliance with the requirements",
+      "items": [
+        {
+          "id": "VI4-01a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A life policy delivered in New Jersey contains a provision less favorable to the policyowner than state law requires. How is the policy interpreted?",
+          "options": [
+            "As written, since the owner accepted it",
+            "As void, with all premiums refunded",
+            "As written until the commissioner orders a change",
+            "As if it complied with the law"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-18.1 provides that a policy delivered in New Jersey that does not comply with Title 17B is deemed to comply and is interpreted as if it did, without relieving the insurer of any penalty."
+        }
+      ]
+    },
+    {
+      "id": "VI4-02",
+      "statement": "A policy form filed with the commissioner is deemed approved 60 days after submission unless disapproved in writing within that time.",
+      "source": "njsa-17b-25-18-2b",
+      "quote": "shall be deemed approved upon the expiration of 60 days after the submission of the form unless disapproved in writing by the commissioner within that time",
+      "items": [
+        {
+          "id": "VI4-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "An insurer files a new life policy form with the New Jersey commissioner. If the commissioner does not disapprove it in writing, the form is deemed approved after:",
+          "options": [
+            "30 days",
+            "45 days",
+            "60 days",
+            "90 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-18.2(b) deems a filed form approved 60 days after submission unless the commissioner disapproves it in writing within that time."
+        }
+      ]
+    },
+    {
+      "id": "VI4-03",
+      "statement": "Treating a noncomplying form as compliant does not relieve the insurer of any penalty for the violation.",
+      "source": "njsa-17b-25-18-1",
+      "quote": "except that this provision shall not relieve the insurer from any penalty that may be imposed for violation of this act",
+      "items": [
+        {
+          "id": "VI4-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A New Jersey insurer delivers a policy that does not comply with Title 17B, so the policy is read as if it complied. What is the effect on the insurer?",
+          "options": [
+            "It is excused from any penalty",
+            "It may still be penalized for the violation",
+            "It must cancel and reissue the policy",
+            "It must refund all premiums with interest"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-18.1 reads a noncomplying policy as if it complied, but that does not relieve the insurer from any penalty for the violation.",
+          "group": "noncomplying-forms"
+        }
+      ]
+    }
+  ]
+}
