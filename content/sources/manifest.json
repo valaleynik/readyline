@@ -1547,6 +1547,54 @@
       "sha256": "f6dc9d1364133204fd0203dacfc9fdb66015b378fada9888d27a2993be7ee17c",
       "verifiedAgainstOfficial": false,
       "note": "Excerpts (a), (b)(1), (e)(1), (g)(1)(A) extracted verbatim in the browser from the LII copy."
+    },
+    {
+      "id": "njac-11-4-52-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-52.4(a)-(b)",
+      "title": "Life insurance illustrations: general rules and prohibitions",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-52-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "d24d3b26f9c94a52f6196bdcd64b3d0afccdffd524580b5d1b558dac76f0a0b6",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs (60.3(a) omits the fraternal-agent clauses)."
+    },
+    {
+      "id": "njac-11-4-52-7",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-52.7",
+      "title": "Life insurance illustrations: delivery and signatures",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-52-7",
+      "retrievedAt": "2026-11-27",
+      "sha256": "8b042d6498ae1c9bac9fa31e2182ed23a47cd9bfd9372bb9fbce705b8dc6cbeb",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs (60.3(a) omits the fraternal-agent clauses)."
+    },
+    {
+      "id": "njac-11-4-60-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-60.3(a),(c)",
+      "title": "Senior-specific certifications and designations",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-60-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "d2622df558fe06add2bb56edfae4b9dce1629402146ddd4a7188b417b7d293f5",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs (60.3(a) omits the fraternal-agent clauses)."
+    },
+    {
+      "id": "njac-11-4-41-11",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.11(a)5-6",
+      "title": "Re-entry or requalification features",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-11",
+      "retrievedAt": "2026-11-27",
+      "sha256": "67c1328ddb1741dbfa857b6cf33f56bc5bb2fcaad3f9581869afe3a9fa1d8d7e",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs (60.3(a) omits the fraternal-agent clauses)."
     }
   ]
 }

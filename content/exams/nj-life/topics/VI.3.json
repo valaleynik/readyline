@@ -301,6 +301,150 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "VI3-50",
+      "statement": "When using an illustration, a producer may not describe a plan of using non-guaranteed elements to pay future premiums as a 'vanishing premium.'",
+      "source": "njac-11-4-52-4",
+      "quote": "Use the term \"vanish\" or \"vanishing premium,\" or a similar term that implies the policy becomes paid up",
+      "items": [
+        {
+          "id": "VI3-50a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey's life insurance illustration rules, which term may a producer NOT use to describe a plan in which future dividends pay part of the premiums?",
+          "options": [
+            "Vanishing premium",
+            "Premium offset",
+            "Dividend option",
+            "Paid-up additions"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-52.4(a)-(b) bars using \"vanish,\" \"vanishing premium\" or a similar term that implies the policy becomes paid up to describe using non-guaranteed elements to pay part of future premiums.",
+          "optionStyle": "category",
+          "retired": "Answerable by common sense or ethics instinct."
+        }
+      ]
+    },
+    {
+      "id": "VI3-51",
+      "statement": "If a policy is applied for as illustrated, a signed copy of the illustration goes to the insurer with the application, and a copy to the applicant.",
+      "source": "njac-11-4-52-7",
+      "quote": "a copy of that illustration, signed in accordance with these rules, shall be submitted to the insurer at the time of policy application",
+      "items": [
+        {
+          "id": "VI3-51a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A producer uses a basic illustration, and the client applies for the policy exactly as illustrated. Under New Jersey rules, when must the signed illustration be submitted to the insurer?",
+          "options": [
+            "When the policy is delivered",
+            "Along with the application",
+            "Within 30 days after issue",
+            "Only if the insurer requests it"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-52.7 requires a signed copy of the illustration to be submitted to the insurer at the time of application when the policy is applied for as illustrated, with a copy to the applicant."
+        }
+      ]
+    },
+    {
+      "id": "VI3-52",
+      "statement": "If the policy is issued other than as applied for, a 'Revised Illustration' must be sent with the policy and signed by the owner and producer no later than delivery.",
+      "source": "njac-11-4-52-7",
+      "quote": "shall be labeled \"Revised Illustration\" and shall be signed and dated by the applicant or policy owner and producer",
+      "items": [
+        {
+          "id": "VI3-52a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A client applied for a policy as illustrated, but the insurer issues it at a higher rating class. Under New Jersey rules, what must accompany the policy?",
+          "options": [
+            "An amended application signed by the client",
+            "A rating letter, with no new illustration",
+            "A revised illustration, signed by delivery",
+            "The original illustration, marked with the new premium"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-52.7 requires a revised basic illustration labeled \"Revised Illustration,\" conforming to the policy as issued, sent with the policy and signed by the owner and producer no later than delivery.",
+          "enemies": [
+            "VI3-51a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VI3-53",
+      "statement": "If no illustration is used, the producer must certify that in writing on a form provided by the insurer.",
+      "source": "njac-11-4-52-7",
+      "quote": "the producer or representative shall certify to that effect in writing on a form provided by the insurer",
+      "items": [
+        {
+          "id": "VI3-53a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A producer sells a life policy that is marketed with illustrations but shows the client no illustration at all. Under New Jersey rules, the producer must:",
+          "options": [
+            "Do nothing, since showing illustrations is optional",
+            "Mail the client an illustration within 30 days",
+            "Get the commissioner's approval for the sale",
+            "Sign a statement on the company's form saying none was shown"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-52.7 requires the producer to certify in writing, on a form provided by the insurer, that no illustration was used."
+        }
+      ]
+    },
+    {
+      "id": "VI3-54",
+      "statement": "Signed illustrations and certifications must be kept by the insurer until three years after the policy is no longer in force.",
+      "source": "njac-11-4-52-7",
+      "quote": "shall be retained by the insurer until three years after the policy is no longer in force",
+      "items": [
+        {
+          "id": "VI3-54a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "How long must a New Jersey insurer keep a policy's signed illustration?",
+          "options": [
+            "Until three years after the policy is no longer in force",
+            "One year after issue",
+            "Five years after issue",
+            "Until the policy's next anniversary"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-52.7 requires the insurer to retain signed illustrations and related certifications until three years after the policy is no longer in force."
+        }
+      ]
+    },
+    {
+      "id": "VI3-55",
+      "statement": "A producer may not use a self-conferred, nonexistent, or unearned senior-specific certification or designation to imply special expertise with seniors.",
+      "source": "njac-11-4-60-3",
+      "quote": "The use of a nonexistent or self-conferred certification or professional designation",
+      "items": [
+        {
+          "id": "VI3-55a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer prints \"Certified Senior Retirement Advisor\" on her cards. She created the title herself and completed no course. Under New Jersey rules, this is:",
+          "options": [
+            "Allowed, since it describes her client base",
+            "Prohibited, since she gave herself the title",
+            "Allowed, if she has ten years of experience",
+            "Prohibited, unless she also sells annuities"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-60.3(a),(c) bars using a nonexistent or self-conferred certification or designation to imply special expertise in advising seniors.",
+          "retired": "Answerable by common sense or ethics instinct."
+        }
+      ]
     }
   ]
 }

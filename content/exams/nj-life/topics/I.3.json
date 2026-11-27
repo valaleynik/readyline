@@ -123,6 +123,29 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "I3-10",
+      "statement": "If re-entry term requires a new policy at current rates, the whole contract may be contestable for two years and the transaction is treated as a replacement.",
+      "source": "njac-11-4-41-11",
+      "quote": "Such a transaction shall be a replacement and the insurer shall be required to satisfy the requirements of N.J.A.C. 11:4-2.",
+      "items": [
+        {
+          "id": "I3-10a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "A re-entry term policy lets the insured requalify for lower rates at the end of the level period by taking a new policy at current rates. Under New Jersey rules, the new policy:",
+          "options": [
+            "Is a continuation of the old policy, with no new contestable period",
+            "May be contested only as to the premium difference",
+            "Cannot require any new evidence of insurability",
+            "Is treated as a replacement, and the whole contract may be contestable for two years"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.11(a)5-6 provides that if requalification requires issuing a new policy at current rates, the entire contract may be contestable for up to two years, and the transaction is a replacement subject to N.J.A.C. 11:4-2."
+        }
+      ]
     }
   ]
 }

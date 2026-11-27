@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r76",
+    "detail": "picked \"A revised illustration, signed by delivery\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r76",
+    "detail": "N.J.A.C. 11:4-52.7(b) directly requires a revised basic illustration conforming to the policy as issued, labeled 'Revised Illustration', sent with the policy and signed and dated by the applicant/owner and producer no later than delivery. Option A (amended application) reflects a real-world underwriting practice but is not what the illustration rule requires, so it is not a reasonable second answer to a question framed 'under New Jersey rules'.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r76",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r76",
+    "detail": "Options are similar in length and form; 'revised illustration' echoes the stem's 'as illustrated', but D and B also reference illustrations, so the cue is weak.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

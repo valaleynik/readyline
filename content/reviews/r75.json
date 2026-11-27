@@ -1,0 +1,380 @@
+[
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Is treated as a replacement, and the whole contract may be contestable for two years\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "D is the longest, two-part option, but the stem's 'new policy' wording plus B (drawn from the same-policy rule in para 5) make it a fair discriminator.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I3-10a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Vanishing premium\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "Minor: 'Paid-up additions' contains 'paid-up', and the rule also bars 'a similar term that implies the policy becomes paid up'; a candidate could overthink it, but PUA is a standard dividend option, not a description of a premium plan.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r75",
+    "detail": "'Vanishing premium' is the only option that sounds like a misleading sales promise, and it is widely known from the 1990s vanishing-premium scandals; an ethics instinct picks it without knowing the rule.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-50a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Along with the application\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-51a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"A revised illustration matching the policy as issued, signed by delivery\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "Minor: in practice insurers often require an amendment to the application when a policy is rated, so A has some real-world plausibility, but it is not what the illustration rule requires.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r75",
+    "detail": "C is the longest, most complete option and echoes the common-sense idea that the illustration should match the policy issued; B ('no new illustration') and D (handwritten change) look obviously sloppy.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-52a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Sign a statement on the company's form saying none was shown\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "Minor: under the NAIC model on which 11:4-52 is based, when no illustration is used an illustration conforming to the policy as issued must be provided no later than delivery, so B ('mail an illustration within 30 days') is partly in the right spirit, though the timing and the 'must' are wrong.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "D is the longest and most procedural, and A/C are weak, but B is a plausible competitor, so the cue is moderate rather than strong.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-53a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Until three years after the policy is no longer in force\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "A is the longest and the only option framed around policy termination rather than issue date, which is a mild odd-one-out cue, but not strong enough to answer without knowledge.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-54a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "picked \"Prohibited, since she gave herself the title\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r75",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r75",
+    "detail": "Ethics instinct alone says a self-invented 'Certified' title with no coursework is deceptive; A and C offer flimsy justifications and D is irrelevant, so the key is obvious without knowing 11:4-60.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI3-55a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
