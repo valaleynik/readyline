@@ -149,3 +149,16 @@ form .dateField { margin-bottom: 16px; }
 .missed .small { font-size: 16px; margin: 0 0 6px; }
 .missed p { margin: 4px 0; font-size: 14px; }
 .missed .cite { color: var(--muted); font-size: 12px; }
+
+.account a { color: var(--accent); }
+.agency { max-width: 1100px; }
+.agencyMeta { align-items: stretch; }
+.agencyMeta .chance { flex: 1 1 260px; margin: 0; }
+.chanceValue.code { font-family: ui-monospace, Menlo, monospace; font-size: 24px; letter-spacing: 1px; }
+.tableWrap { overflow-x: auto; margin: 16px 0; }
+.team td, .team th { white-space: nowrap; }
+.pill { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.pill.good { background: var(--good-bg); color: var(--good); }
+.pill.warn { background: var(--warn-bg); color: var(--ink); }
+.pill.bad { background: var(--bad-bg); color: var(--bad); }
+.pill.muted { background: var(--panel); color: var(--muted); }

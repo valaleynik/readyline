@@ -34,6 +34,7 @@ import {
   type MockSettings as StudySettings,
 } from "../../src/session/mock";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
+import type { Account } from "../lib/agency";
 
 export interface EventStore {
   load(): AnswerEvent[];
@@ -118,7 +119,7 @@ const REASON_LABEL: Record<string, string> = {
   baseline: "Baseline test",
 };
 
-export default function StudyApp({ data, store = localStore }: { data: ExportedBank; store?: EventStore }) {
+export default function StudyApp({ data, store = localStore, account }: { data: ExportedBank; store?: EventStore; account?: Account }) {
   const bank = useMemo(() => new Bank(data.blueprint, data.items), [data]);
   const display = useMemo(() => new Map(data.items.map((i) => [i.key, i])), [data]);
   // Load after mount so server-rendered and first client render match.
@@ -304,6 +305,7 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
             results={results}
             onReport={report}
             onMock={beginMock}
+            account={account}
             onOpenMock={(id) => setView({ kind: "mockDone", id })}
           />}
         {view.kind === "question" && (
@@ -440,6 +442,7 @@ function Home({
   onReport,
   onMock,
   onOpenMock,
+  account,
 }: {
   state: LearnerState;
   bank: Bank;
@@ -452,6 +455,7 @@ function Home({
   onReport: (r: ExamResult) => void;
   onMock: () => void;
   onOpenMock: (id: string) => void;
+  account?: Account;
 }) {
   const active = activeMock(settings);
   const advice = mockAdvice(state, bank, settings, Date.now());
@@ -560,6 +564,7 @@ function Home({
           </ul>
         )}
       </div>
+      {account && <AgencyBox account={account} />}
       {!ask &&
         (manual ? (
           <ResultForm title="Report your exam result" onSave={(r) => (onReport(r), setManual(false))} onLater={() => setManual(false)} />
@@ -1099,5 +1104,54 @@ function MockDone({
         Back to home
       </button>
     </section>
+  );
+}
+
+function AgencyBox({ account }: { account: Account }) {
+  const linked = account.memberships.find((m) => m.role === "learner");
+  const [code, setCode] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
+  if (linked) {
+    return (
+      <div className="mockBox">
+        <div className="chanceTitle">Agency</div>
+        <p className="chanceNote">
+          Linked to {linked.orgName}. They can see your progress summary (exam date, pace, pass chance, mock scores), not your
+          individual answers.
+        </p>
+        {error && <p className="error">{error}</p>}
+        <button
+          className="link"
+          onClick={async () => {
+            if (!confirm(`Leave ${linked.orgName}? Your progress stays with you.`)) return;
+            setError(await account.leave(linked.orgId));
+          }}
+        >
+          Leave agency
+        </button>
+      </div>
+    );
+  }
+  return (
+    <form
+      className="mockBox"
+      onSubmit={async (e) => {
+        e.preventDefault();
+        setBusy(true);
+        setError(await account.join(code));
+        setBusy(false);
+      }}
+    >
+      <div className="chanceTitle">Studying with an agency?</div>
+      <label className="dateField">
+        <span>Agency code</span>
+        <input value={code} onChange={(e) => setCode(e.target.value)} placeholder="RDY-XXXX-XXXX" autoCapitalize="characters" />
+      </label>
+      {error && <p className="error">{error}</p>}
+      <button className="secondary" type="submit" disabled={busy || code.trim().length < 8}>
+        {busy ? "Joining..." : "Join"}
+      </button>
+    </form>
   );
 }

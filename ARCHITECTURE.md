@@ -229,3 +229,14 @@ A full rehearsal (`src/session/mock.ts`): 83 questions in the blueprint's sectio
 - Result: score with a rough 80% range (one form has luck in it), section scores, minutes used, what the model expected before, a warning when over 15% of questions were repeats, and a review of every miss with explanation and citation.
 - Suggested (always available): once 40% of facts are studied, and again 2 to 5 days before the exam; never within 3 days of the last one.
 - Migration `0003_mock_exams` applied before deploy; verified "mock" accepted, other contexts and a non-array `mocks` rejected.
+
+## Agencies
+
+Same app, same sign-in. Individuals study on their own; agencies buy seats and hand out a join code (`supabase/migrations/0004_agencies.sql`).
+
+- `organizations` (name, seats, join code) and `memberships` (manager or learner, email copied at join). A learner belongs to at most one agency.
+- Joining goes through `redeem_join_code`: valid code, a free seat, not already in another agency. `rotate_join_code` (managers only) replaces the code; the old one stops working. Learners can leave; managers can remove learners. No insert or update policies: nobody can self-promote.
+- Managers never get raw answers. The `agency-dashboard` edge function (service role) checks the caller manages the agency, reads each learner's log, runs the same engine (`src/agency/summary.ts`) and returns summaries only: exam date, plan status, share of material seen, activity, pass chance (only when the learner's own app shows it), mock scores, reported result. RLS on answers, settings and results is unchanged.
+- The function is bundled from `supabase/functions/agency-dashboard/handler.ts` by `scripts/build-functions.mjs` and reads the bank from the app's `/bank.json`, so server and app use the same questions.
+- Verified on the live database: code format, seat limit, invalid and replaced codes rejected, no self-promotion, learners see only themselves, managers see members but zero raw answers, outsiders and anon see nothing.
+- Agencies are created by hand for now (sales-led); Stripe will create them on purchase.

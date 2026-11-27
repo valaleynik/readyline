@@ -7,10 +7,12 @@
 import { useEffect, useMemo, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import StudyApp from "./StudyApp";
+import AgencyDashboard from "./AgencyDashboard";
 import { supabase, syncedStore } from "../lib/sync";
+import { joinAgency, leaveAgency, loadDashboard, loadMemberships, removeLearner, rotateCode, type Account, type Membership } from "../lib/agency";
 import type { ExportedBank } from "../../src/content/export";
 
-export default function AuthGate({ data }: { data: ExportedBank }) {
+export default function AuthGate({ data, view = "study" }: { data: ExportedBank; view?: "study" | "agency" }) {
   const db = useMemo(() => supabase(), []);
   const [session, setSession] = useState<Session | null>(null);
   const [ready, setReady] = useState(!db);
@@ -27,19 +29,67 @@ export default function AuthGate({ data }: { data: ExportedBank }) {
 
   const userId = session?.user.id;
   const store = useMemo(() => (db && userId ? syncedStore(db, userId) : undefined), [db, userId]);
+  const [memberships, setMemberships] = useState<Membership[]>([]);
+  const refreshMemberships = useMemo(
+    () => async () => {
+      if (db && userId) setMemberships(await loadMemberships(db, userId));
+    },
+    [db, userId],
+  );
+  useEffect(() => {
+    void refreshMemberships();
+  }, [refreshMemberships]);
+  const account: Account | undefined = useMemo(
+    () =>
+      db && userId
+        ? {
+            memberships,
+            join: async (code) => {
+              const e = await joinAgency(db, code);
+              await refreshMemberships();
+              return e;
+            },
+            leave: async (orgId) => {
+              const e = await leaveAgency(db, userId, orgId);
+              await refreshMemberships();
+              return e;
+            },
+          }
+        : undefined,
+    [db, userId, memberships, refreshMemberships],
+  );
+  const loadTeam = useMemo(() => () => loadDashboard(db!), [db]);
+  const manages = memberships.some((m) => m.role === "manager");
 
-  if (!db) return <StudyApp data={data} />;
+  if (!db) return view === "agency" ? <p className="lede">Agency view needs an account.</p> : <StudyApp data={data} />;
   if (!ready) return null;
   if (!session || !store) return <SignIn onSend={(email) => sendLink(db, email)} />;
   return (
     <>
       <div className="account">
+        {view === "agency" ? <a href="/">Study</a> : manages ? <a href="/agency">Agency dashboard</a> : null}
         <span>{session.user.email}</span>
         <button className="link" onClick={() => db.auth.signOut()}>
           Sign out
         </button>
       </div>
-      <StudyApp key={userId} data={data} store={store} />
+      {view === "agency" ? (
+        <div className="app">
+          <main>
+            {manages ? (
+              <AgencyDashboard
+                load={loadTeam}
+                onRotate={(org) => rotateCode(db, org)}
+                onRemove={(org, uid) => removeLearner(db, org, uid)}
+              />
+            ) : (
+              <p className="lede">This account doesn't manage an agency.</p>
+            )}
+          </main>
+        </div>
+      ) : (
+        <StudyApp key={userId} data={data} store={store} account={account} />
+      )}
     </>
   );
 }
