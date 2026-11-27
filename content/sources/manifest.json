@@ -1127,6 +1127,30 @@
       "sha256": "ada383498f5fe8479009df9131b4716e59b9063d59f43b9db1de0f28ded043cf",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "sec-indexed-annuities",
+      "kind": "manual",
+      "citation": "SEC Investor Bulletin: Indexed Annuities",
+      "title": "Updated Investor Bulletin: Indexed Annuities",
+      "act": "U.S. Securities and Exchange Commission, Office of Investor Education and Advocacy",
+      "url": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins/updated-investor-bulletin-indexed-annuities",
+      "retrievedAt": "2026-11-27",
+      "sha256": "e36e65cbac7de0a6d3ffcc24f09866a455758c06e654f991258f324548a99896",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpt copied verbatim from investor.gov via the browser."
+    },
+    {
+      "id": "sec-variable-annuities",
+      "kind": "manual",
+      "citation": "SEC Investor.gov: Variable Annuities",
+      "title": "Variable Annuities",
+      "act": "U.S. Securities and Exchange Commission, Office of Investor Education and Advocacy",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/variable-annuities",
+      "retrievedAt": "2026-11-27",
+      "sha256": "98916b25fe46ce5325913603dbc54aca7fa1781fc1ba390daf62d37a1f17256c",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpt copied verbatim from investor.gov via the browser."
     }
   ]
 }

@@ -290,6 +290,275 @@
           "group": "rila-losses"
         }
       ]
+    },
+    {
+      "id": "I4-20",
+      "statement": "A participation rate credits only a percentage of the index gain.",
+      "source": "sec-indexed-annuities",
+      "quote": "if the participation rate is 75% and the index return is calculated to be 10% during the measuring period, the return credited to your annuity would be 7.5%",
+      "items": [
+        {
+          "id": "I4-20a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "An indexed annuity has an 80% participation rate and no cap or spread. The index gains 10% over the measuring period. What is credited?",
+          "options": [
+            "2%",
+            "8%",
+            "10%",
+            "12.5%"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, the participation rate sets how much of the index gain is credited. Eighty percent of 10% is 8%.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I4-21",
+      "statement": "A rate cap is the maximum positive return the contract can earn in a period.",
+      "source": "sec-indexed-annuities",
+      "quote": "The rate cap is a maximum rate of positive return that your contract can earn.",
+      "items": [
+        {
+          "id": "I4-21a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A client's indexed annuity carries a 6% rate cap. The linked index rises 11% this crediting period, and there is no participation limit or spread. What is credited?",
+          "options": [
+            "5%",
+            "6%",
+            "8.5%",
+            "11%"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, a rate cap is the maximum positive return the contract can earn, so an 11% index gain is credited at the 6% cap.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I4-22",
+      "statement": "A spread (margin or asset fee) subtracts a set percentage from the index gain.",
+      "source": "sec-indexed-annuities",
+      "quote": "This fee subtracts a set percentage from any gain in the index.",
+      "items": [
+        {
+          "id": "I4-22a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "An indexed annuity has a 2.5% spread and no cap or participation limit. The index gains 8%. What is credited?",
+          "options": [
+            "5.5%",
+            "8%",
+            "10.5%",
+            "20%"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, a spread subtracts a set percentage from any gain in the index: 8% minus 2.5% is 5.5%.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I4-23",
+      "statement": "When features combine, the participation rate is applied first and then the spread is subtracted.",
+      "source": "sec-indexed-annuities",
+      "quote": "(10% x 75% = 7.5%; 7.5% - 3% = 4.5%)",
+      "items": [
+        {
+          "id": "I4-23a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "An indexed annuity has a 50% participation rate and a 1% spread. The participation rate is applied to the index gain first, and then the spread is subtracted. The index gains 12%. What is credited?",
+          "options": [
+            "5%",
+            "5.5%",
+            "6%",
+            "11%"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, combined features are applied in sequence: 12% times 50% is 6%, minus the 1% spread is 5%.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I4-24",
+      "statement": "Index gains are usually calculated without dividends paid on the index's securities.",
+      "source": "sec-indexed-annuities",
+      "quote": "Any gains in the value of the index are generally calculated without including dividends paid on the securities that make up the index.",
+      "items": [
+        {
+          "id": "I4-24a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "An index reports a 9% total return for the year, of which 2% came from dividends. Under a typical indexed annuity, the index gain used to calculate the credit is:",
+          "options": [
+            "2%",
+            "7%",
+            "9%",
+            "11%"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, index gains are generally calculated without dividends, so 9% minus 2% of dividends leaves 7% before any participation rate, cap or spread.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "I4-25",
+      "statement": "A floor limits loss to a set percentage; a buffer (shield) absorbs a set percentage of loss before the owner loses value.",
+      "source": "sec-indexed-annuities",
+      "quote": "Buffer or Shield. This protection offers a set percentage of loss that the insurance company is willing to absorb before deducting value from the indexed annuity.",
+      "items": [
+        {
+          "id": "I4-25a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "An index-linked annuity has a 10% buffer. The index falls 15% in the period. Before any surrender charges, how much does the contract value lose?",
+          "options": [
+            "0%",
+            "5%",
+            "10%",
+            "15%"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, a buffer absorbs a set percentage of loss first. A 15% drop minus the 10% buffer leaves a 5% loss. A 10% floor would instead cap the loss at 10%.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "I4-26a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "I4-26",
+      "statement": "With a floor, the owner's loss stops at the floor percentage.",
+      "source": "sec-indexed-annuities",
+      "quote": "This protection limits investor exposure to a set percentage of potential loss.",
+      "items": [
+        {
+          "id": "I4-26a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Which index-linked annuity feature caps the owner's loss at a set maximum percentage, with the insurer absorbing any decline beyond that point?",
+          "options": [
+            "A buffer",
+            "A rate cap",
+            "A participation rate",
+            "A floor"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, a floor limits exposure to a set percentage of potential loss. A buffer instead absorbs the first set percentage of loss, and the owner bears the rest.",
+          "optionStyle": "category"
+        }
+      ],
+      "contrasts": [
+        "I4-25"
+      ]
+    },
+    {
+      "id": "I4-27",
+      "statement": "Under the point-to-point method, the index level is compared at two points in time, such as the start and end of the period.",
+      "source": "sec-indexed-annuities",
+      "quote": "This method compares the index level at two points in time, such as the beginning and ending dates of the time period.",
+      "items": [
+        {
+          "id": "I4-27a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Which indexing method compares the index level only at the beginning and end of the crediting period?",
+          "options": [
+            "Averaging",
+            "Monthly sum",
+            "High-water mark",
+            "Point-to-point"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, the point-to-point method compares the index level at two points in time, such as the beginning and ending dates of the period.",
+          "optionStyle": "category",
+          "retired": "Method name describes the answer (point-to-point = two points)."
+        }
+      ]
+    },
+    {
+      "id": "I4-28",
+      "statement": "Indexed annuity contracts commonly let the insurer change features like the cap periodically.",
+      "source": "sec-indexed-annuities",
+      "quote": "Indexed annuity contracts commonly allow the insurance company to change some of these features periodically, such as the rate cap.",
+      "items": [
+        {
+          "id": "I4-28a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A client bought an indexed annuity with a 7% cap. Two years later the cap for the new period is 5%. Is this typical?",
+          "options": [
+            "No, a cap is locked in at issue for the whole contract",
+            "No, the participation rate may change but the cap may not",
+            "Yes, but a new cap has to be higher than the old one",
+            "Yes, insurers commonly reset caps from period to period"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC Investor Bulletin: Indexed Annuities, indexed annuity contracts commonly allow the insurer to change some features periodically, such as the rate cap."
+        }
+      ]
+    },
+    {
+      "id": "I4-29",
+      "statement": "Once annuity income payments begin, the owner generally cannot withdraw money from the account.",
+      "source": "sec-variable-annuities",
+      "quote": "annuities do not allow you to withdraw money from your account once you have started receiving income payments",
+      "items": [
+        {
+          "id": "I4-29a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A retiree annuitized her variable annuity last year and now receives monthly income. She wants to take out a lump sum for a home repair. In general:",
+          "options": [
+            "She can withdraw from the account at any time",
+            "She can withdraw up to 10% per year without penalty",
+            "She cannot withdraw from the account once payments have begun",
+            "She can withdraw after the surrender period ends"
+          ],
+          "answer": 2,
+          "explanation": "Per the SEC Investor.gov: Variable Annuities, annuities generally do not allow withdrawals from the account once income payments have started."
+        }
+      ]
+    },
+    {
+      "id": "I4-30",
+      "statement": "A common variable annuity death benefit pays the greater of the account value or a guaranteed minimum such as purchase payments minus withdrawals.",
+      "source": "sec-variable-annuities",
+      "quote": "your beneficiary may receive the greater of: (i) all the money in your account; or (ii) some guaranteed minimum, such as all purchase payments minus prior withdrawals",
+      "items": [
+        {
+          "id": "I4-30a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "A variable annuity owner paid in $100,000, took no withdrawals, and dies during the accumulation phase when the account is worth $82,000. The contract has a common standard death benefit. The beneficiary most likely receives:",
+          "options": [
+            "$82,000",
+            "$91,000",
+            "$100,000",
+            "$118,000"
+          ],
+          "answer": 2,
+          "explanation": "Per the SEC Investor.gov: Variable Annuities, a common death benefit pays the greater of the account value or a guaranteed minimum such as purchase payments minus prior withdrawals. The greater of $82,000 and $100,000 is $100,000.",
+          "optionStyle": "ordered"
+        }
+      ]
     }
   ]
 }
