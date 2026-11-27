@@ -203,4 +203,7 @@ The server stores the answer log and settings, nothing else (`supabase/migration
 - Answers are saved locally first, then uploaded (`src/sync/store.ts`). Losing the connection never loses an answer.
 - Two devices can both write id N. The server's rows are final: local answers it lacks are renumbered after its last id and retried (`src/sync/merge.ts`). Answer times are never rewritten. Replay treats a late upload with an earlier time as happening at the previous answer's time, so memory never runs backward.
 - The app is told about changes only when the log or settings actually changed, so saving back cannot loop.
+- Project: `readyline` (ref `tszpanlxwshwvxemtrvc`, us-east-1). Migration `0001_event_log` applied 2026-11-27.
+- Verified on the live database (as two test users and as anon, then rolled back): duplicate ids rejected with 23505, inserting as another user rejected, updates and deletes of answers affect 0 rows, other users' answers and settings invisible, anon sees nothing. Security and performance advisors: no issues.
+- Not yet verified: the browser client against the live API (the build workspace cannot reach supabase.co). First check after deploy.
 - Without `NEXT_PUBLIC_SUPABASE_URL` and the publishable key, the app runs local-only (the preview build does).
