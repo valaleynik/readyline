@@ -222,6 +222,54 @@
           "explanation": "N.J.S.A. 17B:30-12(a)-(c) bars unfair discrimination between individuals of the same class and equal expectation of life in the rates charged for life insurance."
         }
       ]
+    },
+    {
+      "id": "III2-30",
+      "statement": "Refusing, limiting or rating coverage solely because of blindness or other physical or mental impairment is unfair discrimination, unless based on sound actuarial principles or actual or reasonably anticipated experience.",
+      "source": "njac-11-4-20-2",
+      "quote": "except where the refusal, limitation or rate differential is based on sound, actuarial principles or is related to actual or reasonably anticipated experience",
+      "items": [
+        {
+          "id": "III2-30a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An insurer charges a legally blind applicant a higher life premium. Under New Jersey rules, this is permitted when:",
+          "options": [
+            "Mortality data or experience supports the rating",
+            "The applicant agrees to the higher rate in writing",
+            "The producer notes the reason on the application",
+            "The face amount is under $100,000"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-20.2(a)1 makes it unfair discrimination to refuse, limit or rate coverage solely because of blindness or other impairment, except where based on sound actuarial principles or actual or reasonably anticipated experience.",
+          "retired": "Only option with a risk-based reason; guessable."
+        }
+      ]
+    },
+    {
+      "id": "III2-31",
+      "statement": "Insurers may not refuse smokers if they accept non-smokers whose elevated mortality is at least equal to that of smokers.",
+      "source": "njac-11-4-48-5",
+      "quote": "Insurers shall not decline or refuse to offer insurance to smokers if non-smokers having elevated mortality at least equal to that of smokers are accepted.",
+      "items": [
+        {
+          "id": "III2-31a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An insurer accepts non-smokers with medical conditions that give them higher expected mortality than a typical smoker, but it declines every smoker. Under New Jersey rules, this is:",
+          "options": [
+            "Permitted, since smoking is a voluntary risk",
+            "Not permitted, since it accepts non-smokers with equal or higher mortality",
+            "Permitted, if the policy form is sold to non-smokers",
+            "Not permitted, since smoking may not be used in underwriting"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-48.5 bars declining smokers when the insurer accepts non-smokers with elevated mortality at least equal to that of smokers, and the Department will not approve forms intended for sale only to non-smokers.",
+          "retired": "Key restates stem facts; guessable after review."
+        }
+      ]
     }
   ]
 }

@@ -1391,6 +1391,66 @@
       "sha256": "913baec7821428ebdb3ea2d655720c4da4260b255d297e6c8020be288c3a3925",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-11-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-11.3",
+      "title": "Life insurance disclosure: duties of insurers",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-11-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "2c2857ab4595e725072db27767963b5373798ef98c0a7a11607dd4d455452b4d",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
+    },
+    {
+      "id": "njac-11-4-11-5",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-11.5",
+      "title": "Life insurance disclosure: failure to comply",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-11-5",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ab8d5a03cb00b3a20929bcaf69ce70e156b17b2f5859bf99c2ad2dc9d7ecedf9",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
+    },
+    {
+      "id": "njac-11-4-20-2",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-20.2(a)1",
+      "title": "Unfair discrimination: blindness and other impairments",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-20-2",
+      "retrievedAt": "2026-11-27",
+      "sha256": "70832c70b179cf1cd55a006d4003b04f0845d4c0b6d8d6422296c94b86825d11",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
+    },
+    {
+      "id": "njac-11-4-48-5",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-48.5",
+      "title": "Non-smoker only coverage",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-48-5",
+      "retrievedAt": "2026-11-27",
+      "sha256": "03881cd21848333ebb99952c452d30008afe52cac61fddf6c5203c432f7af44d",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
+    },
+    {
+      "id": "njac-11-4-48-7",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-48.7",
+      "title": "Forgiveness of surrender charge",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-48-7",
+      "retrievedAt": "2026-11-27",
+      "sha256": "595bafe75294117b9f4bf84969f3668c09e62e4aa45679d15c62bf14282b9959",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt (11:4-11.3 joins (a)1-2 and (b)1iv)."
     }
   ]
 }

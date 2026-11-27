@@ -277,6 +277,30 @@
           "explanation": "N.J.A.C. 11:4-11.4(b)-(c) bars using terms such as financial planner or financial counseling to imply an advisory business with compensation unrelated to sales unless that is actually the case."
         }
       ]
+    },
+    {
+      "id": "VI3-40",
+      "statement": "Failing to deliver a required Buyer's Guide, policy summary or illustration is an omission that misrepresents the policy and can bring Unfair Trade Practices Act penalties.",
+      "source": "njac-11-4-11-5",
+      "quote": "shall constitute an omission that misrepresents the benefits, advantages, conditions or terms of an insurance policy",
+      "items": [
+        {
+          "id": "VI3-40a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey's life insurance disclosure rules, a producer's failure to deliver a required Buyer's Guide is treated as:",
+          "options": [
+            "A clerical error with no penalty",
+            "An omission that misrepresents the policy",
+            "A breach of contract only",
+            "A matter for the insured to raise in court"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-11.5 treats failure to deliver a required Buyer's Guide, policy summary, illustration or policy data as an omission that misrepresents the policy, subject to Unfair Trade Practices Act penalties.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

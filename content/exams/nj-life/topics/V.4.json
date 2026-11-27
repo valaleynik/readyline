@@ -453,6 +453,29 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "V4-50",
+      "statement": "A policy may not provide credits for a surrender charge imposed under another contract, since that unfairly discriminates based on the source of funding.",
+      "source": "njac-11-4-48-7",
+      "quote": "A policy shall not provide credits for a surrender charge imposed under another contract",
+      "items": [
+        {
+          "id": "V4-50a",
+          "version": 3,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "To win a replacement sale, a New Jersey insurer's new life policy offers to credit the client with the surrender charge she will pay on her old policy from another company. Under New Jersey rules, this is:",
+          "options": [
+            "Not allowed, even if fully disclosed",
+            "Allowed, as a bonus to the client",
+            "Allowed, if disclosed on the replacement notice",
+            "Not allowed, unless the old insurer consents"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-48.7 bars a policy from providing credits for a surrender charge imposed under another contract, because such credits unfairly discriminate among contractholders based on the source of funding."
+        }
+      ]
     }
   ]
 }

@@ -152,6 +152,82 @@
       "contrasts": [
         "III3-03"
       ]
+    },
+    {
+      "id": "III3-10",
+      "statement": "The Buyer's Guide must be given before the insurer accepts the initial premium, unless the policy has an unconditional refund provision of at least 10 days, in which case it may come with the policy.",
+      "source": "njac-11-4-11-3",
+      "quote": "if the policy for which application is made contains an unconditional refund provision of at least 10 days, the Buyer's Guide may be delivered with the policy",
+      "items": [
+        {
+          "id": "III3-10a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A New Jersey life policy includes an unconditional 10-day refund provision. What is the latest point at which the insurer may provide the Buyer's Guide?",
+          "options": [
+            "Before the initial premium is accepted",
+            "Before the application is taken",
+            "With the policy at delivery",
+            "After the free look period ends"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-11.3 requires the Buyer's Guide before accepting the initial premium, but if the policy has an unconditional refund provision of at least 10 days, the guide may be delivered with the policy or before delivery."
+        }
+      ]
+    },
+    {
+      "id": "III3-11",
+      "statement": "Without a 10-day unconditional refund provision, the Buyer's Guide must be given before the insurer accepts the applicant's initial premium.",
+      "source": "njac-11-4-11-3",
+      "quote": "prior to accepting the applicant's initial premium or premium deposit",
+      "items": [
+        {
+          "id": "III3-11a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A New Jersey life policy has no unconditional refund provision. The producer collects the first premium with the application. Under New Jersey disclosure rules, the Buyer's Guide must be provided:",
+          "options": [
+            "With the policy at delivery",
+            "Within 30 days after the policy is issued",
+            "On request only",
+            "Before the initial premium is accepted"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-11.3 requires the Buyer's Guide to be provided before the insurer accepts the applicant's initial premium, unless the policy has an unconditional refund provision of at least 10 days.",
+          "enemies": [
+            "III3-10a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "III3-10"
+      ]
+    },
+    {
+      "id": "III3-12",
+      "statement": "On request, policy data for an existing policy is provided for 20 years from the prior anniversary, and the insurer may charge up to $10.",
+      "source": "njac-11-4-11-3",
+      "quote": "The insurer may charge a reasonable fee, not to exceed $ 10.00, for the preparation of the statement",
+      "items": [
+        {
+          "id": "III3-12a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A New Jersey policyowner asks the insurer for a statement of policy data on her existing policy. The insurer may charge a fee of no more than:",
+          "options": [
+            "$5",
+            "$10",
+            "$25",
+            "$50"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-11.3 lets the insurer charge a reasonable fee, not to exceed $10.00, to prepare the statement of policy data, which covers 20 years from the previous anniversary unless otherwise requested.",
+          "optionStyle": "ordered"
+        }
+      ]
     }
   ]
 }

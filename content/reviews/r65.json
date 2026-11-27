@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r65",
+    "detail": "picked \"Not allowed, even if fully disclosed\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r65",
+    "detail": "Source states a flat prohibition: a policy shall not provide credits for a surrender charge imposed under another contract. No condition (disclosure or consent) is recognized, so no second option is defensible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r65",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r65",
+    "detail": "No strong cue. C is an attractive distractor since disclosure cures many replacement issues, and D also says 'not allowed', so the candidate must know the rule is unconditional.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

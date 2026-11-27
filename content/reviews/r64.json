@@ -1,0 +1,110 @@
+[
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "picked \"With the policy at delivery\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "N.J.A.C. 11:4-11.3(a)1 says that with an unconditional refund provision of at least 10 days, the Buyer's Guide may be delivered with the policy or before delivery. 'Latest point' then points to C. A is the general rule when there is no such provision, so the 10-day fact in the stem rules it out.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III3-10a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "picked \"Not allowed, as unfair discrimination based on the source of funds\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "The source is categorical: a policy shall not provide credits for a surrender charge imposed under another contract, because such credits unfairly discriminate based on the source of funding. No disclosure exception exists, so C does not hold up.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r64",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r64",
+    "detail": "Mild cue: A is the only option that gives a specific, regulatory-sounding rationale ('unfair discrimination based on the source of funds') that matches the source's wording. Calling D's absolute 'surrender charges are illegal' wrong is common sense. A testwise candidate can narrow it to A or C without knowing the rule, but still needs the rule to reject C.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-50a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
