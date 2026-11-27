@@ -1163,6 +1163,90 @@
       "sha256": "fda236f6bd05f0a779ba86dc1fa00794e46e34155265bc896b230a123adb59c0",
       "verifiedAgainstOfficial": true,
       "note": "Second excerpt from the same page, copied verbatim via the browser."
+    },
+    {
+      "id": "njsa-17b-17-3",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-3",
+      "title": "Life insurance defined",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-3/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "2dcb8292d0212c58b7305b20036f2cca2f5b73ad7ae8ad44760cc8d44dd6cbf5",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-17-5",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-5",
+      "title": "Annuity defined",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-5/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "63f22e6a4ba20685c389e1f13cf9cc120a4daf6c0df8a9e10b9ff496bb6b7eb5",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-17-7",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-7",
+      "title": "Domestic, foreign and alien insurers",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-7/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "dbf77748db0be6d71b189ca7079120b38d6620a680e57f882ba5dc98d014bb63",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-17-11",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-11",
+      "title": "Authorized and unauthorized insurers",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-11/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ed5f46b2a05a8789e0355dfc066ac1a2886cd61d07b1905025c924006f6d69d6",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-17-12",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-12",
+      "title": "Certificate of authority and license",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-12/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "8d2798766b98acc0d4d583211480ac8fe4feecf32a7c186cd294cf87053df2a1",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-17-13",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:17-13(a)-(b)",
+      "title": "Unauthorized transaction of insurance prohibited",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-17-13/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "5ad9123d34fa49140935daf498b2cae04eece181b9b249d08fec7fbf045e30a2",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njsa-17b-21-1",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:21-1(a)",
+      "title": "Annual and quarterly statements",
+      "act": "New Jersey Statutes, Title 17B (Insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-21-1/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "214162c1f27175f86a4636487509f704248f93c8357d4cc7bf951fa8212ded72",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
     }
   ]
 }

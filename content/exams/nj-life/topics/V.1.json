@@ -1,0 +1,81 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "V.1",
+  "facts": [
+    {
+      "id": "V1-01",
+      "statement": "An authorized insurer holds a current certificate of authority from the commissioner; an unauthorized insurer does not.",
+      "source": "njsa-17b-17-11",
+      "quote": "An “unauthorized insurer” is an insurer not so authorized.",
+      "items": [
+        {
+          "id": "V1-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "An insurer formed in Delaware sells life policies by mail to New Jersey residents, but it has never received a certificate of authority from the New Jersey commissioner. In New Jersey it is:",
+          "options": [
+            "An unauthorized insurer",
+            "A domestic insurer",
+            "An authorized foreign insurer",
+            "An alien insurer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:17-11 defines an authorized insurer as one holding a current certificate of authority from the commissioner; any other insurer is unauthorized.",
+          "optionStyle": "category",
+          "enemies": [
+            "V2-02a"
+          ],
+          "retired": "Stem states the lack of a certificate, which names the answer; no rewrite avoids it."
+        }
+      ]
+    },
+    {
+      "id": "V1-02",
+      "statement": "No one may solicit, negotiate or effect insurance, deliver a policy, collect premiums or otherwise transact insurance in New Jersey unless specifically authorized.",
+      "source": "njsa-17b-17-13",
+      "quote": "unless specifically authorized under the laws of this State",
+      "items": [
+        {
+          "id": "V1-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A person with no New Jersey license or authorization collects premium payments from New Jersey residents on behalf of an out-of-state insurer, but never solicits or sells a policy. Under New Jersey law, this is:",
+          "options": [
+            "Allowed, since he did not solicit or sell",
+            "Allowed, if the insurer is licensed in its home state",
+            "Prohibited, since receiving premiums is transacting insurance",
+            "Prohibited only if the policies are life policies"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:17-13(a)-(b) bars anyone, unless specifically authorized, from soliciting, negotiating, delivering a policy, receiving any premium, or otherwise transacting insurance in New Jersey."
+        }
+      ]
+    },
+    {
+      "id": "V1-03",
+      "statement": "Every insurer must file a sworn annual financial statement with the commissioner by March 1, and quarterly statements within 45 days after each quarter.",
+      "source": "njsa-17b-21-1",
+      "quote": "on or before March 1, file with the commissioner a statement subscribed and sworn to",
+      "items": [
+        {
+          "id": "V1-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Every insurer transacting business in New Jersey must file its sworn annual financial statement with the commissioner by:",
+          "options": [
+            "January 31",
+            "March 1",
+            "April 15",
+            "June 30"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:21-1(a) requires the annual statement, showing condition as of December 31, to be filed on or before March 1. Quarterly statements are due within 45 days after each quarter.",
+          "optionStyle": "ordered"
+        }
+      ]
+    }
+  ]
+}

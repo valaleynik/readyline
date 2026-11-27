@@ -1,0 +1,488 @@
+[
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"An unauthorized insurer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r56",
+    "detail": "The stem says the insurer 'never received a certificate of authority', which maps almost word-for-word onto 'unauthorized', so a candidate can match on common sense alone. 'Authorized foreign' is the only option that competes, and the stem rules it out.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-01a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"Prohibited, since receiving premiums is transacting insurance\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-02a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"March 1\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V1-03a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"Domestic insurer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-01a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"Foreign insurer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-02a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"Alien insurer\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-03a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"Part of the life insurance\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"An annuity\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-05a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "picked \"A certificate of authority\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r56",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-06a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

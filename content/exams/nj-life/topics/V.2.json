@@ -1,0 +1,153 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "V.2",
+  "facts": [
+    {
+      "id": "V2-01",
+      "statement": "A domestic insurer is one formed under New Jersey law.",
+      "source": "njsa-17b-17-7",
+      "quote": "A “domestic” insurer is one formed under the laws of this State.",
+      "items": [
+        {
+          "id": "V2-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "An insurer incorporated under New Jersey law, with its home office in Newark, sells policies in New Jersey and Pennsylvania. In New Jersey it is a:",
+          "options": [
+            "Foreign insurer",
+            "Alien insurer",
+            "Unauthorized insurer",
+            "Domestic insurer"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:17-7 defines a domestic insurer as one formed under the laws of this State.",
+          "optionStyle": "category",
+          "group": "domicile"
+        }
+      ]
+    },
+    {
+      "id": "V2-02",
+      "statement": "A foreign insurer is one formed under the laws of another U.S. jurisdiction.",
+      "source": "njsa-17b-17-7",
+      "quote": "A “foreign” insurer is one formed under the laws of a jurisdiction of the United States of America other than this State.",
+      "items": [
+        {
+          "id": "V2-02a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "An insurer formed under Connecticut law is licensed to sell life insurance in New Jersey. In New Jersey it is a:",
+          "options": [
+            "Foreign insurer",
+            "Domestic insurer",
+            "Alien insurer",
+            "Fraternal insurer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:17-7 defines a foreign insurer as one formed under the laws of a U.S. jurisdiction other than New Jersey.",
+          "optionStyle": "category",
+          "group": "domicile"
+        }
+      ]
+    },
+    {
+      "id": "V2-03",
+      "statement": "An alien insurer is one formed under the laws of a country other than the United States.",
+      "source": "njsa-17b-17-7",
+      "quote": "An “alien” insurer is one formed under the laws of any country other than the United States of America",
+      "items": [
+        {
+          "id": "V2-03a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "An insurer formed under the laws of Canada has its U.S. office in New York and sells policies in New Jersey. In New Jersey it is a:",
+          "options": [
+            "Domestic insurer",
+            "Foreign insurer",
+            "Alien insurer",
+            "Surplus lines insurer"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:17-7 defines an alien insurer as one formed under the laws of a country other than the United States, regardless of where its U.S. office is.",
+          "optionStyle": "category",
+          "group": "domicile"
+        }
+      ]
+    },
+    {
+      "id": "V2-04",
+      "statement": "Life insurance as defined in New Jersey includes accidental death and dismemberment benefits and disability waiver-type provisions added to a life policy.",
+      "source": "njsa-17b-17-3",
+      "quote": "additional benefits in event of death by accident or accidental means or in event of dismemberment or loss of sight",
+      "items": [
+        {
+          "id": "V2-04a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Under New Jersey's definition of life insurance, an accidental death and dismemberment benefit attached to a life policy is treated as:",
+          "options": [
+            "A health insurance coverage",
+            "A property and casualty coverage",
+            "An annuity benefit",
+            "Part of the life insurance"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:17-3 includes within life insurance provisions for additional benefits in event of death by accident or accidental means, or dismemberment or loss of sight.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V2-05",
+      "statement": "A contract with life or health extras is still an annuity if those extras are a subsidiary or incidental part of the contract.",
+      "source": "njsa-17b-17-5",
+      "quote": "shall nevertheless be deemed to be an annuity if such extra benefits constitute a subsidiary or incidental part of the entire contract",
+      "items": [
+        {
+          "id": "V2-05a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A contract promises periodic payments for life and also includes a small death benefit that is an incidental part of the contract. Under New Jersey law, the contract is classified as:",
+          "options": [
+            "An annuity",
+            "Life insurance",
+            "Health insurance",
+            "A combination policy needing two filings"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:17-5 treats a contract with extra life or health benefits as an annuity if those benefits are a subsidiary or incidental part of the entire contract.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V2-06",
+      "statement": "A certificate of authority evidences an insurer's authority to transact insurance; a license authorizes a person to act as an agent, broker or solicitor.",
+      "source": "njsa-17b-17-12",
+      "quote": "A “certificate of authority” is a certificate issued by the commissioner evidencing the authority of an insurer to transact insurance in this State.",
+      "items": [
+        {
+          "id": "V2-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "In New Jersey, what does the commissioner issue to an insurer to show it may transact insurance in the state?",
+          "options": [
+            "A producer license",
+            "A charter of incorporation",
+            "A certificate of authority",
+            "A surplus lines permit"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:17-12 defines a certificate of authority as the commissioner's certificate evidencing an insurer's authority to transact insurance in New Jersey. A license authorizes an agent, broker or solicitor.",
+          "optionStyle": "category"
+        }
+      ]
+    }
+  ]
+}

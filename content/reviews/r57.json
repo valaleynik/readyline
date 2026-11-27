@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r57",
+    "detail": "picked \"Part of the life insurance\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r57",
+    "detail": "N.J.S.A. 17B:17-3 says life insurance includes provisions for additional benefits for death by accident or for dismemberment, whether they are in the policy or in a supplemental contract. Standalone AD&D is usually classed as accident and health, but the stem names the New Jersey definition of life insurance and the benefit is attached to a life policy, so A does not hold up.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r57",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r57",
+    "detail": "Saying 'definition of life insurance' in the stem points a little toward D, but it is not a strong cue. A (health) is a tempting distractor because AD&D is often thought of as accident/health coverage.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V2-04a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
