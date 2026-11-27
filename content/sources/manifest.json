@@ -1523,6 +1523,18 @@
       "sha256": "74ae54bc9274c2bf7f8c1f587b9358a562399bd2924b018534bc002942cfc718",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy via the browser; selected paragraphs."
+    },
+    {
+      "id": "usc-26-79",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 79",
+      "title": "Group-term life insurance purchased for employees",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/79",
+      "retrievedAt": "2026-11-27",
+      "sha256": "c71973f6db3c3432fd73f40a6d626a724fe5930285d78eedf631fefa6f0252c1",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt extracted verbatim in the browser from the LII copy; (b)(3) omitted and text ends mid-(d)(1)."
     }
   ]
 }

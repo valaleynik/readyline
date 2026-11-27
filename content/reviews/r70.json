@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r70",
+    "detail": "picked \"Key employees lose the $50,000 exclusion\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r70",
+    "detail": "IRC 79(d)(1)(A) states the $50,000 exclusion in 79(a)(1) does not apply to any key employee under a discriminatory plan; rank-and-file keep it, so B is not defensible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r70",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r70",
+    "detail": "Only option D repeats the stem's phrase 'key employees', and common sense says the favored group loses the benefit. That cue comes with the concept and is hard to avoid, but B ('all employees') does a decent job as a parallel foil.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV2-04a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

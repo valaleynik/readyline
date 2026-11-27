@@ -1,0 +1,125 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.2",
+  "facts": [
+    {
+      "id": "IV2-01",
+      "statement": "The cost of employer-provided group term life coverage above $50,000 is taxable income to the employee.",
+      "source": "usc-26-79",
+      "quote": "the cost of $50,000 of such insurance",
+      "items": [
+        {
+          "id": "IV2-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "An employer provides group term life insurance to employees. The cost of coverage above what amount is generally included in the employee's taxable income?",
+          "options": [
+            "$10,000",
+            "$25,000",
+            "$50,000",
+            "$100,000"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 79 includes in an employee's income the cost of employer-provided group-term life insurance only to the extent it exceeds the cost of $50,000 of coverage, less any amount the employee paid.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV2-02",
+      "statement": "The taxable amount of group term coverage is reduced by whatever the employee paid toward it.",
+      "source": "usc-26-79",
+      "quote": "the amount (if any) paid by the employee toward the purchase of such insurance",
+      "items": [
+        {
+          "id": "IV2-02a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "An employee has $150,000 of employer group term life coverage. The table cost of the excess coverage is $240 for the year, and the employee paid $60 toward the coverage through payroll deduction. How much is included in his taxable income?",
+          "options": [
+            "$0",
+            "$60",
+            "$180",
+            "$240"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 79 taxes the cost of coverage above $50,000 only to the extent it exceeds what the employee paid. $240 minus $60 is $180.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV2-03",
+      "statement": "The cost of excess group term coverage is figured from IRS uniform premiums in 5-year age brackets, not the employer's actual premium.",
+      "source": "usc-26-79",
+      "quote": "uniform premiums (computed on the basis of 5-year age brackets)",
+      "items": [
+        {
+          "id": "IV2-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "For federal tax purposes, the taxable cost of an employee's group term life coverage over $50,000 is measured by:",
+          "options": [
+            "The employer's actual premium for that employee",
+            "IRS uniform premium rates set by 5-year age brackets",
+            "The employee's individual underwriting class",
+            "The policy's cash surrender value"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 79 measures the cost of group-term insurance using uniform premiums computed on 5-year age brackets prescribed by IRS regulations.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "IV2-04",
+      "statement": "If the group term plan discriminates in favor of key employees, key employees lose the $50,000 exclusion.",
+      "source": "usc-26-79",
+      "quote": "subsection (a)(1) shall not apply with respect to any key employee",
+      "items": [
+        {
+          "id": "IV2-04a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "An employer's group term life plan gives executives coverage of five times salary and rank-and-file staff a flat $10,000, and the IRS treats it as discriminatory in favor of key employees. What is the tax consequence?",
+          "options": [
+            "No consequence, since $50,000 is excluded for every employee",
+            "All employees lose the $50,000 exclusion",
+            "The employer loses its deduction for the premiums",
+            "Key employees lose the $50,000 exclusion"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 79 denies the $50,000 exclusion to key employees under a discriminatory group-term life insurance plan.",
+          "retired": "Key is the only option naming key employees; cue unavoidable for this rule."
+        }
+      ]
+    },
+    {
+      "id": "IV2-05",
+      "statement": "The imputed-income rule does not apply to coverage for any period in which a charity is the sole beneficiary for the entire year.",
+      "source": "usc-26-79",
+      "quote": "a person described in section 170(c) is the sole beneficiary",
+      "items": [
+        {
+          "id": "IV2-05a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An employee has $200,000 of employer group term life coverage and names a qualified charity as sole beneficiary for the entire tax year. How much of the cost of the excess coverage is taxable to the employee?",
+          "options": [
+            "None of it",
+            "The cost above $50,000",
+            "The full cost of $200,000 of coverage",
+            "Half the cost above $50,000"
+          ],
+          "answer": 0,
+          "explanation": "26 U.S.C. § 79 excepts from income the cost of group-term coverage for which a qualified charity is the sole beneficiary for the entire period of the tax year."
+        }
+      ]
+    }
+  ]
+}
