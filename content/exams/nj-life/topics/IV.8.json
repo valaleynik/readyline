@@ -1,0 +1,129 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.8",
+  "facts": [
+    {
+      "id": "IV8-01",
+      "statement": "For the federal definition of life insurance, a contract's maturity date is deemed to be no earlier than age 95 and no later than age 100.",
+      "source": "usc-26-7702",
+      "quote": "shall be deemed to be no earlier than the day on which the insured attains age 95, and no later than the day on which the insured attains age 100",
+      "items": [
+        {
+          "id": "IV8-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "In testing whether a contract qualifies as life insurance for federal tax purposes, the maturity date (including the date an endowment is payable) is deemed to be no earlier than the insured's age:",
+          "options": [
+            "65",
+            "85",
+            "95",
+            "121"
+          ],
+          "answer": 2,
+          "explanation": "26 U.S.C. § 7702 deems the maturity date, including the date an endowment benefit is payable, to be no earlier than age 95 and no later than age 100. This is why short-term endowments generally cannot qualify as life insurance.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV8-02",
+      "statement": "For the federal tests, an endowment benefit is deemed not to exceed the smallest death benefit payable under the contract.",
+      "source": "usc-26-7702",
+      "quote": "shall be deemed not to exceed the least amount payable as a death benefit at any time under the contract",
+      "items": [
+        {
+          "id": "IV8-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "When testing a contract under the federal definition of life insurance, any endowment benefit is deemed not to exceed:",
+          "options": [
+            "The total of all premiums paid in",
+            "The cash surrender value at age 65",
+            "Twice the face amount at issue",
+            "The smallest death benefit the contract ever pays"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 7702 deems the amount of any endowment benefit not to exceed the least amount payable as a death benefit at any time under the contract.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "IV8-03",
+      "statement": "A contract qualifies as life insurance for tax purposes only if it meets the cash value accumulation test, or the guideline premium requirements plus the cash value corridor.",
+      "source": "usc-26-7702",
+      "quote": "meets the guideline premium requirements of subsection (c), and (B) falls within the cash value corridor",
+      "items": [
+        {
+          "id": "IV8-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "To qualify as life insurance under federal tax law, a contract must meet either the cash value accumulation test or:",
+          "options": [
+            "The seven-pay test for modified endowments",
+            "Guideline premium limits plus the cash value corridor",
+            "The five-year Roth IRA holding period",
+            "The two-year incontestability period"
+          ],
+          "answer": 1,
+          "explanation": "26 U.S.C. § 7702 defines a life insurance contract as one that meets the cash value accumulation test, or meets the guideline premium requirements and falls within the cash value corridor. The seven-pay test is the modified endowment contract test, not part of this definition.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "IV8-04",
+      "statement": "If a contract fails the federal definition of life insurance, the income on the contract each year is taxed to the policyholder as ordinary income.",
+      "source": "usc-26-7702",
+      "quote": "the income on the contract for any taxable year of the policyholder shall be treated as ordinary income",
+      "items": [
+        {
+          "id": "IV8-04a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A contract sold as life insurance is found to fail the federal definition of a life insurance contract. How is the growth inside the contract taxed to the policyholder?",
+          "options": [
+            "As ordinary income, deferred until surrender",
+            "As long-term capital gain at surrender",
+            "Not at all while premiums continue",
+            "As ordinary income, year by year"
+          ],
+          "answer": 3,
+          "explanation": "26 U.S.C. § 7702 treats the income on a contract that fails the definition of life insurance as ordinary income received or accrued by the policyholder each year.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "IV8-05",
+      "statement": "Under New Jersey law, life insurance includes the granting of endowment benefits.",
+      "source": "njsa-17b-17-3",
+      "quote": "Life insurance includes also the granting of endowment benefits",
+      "items": [
+        {
+          "id": "IV8-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Under New Jersey's insurance code, a contract that pays an endowment benefit if the insured survives to a stated age is classified as:",
+          "options": [
+            "Life insurance",
+            "An annuity",
+            "Health insurance",
+            "A security"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:17-3 provides that life insurance includes the granting of endowment benefits.",
+          "optionStyle": "category",
+          "enemies": [
+            "V2-04a"
+          ]
+        }
+      ]
+    }
+  ]
+}

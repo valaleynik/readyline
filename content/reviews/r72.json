@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r72",
+    "detail": "picked \"As ordinary income, year by year\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r72",
+    "detail": "IRC 7702(g)(1)(A) states income on a failed contract for any taxable year is treated as ordinary income received or accrued by the policyholder during such year; no second option is defensible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r72",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r72",
+    "detail": "A and D both say 'ordinary income', which narrows to two by pairing, but the deciding element (annual vs deferred) requires knowledge of 7702(g). No strong cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV8-04a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

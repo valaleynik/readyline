@@ -1535,6 +1535,18 @@
       "sha256": "c71973f6db3c3432fd73f40a6d626a724fe5930285d78eedf631fefa6f0252c1",
       "verifiedAgainstOfficial": false,
       "note": "Excerpt extracted verbatim in the browser from the LII copy; (b)(3) omitted and text ends mid-(d)(1)."
+    },
+    {
+      "id": "usc-26-7702",
+      "kind": "statute",
+      "citation": "26 U.S.C. § 7702",
+      "title": "Life insurance contract defined",
+      "act": "Internal Revenue Code (Title 26, U.S. Code)",
+      "url": "https://www.law.cornell.edu/uscode/text/26/7702",
+      "retrievedAt": "2026-11-27",
+      "sha256": "f6dc9d1364133204fd0203dacfc9fdb66015b378fada9888d27a2993be7ee17c",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpts (a), (b)(1), (e)(1), (g)(1)(A) extracted verbatim in the browser from the LII copy."
     }
   ]
 }
