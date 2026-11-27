@@ -379,6 +379,80 @@
           "explanation": "N.J.S.A. 17B:30-14 allows lower rates on payroll deduction and similar plans when the rate is reasonably related to the savings made by using the plan."
         }
       ]
+    },
+    {
+      "id": "V4-40",
+      "statement": "The ban on rebates and inducements applies whether or not a policy is ultimately issued.",
+      "source": "njac-11-17a-2-3",
+      "quote": "The provisions of this section shall apply whether or not a contract of insurance is ultimately effected.",
+      "items": [
+        {
+          "id": "V4-40a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer offers a prospect a $200 gift card if she buys a life policy. She declines and never applies. Under New Jersey rules:",
+          "options": [
+            "A violation, since the offer alone breaks the rule",
+            "No violation, since no policy was sold",
+            "A violation, but just if she had applied",
+            "No violation, if the gift card is worth under $25"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:17A-2.3(a)-(e) bars offering an inducement not plainly expressed in the contract, and applies whether or not a contract of insurance is ultimately effected."
+        }
+      ]
+    },
+    {
+      "id": "V4-41",
+      "statement": "A producer may not give anything of value in return for a person's agreement not to buy insurance from another producer or insurer.",
+      "source": "njac-11-17a-2-3",
+      "quote": "anything of value in return for that person's agreement not to purchase insurance from another insurance producer or insurer",
+      "items": [
+        {
+          "id": "V4-41a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer offers a business owner free tax preparation for a year in exchange for a promise not to buy insurance from any competing agency. Under New Jersey rules, this is:",
+          "options": [
+            "Prohibited, as value for not buying elsewhere",
+            "Allowed, since tax preparation is not insurance",
+            "Allowed, if the services are worth under $100",
+            "Prohibited, once she actually buys a policy"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:17A-2.3(a)-(e) bars giving anything of value in return for a person's agreement not to purchase insurance from another producer or insurer, whether or not a policy is sold.",
+          "enemies": [
+            "V4-40a"
+          ],
+          "retired": "Answerable by ethics instinct alone after a rewrite."
+        }
+      ]
+    },
+    {
+      "id": "V4-42",
+      "statement": "Twisting is a misleading representation or incomplete or fraudulent comparison of policies or insurers to induce someone to lapse, surrender or replace a policy.",
+      "source": "njac-11-17a-2-8",
+      "quote": "make any misleading representations or incomplete or fraudulent comparison of any insurance policies or annuity contracts or insurers",
+      "items": [
+        {
+          "id": "V4-42a",
+          "version": 3,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A producer shows a client a comparison that leaves out her existing whole life policy's cash value, to persuade her to surrender it and buy a new policy from another insurer. This practice is called:",
+          "options": [
+            "Rebating",
+            "Sliding",
+            "Churning",
+            "Twisting"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:17A-2.8, titled \"Twisting\" prohibited, bars misleading representations or incomplete or fraudulent comparisons of policies or insurers made to induce a person to lapse, surrender or replace a policy.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r60",
+    "detail": "picked \"Twisting\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r60",
+    "detail": "The stem describes an incomplete comparison used to induce surrender and purchase from another insurer, which matches the source's definition of twisting. Churning is the nearest distractor, but it usually means replacement within the same insurer, and the stem rules that out by saying 'another insurer'.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r60",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r60",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

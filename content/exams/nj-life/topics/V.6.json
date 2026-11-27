@@ -1,0 +1,178 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "V.6",
+  "facts": [
+    {
+      "id": "V6-01",
+      "statement": "A New Jersey insurance producer acts in a fiduciary capacity in conducting insurance business.",
+      "source": "njac-11-17a-4-10",
+      "quote": "An insurance producer acts in a fiduciary capacity",
+      "items": [
+        {
+          "id": "V6-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "New Jersey rules describe the capacity in which an insurance producer acts in conducting insurance business as:",
+          "options": [
+            "Independent contractor",
+            "Agent of the commissioner",
+            "Guarantor of the insurer",
+            "Fiduciary"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:17A-4.10 provides that an insurance producer acts in a fiduciary capacity in the conduct of his or her insurance business.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V6-02",
+      "statement": "Premium funds must be held in a fiduciary capacity and kept segregated, not commingled with the producer's other funds.",
+      "source": "njac-11-17c-2-1",
+      "quote": "All premium funds shall be segregated and not in any manner commingled with any other funds of the insurance producer",
+      "items": [
+        {
+          "id": "V6-02a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A producer deposits a client's premium check into his personal checking account, planning to send the full amount to the insurer within three business days. Under New Jersey rules, this is:",
+          "options": [
+            "Prohibited, even though he remits on time",
+            "Prohibited, if the remittance ends up late",
+            "Allowed, since the premium will be remitted on time",
+            "Allowed, if he keeps a written record of the deposit"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:17C-2.1 requires premium funds to be held in a fiduciary capacity and segregated, not commingled in any manner with the producer's other funds. Timely remittance does not cure commingling.",
+          "retired": "Answerable by ethics instinct alone after a rewrite."
+        }
+      ]
+    },
+    {
+      "id": "V6-03",
+      "statement": "Premium funds must be remitted to the insurer within five business days of receipt, unless a contract, agreement or controlling rule provides otherwise.",
+      "source": "njac-11-17c-2-2",
+      "quote": "within five business days after receipt of the funds",
+      "items": [
+        {
+          "id": "V6-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Absent a different term in the producer's contract with the insurer or another controlling rule, a New Jersey producer must remit premium funds to the insurer within:",
+          "options": [
+            "2 business days",
+            "5 business days",
+            "10 calendar days",
+            "30 calendar days"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:17C-2.2(a)-(b) requires premium funds to be remitted within five business days after receipt, unless the producer's contract, a written agreement, a statute or rule, or residual market rules provide otherwise.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "V6-04a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V6-04",
+      "statement": "Return premiums due the insured must be paid or credited within five business days after the producer receives them.",
+      "source": "njac-11-17c-2-2",
+      "quote": "All premiums due the insured shall be paid to the insured or credited to the insured's account within five business days",
+      "items": [
+        {
+          "id": "V6-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "An insurer sends a producer a $400 return premium owed to a client after a policy change. Under New Jersey rules, the producer must pay or credit it to the client within:",
+          "options": [
+            "10 calendar days after receiving it",
+            "30 days after the policy change",
+            "5 business days after receiving it",
+            "The client's next renewal date"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:17C-2.2(a)-(b) requires premiums due the insured to be paid or credited within five business days after the producer receives them."
+        }
+      ]
+    },
+    {
+      "id": "V6-05",
+      "statement": "Policies received for delivery must be delivered or mailed to the insured within 10 calendar days, unless the insured agrees in writing to a longer retention.",
+      "source": "njac-11-17a-4-6",
+      "quote": "within 10 calendar days of their receipt by the insurance producer, unless the insured agrees in writing",
+      "items": [
+        {
+          "id": "V6-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A New Jersey producer receives a new policy from the insurer for delivery. Unless the insured agrees in writing to a longer period, the producer must deliver or mail it within:",
+          "options": [
+            "5 calendar days",
+            "10 calendar days",
+            "15 calendar days",
+            "30 calendar days"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:17A-4.6 requires delivery or mailing within 10 calendar days of the producer's receipt, unless the insured agrees in writing that the producer may keep it longer.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "V6-07a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "V6-06",
+      "statement": "A producer must witness the applicant's signature only when the application was completed in a face-to-face meeting; the insurer may waive this in writing in advance.",
+      "source": "njac-11-17a-4-2",
+      "quote": "only when the application is signed by the applicant after having been completed in a face to face meeting",
+      "items": [
+        {
+          "id": "V6-06a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A producer completes a life application with a client over the phone, then mails it to the client, who signs it at home and mails it back. Under New Jersey rules, is the producer required to witness the signature?",
+          "options": [
+            "Yes, a producer witnesses all signatures on his applications",
+            "Yes, unless the client already owns a policy with the insurer",
+            "No, since witnessing is required for annuities and not life",
+            "No, since this one was not completed face to face"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:17A-4.2 requires the producer to witness the signature only when the application is signed after being completed in a face-to-face meeting, and the insurer may waive this by prior written authorization."
+        }
+      ]
+    },
+    {
+      "id": "V6-07",
+      "statement": "Within 10 days after a transaction modifying a contract or application, the producer must confirm in writing the information the client submitted and that it was sent to the insurer.",
+      "source": "njac-11-17a-4-3",
+      "quote": "within 10 days after the effectuation of an insurance transaction made through an insurance producer which modifies the terms of an existing insurance contract",
+      "items": [
+        {
+          "id": "V6-07a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A client calls her New Jersey producer to change a policy, and the change is made. Within how many days must the producer confirm to her in writing the information she gave and that it was sent to the insurer?",
+          "options": [
+            "3 days",
+            "5 days",
+            "10 days",
+            "30 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:17A-4.3(a) requires written notice within 10 days after a transaction that modifies an existing contract or application, confirming the information submitted and that it was sent to the insurer.",
+          "optionStyle": "ordered"
+        }
+      ]
+    }
+  ]
+}

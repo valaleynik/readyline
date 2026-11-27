@@ -1,0 +1,272 @@
+[
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "picked \"A violation, since the offer alone breaks the rule\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "Requires knowing subsection (e) (applies whether or not a contract is effected); B is an appealing common-sense answer and D's de minimis threshold sounds plausible from other states' rules.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-40a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "picked \"Prohibited, as value for not buying elsewhere\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r59",
+    "detail": "Option A nearly restates the stem ('value for not buying elsewhere' mirrors 'promise not to buy from any competing agency'), and ethics instinct flags exclusivity-for-freebies as prohibited; the only other 'prohibited' option (D) carries a timing condition that looks wrong.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-41a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": false,
+    "reviewer": "blind-subagent-r59",
+    "detail": "picked \"none\", key \"Twisting\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "Requires knowing the industry term; all four options are real misconduct labels.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V4-42a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "picked \"Prohibited, even though he remits on time\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r59",
+    "detail": "Depositing client premium into a personal account is an obvious ethics red flag; the 'even though' framing of A signals the strict-rule answer and B is merely a conditional version of the same instinct.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-02a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "picked \"No, since this one was not completed face to face\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r59",
+    "detail": "Absolute 'all' in A is a mild cue against it, but common-sense instinct favors witnessing, so the key is not obvious without the rule.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "V6-06a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

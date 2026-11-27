@@ -1247,6 +1247,102 @@
       "sha256": "214162c1f27175f86a4636487509f704248f93c8357d4cc7bf951fa8212ded72",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from FindLaw via the browser; excerpt (17B:21-1 omits one sentence on accounting manuals)."
+    },
+    {
+      "id": "njac-11-17a-2-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-2.3(a)-(e)",
+      "title": "Rebates and inducements; prohibited practices",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-2-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "1bdb537b2c42983cefc3e3c14efb93b33c79570d8149e11637b42988f006180d",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17a-2-8",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-2.8",
+      "title": "Twisting prohibited",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-2-8",
+      "retrievedAt": "2026-11-27",
+      "sha256": "4d0a48f3b897a1161dfdfd063709c5a187117f6f38f18ccc3d98e1a76c75e0ff",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt. Includes the section heading as published."
+    },
+    {
+      "id": "njac-11-17a-4-2",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-4.2",
+      "title": "Producer to witness signature of insured",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-4-2",
+      "retrievedAt": "2026-11-27",
+      "sha256": "925ab7b9670eb010c1a41879248a13f959468624574ca44adcee281ae7800125",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17a-4-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-4.3(a)",
+      "title": "Confirmation of underwriting information",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-4-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "0011bbe3ba97e1a464316fe3794e50c47b1ea74e5c1a4d6be247d921f5ebb9b3",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17a-4-6",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-4.6",
+      "title": "Delivery of policies",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-4-6",
+      "retrievedAt": "2026-11-27",
+      "sha256": "dae427b87a444e0247f33aff38dcac458259e3b67c07bb2892261f779e84d6e7",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17a-4-10",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17A-4.10",
+      "title": "Fiduciary capacity",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17A-4-10",
+      "retrievedAt": "2026-11-27",
+      "sha256": "eb2382cb58f8996d03fed5a1a1f43a795656083dce5febc3394856e2e27a02a1",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17c-2-1",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17C-2.1",
+      "title": "Commingling of funds",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17C-2-1",
+      "retrievedAt": "2026-11-27",
+      "sha256": "353ebc2569a3fde179a2822ae6d1e9d596634fa90ef1ee679833d4db21b5f0ae",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-17c-2-2",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:17C-2.2(a)-(b)",
+      "title": "Remittance standards",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance), Producer Standards of Conduct",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-17C-2-2",
+      "retrievedAt": "2026-11-27",
+      "sha256": "c50e087d1c0d33d8d564dc1175cd64b8be05d0fd8cd0ac978aae5dc51044513e",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
     }
   ]
 }
