@@ -3,7 +3,7 @@
  * and uploaded in the background. The server copy is the truth once it has it.
  */
 import type { AnswerEvent } from "../engine/types";
-import type { BaselineSettings } from "../session/baseline";
+import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
 import { mergeEvents } from "./merge";
 import type { Remote } from "./remote";
 
@@ -20,10 +20,13 @@ export class SyncedStore {
   /** ids the server is known to have */
   private confirmed = 0;
   private settingsDirty = false;
+  private results: ExamResult[] = [];
+  /** result ids not yet confirmed by the server */
+  private pendingResults: string[] = [];
   private flushing: Promise<void> | null = null;
   status: SyncStatus = "pending";
   /** called when a sync changed the log or settings (another device, renumbering) */
-  onChange?: (events: AnswerEvent[], settings: BaselineSettings) => void;
+  onChange?: (events: AnswerEvent[], settings: BaselineSettings, results: ExamResult[]) => void;
 
   constructor(
     private remote: Remote,
@@ -37,6 +40,8 @@ export class SyncedStore {
         this.settings = c.settings ?? {};
         this.confirmed = c.confirmed ?? 0;
         this.settingsDirty = !!c.settingsDirty;
+        this.results = c.results ?? [];
+        this.pendingResults = c.pendingResults ?? [];
       }
     } catch {
       /* bad cache: start empty, the server fills it in */
@@ -48,6 +53,16 @@ export class SyncedStore {
   }
   loadSettings(): BaselineSettings {
     return this.settings;
+  }
+  loadResults(): ExamResult[] {
+    return this.results;
+  }
+  addResult(r: ExamResult): void {
+    if (this.results.some((x) => x.id === r.id)) return;
+    this.results = [...this.results, r];
+    this.pendingResults.push(r.id);
+    this.persist();
+    void this.flush();
   }
 
   /** The app hands over its full log; anything past what we had is new. */
@@ -77,7 +92,14 @@ export class SyncedStore {
     try {
       this.cache.set(
         this.key,
-        JSON.stringify({ events: this.events, settings: this.settings, confirmed: this.confirmed, settingsDirty: this.settingsDirty }),
+        JSON.stringify({
+          events: this.events,
+          settings: this.settings,
+          confirmed: this.confirmed,
+          settingsDirty: this.settingsDirty,
+          results: this.results,
+          pendingResults: this.pendingResults,
+        }),
       );
     } catch {
       /* storage full or blocked: the server copy still gets it */
@@ -91,13 +113,23 @@ export class SyncedStore {
   }
 
   private async run(pull: boolean) {
-    const before = JSON.stringify([this.events, this.settings]);
+    const before = JSON.stringify([this.events, this.settings, this.results]);
     try {
       if (this.settingsDirty) {
         if ((await this.remote.saveSettings(this.settings)) === "ok") this.settingsDirty = false;
       } else if (pull) {
         const s = await this.remote.fetchSettings();
         if (s) this.settings = s;
+      }
+      if (this.pendingResults.length) {
+        const ids = [...this.pendingResults];
+        const send = this.results.filter((r) => ids.includes(r.id));
+        if ((await this.remote.insertResults(send)) === "ok") this.pendingResults = this.pendingResults.filter((id) => !ids.includes(id));
+      }
+      if (pull) {
+        const server = await this.remote.fetchResults();
+        const mine = this.results.filter((r) => this.pendingResults.includes(r.id));
+        this.results = [...server, ...mine.filter((m) => !server.some((x) => x.id === m.id))];
       }
       // Always work from the current log: the app may add answers while a request is in flight.
       const unconfirmed = () => this.events.filter((e) => e.id > this.confirmed);
@@ -119,12 +151,12 @@ export class SyncedStore {
         server = await this.remote.fetchEvents(); // conflict: another device wrote first
       }
       const local = unconfirmed();
-      this.status = local.length || this.settingsDirty ? "pending" : "synced";
+      this.status = local.length || this.settingsDirty || this.pendingResults.length ? "pending" : "synced";
     } catch {
       this.status = "offline";
     }
     this.persist();
     // Only tell the app when something it shows changed, so saving back is never a loop.
-    if (JSON.stringify([this.events, this.settings]) !== before) this.onChange?.(this.events, this.settings);
+    if (JSON.stringify([this.events, this.settings, this.results]) !== before) this.onChange?.(this.events, this.settings, this.results);
   }
 }

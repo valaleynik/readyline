@@ -1,7 +1,7 @@
 /** Supabase implementation of Remote. Row level security limits every query to the signed-in user. */
 import type { SupabaseClient } from "@supabase/supabase-js";
 import type { AnswerEvent } from "../engine/types";
-import type { BaselineSettings } from "../session/baseline";
+import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
 import type { InsertResult, Remote } from "./remote";
 
 interface Row {
@@ -56,12 +56,14 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
       return "offline";
     },
     async fetchSettings() {
-      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped").maybeSingle();
+      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped,result_prompt_skips,result_prompt_skipped_at").maybeSingle();
       if (error) throw error;
       if (!data) return null;
       return {
         ...(data.exam_at ? { examAt: Number(data.exam_at) } : {}),
         ...(data.baseline_skipped ? { baselineSkipped: true } : {}),
+        ...(data.result_prompt_skips ? { resultPromptSkips: data.result_prompt_skips } : {}),
+        ...(data.result_prompt_skipped_at ? { resultPromptSkippedAt: Number(data.result_prompt_skipped_at) } : {}),
       };
     },
     async saveSettings(s): Promise<InsertResult> {
@@ -69,8 +71,28 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
         user_id: userId,
         exam_at: s.examAt ?? null,
         baseline_skipped: !!s.baselineSkipped,
+        result_prompt_skips: s.resultPromptSkips ?? 0,
+        result_prompt_skipped_at: s.resultPromptSkippedAt ?? null,
         updated_at: new Date().toISOString(),
       });
+      return error ? "offline" : "ok";
+    },
+    async fetchResults() {
+      const { data, error } = await db.from("exam_results").select("id,taken_at,passed,score,reported_at").order("reported_at");
+      if (error) throw error;
+      return (data as { id: string; taken_at: number; passed: boolean; score: number | null; reported_at: number }[]).map((r) => ({
+        id: r.id,
+        takenAt: Number(r.taken_at),
+        passed: r.passed,
+        ...(r.score !== null ? { score: r.score } : {}),
+        reportedAt: Number(r.reported_at),
+      }));
+    },
+    async insertResults(xs): Promise<InsertResult> {
+      const { error } = await db.from("exam_results").upsert(
+        xs.map((r) => ({ user_id: userId, id: r.id, taken_at: r.takenAt, passed: r.passed, score: r.score ?? null, reported_at: r.reportedAt })),
+        { onConflict: "user_id,id", ignoreDuplicates: true },
+      );
       return error ? "offline" : "ok";
     },
   };

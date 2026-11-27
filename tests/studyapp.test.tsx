@@ -127,3 +127,46 @@ describe("sign in", () => {
     expect(sent).toEqual(["val@example.com", "val@example.com"]);
   });
 });
+
+describe("exam result UI", () => {
+  const withSettings = (st: object) => {
+    const s = memoryStore();
+    return Object.assign(s, { loadSettings: () => st, saveSettings: () => {} });
+  };
+  function memoryStore() {
+    const results: import("../src/session/results").ExamResult[] = [];
+    return {
+      events: [] as AnswerEvent[],
+      results,
+      load() { return this.events; },
+      save(e: AnswerEvent[]) { this.events = e; },
+      loadResults: () => results,
+      addResult: (r: import("../src/session/results").ExamResult) => void results.push(r),
+    };
+  }
+
+  it("asks after exam day and records a pass with a score", async () => {
+    const store = withSettings({ examAt: Date.now() - 2 * 86_400_000, baselineSkipped: true });
+    render(<StudyApp data={data} store={store as unknown as EventStore} />);
+    fireEvent.click(await screen.findByText("Passed"));
+    fireEvent.change(screen.getByPlaceholderText("e.g. 78"), { target: { value: "81" } });
+    fireEvent.click(screen.getByText("Save result"));
+    expect(await screen.findByText(/You passed the NJ Life exam/)).not.toBeNull();
+    expect(store.results.map((r) => [r.passed, r.score])).toEqual([[true, 81]]);
+    expect(screen.queryByText("How did the exam go?")).toBeNull();
+  });
+
+  it("'I took the exam' works without a date, and rejects a bad score", async () => {
+    const store = withSettings({ baselineSkipped: true });
+    render(<StudyApp data={data} store={store as unknown as EventStore} />);
+    expect(screen.queryByText("How did the exam go?")).toBeNull();
+    fireEvent.click(await screen.findByText("I took the exam"));
+    fireEvent.click(screen.getByText("Didn't pass"));
+    fireEvent.change(screen.getByPlaceholderText("e.g. 78"), { target: { value: "140" } });
+    expect((screen.getByText("Save result") as HTMLButtonElement).disabled).toBe(true);
+    fireEvent.change(screen.getByPlaceholderText("e.g. 78"), { target: { value: "" } });
+    fireEvent.click(screen.getByText("Save result"));
+    expect(await screen.findByText(/Not this time/)).not.toBeNull();
+    expect(store.results[0]!.passed).toBe(false);
+  });
+});

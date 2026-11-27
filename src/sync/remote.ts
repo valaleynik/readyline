@@ -1,6 +1,6 @@
 /** The server side of the log, behind an interface so tests and the offline preview need no network. */
 import type { AnswerEvent } from "../engine/types";
-import type { BaselineSettings } from "../session/baseline";
+import type { ExamResult, ResultSettings as BaselineSettings } from "../session/results";
 
 export type InsertResult = "ok" | "conflict" | "offline";
 
@@ -10,11 +10,24 @@ export interface Remote {
   insertEvents(events: AnswerEvent[]): Promise<InsertResult>;
   fetchSettings(): Promise<BaselineSettings | null>;
   saveSettings(s: BaselineSettings): Promise<InsertResult>;
+  fetchResults(): Promise<ExamResult[]>;
+  /** insert; a result whose id already exists is ignored, so retries are safe */
+  insertResults(results: ExamResult[]): Promise<InsertResult>;
 }
 
 /** In-memory server with the same rules as the database: append-only, unique ids. */
-export function memoryRemote(): Remote & { rows: AnswerEvent[]; settings: BaselineSettings | null; down: boolean } {
+export function memoryRemote(): Remote & { rows: AnswerEvent[]; settings: BaselineSettings | null; results: ExamResult[]; down: boolean } {
   const r = {
+    results: [] as ExamResult[],
+    async fetchResults() {
+      if (r.down) throw new Error("offline");
+      return r.results.map((x) => ({ ...x }));
+    },
+    async insertResults(xs: ExamResult[]): Promise<InsertResult> {
+      if (r.down) return "offline";
+      for (const x of xs) if (!r.results.some((y) => y.id === x.id)) r.results.push({ ...x });
+      return "ok";
+    },
     rows: [] as AnswerEvent[],
     settings: null as BaselineSettings | null,
     down: false,

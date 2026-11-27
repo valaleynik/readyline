@@ -208,3 +208,13 @@ The server stores the answer log and settings, nothing else (`supabase/migration
 - Live: https://readyline-orpin.vercel.app (Vercel project `readyline`, root directory `web`). Verified 2026-11-27 on an iPhone: email-link sign-in, then a 20-question baseline synced as ids 1 to 20 with confidence and context, plus settings (exam date).
 - Auth: email link via Supabase's built-in sender (low hourly limit). Site URL and redirect set to the Vercel address. Use a real email provider before real users.
 - Without `NEXT_PUBLIC_SUPABASE_URL` and the publishable key, the app runs local-only (the preview build does).
+
+## Exam results
+
+Learners report their real result (`src/session/results.ts`); it is the only ground truth for the pass chance.
+
+- Asked on home from 5pm on exam day until answered. "Ask me later" hides it for the day; after 3 it stops asking. An "I took the exam" link is always there (early exams, no date set).
+- Pass or fail required, score (0 to 100) optional. A pass keeps the date and shows a banner. A fail clears the date so the learner sets a retake; the log carries on.
+- `exam_results` is append-only with a device-made id, so a retried upload never double-counts. Latest report for an exam day wins.
+- The prediction is not stored: `predictionBefore` rebuilds what the app showed from answers before exam day. Comparing those against results across users is the calibration check.
+- Migration `0002_exam_results` applied before the app deploy (the new app writes the new settings columns). Verified on the live database: retry inserts 0 rows, score 101 rejected, other users and anon see nothing, no updates or deletes.

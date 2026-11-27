@@ -12,7 +12,16 @@ import { Bank, replay, type AnswerEvent, type LearnerState } from "../../src/eng
 import { calibration, dueFacts, progress, sessionPick, type SessionStart } from "../../src/session/daily";
 import { studyPlan, type StudyPlan } from "../../src/session/plan";
 import { passChance, type CheckName } from "../../src/session/passchance";
-import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus, type BaselineSettings as StudySettings } from "../../src/session/baseline";
+import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus } from "../../src/session/baseline";
+import {
+  latestResult,
+  newResult,
+  settingsAfterResult,
+  shouldAskResult,
+  skipResultPrompt,
+  type ExamResult,
+  type ResultSettings as StudySettings,
+} from "../../src/session/results";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 
 export interface EventStore {
@@ -21,7 +30,9 @@ export interface EventStore {
   loadSettings?(): StudySettings;
   saveSettings?(s: StudySettings): void;
   /** for stores that sync: refresh from the server and report changes */
-  subscribe?(onChange: (events: AnswerEvent[], settings: StudySettings) => void): () => void;
+  subscribe?(onChange: (events: AnswerEvent[], settings: StudySettings, results: ExamResult[]) => void): () => void;
+  loadResults?(): ExamResult[];
+  addResult?(r: ExamResult): void;
 }
 
 const KEY = "readyline.events.v1";
@@ -58,6 +69,21 @@ export const localStore: EventStore = {
   },
 };
 const SETTINGS_KEY = "readyline.settings.v1";
+const RESULTS_KEY = "readyline.results.v1";
+localStore.loadResults = () => {
+  try {
+    return JSON.parse(globalThis.localStorage?.getItem(RESULTS_KEY) ?? "[]") as ExamResult[];
+  } catch {
+    return [];
+  }
+};
+localStore.addResult = (r) => {
+  try {
+    globalThis.localStorage?.setItem(RESULTS_KEY, JSON.stringify([...localStore.loadResults!(), r]));
+  } catch {
+    /* in memory only */
+  }
+};
 
 const SEED = "local-learner";
 const pct = (x: number) => `${Math.round(x * 100)}%`;
@@ -87,6 +113,7 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   const [loaded, setLoaded] = useState(false);
   const state: LearnerState = useMemo(() => replay(events, bank), [events, bank]);
   const [settings, setSettings] = useState<StudySettings>({});
+  const [results, setResults] = useState<ExamResult[]>([]);
   const [session, setSession] = useState<SessionStart | null>(null);
   /** today's quota is fixed when the session starts, so it cannot shift mid-session */
   const [quota, setQuota] = useState(0);
@@ -96,10 +123,12 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   useEffect(() => {
     setEvents(store.load());
     setSettings(store.loadSettings?.() ?? {});
+    setResults(store.loadResults?.() ?? []);
     setLoaded(true);
-    return store.subscribe?.((evs, st) => {
+    return store.subscribe?.((evs, st, rs) => {
       setEvents(evs);
       setSettings(st);
+      setResults(rs);
     });
   }, [store]);
   useEffect(() => {
@@ -108,6 +137,12 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
   useEffect(() => {
     if (loaded) store.saveSettings?.(settings);
   }, [settings, loaded, store]);
+
+  function report(r: ExamResult) {
+    store.addResult?.(r);
+    setResults((rs) => [...rs, r]);
+    setSettings((st) => settingsAfterResult(st, r));
+  }
 
   function nextQuestion(evs: AnswerEvent[], st: LearnerState, s: SessionStart, q: number) {
     const pick = sessionPick(st, bank, evs, s, Date.now(), SEED, q);
@@ -210,6 +245,8 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
             onSettings={setSettings}
             onStart={start}
             onBaseline={() => nextBaseline(events, state)}
+            results={results}
+            onReport={report}
           />}
         {view.kind === "question" && (
           <Question
@@ -318,6 +355,8 @@ function Home({
   onSettings,
   onStart,
   onBaseline,
+  results,
+  onReport,
 }: {
   state: LearnerState;
   bank: Bank;
@@ -326,7 +365,13 @@ function Home({
   onSettings: (s: StudySettings) => void;
   onStart: () => void;
   onBaseline: () => void;
+  results: ExamResult[];
+  onReport: (r: ExamResult) => void;
 }) {
+  const now = Date.now();
+  const ask = shouldAskResult(settings, results, now);
+  const last = latestResult(results);
+  const [manual, setManual] = useState(false);
   const bStatus = baselineStatus(state, bank, events, settings, Date.now());
   const due = dueFacts(state, bank, Date.now()).length;
   const studied = Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length;
@@ -334,6 +379,15 @@ function Home({
   const plan = studyPlan(state, bank, settings, Date.now());
   return (
     <section className="home">
+      {ask && (
+        <ResultForm
+          title="How did the exam go?"
+          takenAt={settings.examAt!}
+          onSave={onReport}
+          onLater={() => onSettings(skipResultPrompt(settings, now))}
+        />
+      )}
+      {!ask && last && <ResultBanner r={last} hasDate={!!settings.examAt} />}
       <h1>{state.answers ? "Ready for today's session" : "Start studying for the NJ Life exam"}</h1>
       <p className="lede">
         {state.answers
@@ -380,6 +434,14 @@ function Home({
       )}
       {state.answers > 0 && <PassChanceCard bank={bank} events={events} examAt={settings.examAt} />}
       {state.answers > 0 && <CalibrationGrid events={events} title="How well your confidence matches your answers" />}
+      {!ask &&
+        (manual ? (
+          <ResultForm title="Report your exam result" onSave={(r) => (onReport(r), setManual(false))} onLater={() => setManual(false)} />
+        ) : (
+          <button className="link tookExam" onClick={() => setManual(true)}>
+            I took the exam
+          </button>
+        ))}
     </section>
   );
 }
@@ -607,5 +669,78 @@ function BaselineDone({ state, bank, events, onStart }: { state: LearnerState; b
         Start your first session
       </button>
     </section>
+  );
+}
+
+function ResultBanner({ r, hasDate }: { r: ExamResult; hasDate: boolean }) {
+  const day = new Date(r.takenAt).toLocaleDateString(undefined, { month: "long", day: "numeric" });
+  return (
+    <div className={`resultBanner ${r.passed ? "passed" : "failed"}`}>
+      {r.passed
+        ? `You passed the NJ Life exam on ${day}${r.score !== undefined ? ` with ${r.score}` : ""}. Congratulations.`
+        : `Not this time (${day}${r.score !== undefined ? `, ${r.score}` : ""}). Your progress carries over.${hasDate ? "" : " Set your retake date below to get a new plan."}`}
+    </div>
+  );
+}
+
+/** Pass or fail, optional score; the date only when reporting by hand. */
+function ResultForm({
+  title,
+  takenAt,
+  onSave,
+  onLater,
+}: {
+  title: string;
+  takenAt?: number;
+  onSave: (r: ExamResult) => void;
+  onLater: () => void;
+}) {
+  const [passed, setPassed] = useState<boolean | null>(null);
+  const [score, setScore] = useState("");
+  const [date, setDate] = useState(toInput(takenAt ?? Date.now()));
+  const n = score.trim() === "" ? undefined : Number(score);
+  const scoreOk = n === undefined || (Number.isInteger(n) && n >= 0 && n <= 100);
+  const when = () => {
+    if (takenAt) return takenAt;
+    const [y, m, d] = date.split("-").map(Number);
+    return new Date(y!, m! - 1, d!, 9).getTime();
+  };
+  return (
+    <div className="resultForm">
+      <div className="chanceTitle">{title}</div>
+      <div className="row">
+        <button className={passed === true ? "primary" : "secondary"} aria-pressed={passed === true} onClick={() => setPassed(true)}>
+          Passed
+        </button>
+        <button className={passed === false ? "primary" : "secondary"} aria-pressed={passed === false} onClick={() => setPassed(false)}>
+          Didn't pass
+        </button>
+      </div>
+      {passed !== null && (
+        <>
+          {!takenAt && (
+            <label className="dateField">
+              <span>Exam date</span>
+              <input type="date" value={date} max={toInput(Date.now())} onChange={(e) => setDate(e.target.value)} />
+            </label>
+          )}
+          <label className="dateField">
+            <span>Score on your report (optional)</span>
+            <input inputMode="numeric" value={score} onChange={(e) => setScore(e.target.value)} placeholder="e.g. 78" />
+          </label>
+          {!scoreOk && <p className="error">Enter a whole number from 0 to 100, or leave it blank.</p>}
+        </>
+      )}
+      <div className="row">
+        {passed !== null && (
+          <button className="primary" disabled={!scoreOk || (!takenAt && !date)} onClick={() => onSave(newResult(when(), passed, n, Date.now()))}>
+            Save result
+          </button>
+        )}
+        <button className="link" onClick={onLater}>
+          {takenAt ? "Ask me later" : "Cancel"}
+        </button>
+      </div>
+    </div>
   );
 }

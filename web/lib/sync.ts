@@ -38,6 +38,8 @@ export function syncedStore(db: SupabaseClient, userId: string): EventStore {
     save: (e) => s.save(e),
     loadSettings: () => s.loadSettings(),
     saveSettings: (st) => s.saveSettings(st),
+    loadResults: () => s.loadResults(),
+    addResult: (r) => s.addResult(r),
     subscribe(fn) {
       s.onChange = fn;
       void s.sync();
