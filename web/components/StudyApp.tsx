@@ -10,7 +10,8 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Bank, readiness, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
 import { calibration, dueFacts, progress, sessionPick, type SessionStart } from "../../src/session/daily";
-import { studyPlan, type StudyPlan, type StudySettings } from "../../src/session/plan";
+import { studyPlan, type StudyPlan } from "../../src/session/plan";
+import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus, type BaselineSettings as StudySettings } from "../../src/session/baseline";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 
 export interface EventStore {
@@ -62,7 +63,9 @@ type View =
   | { kind: "home" }
   | { kind: "question"; item: DisplayItem; reason: string; choice: number | null }
   | { kind: "feedback"; item: DisplayItem; choice: number; correct: boolean; confidence: "sure" | "guess" }
-  | { kind: "done" };
+  | { kind: "done" }
+  | { kind: "baseline"; item: DisplayItem; choice: number | null; n: number }
+  | { kind: "baselineDone" };
 
 const REASON_LABEL: Record<string, string> = {
   new_material: "New",
@@ -70,6 +73,7 @@ const REASON_LABEL: Record<string, string> = {
   due_review: "Review",
   diagnostic: "Placement",
   extra_practice: "Extra practice",
+  baseline: "Baseline test",
 };
 
 export default function StudyApp({ data, store = localStore }: { data: ExportedBank; store?: EventStore }) {
@@ -112,6 +116,28 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
     nextQuestion(events, state, s, q);
   }
 
+  function nextBaseline(evs: AnswerEvent[], st: LearnerState) {
+    const pick = baselinePick(st, bank, evs, Date.now(), SEED);
+    const n = evs.filter((e) => e.context === "baseline").length;
+    if (!pick) return setView({ kind: "baselineDone" });
+    setView({ kind: "baseline", item: display.get(pick.item.key)!, choice: null, n: n + 1 });
+  }
+
+  function submitBaseline(confidence: "sure" | "guess") {
+    if (view.kind !== "baseline" || view.choice === null) return;
+    const ev: AnswerEvent = {
+      id: (events.at(-1)?.id ?? 0) + 1,
+      itemKey: view.item.key,
+      correct: view.choice === view.item.answer,
+      at: Math.max(Date.now(), (events.at(-1)?.at ?? 0) + 1),
+      confidence,
+      context: "baseline",
+    };
+    const evs = [...events, ev];
+    setEvents(evs);
+    nextBaseline(evs, replay(evs, bank));
+  }
+
   function submit(confidence: "sure" | "guess") {
     if (view.kind !== "question" || view.choice === null) return;
     const correct = view.choice === view.item.answer;
@@ -121,6 +147,7 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
       correct,
       at: Math.max(Date.now(), (events.at(-1)?.at ?? 0) + 1),
       confidence,
+      context: "session",
     };
     setEvents([...events, ev]);
     setView({ kind: "feedback", item: view.item, choice: view.choice, correct, confidence });
@@ -133,7 +160,12 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (view.kind === "question") {
+      if (view.kind === "baseline") {
+        const n = Number(e.key);
+        if (n >= 1 && n <= 4) setView({ ...view, choice: n - 1 });
+        if (view.choice !== null && (e.key === "s" || e.key === "Enter")) submitBaseline("sure");
+        if (view.choice !== null && e.key === "g") submitBaseline("guess");
+      } else if (view.kind === "question") {
         const n = Number(e.key);
         if (n >= 1 && n <= 4) setView({ ...view, choice: n - 1 });
         if (view.choice !== null && (e.key === "s" || e.key === "Enter")) submit("sure");
@@ -163,7 +195,15 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
         )}
       </header>
       <main className="main">
-        {view.kind === "home" && loaded && <Home state={state} bank={bank} events={events} settings={settings} onSettings={setSettings} onStart={start} />}
+        {view.kind === "home" && loaded && <Home
+            state={state}
+            bank={bank}
+            events={events}
+            settings={settings}
+            onSettings={setSettings}
+            onStart={start}
+            onBaseline={() => nextBaseline(events, state)}
+          />}
         {view.kind === "question" && (
           <Question
             item={view.item}
@@ -173,6 +213,19 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
             onChoose={(c) => setView({ ...view, choice: c })}
             onSubmit={submit}
           />
+        )}
+        {view.kind === "baseline" && (
+          <Question
+            item={view.item}
+            reason="baseline"
+            topicName={`Question ${view.n} of ${BASELINE_LENGTH} · ${data.topicNames[view.item.topic] ?? view.item.topic}`}
+            choice={view.choice}
+            onChoose={(c) => setView({ ...view, choice: c })}
+            onSubmit={submitBaseline}
+          />
+        )}
+        {view.kind === "baselineDone" && (
+          <BaselineDone state={state} bank={bank} events={events} onStart={start} />
         )}
         {view.kind === "feedback" && (
           <Feedback data={data} view={view} nextRef={nextBtn} onNext={next} />
@@ -215,6 +268,7 @@ function Home({
   settings,
   onSettings,
   onStart,
+  onBaseline,
 }: {
   state: LearnerState;
   bank: Bank;
@@ -222,7 +276,9 @@ function Home({
   settings: StudySettings;
   onSettings: (s: StudySettings) => void;
   onStart: () => void;
+  onBaseline: () => void;
 }) {
+  const bStatus = baselineStatus(state, bank, events, settings, Date.now());
   const due = dueFacts(state, bank, Date.now()).length;
   const studied = Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length;
   const totalFacts = bank.factTopic.size;
@@ -246,16 +302,29 @@ function Home({
             value={toInput(settings.examAt)}
             onChange={(e) => {
               const v = e.target.value;
-              if (!v) return onSettings({});
+              if (!v) return onSettings({ ...settings, examAt: undefined });
               const [y, m, d] = v.split("-").map(Number);
-              onSettings({ examAt: new Date(y!, m! - 1, d!, 9, 0, 0).getTime() });
+              onSettings({ ...settings, examAt: new Date(y!, m! - 1, d!, 9, 0, 0).getTime() });
             }}
           />
         </label>
       </div>
-      <button className="primary" onClick={onStart} autoFocus>
-        {state.answers ? "Start today's session" : "Start first session"}
-      </button>
+      {bStatus === "needed" || bStatus === "in_progress" ? (
+        <div className="row">
+          <button className="primary" onClick={onBaseline} autoFocus>
+            {bStatus === "needed" ? `Take the baseline test (${BASELINE_LENGTH} questions)` : "Finish the baseline test"}
+          </button>
+          {bStatus === "needed" && (
+            <button className="secondary" onClick={() => onSettings({ ...settings, baselineSkipped: true })}>
+              Skip it
+            </button>
+          )}
+        </div>
+      ) : (
+        <button className="primary" onClick={onStart} autoFocus>
+          {state.answers ? "Start today's session" : "Start first session"}
+        </button>
+      )}
       {state.answers > 0 && (
         <div className="stats">
           <Stat label="Facts studied" value={`${studied} of ${totalFacts}`} />
@@ -459,5 +528,44 @@ function CalibrationGrid({ events, title }: { events: AnswerEvent[]; title: stri
         ))}
       </div>
     </div>
+  );
+}
+
+function BaselineDone({ state, bank, events, onStart }: { state: LearnerState; bank: Bank; events: AnswerEvent[]; onStart: () => void }) {
+  const r = useMemo(() => baselineResult(state, bank, events), [state, bank, events]);
+  return (
+    <section className="home">
+      <h1>Your starting point</h1>
+      <p className="lede">
+        You got {r.correct} of {r.answered} right. Right now you'd likely score between {pct(r.range[0])} and {pct(r.range[1])} on the
+        real exam. Passing takes {pct(bank.passScore / bank.blueprint.scoredItems)}. Your sessions will start with your weakest
+        sections.
+      </p>
+      <table className="sections">
+        <thead>
+          <tr>
+            <th>Section</th>
+            <th>Asked</th>
+            <th>Estimate</th>
+          </tr>
+        </thead>
+        <tbody>
+          {r.sections.map((s) => (
+            <tr key={s.code} className={s.code === r.weakest[0] ? "weak" : ""}>
+              <td>
+                {s.code}. {s.name}
+              </td>
+              <td className="num">
+                {s.correct}/{s.asked}
+              </td>
+              <td className="num">{pct(s.estimate)}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <button className="primary" onClick={onStart} autoFocus>
+        Start your first session
+      </button>
+    </section>
   );
 }

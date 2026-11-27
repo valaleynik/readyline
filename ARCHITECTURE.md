@@ -171,3 +171,12 @@ Rules that changed recently (for example the 2024 FCC change from 30 days to 10 
 ### Feature rule
 
 Every feature reads the event log, the bank and the settings, and may only add events or change a setting. No feature keeps its own copy of what the learner knows.
+
+## Baseline test
+
+A 20-question placement round offered once, at signup, before any studying.
+
+- Offered only to a learner with no events and an exam more than 5 days out (or no date). Skippable.
+- Questions are split across sections by exam share (at least one each), one per fact, picked where ability is least certain.
+- No feedback per question. Answers are ordinary events tagged `context: "baseline"`, so they feed the model like any other answer.
+- Result: section-by-section estimate, likely score range, weakest section first.

@@ -19,6 +19,7 @@ describe("study loop UI", () => {
   it("runs a full first session: answer, feedback, next, until the day is cleared", async () => {
     const store = memStore();
     render(<StudyApp data={data} store={store} />);
+    fireEvent.click(await screen.findByText("Skip it"));
     fireEvent.click(await screen.findByText("Start first session"));
     let answered = 0;
     for (let i = 0; i < 80; i++) {
@@ -35,6 +36,7 @@ describe("study loop UI", () => {
     expect(answered).toBeGreaterThanOrEqual(12);
     expect(store.events.length).toBe(answered);
     expect(store.events.every((e: AnswerEvent) => e.confidence === "sure" || e.confidence === "guess")).toBe(true);
+    expect(store.events.every((e: AnswerEvent) => e.context === "session")).toBe(true);
     expect(screen.getByText("This session: confidence vs. results")).not.toBeNull();
   });
 
@@ -50,7 +52,27 @@ describe("study loop UI", () => {
 
   it("submit stays disabled until an option is chosen", async () => {
     render(<StudyApp data={data} store={memStore()} />);
+    fireEvent.click(await screen.findByText("Skip it"));
     fireEvent.click(await screen.findByText("Start first session"));
     expect((screen.getByText("I'm sure") as HTMLButtonElement).disabled).toBe(true);
+  });
+
+  it("baseline: 20 questions with no feedback, then a section breakdown, then studying", async () => {
+    const store = memStore();
+    render(<StudyApp data={data} store={store} />);
+    fireEvent.click(await screen.findByText(/Take the baseline test/));
+    for (let i = 0; i < 20; i++) {
+      expect(screen.getByText(new RegExp(`Question ${i + 1} of 20`))).not.toBeNull();
+      const opts = screen.getAllByRole("button").filter((b) => b.classList.contains("option"));
+      fireEvent.click(opts[i % 4]!);
+      await act(async () => { fireEvent.click(screen.getByText("I'm sure")); });
+      expect(document.querySelector(".verdict")).toBeNull();
+    }
+    expect(screen.getByText("Your starting point")).not.toBeNull();
+    expect(document.querySelectorAll(".sections tbody tr").length).toBe(data.blueprint.sections.length);
+    expect(store.events.length).toBe(20);
+    expect(store.events.every((e: AnswerEvent) => e.context === "baseline")).toBe(true);
+    fireEvent.click(screen.getByText("Start your first session"));
+    expect(document.querySelector(".option")).not.toBeNull();
   });
 });

@@ -104,3 +104,11 @@ button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
 .planLine { margin: 0; font-weight: 600; }
 .dateField { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 14px; color: var(--muted); }
 .dateField input { font: inherit; font-size: 16px; min-height: 44px; padding: 0 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--ink); }
+
+.row { display: flex; flex-wrap: wrap; gap: 10px; }
+.sections { width: 100%; border-collapse: collapse; margin: 8px 0 24px; font-size: 15px; }
+.sections th { text-align: left; font-size: 13px; color: var(--muted); font-weight: 600; padding: 6px 8px; border-bottom: 1px solid var(--line); }
+.sections td { padding: 10px 8px; border-bottom: 1px solid var(--line); }
+.sections .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sections th:nth-child(n+2) { text-align: right; }
+.sections tr.weak td { background: var(--bad-bg); }
