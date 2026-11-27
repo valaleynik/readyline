@@ -959,6 +959,54 @@
       "sha256": "41345864df00bf6d315ae0457dee0e9fb9c222d595b5d62c069e8d2bbef881e0",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-30-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-30.3",
+      "title": "Accelerated death benefits: definitions",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-30-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "7df54120c24670b1dbac7e9c0fe5748d4473a2764d9adcbe5323318950001ec8",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-30-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-30.4",
+      "title": "Permitted forms of accelerated death benefit provisions",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-30-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "b3be892a23eaa9807508e76a4b97e6ecf5e22f197b8dfa73cb696222a02d90b4",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-30-5",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-30.5",
+      "title": "Accelerated death benefits: surrender approach",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-30-5",
+      "retrievedAt": "2026-11-27",
+      "sha256": "7529e71857c5d4545fccc065c260774923d6907fa9a75cb5264d2b5e19e96767",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-11-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-11.4(b)-(c)",
+      "title": "Life insurance disclosure: general regulations",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-11-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "f27fde14f026759c84ca026f1602928aac8bde5a0026b7d3a1d9291c906581e0",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
     }
   ]
 }

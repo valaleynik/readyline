@@ -74,6 +74,172 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "IV7-20",
+      "statement": "A New Jersey accelerated death benefit's terminal-illness trigger must define a drastically limited life span of no less than 6 months and no more than 24 months, as specified in the policy.",
+      "source": "njac-11-4-30-3",
+      "quote": "shall have a minimum of \"six months or less\" and a maximum of \"24 months or less\" and shall be specified in the policy",
+      "items": [
+        {
+          "id": "IV7-20a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "New Jersey rules let an insurer define the terminal-illness trigger for accelerated death benefits as a life expectancy of anywhere from:",
+          "options": [
+            "3 to 12 months or less",
+            "6 to 24 months or less",
+            "12 to 36 months or less",
+            "24 to 60 months or less"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-30.3 requires the definition of a drastically limited life span to have a minimum of six months or less and a maximum of 24 months or less, as specified in the policy.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV7-21",
+      "statement": "Accelerated death benefits are paid to the owner during the insured's lifetime and reduce the death benefit otherwise payable.",
+      "source": "njac-11-4-30-3",
+      "quote": "That reduces the death benefit otherwise payable under the policy or certificate",
+      "items": [
+        {
+          "id": "IV7-21a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A $200,000 policy pays $50,000 as an accelerated death benefit while the insured is terminally ill. Assuming no loans or other charges, what happens to the death benefit?",
+          "options": [
+            "It stays at $200,000 until the insured dies",
+            "It drops to the policy's cash value",
+            "It is reduced by twice the amount paid",
+            "It is reduced by the amount paid early"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-30.3 defines accelerated death benefits as an advance payment of death proceeds to the owner during the insured's lifetime that reduces the death benefit otherwise payable."
+        }
+      ]
+    },
+    {
+      "id": "IV7-22",
+      "statement": "Besides terminal illness, an insurer may include triggers such as a condition requiring extraordinary medical intervention (like a major organ transplant) or permanent institutional confinement.",
+      "source": "njac-11-4-30-3",
+      "quote": "A medical condition that requires extraordinary medical intervention, such as a major organ transplant or continuous artificial life support, without which the insured would die",
+      "items": [
+        {
+          "id": "IV7-22a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey's accelerated death benefit rules, which of these may an insurer include as an optional qualifying event?",
+          "options": [
+            "A chronic condition expected to improve with treatment within a year",
+            "A hospital stay for routine surgery with full recovery expected",
+            "Needing a new heart or liver to survive",
+            "A diagnosis that shortens life expectancy to about 10 years"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-30.3 lets the insurer include, as optional qualifying events, a medical condition requiring extraordinary medical intervention such as a major organ transplant or continuous artificial life support, without which the insured would die.",
+          "retired": "Guessable by common sense twice (only the life-threatening option qualifies). Terminal-illness window covered by IV7-20a."
+        }
+      ]
+    },
+    {
+      "id": "IV7-23",
+      "statement": "New Jersey permits accelerated death benefits only in two forms: a surrender of the policy or a lien on the death benefits.",
+      "source": "njac-11-4-30-4",
+      "quote": "either a surrender of the policy or a lien on the death benefits",
+      "items": [
+        {
+          "id": "IV7-23a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "New Jersey permits accelerated death benefit provisions in which two forms?",
+          "options": [
+            "A surrender of the policy or a lien on the death benefits",
+            "A policy loan or a dividend advance",
+            "A viatical sale or a reinstatement",
+            "An annuity conversion or a paid-up addition"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-30.4 permits accelerated death benefit provisions in the form of either a surrender of the policy or a lien on the death benefits.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "IV7-24",
+      "statement": "Under the surrender approach, the cash value is reduced by the same percentage as the death benefit.",
+      "source": "njac-11-4-30-5",
+      "quote": "the cash value, if any, is reduced by the same percentage as the death benefit",
+      "items": [
+        {
+          "id": "IV7-24a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 1.5,
+          "stem": "A policy with a $100,000 death benefit and $30,000 of cash value accelerates 40% of the death benefit under the surrender approach. What is the remaining cash value?",
+          "options": [
+            "$12,000",
+            "$18,000",
+            "$30,000",
+            "$60,000"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-30.5 reduces the cash value by the same percentage as the death benefit under the surrender approach. Cutting $30,000 by 40% leaves $18,000.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV7-25",
+      "statement": "Under the surrender approach, the accelerated amount may repay a policy loan only up to the loan multiplied by the percentage of death benefit accelerated.",
+      "source": "njac-11-4-30-5",
+      "quote": "but only up to the amount of the outstanding loan multiplied by the percentage of the death benefits which have been accelerated",
+      "items": [
+        {
+          "id": "IV7-25a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.8,
+          "stem": "A $200,000 policy has a $40,000 outstanding loan. The owner accelerates $50,000 (25%) of the death benefit under the surrender approach. Under New Jersey rules, the most of that payment that may go toward repaying the loan is:",
+          "options": [
+            "$10,000",
+            "$12,500",
+            "$40,000",
+            "$50,000"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-30.5 limits loan repayment to the outstanding loan times the percentage accelerated. Twenty-five percent of $40,000 is $10,000, so at least $40,000 goes to the owner.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "IV7-26",
+      "statement": "Under the surrender approach, the premium is proportionately reduced to reflect the insurance remaining in force.",
+      "source": "njac-11-4-30-5",
+      "quote": "The premium is proportionately reduced to reflect the amount of insurance remaining in effect",
+      "items": [
+        {
+          "id": "IV7-26a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "An owner accelerates half of a policy's death benefit under the surrender approach. Absent any other formula in the policy, the premium on the remaining coverage is:",
+          "options": [
+            "Unchanged, since the policy stays in force",
+            "Waived for the rest of the insured's life",
+            "Reduced in proportion to the coverage left in force",
+            "Raised to cover the insurer's early payment"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-30.5 requires the premium to be proportionately reduced to reflect the amount of insurance remaining in effect, and it may be reduced further by a stated formula or become paid-up."
+        }
+      ]
     }
   ]
 }

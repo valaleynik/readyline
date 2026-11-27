@@ -231,6 +231,52 @@
           "group": "vi3-enforcement"
         }
       ]
+    },
+    {
+      "id": "VI3-30",
+      "statement": "Before starting a life insurance sales presentation, the agent must say that he or she is acting as a life insurance agent and give the full name of the insurer represented.",
+      "source": "njac-11-4-11-4",
+      "quote": "prior to commencing a life insurance sales presentation, that he or she is acting as a life insurance agent and the full name of the insurer the agent is representing",
+      "items": [
+        {
+          "id": "VI3-30a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Under New Jersey's life insurance disclosure rules, what must an agent tell a prospect before starting a life insurance sales presentation?",
+          "options": [
+            "His commission rate on the proposed policy",
+            "His license number and its expiration date",
+            "The names of every insurer that has appointed him",
+            "That he sells life insurance, and which company he represents"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-11.4(b)-(c) requires the agent to say, prior to commencing a life insurance sales presentation, that he or she is acting as a life insurance agent and to give the full name of the insurer."
+        }
+      ]
+    },
+    {
+      "id": "VI3-31",
+      "statement": "A producer may not use titles like financial planner or investment advisor to imply an advisory business with compensation unrelated to sales unless that is actually the case.",
+      "source": "njac-11-4-11-4",
+      "quote": "in such a way as to imply that he or she is primarily engaged in an advisory business in which compensation is unrelated to sales unless that is actually the case",
+      "items": [
+        {
+          "id": "VI3-31a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A New Jersey life producer paid entirely by commissions on policy sales uses business cards reading \"Financial Consultant\" and describes his business as an advisory practice. He holds no planning designation. Under New Jersey rules, this is:",
+          "options": [
+            "Prohibited, because it implies his pay is unrelated to sales",
+            "Permitted, since producers who discuss finances may use the title",
+            "Permitted, if he also holds a securities license",
+            "Permitted, if the title also appears on the application"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-11.4(b)-(c) bars using terms such as financial planner or financial counseling to imply an advisory business with compensation unrelated to sales unless that is actually the case."
+        }
+      ]
     }
   ]
 }
