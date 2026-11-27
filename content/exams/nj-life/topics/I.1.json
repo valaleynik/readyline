@@ -48,6 +48,78 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "I1-03",
+      "statement": "Whole life covers the insured for life if premiums are paid, generally with the same premium for life.",
+      "source": "naic-buyers-guide",
+      "quote": "Whole Life Insurance covers you for as long as you live if your premiums are paid. You generally pay the same amount in premiums for as long as you live.",
+      "items": [
+        {
+          "id": "I1-03a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Which statement best describes the premiums on a traditional whole life policy?",
+          "options": [
+            "They rise each time the policy renews",
+            "They can be skipped whenever the cash value is large enough",
+            "They are set by the policyowner each year",
+            "They stay level for as long as the insured lives"
+          ],
+          "answer": 3,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, whole life covers the insured for life if premiums are paid, and the premium is generally the same for as long as the insured lives."
+        }
+      ]
+    },
+    {
+      "id": "I1-04",
+      "statement": "A limited-pay whole life policy (for example 20-pay or paid-up at 65) has higher premiums because they are paid over a shorter period.",
+      "source": "naic-buyers-guide",
+      "quote": "Premiums for these policies are higher since the premium payments are made during a shorter period.",
+      "items": [
+        {
+          "id": "I1-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A client compares a 20-pay whole life policy with an ordinary (continuous-premium) whole life policy of the same face amount, issued at the same age. The 20-pay policy's annual premium will be:",
+          "options": [
+            "Higher, since premiums are paid over fewer years",
+            "Lower, since coverage ends after 20 years",
+            "The same, since the face amounts match",
+            "Lower at first, then higher after year 10"
+          ],
+          "answer": 0,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, whole life policies that let you pay premiums for a shorter period, such as 20 years or until age 65, carry higher premiums because payments are made over a shorter period."
+        }
+      ],
+      "contrasts": [
+        "I1-03"
+      ]
+    },
+    {
+      "id": "I1-05",
+      "statement": "Whole life premiums start several times higher than term premiums for the same amount, but are smaller than what renewing term into later years would eventually cost.",
+      "source": "naic-buyers-guide",
+      "quote": "But they are smaller than the premiums you would eventually pay if you were to keep renewing a term policy until your later years.",
+      "items": [
+        {
+          "id": "I1-05a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "A 35-year-old plans to keep $250,000 of coverage until age 85. Compared with buying whole life now, renewing annual term the whole time would most likely mean:",
+          "options": [
+            "Higher premiums at first, but lower premiums in later years",
+            "Lower premiums at first, but much higher premiums in later years",
+            "The same total premiums, paid on a different schedule",
+            "Lower premiums throughout, with the same cash value"
+          ],
+          "answer": 1,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, whole life premiums start higher than term premiums but are smaller than the premiums you would eventually pay if you kept renewing term into your later years."
+        }
+      ]
     }
   ]
 }

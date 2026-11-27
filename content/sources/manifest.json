@@ -803,6 +803,30 @@
       "sha256": "acd2e93f7b7d28a74d4c239a7704893dc2451ef4d78abd6af3f74b0a2bdc5f88",
       "verifiedAgainstOfficial": true,
       "note": "Excerpt copied verbatim from the official nj.gov page via the browser."
+    },
+    {
+      "id": "naic-buyers-guide",
+      "kind": "model_law",
+      "citation": "NAIC Life Insurance Buyer's Guide",
+      "title": "Life Insurance Buyer's Guide (NAIC, as adopted in state regulation)",
+      "act": "NAIC Life Insurance Disclosure Model Regulation; adopted in N.J.A.C. 11:4-11 (Appendix A) and Ill. Admin. Code tit. 50, pt. 930, exh. B",
+      "url": "https://www.law.cornell.edu/regulations/illinois/Ill-Admin-Code-tit-50-930-Exhibit-B",
+      "retrievedAt": "2026-11-27",
+      "sha256": "8ece54d6da8c1b7d3a75bf6b44079cccb071e97892c49e377e032df051859860",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpts copied verbatim (LII copy of the Illinois adoption; NJ adopts the same NAIC guide). Not yet compared to the N.J.A.C. 11:4-11 appendix text."
+    },
+    {
+      "id": "naic-consumer-life-riders",
+      "kind": "manual",
+      "citation": "NAIC Consumer Guide: Life Insurance Riders",
+      "title": "Life Insurance: Life Insurance Riders",
+      "act": "National Association of Insurance Commissioners (consumer information)",
+      "url": "https://content.naic.org/es/node/1806",
+      "retrievedAt": "2026-11-27",
+      "sha256": "fcc2df2a628d2722d328c710191a438c9fb4e8e7760217d34b360adfb6c1d970",
+      "verifiedAgainstOfficial": true,
+      "note": "Excerpt copied verbatim from the NAIC site via the browser."
     }
   ]
 }

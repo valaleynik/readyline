@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r35",
+    "detail": "picked \"The up-front costs of a new contract may be paid all over again\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r35",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r35",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r35",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

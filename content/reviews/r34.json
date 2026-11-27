@@ -1,0 +1,218 @@
+[
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "picked \"They stay level for as long as the insured lives\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "No strong form cue; options are similar length and structure.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "I1-03a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "picked \"Waiver of premium rider\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "Stem describes the rider's function; no grammatical or length cue points to D.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-10a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "picked \"Allowed, since the money need not go toward care\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "Two 'allowed' and two 'not allowed' options balance each other; C is the only unqualified 'allowed', but that follows from content, not form.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II1-14a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "picked \"The up-front costs of a new contract may be paid all over again\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "distractor",
+    "passed": false,
+    "reviewer": "blind-subagent-r34",
+    "detail": "D is a distorted version of a real replacement cost (surrender charges reduce the cash value received on surrender). It is wrong as worded, since the insurer does not keep the whole cash value, but a candidate thinking of surrender charges could hesitate.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r34",
+    "detail": "A and D both use 'may'; no strong length or wording cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "III1-21a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

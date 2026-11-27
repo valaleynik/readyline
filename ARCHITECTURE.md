@@ -134,7 +134,15 @@ Every concept below exists to fix a specific failure. Before adding a new one, c
 
 ## Sourcing policy
 
-Every item traces to a government primary source, stored verbatim with a hash: New Jersey statutes for state law and policy provisions, the Internal Revenue Code for taxation, the Fair Credit Reporting Act for underwriting reports, and the FCC's TCPA rules for telemarketing. The FTC Telemarketing Sales Rule was dropped for insurance items, because the FTC's authority largely does not reach the state-regulated business of insurance.
+Every item traces to a source stored verbatim with a hash. Sources come in three tiers, used in this order:
+
+1. **Law.** New Jersey statutes for state law and policy provisions, the Internal Revenue Code for taxation, the Social Security Act, the Fair Credit Reporting Act for underwriting reports, and the FCC's TCPA rules for telemarketing.
+2. **Regulator text.** Material written or adopted by insurance regulators: NJ DOBI pages, the NAIC Life Insurance Buyer's Guide (adopted into N.J.A.C. 11:4-11), NAIC consumer guides, and SEC investor education. Used for product concepts (term, whole life, universal life, riders) that the statutes do not define.
+3. **Not allowed.** Prep-course text, insurer marketing, blogs, and anything an AI wrote. These can point to where a rule lives but never stand as the source.
+
+When tiers disagree, law wins. Adding a new source within tiers 1 or 2 needs no sign-off; anything else does.
+
+The FTC Telemarketing Sales Rule was dropped for insurance items, because the FTC's authority largely does not reach the state-regulated business of insurance.
 
 Rules that changed recently (for example the 2024 FCC change from 30 days to 10 business days for honoring do-not-call requests) are withheld when prep materials, and possibly the exam itself, may still teach the old rule. Retired items stay in the files with their reason.
 
@@ -142,5 +150,4 @@ Rules that changed recently (for example the 2024 FCC change from 30 days to 10 
 
 - Blueprint item counts come from a prelicensing provider's published breakdown of the PSI outline. They must be checked against the current PSI content outline before launch (`blueprint.json` marks this).
 - Item difficulty starts from a generator estimate and is calibrated as real responses arrive.
-- Group life (IV.2, VI.2) has no items yet: FindLaw's copy of N.J.S.A. 17B:27 omits the group life sections, and the official NJ Legislature site needs a different retrieval path.
 - Ability does not decay with time; memory decay is handled by FSRS at the fact level.

@@ -24,6 +24,123 @@
           "explanation": "N.J.S.A. 17B:25-4 excludes provisions on disability benefits and on additional benefits for accidental death, dismemberment or loss of sight from the incontestable requirement."
         }
       ]
+    },
+    {
+      "id": "II1-10",
+      "statement": "A waiver of premium rider lets the owner stop paying premiums if the insured develops a covered illness or disability named in the rider.",
+      "source": "naic-consumer-life-riders",
+      "quote": "With a waiver of premium rider, you can stop paying your life insurance premium if you develop a covered illness or disability named in the rider.",
+      "items": [
+        {
+          "id": "II1-10a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "An insured becomes disabled by a condition named in a rider. The policy stays in force, and the owner owes nothing to the insurer while the disability lasts. Which rider is at work?",
+          "options": [
+            "Accidental death benefit rider",
+            "Guaranteed insurability rider",
+            "Long-term care rider",
+            "Waiver of premium rider"
+          ],
+          "answer": 3,
+          "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, a waiver of premium rider lets you stop paying premiums if you develop a covered illness or disability named in the rider.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II1-11",
+      "statement": "An accidental death benefit rider pays more than the death benefit, sometimes two or three times (double or triple indemnity), if death is accidental.",
+      "source": "naic-consumer-life-riders",
+      "quote": "Some riders pay two to three times the death benefit for certain accidents. Insurers sometimes describe these riders as double or triple indemnity.",
+      "items": [
+        {
+          "id": "II1-11a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A $100,000 policy has a double indemnity rider. The insured dies in a car accident that the rider covers. The beneficiary receives:",
+          "options": [
+            "$100,000",
+            "$150,000",
+            "$200,000",
+            "$300,000"
+          ],
+          "answer": 2,
+          "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, an accidental death benefit rider, sometimes called double or triple indemnity, pays a multiple of the death benefit for covered accidents. Double indemnity on $100,000 pays $200,000.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II1-12",
+      "statement": "A guaranteed insurability rider lets the owner increase the death benefit at set future times without a medical exam; the cost depends on age and the amount of the increase, not health.",
+      "source": "naic-consumer-life-riders",
+      "quote": "How much it costs to increase the benefit will depend on your age and the amount of the increase, not your health or lifestyle.",
+      "items": [
+        {
+          "id": "II1-12a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A client with a guaranteed insurability rider develops a serious illness, then reaches one of the rider's option dates and buys more coverage. The premium for the added coverage is based on:",
+          "options": [
+            "How old he is and how much coverage he adds",
+            "His current health and medical history",
+            "The premium rate set when the policy was issued",
+            "A medical exam taken on the option date"
+          ],
+          "answer": 0,
+          "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, a guaranteed insurability rider allows increases at set times without a medical exam, and the cost depends on age and the amount of the increase, not health or lifestyle."
+        }
+      ]
+    },
+    {
+      "id": "II1-13",
+      "statement": "A long-term care rider lets the insured use part of the death benefit for long-term care, usually triggered by inability to perform certain activities of daily living.",
+      "source": "naic-consumer-life-riders",
+      "quote": "Usually, you must be unable to do certain activities of daily living.",
+      "items": [
+        {
+          "id": "II1-13a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A long-term care rider on a life policy usually pays out when the insured:",
+          "options": [
+            "Is diagnosed with any illness that shortens life expectancy",
+            "Needs help with basic tasks such as bathing or dressing",
+            "Retires and stops earning income",
+            "Reaches the policy's maturity age"
+          ],
+          "answer": 1,
+          "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, a long-term care rider lets the insured use part of the death benefit for long-term care, and usually requires being unable to do certain activities of daily living."
+        }
+      ]
+    },
+    {
+      "id": "II1-14",
+      "statement": "Money taken under an accelerated death benefit for a terminal illness does not have to be used for care related to the illness.",
+      "source": "naic-consumer-life-riders",
+      "quote": "You don't have to use the money to pay for care related to your illness.",
+      "items": [
+        {
+          "id": "II1-14a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A terminally ill insured receives an accelerated death benefit and wants to use it for a family trip. Under a typical accelerated benefit rider, this is:",
+          "options": [
+            "Not allowed, since the money is reserved for medical bills",
+            "Allowed, but limited to nursing home costs",
+            "Allowed, since the money need not go toward care",
+            "Not allowed until the beneficiary consents"
+          ],
+          "answer": 2,
+          "explanation": "Per the NAIC Consumer Guide: Life Insurance Riders, an accelerated death benefit lets a terminally ill insured take money from the death benefit, and the money does not have to be used for care related to the illness."
+        }
+      ]
     }
   ]
 }

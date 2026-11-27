@@ -172,6 +172,52 @@
           "explanation": "N.J.S.A. 17B:24-2 deems a minor 15 or older competent to receive and acknowledge insurance payments of up to $2,000 in any calendar year, if the insurer has no notice of a guardian."
         }
       ]
+    },
+    {
+      "id": "III1-20",
+      "statement": "When replacing a policy, the owner should not cancel the old policy until the new one has been received.",
+      "source": "naic-buyers-guide",
+      "quote": "If you decide to replace your policy, don't cancel your old policy until you have received the new one.",
+      "items": [
+        {
+          "id": "III1-20a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A client has decided to replace an existing life policy with a new one. When should the old policy be canceled?",
+          "options": [
+            "Once the new application is signed",
+            "Once the first new premium is paid",
+            "Once the insurer orders a medical exam",
+            "Once the new policy has been received"
+          ],
+          "answer": 3,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, if you decide to replace a policy, do not cancel the old one until you have received the new one."
+        }
+      ]
+    },
+    {
+      "id": "III1-21",
+      "statement": "Replacing a policy can be costly, partly because early premiums went to the insurer's selling and issuing costs, which may be paid again on a new policy.",
+      "source": "naic-buyers-guide",
+      "quote": "Much of what you paid in the early years of the policy you have now paid for the company's cost of selling and issuing the policy. You may pay this type of cost again if you buy a new policy.",
+      "items": [
+        {
+          "id": "III1-21a",
+          "version": 3,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "One reason replacing a life policy can be costly is that:",
+          "options": [
+            "The up-front costs of a new contract may be paid all over again",
+            "The old policy's death benefit is reduced once a new application is filed",
+            "The new policy's premiums are based on the age at which the old one was issued",
+            "The new policy cannot name the same beneficiary as the old one"
+          ],
+          "answer": 0,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, much of what was paid in the early years of a policy covered the company's cost of selling and issuing it, and a new policy may charge that cost again."
+        }
+      ]
     }
   ]
 }

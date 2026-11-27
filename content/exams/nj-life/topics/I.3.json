@@ -50,6 +50,79 @@
       "contrasts": [
         "I1-01"
       ]
+    },
+    {
+      "id": "I3-03",
+      "statement": "Most term policies can be renewed for further terms even if health has changed, but premiums may rise at each renewal.",
+      "source": "naic-buyers-guide",
+      "quote": "You can renew most term insurance policies for one or more terms even if your health has changed. Each time you renew the policy for a new term, premiums may be higher.",
+      "items": [
+        {
+          "id": "I3-03a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A client's renewable 10-year term policy is ending, and she has developed heart disease since buying it. If she renews for another term, she can expect:",
+          "options": [
+            "Coverage to continue, likely at a higher premium",
+            "To be declined, because her health has changed",
+            "To keep the same premium as her first term",
+            "To have the face amount reduced to her cash value"
+          ],
+          "answer": 0,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, most term policies can be renewed for one or more terms even if health has changed, and premiums may be higher at each renewal."
+        }
+      ]
+    },
+    {
+      "id": "I3-04",
+      "statement": "Many term policies can be converted to a cash value policy during a conversion period even if the insured is not in good health; the new premium will be higher.",
+      "source": "naic-buyers-guide",
+      "quote": "You may be able to trade many term insurance policies for a cash value policy during a conversion period - even if you are not in good health.",
+      "items": [
+        {
+          "id": "I3-04a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A client with a convertible term policy has been diagnosed with diabetes and wants permanent coverage. Within the conversion period, he can generally:",
+          "options": [
+            "Convert it if he first passes a medical exam",
+            "Exchange it for a cash value policy without proving good health",
+            "Convert it, keeping the same premium he pays for term",
+            "Exchange it for a policy with a higher face amount at term rates"
+          ],
+          "answer": 1,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, many term policies can be traded for a cash value policy during a conversion period even if the insured is not in good health, though the new premium will be higher than the term premium."
+        }
+      ],
+      "contrasts": [
+        "I3-03"
+      ]
+    },
+    {
+      "id": "I3-05",
+      "statement": "Term insurance generally offers the largest insurance protection for the premium dollar.",
+      "source": "naic-buyers-guide",
+      "quote": "Term insurance generally offers the largest insurance protection for your premium dollar.",
+      "items": [
+        {
+          "id": "I3-05a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "A young parent on a tight budget needs the largest possible death benefit for the next 20 years. Which type of policy generally provides the most coverage per premium dollar?",
+          "options": [
+            "Whole life",
+            "Universal life",
+            "Term life",
+            "Variable life"
+          ],
+          "answer": 2,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, term insurance generally offers the largest insurance protection for your premium dollar.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

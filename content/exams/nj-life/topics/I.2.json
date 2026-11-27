@@ -72,6 +72,52 @@
           "retired": "Flagged as test-wise in three rounds: unsuitability reasons are hard to write without the key standing out."
         }
       ]
+    },
+    {
+      "id": "I2-10",
+      "statement": "Universal life lets the owner vary premium payments and adjust the face amount; increases may require proof of insurability.",
+      "source": "naic-buyers-guide",
+      "quote": "Universal LifeInsurance is a kind of flexible policy that lets you vary your premium payments. You can also adjust the face amount of your coverage. Increases may require proof that you qualify for the new death benefit.",
+      "items": [
+        {
+          "id": "I2-10a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "Which feature most sets universal life apart from traditional whole life?",
+          "options": [
+            "The cash value is tied to separate investment accounts",
+            "The premium is guaranteed level for life",
+            "The owner can vary premium payments and adjust the face amount",
+            "It covers the insured for a set term of years"
+          ],
+          "answer": 2,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, universal life is a flexible policy that lets the owner vary premium payments and adjust the face amount. Increases may require proof of insurability."
+        }
+      ]
+    },
+    {
+      "id": "I2-11",
+      "statement": "If universal life premiums plus interest fall short of the charges, the account value drops, and if it keeps dropping the coverage ends.",
+      "source": "naic-buyers-guide",
+      "quote": "If your yearly premium payment plus the interest your account earns is less than the charges, your account value will become lower. If it keeps dropping, eventually your coverage will end.",
+      "items": [
+        {
+          "id": "I2-11a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A universal life owner has paid very small premiums for several years, and the interest credited plus her payments have not covered the policy's charges. If this continues, what will happen?",
+          "options": [
+            "The insurer will switch the policy to term at the same premium",
+            "The face amount will rise to match the charges",
+            "The charges will be waived until interest rates recover",
+            "The account value will keep falling until coverage ends"
+          ],
+          "answer": 3,
+          "explanation": "Per the NAIC Life Insurance Buyer's Guide, when universal life premiums plus interest are less than the charges, the account value falls, and if it keeps dropping, coverage eventually ends."
+        }
+      ]
     }
   ]
 }
