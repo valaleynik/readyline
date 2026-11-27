@@ -100,6 +100,104 @@
       "contrasts": [
         "II3-10"
       ]
+    },
+    {
+      "id": "II3-20",
+      "statement": "The incontestable and suicide periods start on the earliest of the date of issue, the policy date and any other effective date (except backdating to save age).",
+      "source": "njac-11-4-41-3b",
+      "quote": "The periods for incontestability and suicide shall commence upon the earliest of the date of issue, the policy date and any other effective date.",
+      "items": [
+        {
+          "id": "II3-20a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A New Jersey policy shows a policy date of March 1 and an issue date of March 20, with no backdating to save age. When do the incontestable and suicide periods begin?",
+          "options": [
+            "March 20, the issue date",
+            "The date the policy is delivered",
+            "March 1, the earlier of the two dates",
+            "The date the first premium is paid"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b) starts the incontestability and suicide periods on the earliest of the date of issue, the policy date and any other effective date, except when backdating saves age."
+        }
+      ]
+    },
+    {
+      "id": "II3-21",
+      "statement": "When coverage is increased based on new evidence of insurability, the insurer may contest for up to two more years, limited to the increase.",
+      "source": "njac-11-4-41-3b",
+      "quote": "the insurer may reserve a right to contest the policy for no more than an additional two years following the date of the purchase of the increase, but only limited to the actual increase in insurance",
+      "items": [
+        {
+          "id": "II3-21a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "Five years after issue, a policyowner raises his face amount from $250,000 to $400,000 after a new medical exam. The policy form reserves the insurer's right to contest such increases. Under New Jersey rules, what may the insurer contest?",
+          "options": [
+            "The full $400,000 for two years from the increase",
+            "Nothing, since the original policy is past its contestable period",
+            "The $250,000 original amount, for one more year",
+            "The $150,000 increase, for up to two years from the increase"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.3(b) lets the insurer reserve a right to contest for no more than two additional years after an increase bought with new evidence of insurability, limited to the actual increase."
+        }
+      ]
+    },
+    {
+      "id": "II3-22",
+      "statement": "Modifications made without new evidence of insurability, such as cost-of-living or corridor increases, carry no new right to contest.",
+      "source": "njac-11-4-41-3b",
+      "quote": "Insurers shall not retain any right of contest when modifications to the policy occur without additional evidence of insurability, such as corridor or cost of living increases.",
+      "items": [
+        {
+          "id": "II3-22a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A policy's cost-of-living rider automatically raises the face amount, with no new application or medical evidence. Under New Jersey rules, the increase:",
+          "options": [
+            "Is not contestable at all",
+            "Starts a new two-year contestable period on the increase",
+            "Is contestable for one year from the increase",
+            "Is contestable until the next policy anniversary"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.3(b) bars insurers from retaining any right to contest modifications made without additional evidence of insurability, such as corridor or cost-of-living increases.",
+          "enemies": [
+            "II3-21a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "II3-21"
+      ]
+    },
+    {
+      "id": "II3-23",
+      "statement": "On a conversion or change of plan with no increase in the amount at risk, the suicide period under the new policy runs from the original policy's issue date.",
+      "source": "njac-11-4-41-3b",
+      "quote": "the period for death by suicide under the new policy shall begin as of the date of issue of the original policy",
+      "items": [
+        {
+          "id": "II3-23a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "A term policy issued 18 months ago is converted, at the same face amount and with no increase in the amount at risk, to whole life. The insured dies by suicide 8 months after the conversion. Under New Jersey rules:",
+          "options": [
+            "The suicide exclusion applies, since the whole life policy is only 8 months old",
+            "The suicide exclusion does not apply, since the period began with the original policy",
+            "The insurer returns premiums paid on the whole life policy only",
+            "The claim is contestable for misstatements in the conversion"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.3(b) starts the suicide period under the new policy on the original policy's issue date when a conversion does not increase the amount at risk. Here 26 months have passed, so the two-year period has ended."
+        }
+      ]
     }
   ]
 }

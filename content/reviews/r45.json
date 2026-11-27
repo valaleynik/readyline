@@ -1,0 +1,542 @@
+[
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"Timely, since payment counts as made on the date it was mailed\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "D (certified mail) is a throwaway, but A vs C still needs knowledge of the NJ date-of-mailing rule; many candidates would intuitively pick A.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-50a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"60 days\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "A (30 days) is the figure for the other permitted method (30 days after the policy value reaches zero), but the stem's trigger points clearly to method (2), so A is wrong as asked.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-51a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"No, the grace period is in addition to the loan protections\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "A is tempting because N.J.S.A. 17B:25-8 lets a policy terminate when indebtedness equals or exceeds the loan value (with 30 days' notice). That rule is about loan termination, though, not about cutting the grace period short, which 11:4-41.3(b)2vii forbids. B's '10 days' notice' contradicts the statute's 30 days.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "Weak cues only: C is implausible (term policies generally have no loan value), and D is the longest and most legalistic option and carries the consumer-protective 'No'. That narrows the field, but it is not decisive.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-52a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"Extrapolates a premium and benefit for the true age\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "B (rescind and refund) is what some national exam-prep materials teach when the true age makes the insured uninsurable. The NJ regulation expressly prohibits it, so it is wrong under 'New Jersey rules' but is a deliberate national-vs-NJ trap.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-53a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"30 days\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-54a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"At least every 12 months, and at most every 3 months\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r45",
+    "detail": "B is the only option with a two-sided, specific range and is clearly the 'crafted' answer. A (daily) and D (5 years) are extreme, and C contradicts 'variable' in the stem, so form alone points to B.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-55a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"March 1, the earlier of the two dates\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "A (issue date) is defensible from general exam prep and from a plain reading of N.J.S.A. 17B:25-4 ('2 years from its date of issue'), but 11:4-41.3(b)3i defines date of issue as the earliest of the issue date, policy date and any effective date, so A is wrong under NJ rules.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "C's rationale ('the earlier of the two dates') is a slight cue, since the earlier date favors the consumer, but it is not decisive.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-20a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"The $150,000 increase, for up to two years from the increase\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "D is the intuitive common-sense answer (contest only the new money), and it is the only option that uses the computed $150,000, but you still need the two-year limit.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-21a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"Cannot be contested, since no new evidence was given\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r45",
+    "detail": "The stem stresses 'no new application or medical evidence', and A is the only option that echoes it as its reason ('since no new evidence was given'). That stem-to-option word match is a strong cue.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-22a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "picked \"The suicide exclusion does not apply, since the period began with the original policy\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "D is not on point (it is about contestability, not the suicide claim), and no evidence or increase was involved, so it is clearly not the best answer.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r45",
+    "detail": "The stem's 'no increase in the amount at risk' hints that the original date carries over, but A is a strong lure for anyone without the rule.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-23a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

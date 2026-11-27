@@ -906,6 +906,150 @@
       "contrasts": [
         "II2-42"
       ]
+    },
+    {
+      "id": "II2-50",
+      "statement": "A grace-period premium counts as paid on the date the policyholder mails it; the insurer may not require receipt within the grace period and may rely on the postmark.",
+      "source": "njac-11-4-41-3b",
+      "quote": "The grace period provision shall not require receipt of the premium by the insurer within the grace period.",
+      "items": [
+        {
+          "id": "II2-50a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A New Jersey policyholder mails an overdue premium on the last day of the 30-day grace period, and the insurer receives it three days later. Under New Jersey rules, the payment is:",
+          "options": [
+            "Late, since the insurer received it after the grace period",
+            "Late, so the policy lapses when the grace period ends",
+            "Timely, since payment counts as made on the date it was mailed",
+            "Timely only if sent by certified mail"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b) makes payment effective on the date the policyholder mails it, bars requiring receipt within the grace period, and lets the insurer rely on the postmark."
+        }
+      ]
+    },
+    {
+      "id": "II2-51",
+      "statement": "For account value policies (such as universal life), the grace period is at least 30 days after the policy value hits zero, or at least 60 days after the first monthly deduction date the value cannot cover a full month.",
+      "source": "njac-11-4-41-3b",
+      "quote": "(2) No less than 60 days following the first monthly deduction date for which the policy value is insufficient to provide an entire additional month of insurance.",
+      "items": [
+        {
+          "id": "II2-51a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "For a New Jersey universal life policy kept in force by its account value, one permitted grace period method is at least how long after the first monthly deduction date on which the value cannot cover a full month of insurance?",
+          "options": [
+            "30 days",
+            "31 days",
+            "60 days",
+            "90 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b) allows a grace period for account value policies of no less than 30 days after the policy value reaches zero, or no less than 60 days after the first monthly deduction date for which the value is insufficient for a full month.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-52",
+      "statement": "The grace period cannot be cut short by terminating the policy for excessive loans; it is in addition to the loan-termination protections.",
+      "source": "njac-11-4-41-3b",
+      "quote": "shall not allow the grace period to be preempted by a termination of the policy due to excessive loans",
+      "items": [
+        {
+          "id": "II2-52a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey policy form rules, may an insurer cut off a policy's grace period early because the policy loans have grown too large?",
+          "options": [
+            "Yes, once the loan exceeds the cash value",
+            "Yes, if it gives 10 days' written notice",
+            "No, unless the policy is term insurance",
+            "No, the grace period is in addition to the loan protections"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.3(b) bars a grace period provision that lets the grace period be preempted by termination for excessive loans. The grace period is in addition to the policy loan protections."
+        }
+      ]
+    },
+    {
+      "id": "II2-53",
+      "statement": "The misstatement-of-age provision may not say the policy will be rescinded and premiums refunded; if the true age is outside the issue ages, the insurer extrapolates a premium and benefit.",
+      "source": "njac-11-4-41-3b",
+      "quote": "The provision for misstatement of age shall not state that the policy will be rescinded and the premiums refunded.",
+      "items": [
+        {
+          "id": "II2-53a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An insured's true age turns out to be above the oldest issue age the insurer offers for that policy form. Under New Jersey rules, the insurer:",
+          "options": [
+            "Extrapolates a premium and benefit for the true age",
+            "Rescinds the policy and refunds all premiums",
+            "Pays the full face amount, since the age error was not fraud",
+            "Converts the policy to term at the true age"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.3(b) requires the insurer to extrapolate a premium and benefit when the corrected age falls outside its issue ages, and bars a provision stating that the policy will be rescinded and premiums refunded.",
+          "enemies": [
+            "II2-07a",
+            "II2-07b"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II2-54",
+      "statement": "A participating policy must give at least 30 days after a dividend is due to elect a dividend option.",
+      "source": "njac-11-4-41-3b",
+      "quote": "no less than 30 days following the date on which the dividend is due and payable",
+      "items": [
+        {
+          "id": "II2-54a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey policy form standards, a participating policy must allow the policyholder at least how long after a dividend becomes due to elect a dividend option?",
+          "options": [
+            "10 days",
+            "30 days",
+            "60 days",
+            "One policy year"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.3(b) requires the election period to be no less than 30 days following the date on which the dividend is due and payable.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-55",
+      "statement": "A variable policy loan interest rate must be redetermined no less often than every 12 months and no more often than every 3 months.",
+      "source": "njac-11-4-41-3b",
+      "quote": "The frequency shall be no less than once every 12 months, but no greater than once every three months.",
+      "items": [
+        {
+          "id": "II2-55a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "A New Jersey life policy charges a variable policy loan interest rate. How often must the insurer redetermine that rate, under New Jersey policy form standards?",
+          "options": [
+            "At least every 24 months, and at most every 6 months",
+            "At least every 12 months, and at most every 3 months",
+            "At least every 6 months, and at most every month",
+            "At least every 5 years, and at most every year"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.3(b) requires a variable loan rate to be redetermined no less than once every 12 months but no more often than once every three months."
+        }
+      ]
     }
   ]
 }
