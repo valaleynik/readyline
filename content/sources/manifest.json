@@ -1031,6 +1031,102 @@
       "sha256": "dbaad83539930ede4c61e0e39189c86ddc23cca24a7905b20c5c125bf777c384",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy via the browser; selected paragraphs of (b)7-(b)9."
+    },
+    {
+      "id": "njsa-17b-29-2",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-2",
+      "title": "Credit insurance definitions",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-2/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "bd36afdbca1ba058127abaab5ea2afbae33b41734401dfec6810b826eac749e9",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-3",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-3",
+      "title": "Forms of credit insurance",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-3/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "c5d08c6bb35cb2ba6fd05d59901e720aafcab38191574f212a1555acad13abcc",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-4",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-4(a)(1)",
+      "title": "Amount of credit life insurance",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-4/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "02d0839fb24c5b50b6a3e3382abf8bf07807bf810eef9074013653f1a7793fae",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-5",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-5",
+      "title": "Term of credit insurance",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-5/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "c853728fe8e0347e2f15f95851fb3ed5c255327399ce265ed5bd9b6d4cdbec3b",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-6",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-6(b)",
+      "title": "Credit insurance policy contents",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-6/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "6e0988acc6babf3f4e23085b622eaac1209a5f888952b64f1e1de353670dc2d2",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-8",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-8(b)-(d)",
+      "title": "Credit insurance refunds and charges",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-8/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "efe0fcdd82e625a951540c8e954c09a5407f02c08d2bbb2a1b1d05930f77504c",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-10",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-10(c)",
+      "title": "Credit insurance claims",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-10/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "888261d67d947e01399b5fe147105eef863ffb2a1e475045ea38f650e022d316",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
+    },
+    {
+      "id": "njsa-17b-29-11",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:29-11",
+      "title": "Debtor's option to furnish insurance",
+      "act": "New Jersey Statutes, Title 17B, Chapter 29 (Credit life and health insurance)",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-29-11/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ada383498f5fe8479009df9131b4716e59b9063d59f43b9db1de0f28ded043cf",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from FindLaw via the browser; excerpt."
     }
   ]
 }

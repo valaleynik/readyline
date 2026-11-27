@@ -1,0 +1,221 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "VI.1",
+  "facts": [
+    {
+      "id": "VI1-01",
+      "statement": "Credit life insurance is insurance on a debtor's life in connection with a specific loan or credit transaction.",
+      "source": "njsa-17b-29-2",
+      "quote": "means insurance on the life of a debtor pursuant to or in connection with a specific loan or other credit transaction",
+      "items": [
+        {
+          "id": "VI1-01a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "In New Jersey, credit life insurance insures the life of:",
+          "options": [
+            "The lender, against the borrower's default",
+            "The collateral that secures the loan",
+            "The borrower on a particular loan",
+            "The borrower's income while disabled"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:29-2 defines credit life insurance as insurance on the life of a debtor in connection with a specific loan or other credit transaction.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "VI1-02",
+      "statement": "Credit life insurance may be issued only on the term plan, as individual policies to debtors or group policies to creditors.",
+      "source": "njsa-17b-29-3",
+      "quote": "Individual policies of life insurance issued to debtors on the term plan",
+      "items": [
+        {
+          "id": "VI1-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "Under New Jersey law, credit life insurance may be written on which plan?",
+          "options": [
+            "Whole life",
+            "Universal life",
+            "Endowment",
+            "Term"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:29-3 allows credit life insurance only on the term plan, whether as individual policies to debtors or group policies issued to creditors.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "VI1-03",
+      "statement": "Credit life coverage may not exceed the total amount repayable, and on installment debt may not exceed the greater of the scheduled or actual unpaid balance.",
+      "source": "njsa-17b-29-4",
+      "quote": "The initial amount of credit life insurance shall not exceed the total amount repayable under the contract of indebtedness",
+      "items": [
+        {
+          "id": "VI1-03a",
+          "version": 3,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "A borrower signs a car loan with $24,000 repayable in equal monthly installments. He has fallen behind, so his scheduled unpaid balance is $15,000 but his actual unpaid balance is $16,200. Under New Jersey law, the most credit life insurance that may be in force now is:",
+          "options": [
+            "$15,000",
+            "$15,600",
+            "$16,200",
+            "$24,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:29-4(a)(1) caps credit life on installment debt at the scheduled or actual unpaid indebtedness, whichever is greater. Here that is the actual balance of $16,200.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "VI1-04",
+      "statement": "Credit insurance may not run more than 15 days past the debt's scheduled maturity unless extended at no extra cost to the debtor.",
+      "source": "njsa-17b-29-5",
+      "quote": "The term of such insurance shall not extend more than 15 days beyond the scheduled maturity date of the indebtedness except when extended without additional cost to the debtor.",
+      "items": [
+        {
+          "id": "VI1-04a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Unless extended at no added cost to the debtor, New Jersey credit life coverage may last no more than how long past the loan's scheduled maturity date?",
+          "options": [
+            "15 days",
+            "30 days",
+            "60 days",
+            "6 months"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:29-5 bars the term of credit insurance from extending more than 15 days beyond the scheduled maturity date, except when extended without additional cost to the debtor.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "VI1-05",
+      "statement": "Credit insurance benefits go to the creditor to reduce or pay off the debt; any excess goes to a beneficiary named by the debtor (not the creditor) or the debtor's estate.",
+      "source": "njsa-17b-29-6",
+      "quote": "any such excess shall be payable to a beneficiary, other than the creditor, named by the debtor or to his estate",
+      "items": [
+        {
+          "id": "VI1-05a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "A debtor dies owing $8,000 on a loan, and the credit life benefit payable is $10,000. Under New Jersey law, how is the benefit paid?",
+          "options": [
+            "$10,000 to the creditor, which refunds the excess to the debtor's estate",
+            "$8,000 to the creditor, and $2,000 to the debtor's named beneficiary or estate",
+            "$10,000 to the debtor's named beneficiary, who then pays the creditor",
+            "$8,000 to the creditor, and $2,000 to the co-signer on the loan"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:29-6(b) requires benefits to be paid to the creditor to reduce or extinguish the unpaid debt, with any excess payable to a beneficiary other than the creditor named by the debtor, or to the debtor's estate."
+        }
+      ]
+    },
+    {
+      "id": "VI1-06",
+      "statement": "If credit insurance ends before the debt's scheduled maturity, any refund of what the debtor paid must be paid or credited promptly.",
+      "source": "njsa-17b-29-8",
+      "quote": "any refund of an amount paid by the debtor for insurance shall be paid or credited promptly to the person entitled thereto",
+      "items": [
+        {
+          "id": "VI1-06a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A borrower who paid a single premium for credit life pays off the loan two years early. Under New Jersey law, the unearned premium:",
+          "options": [
+            "Must be refunded at the end of the original loan term",
+            "Is kept as earned, since the coverage was in force",
+            "Must be refunded or credited promptly",
+            "Must be credited toward any new loan with the same lender"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:29-8(b)-(d) requires any refund to be paid or credited promptly when the insurance ends before the scheduled maturity date, though no refund below the commissioner's minimum need be made.",
+          "retired": "Answerable by consumer-fairness instinct alone after two rewrites."
+        }
+      ]
+    },
+    {
+      "id": "VI1-07",
+      "statement": "The amount charged to a debtor for credit insurance may not exceed the premium the insurer charges.",
+      "source": "njsa-17b-29-8",
+      "quote": "shall not exceed the premiums charged by the insurer, as computed at the time the charge to the debtor is determined",
+      "items": [
+        {
+          "id": "VI1-07a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.2,
+          "stem": "An insurer's premium for a borrower's credit life coverage is $300, and the lender adds $50 on top as a service charge for the coverage. Under New Jersey law, this is:",
+          "options": [
+            "Allowed, since lenders may mark up credit insurance",
+            "Allowed, if the markup is disclosed in writing",
+            "Not allowed, unless the loan is over $25,000",
+            "Not allowed, since the debtor's charge may not exceed the insurer's premium"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:29-8(b)-(d) bars charging a debtor more for credit life or credit health insurance than the premiums charged by the insurer."
+        }
+      ]
+    },
+    {
+      "id": "VI1-08",
+      "statement": "The creditor may not be designated as the insurer's claim representative for adjusting credit insurance claims.",
+      "source": "njsa-17b-29-10",
+      "quote": "The creditor shall not be designated as claim representative for the insurer in adjusting claims",
+      "items": [
+        {
+          "id": "VI1-08a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Under New Jersey's credit insurance law, who may NOT be designated to adjust claims for the insurer?",
+          "options": [
+            "The creditor",
+            "The insurer's own claims staff",
+            "An independent adjuster the insurer designates",
+            "A third-party administrator the insurer designates"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:29-10(c) bars designating the creditor as claim representative for the insurer in adjusting claims.",
+          "optionStyle": "category",
+          "retired": "Odd-one-out cue (creditor vs three insurer-side options) with no balanced rewrite."
+        }
+      ]
+    },
+    {
+      "id": "VI1-09",
+      "statement": "When credit insurance is required as security for a debt, the debtor may furnish it through existing policies or through any insurer authorized in New Jersey.",
+      "source": "njsa-17b-29-11",
+      "quote": "have the option of furnishing the required amount of insurance through existing policies of insurance owned or controlled by him",
+      "items": [
+        {
+          "id": "VI1-09a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A lender requires life insurance as security for a loan. The borrower already owns a large term policy with another authorized insurer. Under New Jersey law, the borrower:",
+          "options": [
+            "May use the existing policy, on request to the lender",
+            "Has to buy coverage from an insurer the lender selects",
+            "May use the existing policy if the lender's insurer first declines him",
+            "May use the existing policy if it is issued by the lender's insurer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:29-11 gives the debtor the option of furnishing required insurance through existing policies he owns or controls, or through any insurer authorized in New Jersey.",
+          "retired": "Answerable by consumer-fairness instinct alone after two rewrites."
+        }
+      ]
+    }
+  ]
+}

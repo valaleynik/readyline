@@ -1,0 +1,488 @@
+[
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"The debtor on a specific loan or credit transaction\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "B (cosigner's employer) and D (car dealer) are throwaway options, which leaves A vs C. C is the longest option, repeats the statute's 'specific loan or other credit transaction' wording, and 'insure the borrower's life' is the intuitive meaning of the term.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-01a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"Term\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-02a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"$15,000\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "Credit life matching what is still owed is common sense. $9,000 (amount already paid) and $30,000 (more than the loan) are easy to drop, so it comes down to $15,000 vs $24,000.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"15 days\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "key not identifiable from form",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-04a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"$8,000 to the creditor, and $2,000 to the debtor's named beneficiary or estate\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "Fairness intuition picks B. D (insurer keeps the excess) and C (pay the estate first) look obviously wrong, and B is the longest and most complete option.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-05a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"Is refunded or credited promptly, subject to the commissioner's minimum\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "Strong cue: C is the only consumer-protective option and carries a legalistic qualifier ('subject to the commissioner's minimum'). A, B and D all favor the creditor or insurer, so they read as 'gotcha' options.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-06a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"Not allowed, since the debtor's charge may not exceed the insurer's premium\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "There is a mild cue: D restates the rule and consumer-protection instinct favors 'not allowed'. B (allowed with disclosure) is a credible lure for an uninformed candidate, though, and C's $25,000 threshold is arbitrary but does not give the key away.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-07a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"The creditor\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "Strong cue: B, C and D all contain 'the insurer' and describe the insurer's own people or designees. A is the only party outside the insurer, and conflict-of-interest common sense points to it.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-08a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "picked \"May use the existing policy to provide the required coverage\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "no second defensible option",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r49",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "blind-subagent-r49",
+    "detail": "A and D are coercive and clearly unfair. B is a strange conditional. C is the only option that respects consumer choice, so it can be guessed without knowing 17B:29-11.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-09a",
+    "version": 1,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

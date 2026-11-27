@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r51",
+    "detail": "picked \"$16,200\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r51",
+    "detail": "N.J.S.A. 17B:29-4(1) says that for loans repayable in substantially equal installments, coverage may at no time exceed the scheduled or actual unpaid indebtedness, whichever is greater. Greater of $15,000 and $16,200 is $16,200.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r51",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r51",
+    "detail": "No grammatical or common-sense cue; A (scheduled), C (actual), D (initial total) are all plausible to an unprepared candidate, and B is a computed average.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI1-03a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
