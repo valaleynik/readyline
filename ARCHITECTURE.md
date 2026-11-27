@@ -151,3 +151,11 @@ Rules that changed recently (for example the 2024 FCC change from 30 days to 10 
 - Blueprint item counts come from a prelicensing provider's published breakdown of the PSI outline. They must be checked against the current PSI content outline before launch (`blueprint.json` marks this).
 - Item difficulty starts from a generator estimate and is calibrated as real responses arrive.
 - Ability does not decay with time; memory decay is handled by FSRS at the fact level.
+
+## Study loop (UI phase, step 1)
+
+- `src/session/daily.ts` is the daily session: pure functions over the event log. It adds one session rule on top of the engine: at most 12 new facts a day, then review only, with a hard cap of 60 questions. A missed fact that is stuck behind the relearn gap is served before the day counts as cleared.
+- `src/content/export.ts` writes `web/data/bank.json` (engine metadata plus display text from the same files in one pass). A test fails if the bundled file is stale.
+- `web/components/StudyApp.tsx` is the only UI component. The Next.js app (`web/app`) and the single-file preview (`scripts/build-preview.mjs`) both render it.
+- Stored state is the event log only. Learner state is always `replay(events)`. Confidence ("sure" / "guess") is recorded on each event for the calibration grid; the engine ignores it.
+- Engine fix found while building: the no-repeat window now covers only the last 6 hours, so a learner returning after a break sees their due reviews.

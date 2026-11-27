@@ -19,6 +19,12 @@ export interface Pick {
 
 /** Answers that must pass before a missed fact is asked again (short-term spacing). */
 const RELEARN_GAP = 8;
+/**
+ * The no-repeat window only covers recent answers. A fact answered days ago is not
+ * "recent" even if it is still in the last N answers, or a learner who returns after
+ * a break would have their due reviews hidden.
+ */
+const RECENT_MS = 6 * 3_600_000;
 /** Randomise among the K best items so the bank is used evenly across learners. */
 const EXPOSURE_K = 5;
 
@@ -78,11 +84,11 @@ export function nextItem(
   /** stable per-learner key (user id) so picks are reproducible but differ across learners */
   seedKey = "",
 ): Pick | null {
-  const exclude = new Set(state.recent);
+  const exclude = new Set(state.recent.filter((k) => now - (state.lastSeen[k] ?? 0) < RECENT_MS));
   const rng = createRng(hashSeed(`${seedKey}:${state.lastEventId}:${state.answers}`));
   if (mode === "diagnostic") return diagnosticPick(state, bank, exclude, rng.next);
 
-  const recentFacts = new Set(state.recent.map((k) => bank.items.get(k)?.factId));
+  const recentFacts = new Set([...exclude].map((k) => bank.items.get(k)?.factId));
   const candidates: { factId: string; topic: string; value: number; reason: PickReason; jitter: number }[] = [];
 
   for (const topic of bank.topics()) {

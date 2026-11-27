@@ -39,6 +39,8 @@ export interface AnswerEvent {
   correct: boolean;
   /** epoch milliseconds when the learner answered */
   at: number;
+  /** learner's self-rating before answering. Recorded for calibration; the engine does not use it yet. */
+  confidence?: "sure" | "guess";
 }
 
 export interface Gaussian {
