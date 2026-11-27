@@ -14,7 +14,7 @@ const ordered = (opts: string[]) => opts.every((o) => /^\$?\d/.test(o.trim()));
 export function rebalance(files: { path: string; data: TopicFile }[], reviewed: Set<string> = new Set()) {
   const all = files.flatMap((f) => f.data.facts.flatMap((fact) => fact.items));
   // Reviewed items are frozen: moving their options would silently invalidate the review.
-  const frozen = (it: ItemDraft) => ordered(it.options) || reviewed.has(`${it.id}@${it.version}`);
+  const frozen = (it: ItemDraft) => ordered(it.options) || it.optionStyle === "ordered" || reviewed.has(`${it.id}@${it.version}`);
   const counts = [0, 0, 0, 0];
   for (const it of all) if (frozen(it)) counts[it.answer]!++;
 

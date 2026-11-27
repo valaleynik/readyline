@@ -187,6 +187,40 @@
       "retrievedAt": "2026-11-26",
       "sha256": "678f66e6f8943ef516f86cacf3f8079c59430d61d9e83c1f0201cf9c2ef06238",
       "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-32a-3e",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:32A-3(e)",
+      "title": "Coverage limits (excerpt: subsection e)",
+      "act": "New Jersey Life and Health Insurance Guaranty Association Act",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-32a-3/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "620a3e181a2309df6ce1e36e8ce8e9ba1480526b4c2be9689be9f13c22392d34",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt: subsection e only, extracted verbatim from the full section text in the browser."
+    },
+    {
+      "id": "njsa-17b-32a-5",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:32A-5",
+      "title": "Creation of the association; membership; accounts",
+      "act": "New Jersey Life and Health Insurance Guaranty Association Act",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-32a-5/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "4fb8e5bbbc963fe734d20248224ffe8b650c8b38bada1cfbb5f66733beaf6fee",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-32a-17",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:32A-17",
+      "title": "Advertising prohibition; summary document and disclaimer",
+      "act": "New Jersey Life and Health Insurance Guaranty Association Act",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-32a-17/",
+      "retrievedAt": "2026-11-26",
+      "sha256": "09dc34593cda755a3a707aaa9e7f98bd3f602a3788347c0a4596f9f8ebee9468",
+      "verifiedAgainstOfficial": false
     }
   ]
 }

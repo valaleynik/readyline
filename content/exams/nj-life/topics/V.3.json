@@ -243,7 +243,8 @@
             "The applicant personally"
           ],
           "answer": 3,
-          "explanation": "N.J.S.A. 17:22A-32 states that the applicant bears the cost of the criminal history record background check, including processing costs."
+          "explanation": "N.J.S.A. 17:22A-32 states that the applicant bears the cost of the criminal history record background check, including processing costs.",
+          "group": "njsa-17-22a-32e"
         }
       ]
     },
@@ -266,7 +267,8 @@
             "A notarized affidavit of good moral character"
           ],
           "answer": 0,
-          "explanation": "N.J.S.A. 17:22A-32 requires the applicant's name, address, fingerprints and written consent for a criminal history record background check."
+          "explanation": "N.J.S.A. 17:22A-32 requires the applicant's name, address, fingerprints and written consent for a criminal history record background check.",
+          "group": "njsa-17-22a-32e"
         }
       ]
     },
@@ -450,7 +452,8 @@
             "60 days"
           ],
           "answer": 2,
-          "explanation": "N.J.S.A. 17:22A-33 requires licensees to inform the commissioner of a change of address within 30 days of the change."
+          "explanation": "N.J.S.A. 17:22A-33 requires licensees to inform the commissioner of a change of address within 30 days of the change.",
+          "group": "address-30-days"
         },
         {
           "id": "V3-19b",
@@ -465,7 +468,8 @@
             "Only if his business address also changes"
           ],
           "answer": 0,
-          "explanation": "N.J.S.A. 17:22A-33 requires notice of a change of address within 30 days of the change, not at renewal."
+          "explanation": "N.J.S.A. 17:22A-33 requires notice of a change of address within 30 days of the change, not at renewal.",
+          "group": "address-30-days"
         }
       ]
     },
@@ -695,7 +699,8 @@
             "The agency's largest client"
           ],
           "answer": 0,
-          "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the surviving spouse or court-appointed personal representative of a producer who dies or becomes disabled."
+          "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the surviving spouse or court-appointed personal representative of a producer who dies or becomes disabled.",
+          "group": "temp-license-provisions"
         }
       ]
     },
@@ -718,7 +723,8 @@
             "An unlicensed employee, with no limits on authority"
           ],
           "answer": 0,
-          "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the designee of a producer entering active service in the U.S. armed forces."
+          "explanation": "N.J.S.A. 17:22A-37 allows a temporary license for the designee of a producer entering active service in the U.S. armed forces.",
+          "group": "temp-license-provisions"
         }
       ]
     },

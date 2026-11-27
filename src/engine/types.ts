@@ -27,6 +27,8 @@ export interface ItemMeta {
   topic: string;
   /** IRT difficulty on the logit scale (calibrated, or the generator prior). */
   b: number;
+  /** items in the same enemy group cue each other and never share a form */
+  group?: string;
 }
 
 export interface AnswerEvent {

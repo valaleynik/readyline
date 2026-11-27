@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { fileURLToPath } from "node:url";
 import { validateContent } from "../src/content/validate";
 import { rebalance } from "../src/content/rebalance";
+import { loadLiveBank } from "../src/content/bank";
 import type { ItemDraft, TopicFile } from "../src/content/schema";
 
 const root = fileURLToPath(new URL("../content", import.meta.url));
@@ -34,6 +35,18 @@ function item(id: string, answer: 0 | 1 | 2 | 3, options = ["w", "x", "y", "z"])
     difficulty: 0,
   };
 }
+
+describe("live bank", () => {
+  it("contains only verified items, each mapped to a blueprint topic", () => {
+    const { live, bank } = loadLiveBank();
+    const verified = new Set(validateContent(root).verified);
+    expect(live.length).toBe(verified.size);
+    for (const it of live) {
+      expect(verified.has(it.key.split("@")[0]!)).toBe(true);
+      expect(bank.topicWeight.has(it.topic)).toBe(true);
+    }
+  });
+});
 
 describe("rebalance", () => {
   const file = (items: ItemDraft[]): { path: string; data: TopicFile } => ({

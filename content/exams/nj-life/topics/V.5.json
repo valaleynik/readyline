@@ -1,0 +1,287 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "V.5",
+  "facts": [
+    {
+      "id": "V5-01",
+      "statement": "Every member insurer must belong to the association as a condition of its authority to do business in New Jersey.",
+      "source": "njsa-17b-32a-5",
+      "quote": "All member insurers shall be and remain members of the association as a condition of their authority or license to transact insurance",
+      "items": [
+        {
+          "id": "V5-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": -0.3,
+          "stem": "Membership in the New Jersey Life and Health Insurance Guaranty Association is:",
+          "options": [
+            "Voluntary for insurers with strong financial ratings",
+            "A condition of an insurer's authority to do business in New Jersey",
+            "Required only of insurers that sell annuities",
+            "Required only of mutual insurers"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:32A-5 requires all member insurers to be and remain members of the association as a condition of their authority or license to transact insurance in New Jersey."
+        }
+      ]
+    },
+    {
+      "id": "V5-02",
+      "statement": "An insurer remains a member for four years after it stops holding a certificate of authority or license.",
+      "source": "njsa-17b-32a-5",
+      "quote": "Any member insurer shall remain a member insurer for four years after it ceases to hold a certificate of authority or license.",
+      "items": [
+        {
+          "id": "V5-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "After an insurer stops holding its New Jersey certificate of authority, it remains a member of the life and health guaranty association for:",
+          "options": [
+            "1 year",
+            "2 years",
+            "4 years",
+            "10 years"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:32A-5 keeps an insurer a member for four years after it ceases to hold a certificate of authority or license."
+        }
+      ]
+    },
+    {
+      "id": "V5-03",
+      "statement": "The association keeps two accounts: a life insurance and annuity account, and a health account.",
+      "source": "njsa-17b-32a-5",
+      "quote": "(1) The life insurance and annuity account which shall include the following subaccounts: (a) life insurance subaccount; (b) annuity subaccount; and (c) unallocated annuity subaccount. (2) The health account.",
+      "items": [
+        {
+          "id": "V5-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "For administration and assessment, the New Jersey Life and Health Insurance Guaranty Association maintains which two accounts?",
+          "options": [
+            "A resident account and a nonresident account",
+            "An individual account and a group account",
+            "A life insurance and annuity account, and a health account",
+            "A premium account and a claims account"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:32A-5 requires two accounts: the life insurance and annuity account (with life, annuity and unallocated annuity subaccounts) and the health account.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "V5-04",
+      "statement": "For one life, the association's limit for life insurance death benefits is $500,000, regardless of the number of policies.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "with respect to one life, regardless of the number of policies or contracts: (a) $500,000 in life insurance death benefits",
+      "items": [
+        {
+          "id": "V5-04a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "An insured's life insurer becomes insolvent. Regardless of how many policies are involved, the guaranty association's limit for life insurance death benefits on one life is:",
+          "options": [
+            "$100,000",
+            "$250,000",
+            "$300,000",
+            "$500,000"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:32A-3(e) limits life insurance death benefits to $500,000 with respect to one life, regardless of the number of policies or contracts.",
+          "group": "ga-life-limits"
+        }
+      ]
+    },
+    {
+      "id": "V5-05",
+      "statement": "For life insurance, net cash surrender and withdrawal values are limited to $100,000 per life.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "but not more than $100,000 in net cash surrender and net cash withdrawal values for life insurance",
+      "items": [
+        {
+          "id": "V5-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "When a life insurer fails, the guaranty association's limit on a life policy's net cash surrender and withdrawal values, for one life, is:",
+          "options": [
+            "$50,000",
+            "$100,000",
+            "$250,000",
+            "$500,000"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:32A-3(e) caps net cash surrender and net cash withdrawal values for life insurance at $100,000 with respect to one life.",
+          "group": "ga-life-limits"
+        }
+      ]
+    },
+    {
+      "id": "V5-06",
+      "statement": "For annuities, net cash surrender and withdrawal values are limited to $250,000 per life.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "but not more than $250,000 in net cash surrender and net cash withdrawal values for annuity benefits",
+      "items": [
+        {
+          "id": "V5-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "For annuities, the guaranty association's limit on net cash surrender and withdrawal values for one life is:",
+          "options": [
+            "$100,000",
+            "$250,000",
+            "$500,000",
+            "$2,000,000"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:32A-3(e) caps net cash surrender and net cash withdrawal values for annuity benefits at $250,000 with respect to one life."
+        }
+      ]
+    },
+    {
+      "id": "V5-07",
+      "statement": "The association will not spend more than $500,000 in the aggregate for any one individual's life and annuity benefits.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "in no event shall the association be liable to expend more than $500,000 in the aggregate with respect to any one individual under this paragraph (2)",
+      "items": [
+        {
+          "id": "V5-07a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.1,
+          "stem": "Maria has a $400,000 life policy and an annuity with a $300,000 present value, both with the same insurer, which becomes insolvent. What is the most the guaranty association can be obligated to pay in total on these benefits for her?",
+          "options": [
+            "$400,000",
+            "$500,000",
+            "$700,000",
+            "$800,000"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:32A-3(e) sets a $500,000 aggregate cap for any one individual across life insurance death benefits and annuity benefits, so $700,000 of combined benefits is limited to $500,000.",
+          "group": "ga-life-limits"
+        }
+      ]
+    },
+    {
+      "id": "V5-08",
+      "statement": "The limit for any one unallocated annuity contract is $2,000,000.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "(3) with respect to any one unallocated annuity contract, $2,000,000 in benefits",
+      "items": [
+        {
+          "id": "V5-08a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1,
+          "stem": "The guaranty association's benefit limit for any one unallocated annuity contract is:",
+          "options": [
+            "$500,000",
+            "$1,000,000",
+            "$2,000,000",
+            "$5,000,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:32A-3(e) limits benefits for any one unallocated annuity contract to $2,000,000."
+        }
+      ]
+    },
+    {
+      "id": "V5-09",
+      "statement": "For accident or health insurance policies, the New Jersey act provides unlimited benefits.",
+      "source": "njsa-17b-32a-3e",
+      "quote": "(4) with respect to any one group, blanket, or individual accident or health insurance or group, blanket or individual accident or health insurance policy, unlimited benefits",
+      "items": [
+        {
+          "id": "V5-09a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1,
+          "stem": "Under New Jersey's Life and Health Insurance Guaranty Association Act, the limit on benefits for an accident or health insurance policy is:",
+          "options": [
+            "$100,000",
+            "$300,000",
+            "$500,000",
+            "Unlimited"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:32A-3(e) provides unlimited benefits with respect to any one group, blanket or individual accident or health insurance policy. This is broader than the dollar caps many other states use.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "V5-10",
+      "statement": "No insurer, producer or agent may use the existence of the association to sell, solicit or induce a purchase.",
+      "source": "njsa-17b-32a-17",
+      "quote": "which uses the existence of the association for the purpose of sales, solicitation, or inducement to purchase any form of insurance",
+      "items": [
+        {
+          "id": "V5-10a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.2,
+          "stem": "A producer tells a hesitant client, \"Don't worry about this insurer's finances, because the state guaranty association will cover you anyway.\" Under New Jersey law, this statement is:",
+          "options": [
+            "Acceptable, because the association does exist",
+            "Required disclosure at the point of sale",
+            "Acceptable if the coverage limits are also stated",
+            "Prohibited use of the association to induce a purchase"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:32A-17 prohibits any producer or insurer from using the existence of the guaranty association, in any written or oral statement, for sales, solicitation or inducement to purchase."
+        }
+      ]
+    },
+    {
+      "id": "V5-11",
+      "statement": "A member insurer must deliver the association's summary document to the policyowner prior to or at the time the policy is delivered.",
+      "source": "njsa-17b-32a-17",
+      "quote": "unless the document is delivered to the policy or contract owner, certificate holder, or enrollee prior to or at the time of delivery of the policy or contract",
+      "items": [
+        {
+          "id": "V5-11a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "When must a member insurer give the policyowner the guaranty association's summary document?",
+          "options": [
+            "No later than the day the policy is handed over",
+            "Within 30 days after the policy is delivered",
+            "Only if the policyowner requests it in writing",
+            "Only after the insurer becomes impaired"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:32A-17 bars a member insurer from delivering a covered policy unless the summary document is delivered prior to or at the time of policy delivery."
+        }
+      ]
+    },
+    {
+      "id": "V5-12",
+      "statement": "The summary document's disclaimer must warn that the association may not cover the policy, and that any coverage is subject to limitations and conditioned on continued residence in New Jersey.",
+      "source": "njsa-17b-32a-17",
+      "quote": "the association may not cover the policy or contract or, if coverage is available, it will be subject to substantial limitations and exclusions and conditioned on continued residence in this State",
+      "items": [
+        {
+          "id": "V5-12a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "The disclaimer on the guaranty association's summary document must warn that any available coverage is conditioned on:",
+          "options": [
+            "Payment of an annual guaranty fee",
+            "Continued residence in New Jersey",
+            "The policy being in force for two years",
+            "The insured's good health at the time of insolvency"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:32A-17 requires the disclaimer to warn that the association may not cover the policy, and that any coverage is subject to substantial limitations and conditioned on continued residence in New Jersey."
+        }
+      ]
+    }
+  ]
+}

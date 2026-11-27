@@ -121,7 +121,8 @@ export function validateContent(root: string): ValidationReport {
           const keyEcho = echo(item.options[item.answer]!);
           const maxDistractorEcho = Math.max(...item.options.filter((_, i) => i !== item.answer).map(echo));
           // Category items (options are names of practices or factors) naturally share the statute's term.
-          if (item.optionStyle !== "category" && keyEcho - maxDistractorEcho > 0.4)
+          const numeric = item.options.every((o) => /^\$?\d/.test(o.trim()));
+          if (item.optionStyle === undefined && !numeric && keyEcho - maxDistractorEcho > 0.4)
             warn(w, `key echoes the source wording far more than any distractor (${keyEcho.toFixed(2)} vs ${maxDistractorEcho.toFixed(2)})`);
 
           if (!item.stem.trim().endsWith("?") && !item.stem.includes("_____") && !/:$/.test(item.stem.trim()))

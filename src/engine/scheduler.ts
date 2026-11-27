@@ -147,17 +147,20 @@ export function mockForm(bank: Bank, seed: number): ItemMeta[] {
   const form: ItemMeta[] = [];
   const usedFacts = new Set<string>();
   const usedItems = new Set<string>();
+  const usedGroups = new Set<string>();
+  const free = (x: ItemMeta) => !usedItems.has(x.key) && !(x.group && usedGroups.has(x.group));
   for (const sec of bank.blueprint.sections) {
     const pool = sec.topics.flatMap((t) => bank.byTopic.get(t.code) ?? []);
     for (let i = 0; i < sec.items; i++) {
-      let candidates = pool.filter((x) => !usedFacts.has(x.factId));
-      if (!candidates.length) candidates = pool.filter((x) => !usedItems.has(x.key));
+      let candidates = pool.filter((x) => free(x) && !usedFacts.has(x.factId));
+      if (!candidates.length) candidates = pool.filter(free);
       if (!candidates.length) {
         throw new Error(`bank cannot fill section ${sec.code}: needs ${sec.items}, has ${pool.length} items`);
       }
       const pick = candidates[rng.int(candidates.length)]!;
       usedFacts.add(pick.factId);
       usedItems.add(pick.key);
+      if (pick.group) usedGroups.add(pick.group);
       form.push(pick);
     }
   }

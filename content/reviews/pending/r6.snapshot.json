@@ -1,0 +1,327 @@
+[
+  {
+    "itemId": "V4-01a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "A producer tells a policyholder that her whole life policy's cash value will be forfeited next year unless she surrenders it now. The statement is false, and the producer is not offering her another policy. Under New Jersey law, this is:",
+    "options": [
+      "Misrepresentation",
+      "Twisting",
+      "Churning",
+      "False advertising"
+    ],
+    "key": "Misrepresentation"
+  },
+  {
+    "itemId": "V4-02a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "An agency's newspaper ad claims it has \"won the state's top customer service award five years running.\" No such award exists. Which unfair trade practice is this?",
+    "options": [
+      "False information and advertising",
+      "Defamation",
+      "Misrepresentation of policy terms",
+      "Twisting"
+    ],
+    "key": "False information and advertising"
+  },
+  {
+    "itemId": "V4-03a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "A producer tells prospects that a competing insurer \"is about to be taken over by regulators,\" which is untrue, to steer new business away from that insurer. Which practice is this?",
+    "options": [
+      "Defamation",
+      "Twisting",
+      "Rebating",
+      "Boycott"
+    ],
+    "key": "Defamation"
+  },
+  {
+    "itemId": "V4-04a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "Several insurers jointly threaten to stop writing business through any agency that also represents a new competitor, in order to keep that competitor out of the market. This is an example of:",
+    "options": [
+      "Rebating",
+      "Unfair discrimination",
+      "Defamation",
+      "Boycott, coercion and intimidation"
+    ],
+    "key": "Boycott, coercion and intimidation"
+  },
+  {
+    "itemId": "V4-05a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "Two applicants have the same age, health and risk class, with equal life expectancy. The underwriter charges one of them a higher life insurance rate because of the neighborhood he lives in. Under New Jersey law, this is:",
+    "options": [
+      "Unfair discrimination",
+      "Permitted underwriting judgment",
+      "Rebating",
+      "A permitted territorial rating"
+    ],
+    "key": "Unfair discrimination"
+  },
+  {
+    "itemId": "V4-06a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "Which of the following is NOT one of the characteristics listed in New Jersey's ban on discrimination in issuing, withholding, extending or renewing a policy?",
+    "options": [
+      "Creed",
+      "Ancestry",
+      "Occupation",
+      "National origin"
+    ],
+    "key": "Occupation"
+  },
+  {
+    "itemId": "V4-08a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "Which of the following is NOT treated as a rebate or unfair discrimination under New Jersey law?",
+    "options": [
+      "Fair bonuses out of surplus paid only to friends",
+      "Premium abatements given as an inducement to buy",
+      "Modest stock gifts offered as an inducement to buy",
+      "Fair bonuses paid out of nonparticipating surplus"
+    ],
+    "key": "Fair bonuses paid out of nonparticipating surplus"
+  },
+  {
+    "itemId": "V4-11a",
+    "version": 2,
+    "source": "njsa-17-29b-4",
+    "stem": "Which of the following, if an insurer does it routinely, is an unfair claim settlement practice in New Jersey?",
+    "options": [
+      "Denying claims before reasonably investigating them",
+      "Refusing to pay claims for losses the policy excludes",
+      "Requiring a death certificate before paying a death claim",
+      "Paying claims only after a reasonable investigation"
+    ],
+    "key": "Denying claims before reasonably investigating them"
+  },
+  {
+    "itemId": "V5-01a",
+    "version": 1,
+    "source": "njsa-17b-32a-5",
+    "stem": "Membership in the New Jersey Life and Health Insurance Guaranty Association is:",
+    "options": [
+      "Voluntary for insurers with strong financial ratings",
+      "A condition of an insurer's authority to do business in New Jersey",
+      "Required only of insurers that sell annuities",
+      "Required only of mutual insurers"
+    ],
+    "key": "A condition of an insurer's authority to do business in New Jersey"
+  },
+  {
+    "itemId": "V5-02a",
+    "version": 1,
+    "source": "njsa-17b-32a-5",
+    "stem": "After an insurer stops holding its New Jersey certificate of authority, it remains a member of the life and health guaranty association for:",
+    "options": [
+      "1 year",
+      "2 years",
+      "4 years",
+      "10 years"
+    ],
+    "key": "4 years"
+  },
+  {
+    "itemId": "V5-03a",
+    "version": 1,
+    "source": "njsa-17b-32a-5",
+    "stem": "For administration and assessment, the New Jersey Life and Health Insurance Guaranty Association maintains which two accounts?",
+    "options": [
+      "A resident account and a nonresident account",
+      "An individual account and a group account",
+      "A life insurance and annuity account, and a health account",
+      "A premium account and a claims account"
+    ],
+    "key": "A life insurance and annuity account, and a health account"
+  },
+  {
+    "itemId": "V5-04a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "An insured's life insurer becomes insolvent. Regardless of how many policies are involved, the guaranty association's limit for life insurance death benefits on one life is:",
+    "options": [
+      "$100,000",
+      "$250,000",
+      "$300,000",
+      "$500,000"
+    ],
+    "key": "$500,000"
+  },
+  {
+    "itemId": "V5-05a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "When a life insurer fails, the guaranty association's limit on a life policy's net cash surrender and withdrawal values, for one life, is:",
+    "options": [
+      "$50,000",
+      "$100,000",
+      "$250,000",
+      "$500,000"
+    ],
+    "key": "$100,000"
+  },
+  {
+    "itemId": "V5-06a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "For annuities, the guaranty association's limit on net cash surrender and withdrawal values for one life is:",
+    "options": [
+      "$100,000",
+      "$250,000",
+      "$500,000",
+      "$2,000,000"
+    ],
+    "key": "$250,000"
+  },
+  {
+    "itemId": "V5-07a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "Maria has a $400,000 life policy and an annuity with a $300,000 present value, both with the same insurer, which becomes insolvent. What is the most the guaranty association can be obligated to pay in total on these benefits for her?",
+    "options": [
+      "$400,000",
+      "$500,000",
+      "$700,000",
+      "$800,000"
+    ],
+    "key": "$500,000"
+  },
+  {
+    "itemId": "V5-08a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "The guaranty association's benefit limit for any one unallocated annuity contract is:",
+    "options": [
+      "$500,000",
+      "$1,000,000",
+      "$2,000,000",
+      "$5,000,000"
+    ],
+    "key": "$2,000,000"
+  },
+  {
+    "itemId": "V5-09a",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "Under New Jersey's Life and Health Insurance Guaranty Association Act, the limit on benefits for an accident or health insurance policy is:",
+    "options": [
+      "$100,000",
+      "$300,000",
+      "$500,000",
+      "Unlimited"
+    ],
+    "key": "Unlimited"
+  },
+  {
+    "itemId": "V5-10a",
+    "version": 1,
+    "source": "njsa-17b-32a-17",
+    "stem": "A producer tells a hesitant client, \"Don't worry about this insurer's finances, because the state guaranty association will cover you anyway.\" Under New Jersey law, this statement is:",
+    "options": [
+      "Acceptable, because the association does exist",
+      "Required disclosure at the point of sale",
+      "Acceptable if the coverage limits are also stated",
+      "Prohibited use of the association to induce a purchase"
+    ],
+    "key": "Prohibited use of the association to induce a purchase"
+  },
+  {
+    "itemId": "V5-11a",
+    "version": 1,
+    "source": "njsa-17b-32a-17",
+    "stem": "When must a member insurer give the policyowner the guaranty association's summary document?",
+    "options": [
+      "No later than the day the policy is handed over",
+      "Within 30 days after the policy is delivered",
+      "Only if the policyowner requests it in writing",
+      "Only after the insurer becomes impaired"
+    ],
+    "key": "No later than the day the policy is handed over"
+  },
+  {
+    "itemId": "V5-12a",
+    "version": 1,
+    "source": "njsa-17b-32a-17",
+    "stem": "The disclaimer on the guaranty association's summary document must warn that any available coverage is conditioned on:",
+    "options": [
+      "Payment of an annual guaranty fee",
+      "Continued residence in New Jersey",
+      "The policy being in force for two years",
+      "The insured's good health at the time of insolvency"
+    ],
+    "key": "Continued residence in New Jersey"
+  },
+  {
+    "itemId": "VI3-01b",
+    "version": 2,
+    "source": "njsa-17b-30-6",
+    "stem": "New Jersey's prohibition on misleading policy comparisons applies when the comparison is used to induce someone to do which of the following?",
+    "options": [
+      "Increase the face amount of an existing policy",
+      "Change the payment mode of an existing policy",
+      "Keep or convert a current policy",
+      "Add a rider to an existing policy"
+    ],
+    "key": "Keep or convert a current policy"
+  },
+  {
+    "itemId": "VI3-02a",
+    "version": 2,
+    "source": "njsa-17b-30-3",
+    "stem": "A producer tells a prospect that a participating policy \"has paid 8% dividends every year for 20 years.\" Similar policies actually paid between 3% and 5%. Under New Jersey law, the statement is:",
+    "options": [
+      "Permitted, since dividends are not guaranteed",
+      "Permitted if an illustration is also provided",
+      "Twisting",
+      "Misrepresentation"
+    ],
+    "key": "Misrepresentation"
+  },
+  {
+    "itemId": "VI3-03a",
+    "version": 2,
+    "source": "njsa-17b-30-3",
+    "stem": "An insurer sells a 10-year term policy under the product name \"Lifetime Wealth Builder.\" Under New Jersey law, this is:",
+    "options": [
+      "Misrepresentation of what the product is",
+      "Permitted, because product names are marketing",
+      "Twisting",
+      "Permitted if the policy form says it is term insurance"
+    ],
+    "key": "Misrepresentation of what the product is"
+  },
+  {
+    "itemId": "VI3-04a",
+    "version": 2,
+    "source": "njsa-17b-30-13",
+    "stem": "A producer offers to give a new life insurance client half of the producer's commission on the policy. Under New Jersey law, this is:",
+    "options": [
+      "Commission splitting, which is legal between licensed persons",
+      "An illegal rebate",
+      "Permitted, because the client is not licensed",
+      "A permitted marketing allowance"
+    ],
+    "key": "An illegal rebate"
+  },
+  {
+    "itemId": "VI3-07a",
+    "version": 2,
+    "source": "njsa-17b-30-17",
+    "stem": "Before the commissioner can order a person to stop an unfair life or annuity trade practice, what must the commissioner first serve on that person?",
+    "options": [
+      "A cease and desist order effective immediately",
+      "A notice of a hearing only",
+      "A statement of charges and notice of a hearing",
+      "A civil complaint filed in Superior Court"
+    ],
+    "key": "A statement of charges and notice of a hearing"
+  }
+]

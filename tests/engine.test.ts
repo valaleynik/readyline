@@ -200,6 +200,17 @@ describe("mock exam", () => {
     expect(new Set(form.map((i) => i.factId)).size).toBe(83);
   });
 
+  it("never puts two items from the same enemy group on one form", () => {
+    const grouped = new Bank(
+      bp,
+      makeItems().flatMap((i) => [i, { ...i, key: i.key.replace("@1", "x@1"), factId: i.factId + "x" }]).map((i, n) => ({ ...i, group: n % 4 === 0 ? `g${Math.floor(n / 8)}` : undefined })),
+    );
+    for (let seed = 1; seed <= 20; seed++) {
+      const groups = mockForm(grouped, seed).map((i) => i.group).filter(Boolean);
+      expect(new Set(groups).size).toBe(groups.length);
+    }
+  });
+
   it("refuses to build a short mock", () => {
     const thin = new Bank(bp, makeItems().filter((i) => !i.topic.startsWith("II.")));
     expect(() => mockForm(thin, 1)).toThrow(/section II/);

@@ -9,7 +9,8 @@
     "typecheck": "tsc --noEmit",
     "content": "tsx src/content/cli.ts",
     "rebalance": "tsx src/content/rebalance.ts",
-    "review": "tsx src/content/review.ts"
+    "review": "tsx src/content/review.ts",
+    "coverage": "tsx src/content/bank.ts"
   },
   "devDependencies": {
     "@types/node": "^22.20.7",
