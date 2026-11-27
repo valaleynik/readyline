@@ -1487,6 +1487,42 @@
       "sha256": "458876125ab5d89d2c9f1f8b63ecd8415e0b4375755b8cde9dae09b6ea498446",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from FindLaw via the browser; selected clauses, footnote markers removed."
+    },
+    {
+      "id": "njac-11-4-41-3c",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.3(b)10-13",
+      "title": "Individual life forms: claims, title, reinstatement, amendments",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "00b15ae47b149daabf515b5fed73ce624ba2f855469166e1f946df7a06711f83",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs."
+    },
+    {
+      "id": "njac-11-4-61-3",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-61.3(a),(d)",
+      "title": "Retained asset accounts: disclosure",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-61-3",
+      "retrievedAt": "2026-11-27",
+      "sha256": "bb18c4f83c2e5f30f6f2bc62cd319c0c3d579423a0e57debcb05aed92eda0ed5",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs."
+    },
+    {
+      "id": "njac-11-4-41-14",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.14(c)1",
+      "title": "Smoker/nonsmoker reclassification",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-14",
+      "retrievedAt": "2026-11-27",
+      "sha256": "74ae54bc9274c2bf7f8c1f587b9358a562399bd2924b018534bc002942cfc718",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; selected paragraphs."
     }
   ]
 }

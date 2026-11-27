@@ -1199,6 +1199,152 @@
           "retired": "Rule is a filing certification, not a policy provision; low exam value and oddly worded for candidates."
         }
       ]
+    },
+    {
+      "id": "II2-70",
+      "statement": "A death claim must be settled within 60 days after the insurer receives due proof of death and any required documents.",
+      "source": "njac-11-4-41-3c",
+      "quote": "settlement shall be made within 60 days after receipt of the document or information requested",
+      "items": [
+        {
+          "id": "II2-70a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Under New Jersey life policy form standards, once the insurer receives due proof of death and any other documents its policy requires, it must settle the death claim within:",
+          "options": [
+            "15 days",
+            "30 days",
+            "60 days",
+            "90 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b)10-13 requires the claims payment provision to state that settlement will be made within 60 days after receipt of the required proof and documents.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-71",
+      "statement": "If a policy has no provision on contestability after reinstatement, the reinstated policy is incontestable from the reinstatement date and liability limitations are waived.",
+      "source": "njac-11-4-41-3c",
+      "quote": "If the form does not contain such a provision, the policy shall be incontestable from the date of reinstatement, and limitations on liability shall be waived.",
+      "items": [
+        {
+          "id": "II2-71a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "A lapsed New Jersey policy is reinstated, and the policy form contains no provision about contestability after reinstatement. Six months later the insured dies, and the insurer finds a misstatement on the reinstatement application. The insurer:",
+          "options": [
+            "May contest for two years from reinstatement",
+            "Cannot contest, since the policy is incontestable from reinstatement",
+            "May contest for two years from the original issue date",
+            "May contest only for fraud"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.3(b)10-13 provides that if the form has no provision on contestability after reinstatement, the policy is incontestable from the date of reinstatement and liability limitations are waived.",
+          "enemies": [
+            "II2-16a"
+          ],
+          "retired": "Conflicts with N.J.S.A. 17B:25-17(a), which allows contest of the reinstatement application for the original contestable period; law wins."
+        }
+      ]
+    },
+    {
+      "id": "II2-72",
+      "statement": "An insurer may unilaterally amend a policy to satisfy applicable law, but the owner may refuse the change unless noncompliance would void the contract or break New Jersey or federal law.",
+      "source": "njac-11-4-41-3c",
+      "quote": "the owner shall be permitted to refuse any such change unless noncompliance would cause the contract to be null and void",
+      "items": [
+        {
+          "id": "II2-72a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An insurer notifies a policyowner that it is changing her policy to satisfy a new law. The change is not needed to keep the policy valid or lawful. Under New Jersey rules, the owner:",
+          "options": [
+            "Has to accept any change the insurer makes",
+            "May refuse it, if she pays a fee",
+            "Has to accept it once it is filed with the Department",
+            "May refuse the change"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.3(b)10-13 lets the insurer unilaterally amend a form to satisfy applicable law, but the owner may refuse the change unless noncompliance would make the contract void or violate New Jersey or federal law.",
+          "retired": "Stem states the exception outright; guessable."
+        }
+      ]
+    },
+    {
+      "id": "II2-73",
+      "statement": "The policy's face-page title must briefly describe the policy, must not mislead, and must state whether it is participating or nonparticipating.",
+      "source": "njac-11-4-41-3c",
+      "quote": "shall state if the form is participating or nonparticipating or words of similar meaning",
+      "items": [
+        {
+          "id": "II2-73a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey life policy form standards, the title on a policy's face page must state whether the policy is:",
+          "options": [
+            "Participating or nonparticipating",
+            "Term or permanent",
+            "Fixed or variable",
+            "Individual or group"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.3(b)10-13 requires the face-page title to briefly describe the policy, not mislead, and state whether the form is participating or nonparticipating.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-74",
+      "statement": "Retained asset account funds are not FDIC insured but are guaranteed by the state guaranty associations; the beneficiary can withdraw the entire amount with one draft at any time.",
+      "source": "njac-11-4-61-3",
+      "quote": "are not guaranteed by the Federal Deposit Insurance Corporation (FDIC), but are guaranteed by the State Guaranty Associations",
+      "items": [
+        {
+          "id": "II2-74a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A beneficiary's death proceeds are placed in an insurer's retained asset account with a checkbook. Under New Jersey disclosure rules, the funds in this account are protected by:",
+          "options": [
+            "The FDIC",
+            "The state life and health guaranty association",
+            "The Securities Investor Protection Corporation",
+            "The insurer's agent's errors and omissions coverage"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-61.3(a),(d) requires disclosure that retained asset account funds are not guaranteed by the FDIC but are guaranteed by the state guaranty associations.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II2-75",
+      "statement": "Insurers must give every beneficiary, with the claim form, easy-to-understand information describing all available settlement options.",
+      "source": "njac-11-4-61-3",
+      "quote": "The information shall be provided with the claim form",
+      "items": [
+        {
+          "id": "II2-75a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey's retained asset account rules, when must the insurer give a beneficiary information describing all available settlement options?",
+          "options": [
+            "After the claim is paid",
+            "Only if the beneficiary asks in writing",
+            "At the policy's original delivery",
+            "Along with the claim paperwork"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-61.3(a),(d) requires the insurer to give all beneficiaries easy-to-understand information on all settlement options, provided with the claim form."
+        }
+      ]
     }
   ]
 }

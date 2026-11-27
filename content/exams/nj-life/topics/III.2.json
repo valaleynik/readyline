@@ -270,6 +270,33 @@
           "retired": "Key restates stem facts; guessable after review."
         }
       ]
+    },
+    {
+      "id": "III2-40",
+      "statement": "A smoker/nonsmoker reclassification is based on the insurer's underwriting rules at the time, and the policy must disclose possible downsides such as a new contestability period.",
+      "source": "njac-11-4-41-14",
+      "quote": "any new contestability period, or any temporary or permanent premium increase",
+      "items": [
+        {
+          "id": "III2-40a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "Five years after issue, a policyowner who quit smoking applies to be reclassified as a nonsmoker. Under New Jersey rules, which is a potential downside the policy must disclose?",
+          "options": [
+            "A fresh period during which the insurer may contest",
+            "Loss of the policy's beneficiary designation",
+            "Automatic conversion to term insurance",
+            "Forfeiture of all accumulated dividends"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.14(c)1 requires the policy to disclose potential negative impacts of reclassification, including any new contestability period, cash value scale reduction, or premium increase. Reclassification is based on the insurer's underwriting rules in effect at the time.",
+          "enemies": [
+            "II3-21a"
+          ],
+          "retired": "Only realistic downside among options; guessable."
+        }
+      ]
     }
   ]
 }
