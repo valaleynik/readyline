@@ -198,6 +198,176 @@
           "explanation": "N.J.A.C. 11:4-41.3(b) starts the suicide period under the new policy on the original policy's issue date when a conversion does not increase the amount at risk. Here 26 months have passed, so the two-year period has ended."
         }
       ]
+    },
+    {
+      "id": "II3-30",
+      "statement": "New Jersey permits aviation, avocation and war risk exclusions in individual life policies.",
+      "source": "njac-11-4-41-4",
+      "quote": "1. Aviation exclusions; 2. Avocation exclusions; 3. War risk exclusions",
+      "items": [
+        {
+          "id": "II3-30a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Which set of exclusions does New Jersey permit in individual life insurance policies?",
+          "options": [
+            "Aviation, cancer and heart disease",
+            "Aviation, avocation and war risk",
+            "War risk, pregnancy and old age",
+            "Avocation, mental illness and diabetes"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.4 permits aviation exclusions, avocation exclusions and war risk exclusions, which may include military, non-combatant civilian and civilian exclusions.",
+          "optionStyle": "category",
+          "retired": "Distractors pair real exclusions with health items; guessable by common sense."
+        }
+      ]
+    },
+    {
+      "id": "II3-31",
+      "statement": "A military war exclusion may exclude death from war while serving in the armed forces, if death occurs in service or within six months after service ends.",
+      "source": "njac-11-4-41-4",
+      "quote": "provided such death occurs while in such forces or within six months after termination of service in such forces",
+      "items": [
+        {
+          "id": "II3-31a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A policy has a New Jersey-compliant military war exclusion. The insured is wounded in combat while serving, leaves the service, and dies of those wounds eight months later. Can the insurer apply the exclusion?",
+          "options": [
+            "Yes, since the cause of death occurred in service",
+            "Yes, for any death from a war wound at any time",
+            "No, since war exclusions apply only to civilians",
+            "No, since death occurred more than six months after service ended"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.4 lets a military war exclusion apply only if death occurs while in the forces or within six months after service ends. Eight months after discharge is outside that window."
+        }
+      ]
+    },
+    {
+      "id": "II3-32",
+      "statement": "A civilian war exclusion may apply only within two years from the policy's issue date, for death from war while the insured is outside the home area.",
+      "source": "njac-11-4-41-4",
+      "quote": "within two years from the date of issue of the policy, while the insured is not in such forces or units",
+      "items": [
+        {
+          "id": "II3-32a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.8,
+          "stem": "Under New Jersey rules, a civilian war exclusion may apply to a death from war outside the home area only within how long after the policy's issue date?",
+          "options": [
+            "Six months",
+            "One year",
+            "Two years",
+            "Five years"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.4 allows a civilian war exclusion for death from war outside the home area only within two years from the date of issue, while the insured is not in military forces or units.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II3-33",
+      "statement": "When death results from an excluded act, the insurer must pay at least the greater of premiums paid or the reserve, adjusted for dividends, loans, withdrawals and surrenders.",
+      "source": "njac-11-4-41-4",
+      "quote": "shall be at least equal to the greater of the premiums paid for the policy or the reserve",
+      "items": [
+        {
+          "id": "II3-33a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.8,
+          "stem": "An insured dies in an aviation accident that the policy excludes. Premiums paid total $9,000, and the policy reserve is $12,500, with no loans, dividends or withdrawals. Under New Jersey rules, the insurer must pay at least:",
+          "options": [
+            "$0",
+            "$9,000",
+            "$12,500",
+            "$21,500"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.4 requires that any amount payable for a death from an excluded act be at least the greater of premiums paid or the reserve, adjusted for dividends, loans, withdrawals and surrenders. The greater of $9,000 and $12,500 is $12,500.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II3-34",
+      "statement": "The policyowner must be notified of any war, aviation or avocation exclusion, and a war risk exclusion must be stamped across the face of the policy.",
+      "source": "njac-11-4-41-4",
+      "quote": "the method of notification for a war risk exclusion shall be in the form of a stamp across the face of the policy",
+      "items": [
+        {
+          "id": "II3-34a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "How must the policyowner be notified when a New Jersey life policy includes a war risk exclusion?",
+          "options": [
+            "By a stamp across the face of the policy",
+            "By a separate letter mailed after delivery",
+            "By a footnote in the illustration",
+            "By a verbal disclosure from the producer"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.4 requires the policyowner to be notified of war, aviation or avocation exclusions, and requires war risk exclusion notice in the form of a stamp across the face of the policy.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II3-35",
+      "statement": "In New Jersey individual life forms, pre-existing condition exclusions are permitted only for disability benefits.",
+      "source": "njac-11-4-41-7",
+      "quote": "Pre-existing condition exclusions shall only be permitted in the case of benefits for disability",
+      "items": [
+        {
+          "id": "II3-35a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey life policy form rules, a pre-existing condition exclusion may apply to which part of a life policy?",
+          "options": [
+            "The base death benefit",
+            "Disability benefits",
+            "The cash surrender value",
+            "The accidental death benefit"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.7(a)1-2 permits pre-existing condition exclusions only for disability benefits.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "II3-36",
+      "statement": "A pre-existing condition disclosed on the application but not excluded by rider is covered for disability from the policy's effective date.",
+      "source": "njac-11-4-41-7",
+      "quote": "The insurer shall be liable from the effective date of the policy for a disability resulting from any pre-existing condition which is in an application and not excluded by rider.",
+      "items": [
+        {
+          "id": "II3-36a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "An applicant discloses a back condition on her life application. The insurer issues the policy with a disability waiver of premium benefit and attaches no exclusion rider. Six months later she is disabled by that back condition. The insurer:",
+          "options": [
+            "May deny the claim during the first two years",
+            "May deny the claim as pre-existing",
+            "Is liable after a 12-month waiting period",
+            "Must pay, starting from when coverage began"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.7(a)1-2 makes the insurer liable from the policy's effective date for disability from a pre-existing condition that was in the application and not excluded by rider."
+        }
+      ],
+      "contrasts": [
+        "II3-35"
+      ]
     }
   ]
 }

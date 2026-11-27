@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r62",
+    "detail": "picked \"Must pay, starting from when coverage began\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r62",
+    "detail": "N.J.A.C. 11:4-41.7(a)2 says the insurer is liable from the policy effective date for a disability from a pre-existing condition that was disclosed in the application and not excluded by rider. Those are exactly the stem's facts, so no second option holds up.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r62",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r62",
+    "detail": "No strong form or common-sense cue. A, B and C are plausible-sounding misconceptions about contestability, pre-existing exclusions and waiting periods.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II3-36a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

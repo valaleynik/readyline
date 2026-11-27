@@ -213,6 +213,53 @@
           "optionStyle": "category"
         }
       ]
+    },
+    {
+      "id": "II1-30",
+      "statement": "For coverage on an other insured (such as a spouse or child rider), the form must describe what happens at the primary insured's death; if the coverage ends, unearned premium must be returned or coverage continued for the period paid.",
+      "source": "njac-11-4-41-9",
+      "quote": "If coverage on the other insured terminates upon the death of the primary insured, then the form shall provide for the return of the unearned premium",
+      "items": [
+        {
+          "id": "II1-30a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A parent's life policy includes a rider covering the parent's spouse. The rider says the spouse's coverage ends when the parent dies. The parent dies midway through a paid premium period. Under New Jersey rules, the policy must:",
+          "options": [
+            "Refund the unearned premium, or keep the coverage for the paid period",
+            "Pay the spouse's face amount to the estate right away",
+            "Convert the spouse coverage to whole life automatically",
+            "End the spouse coverage at once, with no refund at all"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.9(a)1-3 requires a form that ends other-insured coverage at the primary insured's death to return the unearned premium, or else continue the coverage for the remainder of the period paid for."
+        }
+      ]
+    },
+    {
+      "id": "II1-31",
+      "statement": "Coverage on an other insured may be continued after the primary insured's death by waiver of premium.",
+      "source": "njac-11-4-41-9",
+      "quote": "The form may continue the coverage on the other insured by waiver of premium",
+      "items": [
+        {
+          "id": "II1-31a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "Under New Jersey rules, which is one permitted way for a policy to keep a child rider in force after the primary insured parent dies?",
+          "options": [
+            "Waiving the premium for the child coverage",
+            "Raising the child coverage to the parent's face amount",
+            "Requiring the child to prove insurability again",
+            "Paying the child coverage's face amount to the estate"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.9(a)1-3 permits a form to continue coverage on the other insured by waiver of premium, or by other permitted methods such as paid-up term.",
+          "optionStyle": "category"
+        }
+      ]
     }
   ]
 }

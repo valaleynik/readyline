@@ -1343,6 +1343,54 @@
       "sha256": "c50e087d1c0d33d8d564dc1175cd64b8be05d0fd8cd0ac978aae5dc51044513e",
       "verifiedAgainstOfficial": false,
       "note": "Copied verbatim from the LII copy of the N.J. Administrative Code via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-41-4",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.4",
+      "title": "Individual life forms: permitted exclusions",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-4",
+      "retrievedAt": "2026-11-27",
+      "sha256": "b3023321826e9ad33d77fdf454602561368980e69f6c692976c5bfe2b39119e6",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; paragraph (a)3ii (non-combatant units) omitted."
+    },
+    {
+      "id": "njac-11-4-41-7",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.7(a)1-2",
+      "title": "Pre-existing condition exclusions",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-7",
+      "retrievedAt": "2026-11-27",
+      "sha256": "2698a55b5d94760e5ca6ffa3eacca91cce3480107e47f04e98180b0f0e589d25",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-41-9",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.9(a)1-3",
+      "title": "Other insured coverage",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-9",
+      "retrievedAt": "2026-11-27",
+      "sha256": "ef72aab0a01d98b82ed31c9b03f4b50a913f34d90b9d3a5064bd42db57c93c04",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
+    },
+    {
+      "id": "njac-11-4-41-10",
+      "kind": "regulation",
+      "citation": "N.J.A.C. 11:4-41.10(c)1-2",
+      "title": "Survivorship forms: suicide",
+      "act": "New Jersey Administrative Code, Title 11 (Insurance)",
+      "url": "https://www.law.cornell.edu/regulations/new-jersey/N-J-A-C-11-4-41-10",
+      "retrievedAt": "2026-11-27",
+      "sha256": "913baec7821428ebdb3ea2d655720c4da4260b255d297e6c8020be288c3a3925",
+      "verifiedAgainstOfficial": false,
+      "note": "Copied verbatim from the LII copy via the browser; excerpt."
     }
   ]
 }

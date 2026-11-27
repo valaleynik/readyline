@@ -55,6 +55,32 @@
       "contrasts": [
         "I5-01"
       ]
+    },
+    {
+      "id": "I5-10",
+      "statement": "If only the first insured to die under a survivorship policy commits suicide within the first two years, the insurer generally must reissue it as a single-life policy on the survivor without evidence of insurability.",
+      "source": "njac-11-4-41-10",
+      "quote": "the insurer shall reform and reissue the contract as of the original effective date as a single life contract on the surviving insured",
+      "items": [
+        {
+          "id": "I5-10a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "Eight months after a second-to-die policy is issued on a married couple, one spouse dies by suicide. The form does not elect to continue the survivorship contract. Under New Jersey rules, the insurer must:",
+          "options": [
+            "Reissue it as single-life coverage on the survivor, with no new evidence",
+            "Rescind the whole policy and refund every premium paid",
+            "Pay the full face amount now, as if both had died",
+            "Keep the survivorship policy but double the premium"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.10(c)1-2 requires the insurer, when only the first insured to die commits suicide in the first two years, to reform and reissue the contract as a single-life policy on the survivor as of the original effective date, without evidence of insurability. Rescission is allowed only if both insureds or the surviving insured commit suicide in that period. The insurer may instead continue the survivorship contract.",
+          "enemies": [
+            "II3-10a"
+          ]
+        }
+      ]
     }
   ]
 }
