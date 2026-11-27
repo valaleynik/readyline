@@ -20,6 +20,8 @@ export interface EventStore {
   save(events: AnswerEvent[]): void;
   loadSettings?(): StudySettings;
   saveSettings?(s: StudySettings): void;
+  /** for stores that sync: refresh from the server and report changes */
+  subscribe?(onChange: (events: AnswerEvent[], settings: StudySettings) => void): () => void;
 }
 
 const KEY = "readyline.events.v1";
@@ -95,6 +97,10 @@ export default function StudyApp({ data, store = localStore }: { data: ExportedB
     setEvents(store.load());
     setSettings(store.loadSettings?.() ?? {});
     setLoaded(true);
+    return store.subscribe?.((evs, st) => {
+      setEvents(evs);
+      setSettings(st);
+    });
   }, [store]);
   useEffect(() => {
     if (loaded) store.save(events);

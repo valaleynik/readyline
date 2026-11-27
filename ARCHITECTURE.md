@@ -193,3 +193,14 @@ The pass chance is hidden until the model has earned it for this learner (`src/s
 Once unlocked before today, looser keep rules apply (50%, 13 points, 2.5 SE, 10 days) so the number does not flicker. Shown as "about N%", rounded to 5s, held between 5% and 95%, with the likely score range. While locked, the learner sees the checks and a rough count of answers left, with the section to work on.
 
 Simulation (learners who behave as the model assumes): unlocks at roughly 180 to 390 answers, and hides again on about 3% of later days. The real test is reported exam results.
+
+## Storage and sync (Supabase)
+
+The server stores the answer log and settings, nothing else (`supabase/migrations/0001_event_log.sql`). The bank stays in code.
+
+- `answer_events`: one row per answer, keyed by (user, id). Row level security: users can read and insert their own rows only. No update or delete, ever.
+- `study_settings`: exam date and baseline skip, the only mutable per-user data.
+- Answers are saved locally first, then uploaded (`src/sync/store.ts`). Losing the connection never loses an answer.
+- Two devices can both write id N. The server's rows are final: local answers it lacks are renumbered after its last id and retried (`src/sync/merge.ts`). Answer times are never rewritten. Replay treats a late upload with an earlier time as happening at the previous answer's time, so memory never runs backward.
+- The app is told about changes only when the log or settings actually changed, so saving back cannot loop.
+- Without `NEXT_PUBLIC_SUPABASE_URL` and the publishable key, the app runs local-only (the preview build does).

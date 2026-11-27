@@ -79,3 +79,36 @@ describe("study loop UI", () => {
     expect(document.querySelector(".option")).not.toBeNull();
   });
 });
+
+describe("study loop UI with a synced store", () => {
+  it("uploads answers and settles without a save loop", async () => {
+    const { memoryRemote } = await import("../src/sync/remote");
+    const { SyncedStore } = await import("../src/sync/store");
+    const remote = memoryRemote();
+    const m = new Map<string, string>();
+    const s = new SyncedStore(remote, { get: (k) => m.get(k) ?? null, set: (k, v) => void m.set(k, v) }, "u");
+    let calls = 0;
+    const origFetch = remote.fetchEvents;
+    remote.fetchEvents = async () => (calls++, origFetch());
+    const store: EventStore = {
+      load: () => s.load(),
+      save: (e) => s.save(e),
+      loadSettings: () => s.loadSettings(),
+      saveSettings: (st) => s.saveSettings(st),
+      subscribe(fn) {
+        s.onChange = fn;
+        void s.sync();
+        return () => (s.onChange = undefined);
+      },
+    };
+    render(<StudyApp data={data} store={store} />);
+    fireEvent.click(await screen.findByText("Skip it"));
+    fireEvent.click(await screen.findByText("Start first session"));
+    fireEvent.click(screen.getAllByRole("button").filter((b) => b.classList.contains("option"))[0]!);
+    await act(async () => { fireEvent.click(screen.getByText("I'm sure")); });
+    await act(async () => { await new Promise((r) => setTimeout(r, 50)); });
+    expect(remote.rows.length).toBe(1);
+    expect(remote.settings?.baselineSkipped).toBe(true);
+    expect(calls).toBeLessThanOrEqual(2);
+  });
+});

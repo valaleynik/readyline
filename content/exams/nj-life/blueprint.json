@@ -10,7 +10,8 @@
     "topics": "PSI NJ Insurance Examination Content Outline, as reproduced at staterequirement.com/new-jersey-insurance-license-exam (retrieved 2026-11-26)",
     "itemCounts": "Xcel Solutions NJ Life and Health exam breakdown, xcelsolutions.com/New-Jersey/insurance-license/requirements (retrieved 2026-11-26)",
     "verifiedAgainstPrimary": false,
-    "note": "Verify section item counts against the current PSI content outline linked from test-takers.psiexams.com/njins before launch."
+    "note": "Checked 2026-11-27: Xcel Solutions and ExamFX both give 83 scored items, 70% pass, 210 minutes, sections 9/21/12/8/25/8. PSI NJ Candidate Information Bulletin (updated 9/8/2026, test-takers.psiexams.com/api/content/bulletin/1640) confirms 5 to 19 unscored experimental items may appear. The primary PSI content outline file was not reachable; open it from test-takers.psiexams.com/njins before launch.",
+    "unscoredItems": "5 to 19 experimental items, not scored (PSI bulletin updated 9/8/2026)"
   },
   "sections": [
     {
@@ -18,11 +19,26 @@
       "name": "Types of Policies",
       "items": 9,
       "topics": [
-        { "code": "I.1", "name": "Traditional Whole Life Products" },
-        { "code": "I.2", "name": "Interest-Sensitive Life Products" },
-        { "code": "I.3", "name": "Term Life" },
-        { "code": "I.4", "name": "Annuities" },
-        { "code": "I.5", "name": "Combination Plans and Variations" }
+        {
+          "code": "I.1",
+          "name": "Traditional Whole Life Products"
+        },
+        {
+          "code": "I.2",
+          "name": "Interest-Sensitive Life Products"
+        },
+        {
+          "code": "I.3",
+          "name": "Term Life"
+        },
+        {
+          "code": "I.4",
+          "name": "Annuities"
+        },
+        {
+          "code": "I.5",
+          "name": "Combination Plans and Variations"
+        }
       ]
     },
     {
@@ -30,9 +46,18 @@
       "name": "Policy Riders, Provisions, Options, and Exclusions",
       "items": 21,
       "topics": [
-        { "code": "II.1", "name": "Policy Riders" },
-        { "code": "II.2", "name": "Policy Provisions and Options" },
-        { "code": "II.3", "name": "Policy Exclusions" }
+        {
+          "code": "II.1",
+          "name": "Policy Riders"
+        },
+        {
+          "code": "II.2",
+          "name": "Policy Provisions and Options"
+        },
+        {
+          "code": "II.3",
+          "name": "Policy Exclusions"
+        }
       ]
     },
     {
@@ -40,10 +65,22 @@
       "name": "Completing the Application, Underwriting, and Delivering the Policy",
       "items": 12,
       "topics": [
-        { "code": "III.1", "name": "Completing the Application" },
-        { "code": "III.2", "name": "Underwriting" },
-        { "code": "III.3", "name": "Delivering the Policy" },
-        { "code": "III.4", "name": "Do Not Call List" }
+        {
+          "code": "III.1",
+          "name": "Completing the Application"
+        },
+        {
+          "code": "III.2",
+          "name": "Underwriting"
+        },
+        {
+          "code": "III.3",
+          "name": "Delivering the Policy"
+        },
+        {
+          "code": "III.4",
+          "name": "Do Not Call List"
+        }
       ]
     },
     {
@@ -51,14 +88,38 @@
       "name": "Taxes, Retirement, and Other Insurance Concepts",
       "items": 8,
       "topics": [
-        { "code": "IV.1", "name": "Third-Party Ownership" },
-        { "code": "IV.2", "name": "Group Life Insurance" },
-        { "code": "IV.3", "name": "Retirement Plans" },
-        { "code": "IV.4", "name": "Business Insurance" },
-        { "code": "IV.5", "name": "Social Security Benefits and Taxes" },
-        { "code": "IV.6", "name": "Tax Treatment of Insurance Premiums, Proceeds, and Dividends" },
-        { "code": "IV.7", "name": "Accelerated Death Benefits (Living Benefits)" },
-        { "code": "IV.8", "name": "Endowments" }
+        {
+          "code": "IV.1",
+          "name": "Third-Party Ownership"
+        },
+        {
+          "code": "IV.2",
+          "name": "Group Life Insurance"
+        },
+        {
+          "code": "IV.3",
+          "name": "Retirement Plans"
+        },
+        {
+          "code": "IV.4",
+          "name": "Business Insurance"
+        },
+        {
+          "code": "IV.5",
+          "name": "Social Security Benefits and Taxes"
+        },
+        {
+          "code": "IV.6",
+          "name": "Tax Treatment of Insurance Premiums, Proceeds, and Dividends"
+        },
+        {
+          "code": "IV.7",
+          "name": "Accelerated Death Benefits (Living Benefits)"
+        },
+        {
+          "code": "IV.8",
+          "name": "Endowments"
+        }
       ]
     },
     {
@@ -66,12 +127,30 @@
       "name": "New Jersey Laws, Rules, and Regulations Common to Life, Accident and Health, Property, and Casualty Insurance",
       "items": 25,
       "topics": [
-        { "code": "V.1", "name": "State Regulatory Jurisdiction" },
-        { "code": "V.2", "name": "Definitions" },
-        { "code": "V.3", "name": "Licensing" },
-        { "code": "V.4", "name": "Trade Practices" },
-        { "code": "V.5", "name": "Guaranty Associations" },
-        { "code": "V.6", "name": "Ethics" }
+        {
+          "code": "V.1",
+          "name": "State Regulatory Jurisdiction"
+        },
+        {
+          "code": "V.2",
+          "name": "Definitions"
+        },
+        {
+          "code": "V.3",
+          "name": "Licensing"
+        },
+        {
+          "code": "V.4",
+          "name": "Trade Practices"
+        },
+        {
+          "code": "V.5",
+          "name": "Guaranty Associations"
+        },
+        {
+          "code": "V.6",
+          "name": "Ethics"
+        }
       ]
     },
     {
@@ -79,10 +158,22 @@
       "name": "New Jersey Laws, Rules, and Regulations Pertinent to Life Insurance",
       "items": 8,
       "topics": [
-        { "code": "VI.1", "name": "Credit Life" },
-        { "code": "VI.2", "name": "Group Life" },
-        { "code": "VI.3", "name": "Marketing Methods and Practices" },
-        { "code": "VI.4", "name": "The Insurance Contract" }
+        {
+          "code": "VI.1",
+          "name": "Credit Life"
+        },
+        {
+          "code": "VI.2",
+          "name": "Group Life"
+        },
+        {
+          "code": "VI.3",
+          "name": "Marketing Methods and Practices"
+        },
+        {
+          "code": "VI.4",
+          "name": "The Insurance Contract"
+        }
       ]
     }
   ]

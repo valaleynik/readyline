@@ -39,6 +39,9 @@ export function applyAnswer(
   }
   const item = bank.items.get(ev.itemKey);
   if (!item) return { ...state, lastEventId: ev.id, skipped: state.skipped + 1 };
+  // Log order is the truth. An answer synced late from another device can carry an earlier
+  // time than the one before it; treat it as happening then, so memory never runs backward.
+  const at = Math.max(ev.at, state.lastAt);
 
   const topic = state.topics[item.topic]!;
   const upd = updateAbility(state.g, topic, item.b, ev.correct, bank.guess);
@@ -46,7 +49,7 @@ export function applyAnswer(
   const grade = ev.correct ? 3 : 1;
   const prev = state.facts[item.factId];
   const mem = {
-    ...(prev ? review(prev, grade, ev.at) : firstReview(grade, ev.at)),
+    ...(prev ? review(prev, grade, at) : firstReview(grade, at)),
     lastCorrect: ev.correct,
     lastAnswerNo: state.answers + 1,
   };
@@ -67,11 +70,11 @@ export function applyAnswer(
       },
     },
     facts: { ...state.facts, [item.factId]: mem },
-    lastSeen: { ...state.lastSeen, [item.key]: ev.at },
+    lastSeen: { ...state.lastSeen, [item.key]: at },
     recent,
     answers: state.answers + 1,
     lastEventId: ev.id,
-    lastAt: ev.at,
+    lastAt: at,
   };
 }
 
