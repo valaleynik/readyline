@@ -1,0 +1,54 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.4",
+  "facts": [
+    {
+      "id": "IV4-01",
+      "statement": "A corporation has an insurable interest in its directors, officers, employees, and others whose death or disability might cause it financial loss.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "(a) in the life or physical or mental ability of any of its directors, officers, or employees, or the directors, officers, or employees of any of its subsidiaries or any other person whose death or physical or mental disability might cause financial loss to the corporation",
+      "items": [
+        {
+          "id": "IV4-01a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.1,
+          "stem": "A corporation buys a life policy on its chief engineer, who designs its main products. Under New Jersey law, does the corporation have an insurable interest in the engineer's life?",
+          "options": [
+            "Yes, but only if the engineer is also an officer",
+            "No, since only relatives have an insurable interest",
+            "No, since a corporation can insure only its owners",
+            "Yes, since the engineer's death could cause it financial loss"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:24-1.1 gives a corporation an insurable interest in its directors, officers and employees, and in anyone whose death or disability might cause it financial loss.",
+          "retired": "Flagged as test-wise in two rounds: the financial-loss reason is identifiable by common sense among conditional options."
+        }
+      ]
+    },
+    {
+      "id": "IV4-02",
+      "statement": "A corporation has an insurable interest in a shareholder's life to carry out an agreement to reacquire the shareholder's shares at death or disability.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "pursuant to any contractual arrangement with any shareholder concerning the reacquisition of shares owned by him at the time of his death or disability",
+      "items": [
+        {
+          "id": "IV4-02a",
+          "version": 3,
+          "kind": "application",
+          "difficulty": 0.7,
+          "stem": "Under New Jersey law, a corporation that has agreed to buy back a shareholder's stock at the shareholder's death has an insurable interest in that shareholder's life:",
+          "options": [
+            "For the purpose of carrying out that agreement",
+            "For any amount, without regard to the agreement",
+            "Only while the shareholder is also an officer",
+            "Only after the shareholder's family consents"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-1.1 gives a corporation an insurable interest in a shareholder's life to carry out a contractual arrangement to reacquire the shareholder's shares at death or disability.",
+          "retired": "Test-wise in two rounds: the statute's purpose wording makes the key stand out against conditional options. Business insurance needs a scenario-rich source."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "III.1",
+  "facts": [
+    {
+      "id": "III1-01",
+      "statement": "No one other than the applicant may alter a written application without the applicant's written consent.",
+      "source": "njsa-17b-24-3",
+      "quote": "No alteration on any written application for any such policy or contract shall be made by any person other than the applicant without his written consent",
+      "items": [
+        {
+          "id": "III1-01a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.2,
+          "stem": "While processing a life application, a producer notices the applicant left the tobacco-use question blank and wants to fill it in. Under New Jersey law, the producer:",
+          "options": [
+            "Must get the insurer's written approval first",
+            "Must get the applicant's written consent first",
+            "Must get the beneficiary's written consent first",
+            "Must initial the change and then tell the applicant"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-3 bars anyone other than the applicant from altering a written application without the applicant's written consent.",
+          "enemies": [
+            "III1-02a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III1-02",
+      "statement": "The insurer may make insertions for administrative purposes only, marked clearly as not attributable to the applicant.",
+      "source": "njsa-17b-24-3",
+      "quote": "insertions may be made by the insurer, for administrative purposes only, in such manner as to indicate clearly that such insertions are not to be ascribed to the applicant",
+      "items": [
+        {
+          "id": "III1-02a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "Which change to a written life application may be made without the applicant's written consent?",
+          "options": [
+            "Producer corrections of spelling errors in answers",
+            "Insurer updates to the applicant's medical history",
+            "Producer additions of omitted answers from notes",
+            "Insurer office codes visibly not the applicant's"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:24-3 allows only insurer insertions for administrative purposes, made so they clearly are not attributed to the applicant. Other alterations need the applicant's written consent."
+        }
+      ]
+    },
+    {
+      "id": "III1-03",
+      "statement": "A false statement in the application bars recovery only if it materially affected acceptance of the risk or the hazard assumed.",
+      "source": "njsa-17b-24-3",
+      "quote": "may not bar the right to recovery thereunder unless such false statement materially affected either the acceptance of the risk or the hazard assumed by the insurer",
+      "items": [
+        {
+          "id": "III1-03a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.7,
+          "stem": "An applicant overstated his height by one inch. Under the insurer's guidelines, his correct height would have produced the same underwriting decision and premium. He dies within the contestable period. Under New Jersey law, the insurer:",
+          "options": [
+            "May deny, since the policy is still contestable",
+            "Must pay, since the misstatement was not material",
+            "May reduce the benefit to reflect the correct height",
+            "May deny the claim but must refund the premiums"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-3 provides that a false statement in the application does not bar recovery unless it materially affected the acceptance of the risk or the hazard assumed. Being within the contestable period does not change that."
+        }
+      ]
+    },
+    {
+      "id": "III1-04",
+      "statement": "An application is admissible as evidence only if a copy was attached to or endorsed on the policy when issued.",
+      "source": "njsa-17b-24-3",
+      "quote": "No application for any life or health insurance policy or annuity contract shall be admissible in evidence in any action relative to such policy or contract, unless a copy of the application was attached to or endorsed upon the policy or contract when issued.",
+      "items": [
+        {
+          "id": "III1-04a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "In a lawsuit over a New Jersey life policy, the insurer wants to rely on statements in the application. The application is admissible only if:",
+          "options": [
+            "It was made part of the policy at issue",
+            "The applicant signed it in the producer's presence",
+            "The insurer kept the original for at least five years",
+            "The application form was filed with the commissioner"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-3 makes an application inadmissible in any action on the policy unless a copy was attached to or endorsed on the policy when issued.",
+          "enemies": [
+            "II2-05a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III1-05",
+      "statement": "On written request after reinstatement or renewal, the insurer must provide a copy of the reinstatement or renewal application within 30 days.",
+      "source": "njsa-17b-24-3",
+      "quote": "the insurer shall, within 30 days after receipt of such request at its home office, deliver or mail to the person making such request a copy of such application",
+      "items": [
+        {
+          "id": "III1-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "After a New Jersey life policy is reinstated, the insured asks in writing for a copy of the reinstatement application. The insurer must deliver or mail it within:",
+          "options": [
+            "10 days",
+            "15 days",
+            "30 days",
+            "60 days"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:24-3 requires the insurer to deliver or mail a copy of the reinstatement or renewal application within 30 days after receiving a written request at its home office."
+        }
+      ]
+    },
+    {
+      "id": "III1-06",
+      "statement": "A minor at least 15 years old may contract for insurance or annuities on his own life or on someone in whom he has an insurable interest.",
+      "source": "njsa-17b-24-2",
+      "quote": "Any minor not less than 15 years of age may, notwithstanding such minority, contract for annuities or for insurance",
+      "items": [
+        {
+          "id": "III1-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "Under New Jersey law, a minor may contract for life insurance on his own life beginning at age:",
+          "options": [
+            "12",
+            "14",
+            "15",
+            "16"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:24-2 allows any minor not less than 15 years of age to contract for insurance or annuities on his own life, or on another person in whom he has an insurable interest.",
+          "optionStyle": "ordered",
+          "enemies": [
+            "III1-07a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "III1-07",
+      "statement": "A minor 15 or older may give a valid receipt for insurance payments totaling up to $2,000 a year, if no guardian has been appointed.",
+      "source": "njsa-17b-24-2",
+      "quote": "As to a minor not less than 15 years of age--a payment or payments in aggregate not exceeding $2,000.00 in any 1 calendar year",
+      "items": [
+        {
+          "id": "III1-07a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.1,
+          "stem": "A 16-year-old beneficiary with no appointed guardian may give the insurer a valid receipt for payments totaling up to what amount in a calendar year?",
+          "options": [
+            "$500",
+            "$1,000",
+            "$2,000",
+            "$5,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:24-2 deems a minor 15 or older competent to receive and acknowledge insurance payments of up to $2,000 in any calendar year, if the insurer has no notice of a guardian."
+        }
+      ]
+    }
+  ]
+}

@@ -71,6 +71,52 @@
           "group": "noncomplying-forms"
         }
       ]
+    },
+    {
+      "id": "VI4-04",
+      "statement": "A policy on another person's life must benefit the insured, the insured's personal representative, or someone with an insurable interest when the contract was made.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "or to a person having, at the time when that contract was made, an insurable interest in the individual insured",
+      "items": [
+        {
+          "id": "VI4-04a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "For a policy on another person's life to be valid in New Jersey, when must the beneficiary's insurable interest exist?",
+          "options": [
+            "When the contract is made",
+            "When the insured dies",
+            "Both at issue and at death",
+            "Throughout the life of the policy"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-1.1 requires the benefits to be payable to someone who had an insurable interest at the time the contract was made. It need not exist at death."
+        }
+      ]
+    },
+    {
+      "id": "VI4-05",
+      "statement": "An individual has an insurable interest in a close relative by blood or by law in whom he has a substantial interest engendered by love and affection.",
+      "source": "njsa-17b-24-1-1",
+      "quote": "(3) An individual has an insurable interest in the life, health and bodily safety of another individual to whom he is closely related by blood or by law and in whom he has a substantial interest engendered by love and affection.",
+      "items": [
+        {
+          "id": "VI4-05a",
+          "version": 3,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "Under New Jersey law, which of the following has an insurable interest in Ana's life without having to show any financial interest in her?",
+          "options": [
+            "Ana's adult sister",
+            "Ana's landlord",
+            "Ana's next-door neighbor",
+            "Ana's former classmate"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-1.1 gives an insurable interest to a person closely related by blood or by law who has a substantial interest engendered by love and affection. Friends, neighbors and coworkers would need a financial interest."
+        }
+      ]
     }
   ]
 }

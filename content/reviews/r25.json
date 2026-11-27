@@ -1,0 +1,110 @@
+[
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "picked \"For the purpose of carrying out that agreement\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "17B:24-1.1(a)(4)(b) gives the interest 'for the purpose of carrying out that contractual arrangement'. B overreaches (no unlimited interest without regard to the agreement). C: an officer-shareholder would also be covered under (4)(a), but 'only while' wrongly makes officer status a condition of the buy-sell interest. D has no basis. A candidate citing (4)(a) 'any other person whose death might cause financial loss' still could not defend B's 'any amount, without regard to the agreement' or C's 'only'.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "testwise",
+    "passed": false,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "A is the only option without an absolute or restrictive qualifier (B 'any amount, without regard', C 'Only', D 'Only'), and it echoes the stem's 'agreed' / statutory 'purpose of carrying out' wording. A testwise candidate picks A without knowing the rule.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "IV4-02a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "picked \"Ana's adult sister\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "Under (a)(3) a blood relative with a substantial interest engendered by love and affection has an insurable interest without pecuniary interest. Landlord, neighbor and former classmate would need an expectation of pecuniary advantage under (a)(2); a landlord's rent expectation is exactly the financial interest the stem excludes, so it does not create a second defensible answer.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "agent:blind-reviewer-25",
+    "detail": "Options are parallel in form and length; the key is found by content (only blood relative), not by wording cues.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "VI4-05a",
+    "version": 3,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]
