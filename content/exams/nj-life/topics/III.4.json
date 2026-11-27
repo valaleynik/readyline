@@ -173,6 +173,21 @@
           "answer": 2,
           "explanation": "47 C.F.R. § 64.1200(c) bars telephone solicitations to a residential subscriber before 8 a.m. or after 9 p.m., local time at the called party's location.",
           "optionStyle": "ordered"
+        },
+        {
+          "id": "III4-11b",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "A New Jersey producer wants to make a sales call at 6:30 p.m. Eastern time to a prospect at home in California, where it is 3:30 p.m. Under the federal calling-hour rule, the call is:",
+          "options": [
+            "Prohibited, because it is after 6 p.m. for the caller",
+            "Prohibited, because interstate sales calls need written consent",
+            "Permitted only with a recorded disclosure at the start",
+            "Permitted, because it is 3:30 p.m. where the prospect is"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(c) measures the 8 a.m. to 9 p.m. window by local time at the called party's location. 3:30 p.m. in California is within it."
         }
       ]
     },
@@ -245,6 +260,22 @@
           ],
           "answer": 3,
           "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call.",
+          "group": "tcpa-ebr"
+        },
+        {
+          "id": "III4-14b",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.9,
+          "stem": "A client bought a single-premium policy from an agency 20 months ago and has had no other dealings with it since. Her number is on the national do-not-call registry. May the agency make a sales call to her?",
+          "options": [
+            "Yes, because she is a past customer",
+            "Yes, because registrations expire after five years",
+            "Yes, as long as the call is made before 9 p.m.",
+            "No, because the 18-month business relationship has ended"
+          ],
+          "answer": 3,
+          "explanation": "47 C.F.R. § 64.1200(f) bases an established business relationship on a purchase or transaction within the 18 months before the call. At 20 months with no further dealings, it has ended, so the registry applies.",
           "group": "tcpa-ebr"
         }
       ]

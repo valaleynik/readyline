@@ -1,0 +1,301 @@
+[
+  {
+    "itemId": "I2-01a",
+    "version": 1,
+    "source": "sec-variable-life",
+    "stem": "What distinguishes variable life insurance from other forms of life insurance?",
+    "options": [
+      "Its cash value earns a guaranteed minimum interest rate",
+      "Its death benefit is limited to the premiums paid",
+      "Its cash value varies with investments the owner chooses",
+      "Its premiums are set by the state insurance department"
+    ],
+    "key": "Its cash value varies with investments the owner chooses"
+  },
+  {
+    "itemId": "I2-02a",
+    "version": 1,
+    "source": "sec-variable-life",
+    "stem": "If the investment options a variable life policyowner selects perform poorly, the owner:",
+    "options": [
+      "Keeps a guaranteed minimum cash value",
+      "Receives a refund of premiums from the insurer",
+      "Can lose earnings, but not the initial investment",
+      "Could lose money, including the initial investment"
+    ],
+    "key": "Could lose money, including the initial investment"
+  },
+  {
+    "itemId": "I2-03a",
+    "version": 1,
+    "source": "sec-variable-life",
+    "stem": "A client wants somewhere to keep savings for 18 months. Why is variable life insurance generally unsuitable for that goal?",
+    "options": [
+      "Costs and tax consequences that outweigh short-term gains",
+      "Tax-deferred growth, which suits short-term goals",
+      "Fees that are lower than a bank savings account",
+      "Guaranteed returns over periods under two years"
+    ],
+    "key": "Costs and tax consequences that outweigh short-term gains"
+  },
+  {
+    "itemId": "I4-01a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "At age 70, Dana buys an annuity with one lump-sum payment, and her monthly income checks begin a few weeks later. Dana bought:",
+    "options": [
+      "A deferred annuity",
+      "An immediate annuity",
+      "A variable life policy",
+      "A registered index-linked annuity"
+    ],
+    "key": "An immediate annuity"
+  },
+  {
+    "itemId": "I4-02a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "In a deferred annuity, the period during which money grows tax-deferred before income payments begin is called the:",
+    "options": [
+      "Payout phase",
+      "Annuitization period",
+      "Accumulation phase",
+      "Free-look period"
+    ],
+    "key": "Accumulation phase"
+  },
+  {
+    "itemId": "I4-03a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "During the accumulation phase, what does a fixed deferred annuity guarantee?",
+    "options": [
+      "Its current interest rate for the life of the contract",
+      "Returns tied to a stock index",
+      "Withdrawals free of surrender charges",
+      "A floor on credited interest"
+    ],
+    "key": "A floor on credited interest"
+  },
+  {
+    "itemId": "I4-04a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "The benchmark index for Ray's fixed indexed annuity falls 12% during a one-year term. The interest credited to his annuity for that term is:",
+    "options": [
+      "Zero at worst",
+      "Negative 12%",
+      "Negative, but limited by a buffer",
+      "Negative, offset by the guaranteed minimum"
+    ],
+    "key": "Zero at worst"
+  },
+  {
+    "itemId": "I4-05a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "Which type of deferred annuity can credit negative interest, reducing contract value, when its benchmark index performs poorly?",
+    "options": [
+      "Fixed annuity",
+      "Registered index-linked annuity (RILA)",
+      "Fixed indexed annuity",
+      "Immediate annuity"
+    ],
+    "key": "Registered index-linked annuity (RILA)"
+  },
+  {
+    "itemId": "I4-06a",
+    "version": 1,
+    "source": "sec-annuities-kinds",
+    "stem": "Which type of annuity lets the owner direct contributions among a menu of mutual funds, with no limit on gains or losses?",
+    "options": [
+      "Fixed annuity",
+      "Fixed indexed annuity",
+      "Variable annuity",
+      "Registered index-linked annuity"
+    ],
+    "key": "Variable annuity"
+  },
+  {
+    "itemId": "I4-07a",
+    "version": 1,
+    "source": "sec-annuities-securities",
+    "stem": "Which two types of deferred annuities are securities that must register with the SEC?",
+    "options": [
+      "Fixed annuities and fixed indexed annuities",
+      "Fixed annuities and RILAs",
+      "Fixed indexed annuities and variable annuities",
+      "RILAs and variable annuities"
+    ],
+    "key": "RILAs and variable annuities"
+  },
+  {
+    "itemId": "I4-08a",
+    "version": 1,
+    "source": "sec-annuities-securities",
+    "stem": "In a registered market value adjustment (MVA) annuity, what can happen if the owner withdraws money before the specified period ends?",
+    "options": [
+      "The contract value may be adjusted, often downward",
+      "The insurer must credit a bonus interest rate",
+      "The fixed rate converts to an index-linked rate",
+      "Nothing, since the fixed rate is locked in"
+    ],
+    "key": "The contract value may be adjusted, often downward"
+  },
+  {
+    "itemId": "I4-09a",
+    "version": 1,
+    "source": "sec-annuities-what",
+    "stem": "The guarantees in an annuity contract are backed primarily by:",
+    "options": [
+      "FDIC deposit insurance",
+      "The issuing insurer's claims-paying ability",
+      "The SEC's investor protection fund",
+      "The performance of a stock index"
+    ],
+    "key": "The issuing insurer's claims-paying ability"
+  },
+  {
+    "itemId": "II2-07b",
+    "version": 1,
+    "source": "njsa-17b-25-6",
+    "stem": "A $100,000 life policy was issued based on a misstated age. At the insured's true age, the premium paid would have bought only $88,000 of coverage. At death, the insurer pays:",
+    "options": [
+      "$0",
+      "$88,000",
+      "$100,000",
+      "$100,000 minus the premium shortfall"
+    ],
+    "key": "$88,000"
+  },
+  {
+    "itemId": "II2-17b",
+    "version": 1,
+    "source": "njsa-17b-25-11",
+    "stem": "A New Jersey life insurer receives due proof of death on May 1 and finds nothing that needs investigation. Settlement must be made no later than:",
+    "options": [
+      "May 31",
+      "June 15",
+      "June 30",
+      "July 30"
+    ],
+    "key": "June 30"
+  },
+  {
+    "itemId": "III4-11b",
+    "version": 1,
+    "source": "cfr-47-64-1200-c",
+    "stem": "A New Jersey producer wants to make a sales call at 6:30 p.m. Eastern time to a prospect at home in California, where it is 3:30 p.m. Under the federal calling-hour rule, the call is:",
+    "options": [
+      "Prohibited, because it is after 6 p.m. for the caller",
+      "Prohibited, because interstate sales calls need written consent",
+      "Permitted only with a recorded disclosure at the start",
+      "Permitted, because it is 3:30 p.m. where the prospect is"
+    ],
+    "key": "Permitted, because it is 3:30 p.m. where the prospect is"
+  },
+  {
+    "itemId": "III4-14b",
+    "version": 1,
+    "source": "cfr-47-64-1200-ebr",
+    "stem": "A client bought a single-premium policy from an agency 20 months ago and has had no other dealings with it since. Her number is on the national do-not-call registry. May the agency make a sales call to her?",
+    "options": [
+      "Yes, because she is a past customer",
+      "Yes, because registrations expire after five years",
+      "Yes, as long as the call is made before 9 p.m.",
+      "No, because the 18-month business relationship has ended"
+    ],
+    "key": "No, because the 18-month business relationship has ended"
+  },
+  {
+    "itemId": "IV6-06b",
+    "version": 1,
+    "source": "usc-26-72-q",
+    "stem": "A 61-year-old withdraws $10,000 of taxable earnings from a nonqualified deferred annuity. The additional 10% federal penalty tax on this withdrawal is:",
+    "options": [
+      "$0",
+      "$600",
+      "$1,000",
+      "$10,000"
+    ],
+    "key": "$0"
+  },
+  {
+    "itemId": "V3-07b",
+    "version": 1,
+    "source": "njsa-17-22a-32",
+    "stem": "Jordan, age 17, completes his prelicensing course and passes the New Jersey producer exam. When can the commissioner approve his resident producer license?",
+    "options": [
+      "Once he turns 18",
+      "Immediately, since he passed the exam",
+      "Once he turns 21",
+      "Only with a parent's written consent"
+    ],
+    "key": "Once he turns 18"
+  },
+  {
+    "itemId": "V3-16b",
+    "version": 1,
+    "source": "njsa-17-22a-33",
+    "stem": "A producer's license renewal fee was due June 30. She does not pay it until May 15 of the following year. What is the result?",
+    "options": [
+      "She must retake the licensing exam",
+      "She may reinstate without an exam, though a late penalty may apply",
+      "Her license is reinstated with no penalty",
+      "She must wait 90 days and then reapply"
+    ],
+    "key": "She may reinstate without an exam, though a late penalty may apply"
+  },
+  {
+    "itemId": "V3-28b",
+    "version": 1,
+    "source": "njsa-17-22a-37",
+    "stem": "The commissioner issues a temporary producer license to a deceased producer's spouse on March 1. Absent a new license, the latest it can remain in effect is about:",
+    "options": [
+      "March 31",
+      "June 1",
+      "August 28",
+      "March 1 of the next year"
+    ],
+    "key": "August 28"
+  },
+  {
+    "itemId": "V3-43a",
+    "version": 1,
+    "source": "njsa-17-22a-41",
+    "stem": "A licensed agency pays a referral fee to an unlicensed real estate agent who only passes along a client's name and never discusses coverage. Under New Jersey's licensing law, this payment is:",
+    "options": [
+      "Prohibited, since the real estate agent is unlicensed",
+      "Permitted only if she becomes licensed within 90 days",
+      "Prohibited unless the commissioner approves it in advance",
+      "Permitted, since she only referred the client"
+    ],
+    "key": "Permitted, since she only referred the client"
+  },
+  {
+    "itemId": "V5-04b",
+    "version": 1,
+    "source": "njsa-17b-32a-3e",
+    "stem": "John has two policies on his life with the same insurer, with death benefits of $300,000 and $350,000. The insurer becomes insolvent. The guaranty association's maximum obligation for John's death benefits is:",
+    "options": [
+      "$300,000",
+      "$350,000",
+      "$500,000",
+      "$650,000"
+    ],
+    "key": "$500,000"
+  },
+  {
+    "itemId": "VI3-05c",
+    "version": 1,
+    "source": "njsa-17b-30-17",
+    "stem": "After a hearing, a producer is found to have knowingly made three misleading policy comparisons in violation of New Jersey's life trade practice rules. The maximum total penalty is:",
+    "options": [
+      "$3,000",
+      "$5,000",
+      "$15,000",
+      "$30,000"
+    ],
+    "key": "$15,000"
+  }
+]

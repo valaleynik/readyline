@@ -178,6 +178,22 @@
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17B:25-6 adjusts the amount payable to what the premium would have purchased at the correct age."
+        },
+        {
+          "id": "II2-07b",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "A $100,000 life policy was issued based on a misstated age. At the insured's true age, the premium paid would have bought only $88,000 of coverage. At death, the insurer pays:",
+          "options": [
+            "$0",
+            "$88,000",
+            "$100,000",
+            "$100,000 minus the premium shortfall"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:25-6 pays the amount the premium would have purchased at the correct age, here $88,000.",
+          "optionStyle": "ordered"
         }
       ]
     },
@@ -418,6 +434,23 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-11 requires settlement within 60 days after receipt of due proof of death.",
+          "group": "claim-timing"
+        },
+        {
+          "id": "II2-17b",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.8,
+          "stem": "A New Jersey life insurer receives due proof of death on May 1 and finds nothing that needs investigation. Settlement must be made no later than:",
+          "options": [
+            "May 31",
+            "June 15",
+            "June 30",
+            "July 30"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:25-11 requires settlement within 60 days after receipt of due proof of death. 60 days after May 1 is June 30.",
+          "optionStyle": "ordered",
           "group": "claim-timing"
         }
       ]

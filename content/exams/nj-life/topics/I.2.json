@@ -1,0 +1,77 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "I.2",
+  "facts": [
+    {
+      "id": "I2-01",
+      "statement": "Unlike other life insurance, variable life has a cash value that varies with the performance of investments the owner chooses, typically mutual funds.",
+      "source": "sec-variable-life",
+      "quote": "Unlike other life insurance, variable life insurance has a cash value that varies depending, in part, on the performance of investments you choose",
+      "items": [
+        {
+          "id": "I2-01a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0,
+          "stem": "Which feature sets variable life insurance apart from whole life and term life?",
+          "options": [
+            "Its cash value rises and falls with investments the owner selects",
+            "Its cash value earns a guaranteed minimum interest rate",
+            "Its death benefit is paid only if death occurs during a set term",
+            "Its premiums are fixed and its cash value grows on a set schedule"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, variable life has a cash value that varies, in part, with the performance of investment options the owner chooses, typically mutual funds.",
+          "group": "variable-life"
+        }
+      ]
+    },
+    {
+      "id": "I2-02",
+      "statement": "A variable life policyowner can lose money, including the initial investment, if the chosen investments perform poorly.",
+      "source": "sec-variable-life",
+      "quote": "You can lose money in a variable life insurance policy, including potential loss of your initial investment.",
+      "items": [
+        {
+          "id": "I2-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "If the investment options a variable life policyowner selects perform poorly, the owner:",
+          "options": [
+            "Keeps a guaranteed minimum cash value",
+            "Receives a refund of premiums from the insurer",
+            "Can lose earnings, but not the initial investment",
+            "Could lose money, including the initial investment"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, a variable life policyowner can lose money, including the initial investment, if the chosen investment options perform poorly.",
+          "group": "variable-life"
+        }
+      ]
+    },
+    {
+      "id": "I2-03",
+      "statement": "Substantial fees, expenses and tax implications generally make variable life unsuitable as short-term savings.",
+      "source": "sec-variable-life",
+      "quote": "Substantial fees, expenses, and tax implications generally make variable life insurance unsuitable as a short-term savings vehicle.",
+      "items": [
+        {
+          "id": "I2-03a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 0.4,
+          "stem": "A client wants somewhere to keep savings for 18 months. Why is variable life insurance generally unsuitable for that goal?",
+          "options": [
+            "Costs and tax consequences that outweigh short-term gains",
+            "A death benefit that cannot be changed once issued",
+            "A requirement to hold the policy until age 65",
+            "A tax rule that bars short-term withdrawals"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC, Investor.gov: Variable Life Insurance guide, substantial fees, expenses and tax implications generally make variable life unsuitable as a short-term savings vehicle."
+        }
+      ]
+    }
+  ]
+}

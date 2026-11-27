@@ -93,6 +93,22 @@
           "answer": 3,
           "explanation": "N.J.S.A. 17B:32A-3(e) limits life insurance death benefits to $500,000 with respect to one life, regardless of the number of policies or contracts.",
           "group": "ga-life-limits"
+        },
+        {
+          "id": "V5-04b",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.9,
+          "stem": "John has two policies on his life with the same insurer, with death benefits of $300,000 and $350,000. The insurer becomes insolvent. The guaranty association's maximum obligation for John's death benefits is:",
+          "options": [
+            "$300,000",
+            "$350,000",
+            "$500,000",
+            "$650,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:32A-3(e) limits life insurance death benefits to $500,000 with respect to one life, regardless of the number of policies.",
+          "group": "ga-life-limits"
         }
       ]
     },

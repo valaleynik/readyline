@@ -148,6 +148,22 @@
           "answer": 2,
           "explanation": "N.J.S.A. 17B:30-17 raises the maximum penalty to $5,000 for every violation when the person knew or reasonably should have known it was a violation.",
           "group": "vi3-enforcement"
+        },
+        {
+          "id": "VI3-05c",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.1,
+          "stem": "After a hearing, a producer is found to have knowingly made three misleading policy comparisons in violation of New Jersey's life trade practice rules. The maximum total penalty is:",
+          "options": [
+            "$3,000",
+            "$5,000",
+            "$15,000",
+            "$30,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:30-17 allows up to $5,000 for every violation when the person knew or reasonably should have known it was a violation. Three violations come to $15,000.",
+          "group": "vi3-enforcement"
         }
       ]
     },

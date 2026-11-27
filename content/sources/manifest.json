@@ -511,6 +511,54 @@
       "sha256": "b9b7c1a350791700057d08676f812895d86c7b41824902e0dd685b145f119d1f",
       "verifiedAgainstOfficial": false,
       "note": "Excerpt: subsection a, paragraphs (1)-(4), extracted verbatim in the browser."
+    },
+    {
+      "id": "sec-annuities-kinds",
+      "kind": "manual",
+      "citation": "SEC, Investor.gov: Annuities",
+      "title": "Annuity types: immediate, deferred, fixed, fixed indexed, RILA, variable",
+      "act": "U.S. Securities and Exchange Commission investor education (U.S. government work)",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities",
+      "retrievedAt": "2026-11-26",
+      "sha256": "be909e083d274525cca20cb96a169f45e28e8b6dabce4baead61522cba775482",
+      "verifiedAgainstOfficial": true,
+      "note": "Retrieved directly from the official SEC site; excerpt extracted verbatim in the browser."
+    },
+    {
+      "id": "sec-annuities-securities",
+      "kind": "manual",
+      "citation": "SEC, Investor.gov: Annuities",
+      "title": "Annuities that are securities",
+      "act": "U.S. Securities and Exchange Commission investor education (U.S. government work)",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities",
+      "retrievedAt": "2026-11-26",
+      "sha256": "dd7c897235a8ffa1bdc6c626c1922f5121fadc9093e04d168a1353f3b2b010ec",
+      "verifiedAgainstOfficial": true,
+      "note": "Retrieved directly from the official SEC site; excerpt extracted verbatim in the browser."
+    },
+    {
+      "id": "sec-annuities-what",
+      "kind": "manual",
+      "citation": "SEC, Investor.gov: Annuities",
+      "title": "What annuities are",
+      "act": "U.S. Securities and Exchange Commission investor education (U.S. government work)",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/insurance-products/annuities",
+      "retrievedAt": "2026-11-26",
+      "sha256": "eb5b649a93c301ab578796ff0f6f98e4235ca801ba6cb7b52a215f9469625151",
+      "verifiedAgainstOfficial": true,
+      "note": "Retrieved directly from the official SEC site; excerpt extracted verbatim in the browser."
+    },
+    {
+      "id": "sec-variable-life",
+      "kind": "manual",
+      "citation": "SEC, Investor.gov: Variable Life Insurance",
+      "title": "What variable life insurance is; investment and insurer risk",
+      "act": "U.S. Securities and Exchange Commission investor education (U.S. government work)",
+      "url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/variable-life",
+      "retrievedAt": "2026-11-26",
+      "sha256": "baa0c5f61065be137c87d6c714e17056562ea90d7fef9abcb4ca6696b26a2e6c",
+      "verifiedAgainstOfficial": true,
+      "note": "Retrieved directly from the official SEC site; excerpt extracted verbatim in the browser."
     }
   ]
 }

@@ -44,7 +44,14 @@ function allItems(): { item: ItemDraft; source: string }[] {
 
 function pack(round: string, outDir: string, ids: string[]) {
   const verified = new Set(validateContent(root).verified);
-  const chosen = allItems().filter(({ item }) => (ids.length ? ids.includes(item.id) : !verified.has(item.id)));
+  // Never pack an item version that is already out for review in another round.
+  const pending = new Set<string>();
+  if (existsSync(pendingDir))
+    for (const f of readdirSync(pendingDir).filter((x) => x.endsWith(".json") && !x.endsWith(".snapshot.json")))
+      if (f !== `${round}.json`) for (const k of JSON.parse(readFileSync(join(pendingDir, f), "utf8")) as string[]) pending.add(k);
+  const chosen = allItems().filter(
+    ({ item }) => (ids.length ? ids.includes(item.id) : !verified.has(item.id)) && !pending.has(`${item.id}@${item.version}`),
+  );
   const snaps: Snapshot[] = chosen.map(({ item, source }) => ({
     itemId: item.id,
     version: item.version,
@@ -89,10 +96,14 @@ function ingest(round: string, resultsPath: string, reviewer: string) {
   // Refuse to score an item that changed after it was packed: the review would not describe it.
   const current = new Map(allItems().map(({ item }) => [item.id, item]));
   let agree = 0;
+  let skipped = 0;
   for (const s of snaps) {
     const now = current.get(s.itemId);
-    if (!now || now.version !== s.version || now.stem !== s.stem || [...now.options].sort().join("|") !== [...s.options].sort().join("|"))
-      throw new Error(`${s.itemId} changed after packing; re-pack before ingesting`);
+    if (!now || now.version !== s.version || now.stem !== s.stem || [...now.options].sort().join("|") !== [...s.options].sort().join("|")) {
+      console.warn(`skipping ${s.itemId}@${s.version}: changed after packing, so this review does not describe the current item`);
+      skipped++;
+      continue;
+    }
     const r = results.get(s.itemId);
     if (!r) throw new Error(`no result for ${s.itemId}`);
     const picked = s.options["ABCD".indexOf(r.blind_answer)];
@@ -110,7 +121,7 @@ function ingest(round: string, resultsPath: string, reviewer: string) {
   writeFileSync(join(root, "reviews", `${round}.json`), JSON.stringify(records, null, 2));
   rmSync(join(pendingDir, `${round}.json`), { force: true });
   rmSync(join(pendingDir, `${round}.snapshot.json`), { force: true });
-  console.log(`round ${round}: ${agree}/${snaps.length} blind answers matched the key`);
+  console.log(`round ${round}: ${agree}/${snaps.length - skipped} blind answers matched the key${skipped ? ` (${skipped} stale items skipped)` : ""}`);
 }
 
 const [cmd, round, a, ...rest] = process.argv.slice(2);

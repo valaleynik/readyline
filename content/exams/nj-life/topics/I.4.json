@@ -1,0 +1,223 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "I.4",
+  "facts": [
+    {
+      "id": "I4-01",
+      "statement": "An immediate annuity is bought with a single payment, and income typically starts within one year.",
+      "source": "sec-annuities-kinds",
+      "quote": "With an immediate annuity, you make a single payment to purchase the annuity and typically start receiving income payments within one year of purchase.",
+      "items": [
+        {
+          "id": "I4-01a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": -0.3,
+          "stem": "At age 70, Dana buys an annuity with one lump-sum payment, and her monthly income checks begin a few weeks later. Dana bought:",
+          "options": [
+            "A deferred annuity",
+            "An immediate annuity",
+            "A variable life policy",
+            "A registered index-linked annuity"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, an immediate annuity is bought with a single payment and income typically begins within one year of purchase.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "I4-02",
+      "statement": "In a deferred annuity, the period when money grows before income begins is the accumulation phase.",
+      "source": "sec-annuities-kinds",
+      "quote": "This time period during which your money is allowed to grow is called the accumulation phase.",
+      "items": [
+        {
+          "id": "I4-02a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": -0.2,
+          "stem": "In a deferred annuity, the period during which money grows tax-deferred before income payments begin is called the:",
+          "options": [
+            "Accumulation phase",
+            "Payout phase",
+            "Grace period",
+            "Free-look period"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, the period during which the money is allowed to grow is the accumulation phase. Income payments begin in the payout phase.",
+          "optionStyle": "category",
+          "group": "annuity-phases"
+        }
+      ]
+    },
+    {
+      "id": "I4-03",
+      "statement": "A fixed annuity guarantees at least a minimum interest rate during accumulation; only the minimum is guaranteed.",
+      "source": "sec-annuities-kinds",
+      "quote": "Fixed annuities guarantee your money will earn at least a minimum interest rate during the accumulation phase.",
+      "items": [
+        {
+          "id": "I4-03a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "During the accumulation phase, what does a fixed deferred annuity guarantee?",
+          "options": [
+            "Its current interest rate for the life of the contract",
+            "Returns tied to a stock index",
+            "Withdrawals free of surrender charges",
+            "A floor on credited interest"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, fixed annuities guarantee at least a minimum interest rate. They may credit more, but only the minimum is guaranteed.",
+          "group": "annuity-types"
+        }
+      ]
+    },
+    {
+      "id": "I4-04",
+      "statement": "A fixed indexed annuity's credited interest is guaranteed never to be less than zero, even if the market goes down.",
+      "source": "sec-annuities-kinds",
+      "quote": "The interest rate is guaranteed to never be less than zero, even if the market goes down.",
+      "items": [
+        {
+          "id": "I4-04a",
+          "version": 2,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "The benchmark index for Ray's fixed indexed annuity falls 12% during a one-year term. The interest credited to his annuity for that term is:",
+          "options": [
+            "Negative 12%",
+            "Negative, but limited by a buffer",
+            "Zero, since the credited rate cannot go below zero",
+            "Negative, offset by a guaranteed minimum"
+          ],
+          "answer": 2,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, a fixed indexed annuity's credited interest is guaranteed never to be less than zero, even if the market goes down. Negative crediting limited by a buffer describes a RILA.",
+          "group": "annuity-types"
+        }
+      ]
+    },
+    {
+      "id": "I4-05",
+      "statement": "Unlike a fixed indexed annuity, a registered index-linked annuity (RILA) can lose money when the index performs poorly.",
+      "source": "sec-annuities-kinds",
+      "quote": "However, unlike a fixed index annuity, you can lose money in a RILA.",
+      "items": [
+        {
+          "id": "I4-05a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.7,
+          "stem": "Which type of deferred annuity can credit negative interest, reducing contract value, when its benchmark index performs poorly?",
+          "options": [
+            "Fixed annuity",
+            "Registered index-linked annuity (RILA)",
+            "Fixed indexed annuity",
+            "Immediate annuity"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, a RILA can credit negative interest when the index performs poorly, so the owner can lose money. A fixed indexed annuity's credited interest never falls below zero.",
+          "optionStyle": "category",
+          "group": "annuity-types"
+        }
+      ]
+    },
+    {
+      "id": "I4-06",
+      "statement": "A variable annuity lets the owner direct contributions among mutual funds, with no limits on gains or losses.",
+      "source": "sec-annuities-kinds",
+      "quote": "Variable annuities allow you, during the accumulation phase, to direct your contributions to a menu of different mutual funds. There are no limitations on losses or gains",
+      "items": [
+        {
+          "id": "I4-06a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.1,
+          "stem": "Which type of annuity lets the owner direct contributions among a menu of mutual funds, with no limit on gains or losses?",
+          "options": [
+            "Fixed annuity",
+            "Fixed indexed annuity",
+            "Variable annuity",
+            "Registered index-linked annuity"
+          ],
+          "answer": 2,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, variable annuities let the owner direct contributions to a menu of mutual funds, with no limits on losses or gains.",
+          "optionStyle": "category",
+          "group": "annuity-types"
+        }
+      ]
+    },
+    {
+      "id": "I4-07",
+      "statement": "Of the four main deferred annuity types, RILAs and variable annuities are securities that must register with the SEC.",
+      "source": "sec-annuities-securities",
+      "quote": "Of the four main types of deferred annuities shown above, RILAs and variable annuities are securities that must register with the SEC.",
+      "items": [
+        {
+          "id": "I4-07a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.8,
+          "stem": "Of the four main types of deferred annuities, which two are securities that must register with the SEC?",
+          "options": [
+            "Fixed annuities and fixed indexed annuities",
+            "Fixed annuities and RILAs",
+            "Fixed indexed annuities and variable annuities",
+            "RILAs and variable annuities"
+          ],
+          "answer": 3,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, RILAs and variable annuities are securities that must register with the SEC. Fixed and fixed indexed annuities are insurance products regulated by the states.",
+          "optionStyle": "category"
+        }
+      ]
+    },
+    {
+      "id": "I4-08",
+      "statement": "In a registered MVA annuity, the insurer pays a fixed rate for a period but may adjust contract value, often down, on early withdrawal.",
+      "source": "sec-annuities-securities",
+      "quote": "In a registered MVA annuity, the insurer pays a fixed rate of interest over a specified period, but may adjust the value of your contract, often down, if you withdraw money early.",
+      "items": [
+        {
+          "id": "I4-08a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 1,
+          "stem": "An owner of a registered MVA annuity withdraws money before the end of the specified interest period. What can the insurer do?",
+          "options": [
+            "Change the contract's value, often reducing it",
+            "Pay a higher fixed rate for the rest of the period",
+            "Convert the contract into an index-linked annuity",
+            "Waive any charges, since the rate was fixed"
+          ],
+          "answer": 0,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, a registered MVA annuity pays a fixed rate over a specified period but may adjust the contract value, often down, if money is withdrawn early."
+        }
+      ]
+    },
+    {
+      "id": "I4-09",
+      "statement": "An insurer's obligations under an annuity depend on its financial strength and claims-paying ability.",
+      "source": "sec-annuities-what",
+      "quote": "an insurance company’s obligations under an annuity contract are subject to its financial strength and claims-paying ability",
+      "items": [
+        {
+          "id": "I4-09a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.2,
+          "stem": "The guarantees in an annuity contract are backed primarily by:",
+          "options": [
+            "FDIC deposit insurance",
+            "The issuing insurer's claims-paying ability",
+            "The SEC's investor protection fund",
+            "The performance of a stock index"
+          ],
+          "answer": 1,
+          "explanation": "Per the SEC, Investor.gov: Annuities guide, an insurer's obligations under an annuity are subject to its financial strength and claims-paying ability. Annuities are not FDIC-insured."
+        }
+      ]
+    }
+  ]
+}
