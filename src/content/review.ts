@@ -43,7 +43,13 @@ function allItems(): { item: ItemDraft; source: string }[] {
 }
 
 function pack(round: string, outDir: string, ids: string[]) {
-  const verified = new Set(validateContent(root).verified);
+  const report = validateContent(root);
+  const errors = report.findings.filter((f) => f.level === "error");
+  if (errors.length) {
+    for (const e of errors) console.error(`ERROR ${e.where}  ${e.message}`);
+    throw new Error(`refusing to pack with ${errors.length} validation errors`);
+  }
+  const verified = new Set(report.verified);
   // Never pack an item version that is already out for review in another round.
   const pending = new Set<string>();
   if (existsSync(pendingDir))

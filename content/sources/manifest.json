@@ -651,6 +651,74 @@
       "retrievedAt": "2026-11-27",
       "sha256": "5b88a6a3b47a25aab36bc79396e9ab764988687288540fddf14eb9fdc2458826",
       "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-25-15",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:25-15",
+      "title": "Limitation of actions",
+      "act": "Title 17B Chapter 25, Life Insurance Policy Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-25-15/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "58c622e3659747de82863e644f9f26d33c1e134b87d713285ebb8e1bd298e6cf",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-24-4",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:24-4",
+      "title": "Assignment of policies",
+      "act": "Title 17B Chapter 24, Life and Health Insurance and Annuities: General Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-24-4/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "cfecd341dd2bde8b4631155f601d7ed546de08e491e750da741ca16e45349c58",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-24-10",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:24-10",
+      "title": "Proceeds held by the insurer under agreement",
+      "act": "Title 17B Chapter 24, Life and Health Insurance and Annuities: General Provisions",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-24-10/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "9fe6f781582773715e161924f47d3cc09f0ac568e41adf664c8170d3a18be1f3",
+      "verifiedAgainstOfficial": false
+    },
+    {
+      "id": "njsa-17b-27-72bc",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:27-72(b)-(c)",
+      "title": "Group life: grace period and incontestability (excerpt)",
+      "act": "Title 17B Chapter 27, Group Life Insurance",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-27-72/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "6ba670ce313a2a55731ac7ee2c55e37f173c3d432db807af43b67fb128bb0d14",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt: subsections b and c, extracted verbatim in the browser."
+    },
+    {
+      "id": "njsa-17b-27-72i",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:27-72(i)",
+      "title": "Group life: conversion privilege (excerpt)",
+      "act": "Title 17B Chapter 27, Group Life Insurance",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-27-72/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "0ff214f81c92c6db26c89c0b3afe9061f5b1d158792ad87f077f16331045dd3f",
+      "verifiedAgainstOfficial": false,
+      "note": "Excerpt: subsection i, extracted verbatim in the browser."
+    },
+    {
+      "id": "njsa-17b-27-73",
+      "kind": "statute",
+      "citation": "N.J.S.A. 17B:27-73",
+      "title": "Group life: late notice of conversion right",
+      "act": "Title 17B Chapter 27, Group Life Insurance",
+      "url": "https://codes.findlaw.com/nj/title-17b-insurance/nj-st-sect-17b-27-73/",
+      "retrievedAt": "2026-11-27",
+      "sha256": "9c01fdf0d78da4878b48d383f50340bb8a88ec6e862898e13ff76e297eb06aa2",
+      "verifiedAgainstOfficial": false
     }
   ]
 }

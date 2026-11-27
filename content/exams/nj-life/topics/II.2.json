@@ -99,15 +99,15 @@
         },
         {
           "id": "II2-04b",
-          "version": 1,
+          "version": 2,
           "kind": "application",
           "difficulty": 1,
           "stem": "An insured dies 18 months after the policy was issued. The insurer then discovers a material misrepresentation on the application. Under New Jersey's incontestable provision, the insurer:",
           "options": [
-            "May still contest, since 2 years did not pass during the insured's life",
-            "Must pay, since death makes the policy incontestable",
-            "Must pay, since only nonpayment can be contested",
-            "May contest only after obtaining a court order"
+            "Can still contest, since 2 years did not pass in the insured's life",
+            "Has to pay, since death makes the policy incontestable",
+            "Has to pay, since contests end when the insured dies",
+            "Can contest after it first obtains a court order"
           ],
           "answer": 0,
           "explanation": "N.J.S.A. 17B:25-4 makes a policy incontestable only after it has been in force during the insured's lifetime for 2 years. A death at 18 months means that period never ran, so the policy is still contestable.",
@@ -276,17 +276,17 @@
         },
         {
           "id": "II2-10b",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.7,
           "stem": "Mia's whole life policy has built cash value after 2 full years of premiums, and she asks for a policy loan. Under New Jersey's policy loan provision, the insurer:",
           "options": [
-            "Must grant the loan on request",
             "Is not yet required to offer a loan",
-            "Must lend, but only up to half the cash value",
-            "Must lend without charging interest"
+            "Has to grant the loan on request",
+            "Has to lend up to half the cash value",
+            "Is not allowed to lend until year 5"
           ],
-          "answer": 1,
+          "answer": 0,
           "explanation": "N.J.S.A. 17B:25-8 requires a loan to be available only after 3 full years' premiums have been paid and the policy has a cash surrender value. After 2 years, the requirement has not been triggered.",
           "group": "loan-3yr"
         }
@@ -419,14 +419,14 @@
       "items": [
         {
           "id": "II2-16a",
-          "version": 2,
+          "version": 3,
           "kind": "application",
           "difficulty": 0.9,
           "stem": "A New Jersey life policy with a 2-year incontestable period is reinstated after a lapse. For how long can the insurer contest it because of misstatements in the reinstatement application?",
           "options": [
             "For 2 years after reinstatement",
-            "It cannot be contested at all",
-            "Only for what is left of the original 2 years",
+            "Not at all after reinstatement",
+            "For whatever is left of the original 2 years",
             "For as long as the policy stays in force"
           ],
           "answer": 0,
@@ -615,6 +615,76 @@
           ],
           "answer": 2,
           "explanation": "N.J.S.A. 17B:25-7 requires a policy that offers other dividend options to state which option takes effect automatically if the owner does not elect another."
+        }
+      ]
+    },
+    {
+      "id": "II2-24",
+      "statement": "A life policy may not limit the time to bring a lawsuit to less than 5 years after the cause of action accrues.",
+      "source": "njsa-17b-25-15",
+      "quote": "limits the time within which any action may be commenced to less than 5 years after the cause of action accrues",
+      "items": [
+        {
+          "id": "II2-24a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "A life policy delivered in New Jersey may not limit the time to bring a lawsuit on the policy to less than how long after the cause of action accrues?",
+          "options": [
+            "1 year",
+            "2 years",
+            "3 years",
+            "5 years"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:25-15 bars any life policy from limiting the time to commence an action to less than 5 years after the cause of action accrues."
+        }
+      ]
+    },
+    {
+      "id": "II2-25",
+      "statement": "If the policyholder made no settlement agreement, the insurer may hold the proceeds at maturity under an agreement with the beneficiaries.",
+      "source": "njsa-17b-24-10",
+      "quote": "Upon maturity of a policy, in the event the policyholder has made no such agreement, the insurer shall have the power to hold the proceeds of the policy under an agreement with the beneficiaries.",
+      "items": [
+        {
+          "id": "II2-25a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.8,
+          "stem": "An insured dies without having elected a settlement option. The beneficiary would like the insurer to keep the proceeds and pay them out over time. Under New Jersey law:",
+          "options": [
+            "The policyholder alone could have chosen that",
+            "The insurer and the beneficiary may agree to that",
+            "The insurer may do so after segregating the funds",
+            "The beneficiary has to take a lump sum"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:24-10 lets the insurer hold the proceeds at maturity under an agreement with the beneficiaries when the policyholder made no settlement agreement."
+        }
+      ]
+    },
+    {
+      "id": "II2-26",
+      "statement": "Proceeds held under a settlement agreement need not be segregated; the insurer may hold them as part of its general assets.",
+      "source": "njsa-17b-24-10",
+      "quote": "The insurer shall not be required to segregate the funds so held but may hold them as part of its general assets.",
+      "items": [
+        {
+          "id": "II2-26a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1,
+          "stem": "When a New Jersey life insurer holds policy proceeds under a settlement agreement, the funds:",
+          "options": [
+            "Must be held in a separate trust account",
+            "Must be deposited with the commissioner",
+            "Must be invested only in Treasury securities",
+            "Can be mixed with the insurer's other funds"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:24-10 states that the insurer need not segregate funds held under a settlement agreement and may hold them as part of its general assets.",
+          "retired": "Could not balance option forms without creating ambiguity (insurers may, but need not, segregate funds). II2-25a covers settlement agreements."
         }
       ]
     }

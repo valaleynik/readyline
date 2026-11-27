@@ -56,17 +56,17 @@
       "items": [
         {
           "id": "VI4-03a",
-          "version": 1,
+          "version": 2,
           "kind": "recall",
           "difficulty": 0.9,
           "stem": "A New Jersey insurer delivers a policy that does not comply with Title 17B, so the policy is read as if it complied. What is the effect on the insurer?",
           "options": [
             "It is excused from any penalty",
+            "It may cancel the policy to cure the violation",
             "It may still be penalized for the violation",
-            "It must cancel and reissue the policy",
-            "It must refund all premiums with interest"
+            "It is excused if it reissues the policy"
           ],
-          "answer": 1,
+          "answer": 2,
           "explanation": "N.J.S.A. 17B:25-18.1 reads a noncomplying policy as if it complied, but that does not relieve the insurer from any penalty for the violation.",
           "group": "noncomplying-forms"
         }

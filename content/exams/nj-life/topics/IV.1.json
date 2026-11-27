@@ -1,0 +1,55 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "IV.1",
+  "facts": [
+    {
+      "id": "IV1-01",
+      "statement": "After an assignment, the insurer may deal with the assignee as owner or pledgee until it receives written notice at its home office that the assignment ended.",
+      "source": "njsa-17b-24-4",
+      "quote": "until the insurer has received at its home office written notice of termination of the assignment or pledge",
+      "items": [
+        {
+          "id": "IV1-01a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 0.6,
+          "stem": "A policyowner assigns her life policy to a bank as collateral for a loan. Until the insurer receives written notice at its home office that the assignment has ended, the insurer:",
+          "options": [
+            "May deal with the policyowner and disregard the assignment",
+            "Has to wait for a court to approve the assignment",
+            "Has to suspend the beneficiary designation",
+            "May deal with the bank under the terms of the assignment"
+          ],
+          "answer": 3,
+          "explanation": "N.J.S.A. 17B:24-4 entitles the insurer to deal with the assignee as owner or pledgee under the assignment's terms until it receives written notice of termination at its home office.",
+          "enemies": [
+            "IV1-02a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "IV1-02",
+      "statement": "If the owner alone can change the beneficiary, the policy may be assigned by pledge or by transfer of title through an assignment executed by the owner alone.",
+      "source": "njsa-17b-24-4",
+      "quote": "may be assigned either by pledge or transfer of title, by an assignment executed by the insured or such owner alone and delivered to the insurer",
+      "items": [
+        {
+          "id": "IV1-02a",
+          "version": 3,
+          "kind": "recall",
+          "difficulty": 0.9,
+          "stem": "Under New Jersey law, how may a life policyowner assign the policy, subject to the policy's own terms on assignability?",
+          "options": [
+            "By pledge or by transfer of title",
+            "With the beneficiary's written consent",
+            "By transfer of title, but not by pledge",
+            "To the issuing insurer, but not to a lender"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:24-4 allows such a policy to be assigned by pledge or by transfer of title through an assignment executed by the insured or owner alone and delivered to the insurer, whether or not the assignee is the insurer."
+        }
+      ]
+    }
+  ]
+}

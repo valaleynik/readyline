@@ -1,0 +1,158 @@
+{
+  "exam": "NJ-LIFE",
+  "topic": "VI.2",
+  "facts": [
+    {
+      "id": "VI2-01",
+      "statement": "A group life policy must give the policyholder a 31-day grace period for premiums after the first, with death benefit coverage continuing during it.",
+      "source": "njsa-17b-27-72bc",
+      "quote": "entitled to a grace period of 31 days for the payment of any premium due except the first",
+      "items": [
+        {
+          "id": "VI2-01a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "A New Jersey group life policy must give the policyholder a grace period of how many days for premiums after the first?",
+          "options": [
+            "28",
+            "30",
+            "31",
+            "60"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:27-72(b)-(c) requires a 31-day grace period for premiums after the first, during which death benefit coverage continues.",
+          "optionStyle": "ordered"
+        }
+      ],
+      "contrasts": [
+        "II2-01"
+      ]
+    },
+    {
+      "id": "VI2-02",
+      "statement": "A New Jersey group life policy becomes incontestable, except for nonpayment, after it has been in force for two years from issue.",
+      "source": "njsa-17b-27-72bc",
+      "quote": "the validity of the policy shall not be contested except for nonpayment of premiums after it has been in force for two years from its date of issue",
+      "items": [
+        {
+          "id": "VI2-02a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 0.3,
+          "stem": "A New Jersey group life policy's validity may not be contested, except for nonpayment of premiums, once it has been in force for:",
+          "options": [
+            "1 year",
+            "2 years",
+            "3 years",
+            "5 years"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:27-72(b)-(c) bars contesting the group policy's validity, except for nonpayment of premiums, after it has been in force for two years from issue.",
+          "enemies": [
+            "II2-04a",
+            "II1-01a"
+          ]
+        }
+      ],
+      "contrasts": [
+        "II2-04"
+      ]
+    },
+    {
+      "id": "VI2-03",
+      "statement": "When group coverage ends because employment or eligible membership ends, the person may convert to an individual policy without evidence of insurability by applying and paying the first premium within 31 days.",
+      "source": "njsa-17b-27-72i",
+      "quote": "without evidence of insurability, an individual policy of life insurance without disability or other supplementary benefits, provided application for the individual policy shall be made, and the first premium paid to the insurer, within 31 days after termination",
+      "items": [
+        {
+          "id": "VI2-03a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 0.3,
+          "stem": "An employee leaves her job and loses her group life coverage. To convert to an individual policy without evidence of insurability, she must apply and pay the first premium within:",
+          "options": [
+            "15 days",
+            "31 days",
+            "60 days",
+            "90 days"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:27-72(i) allows conversion without evidence of insurability if the application is made and the first premium paid within 31 days after termination.",
+          "enemies": [
+            "VI2-06a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "VI2-04",
+      "statement": "The converted policy's premium is the insurer's customary rate for the form, amount, risk class and the person's attained age when the individual policy takes effect.",
+      "source": "njsa-17b-27-72i",
+      "quote": "(3) The premium on the individual policy shall be at the insurer's then customary rate applicable to the form and amount of the individual policy, to the class of risk to which the person then belongs, and to the individual age attained on the effective date of the individual policy.",
+      "items": [
+        {
+          "id": "VI2-04a",
+          "version": 2,
+          "kind": "recall",
+          "difficulty": 0.6,
+          "stem": "When a former employee, Dana, converts group life coverage to an individual policy, the premium is based on:",
+          "options": [
+            "The age Dana has reached when the individual policy takes effect",
+            "The age at which Dana first joined the group plan",
+            "The average age of the group's members",
+            "A flat conversion rate set by the commissioner"
+          ],
+          "answer": 0,
+          "explanation": "N.J.S.A. 17B:27-72(i)(3) sets the converted policy's premium at the insurer's customary rate for the form, amount, risk class and the age attained on the individual policy's effective date."
+        }
+      ]
+    },
+    {
+      "id": "VI2-05",
+      "statement": "The converted policy may not exceed the amount of group life insurance that ended, less any new group coverage the person becomes eligible for within 31 days.",
+      "source": "njsa-17b-27-72i",
+      "quote": "(2) The individual policy shall be in an amount not in excess of the amount of life insurance that ceases because of termination",
+      "items": [
+        {
+          "id": "VI2-05a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 0.6,
+          "stem": "An employee with $150,000 of group life coverage leaves his job and has no other group coverage. Without evidence of insurability, the most he can convert to an individual policy is:",
+          "options": [
+            "$50,000",
+            "$100,000",
+            "$150,000",
+            "$300,000"
+          ],
+          "answer": 2,
+          "explanation": "N.J.S.A. 17B:27-72(i)(2) limits the converted policy to the amount of life insurance that ceased because of termination, less any new group coverage within 31 days."
+        }
+      ]
+    },
+    {
+      "id": "VI2-06",
+      "statement": "If a person is not told of the conversion right at least 15 days before the period ends, the period extends to 15 days after notice, but never more than 60 days past the original deadline.",
+      "source": "njsa-17b-27-73",
+      "quote": "This additional period shall expire 15 days after the individual is given notice but in no event shall the additional period extend beyond 60 days after the expiration date of the period provided in the policy.",
+      "items": [
+        {
+          "id": "VI2-06a",
+          "version": 1,
+          "kind": "application",
+          "difficulty": 1.2,
+          "stem": "A former employee was never told of her group life conversion right before the conversion period ended. She finally receives notice 20 days after that period ended. Under New Jersey law, how long does she now have to convert?",
+          "options": [
+            "No time, since the period has already ended",
+            "15 days after she receives the notice",
+            "31 days after she receives the notice",
+            "60 days after she receives the notice"
+          ],
+          "answer": 1,
+          "explanation": "N.J.S.A. 17B:27-73 extends the conversion period to 15 days after notice when notice was not given at least 15 days before the period expired, but never beyond 60 days after the original deadline. Here that gives her 15 days from notice."
+        }
+      ]
+    }
+  ]
+}

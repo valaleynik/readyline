@@ -114,6 +114,13 @@ export function validateContent(root: string): ValidationReport {
               warn(w, `distractor ${i} uses "always/never", a test-wise giveaway`);
           });
 
+          // Test-wiseness: the key should not be the only option free of limiting words.
+          const LIMITING = /\b(only (if|when|for|to|with|after|by|in|while|a|the)|must|never|always|cannot)\b/i;
+          const keyLimited = LIMITING.test(item.options[item.answer]!);
+          const limitedDistractors = item.options.filter((o, i) => i !== item.answer && LIMITING.test(o)).length;
+          if (!keyLimited && limitedDistractors >= 2 && item.optionStyle !== "ordered")
+            warn(w, `key is the only option without limiting words (${limitedDistractors} distractors use only/must/never/etc.)`);
+
           // Test-wiseness: the key should not be the only option that echoes the source wording.
           const qt = tokens(fact.quote);
           const echo = (o: string) => {

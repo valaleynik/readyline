@@ -267,17 +267,17 @@
       "items": [
         {
           "id": "V5-11a",
-          "version": 1,
+          "version": 3,
           "kind": "recall",
           "difficulty": 0.6,
           "stem": "When must a member insurer give the policyowner the guaranty association's summary document?",
           "options": [
-            "No later than the day the policy is handed over",
             "Within 30 days after the policy is delivered",
-            "Only if the policyowner requests it in writing",
-            "Only after the insurer becomes impaired"
+            "Only once the policyowner asks for it",
+            "After the insurer becomes impaired",
+            "No later than the day the policy is handed over"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "N.J.S.A. 17B:32A-17 bars a member insurer from delivering a covered policy unless the summary document is delivered prior to or at the time of policy delivery."
         }
       ]

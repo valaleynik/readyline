@@ -829,17 +829,17 @@
       "items": [
         {
           "id": "V3-32a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": -0.4,
           "stem": "During the licensing exam, a candidate is caught using notes hidden in a jacket. Under New Jersey law, this conduct is:",
           "options": [
-            "Only a reason to fail the current exam attempt",
-            "Permitted if the notes came from an approved course",
+            "A reason to fail the current attempt, and nothing more",
             "A ground for the commissioner to refuse the license",
-            "Reportable only to the testing vendor"
+            "Permitted if the notes came from an approved course",
+            "A matter for the testing vendor alone"
           ],
-          "answer": 2,
+          "answer": 1,
           "explanation": "N.J.S.A. 17:22A-40 lists improperly using notes or other reference material to complete the licensing exam as a cause to refuse, suspend or revoke a license."
         }
       ]
@@ -875,17 +875,17 @@
       "items": [
         {
           "id": "V3-34a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.4,
           "stem": "A producer ignores a court order requiring child support payments. Can this affect the producer's license?",
           "options": [
-            "Yes, it is a listed ground for action against the license",
             "No, because family law matters are unrelated to licensing",
-            "Only if the producer also misses an insurance premium",
-            "Only if a client files a complaint"
+            "Yes, but just when a client also complains",
+            "No, unless the producer also misses a premium payment",
+            "Yes, it is a listed ground for action against the license"
           ],
-          "answer": 0,
+          "answer": 3,
           "explanation": "N.J.S.A. 17:22A-40 lists failing to comply with an administrative or court order imposing a child support obligation as a cause for license action."
         }
       ]
@@ -967,17 +967,17 @@
       "items": [
         {
           "id": "V3-38a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.4,
           "stem": "A producer under investigation surrenders his license, hoping to avoid discipline. What is the effect on the commissioner's authority?",
           "options": [
-            "The investigation must end",
+            "The commissioner may still impose penalties",
+            "The investigation has to end",
             "Authority passes to the appointing insurer",
-            "Only a court may act from then on",
-            "The commissioner may still impose penalties"
+            "A court takes over the matter"
           ],
-          "answer": 3,
+          "answer": 0,
           "explanation": "N.J.S.A. 17:22A-40 preserves the commissioner's authority to enforce the law and impose penalties even if the license was surrendered or lapsed."
         }
       ]
@@ -1013,15 +1013,15 @@
       "items": [
         {
           "id": "V3-40a",
-          "version": 1,
+          "version": 2,
           "kind": "scenario",
           "difficulty": 0.5,
           "stem": "A retired producer no longer holds a license, but was licensed when she sold several policies. May she receive renewal commissions on those policies?",
           "options": [
             "No, because commissions stop when the license ends",
             "Yes, because she was licensed at the time of the sale",
-            "Only if she reinstates her license",
-            "Only for 12 months after she retires"
+            "No, unless she reinstates her license",
+            "Yes, but just for 12 months after she retires"
           ],
           "answer": 1,
           "explanation": "N.J.S.A. 17:22A-41 allows renewal or deferred commissions to be paid to a person who was properly licensed at the time of the sale."
