@@ -1,0 +1,56 @@
+[
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "blind_solve",
+    "passed": true,
+    "reviewer": "blind-subagent-r48",
+    "detail": "picked \"Cannot end that policy year merely because the rate went up\"",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "ambiguity",
+    "passed": true,
+    "reviewer": "blind-subagent-r48",
+    "detail": "N.J.A.C. 11:4-41.3(b)7iii(2) says that when the rate is redetermined more often than annually, the policy shall not terminate in any policy year solely because of a change in the interest rate during that year. The stem's quarterly reset and rate-increase-alone facts trigger exactly this rule, so no second option is defensible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "distractor",
+    "passed": true,
+    "reviewer": "blind-subagent-r48",
+    "detail": "all distractors clearly wrong",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "testwise",
+    "passed": true,
+    "reviewer": "blind-subagent-r48",
+    "detail": "No strong form cue. A is the only option that is not a termination or conversion outcome, but the other options are parallel and plausible.",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "citation",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "exact source quote and cited explanation",
+    "at": "2026-11-27"
+  },
+  {
+    "itemId": "II2-62a",
+    "version": 2,
+    "check": "dedupe",
+    "passed": true,
+    "reviewer": "validator",
+    "detail": "no stem above 0.8 similarity",
+    "at": "2026-11-27"
+  }
+]

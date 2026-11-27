@@ -1050,6 +1050,155 @@
           "explanation": "N.J.A.C. 11:4-41.3(b) requires a variable loan rate to be redetermined no less than once every 12 months but no more often than once every three months."
         }
       ]
+    },
+    {
+      "id": "II2-60",
+      "statement": "With a variable loan rate, the insurer must notify the policyholder in writing at least 10 days before any rate increase takes effect.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "Notify the policyholder in writing at least 10 days prior to the effective date of any increase in the interest rate.",
+      "items": [
+        {
+          "id": "II2-60a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A New Jersey policy has a variable loan interest rate, and the insurer plans to raise the rate. How much advance written notice must the policyholder get?",
+          "options": [
+            "None, if the policy discloses the rate method",
+            "At least 30 days before the increase takes effect",
+            "At least 60 days before the next policy anniversary",
+            "At least 10 days before the increase takes effect"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 requires the insurer to notify the policyholder in writing at least 10 days before the effective date of any increase in a variable loan rate.",
+          "enemies": [
+            "II2-61a"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "II2-61",
+      "statement": "With a variable loan rate, the insurer must give written notice of the initial rate no later than 30 days after a cash loan.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "but in no event later than 30 days following the loan",
+      "items": [
+        {
+          "id": "II2-61a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.5,
+          "stem": "A New Jersey policyholder takes a cash loan from a policy with a variable loan interest rate. The insurer must notify her in writing of the initial loan rate no later than:",
+          "options": [
+            "The next policy anniversary",
+            "10 days after the loan",
+            "30 days after the loan",
+            "90 days after the loan"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 requires written notice of the initial rate at the time of a cash loan or as soon as practicable, but no later than 30 days following the loan.",
+          "optionStyle": "ordered"
+        }
+      ]
+    },
+    {
+      "id": "II2-62",
+      "statement": "If the loan rate is redetermined more often than annually, the policy may not terminate in a policy year solely because of a rate change during that year.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "the policy shall not terminate in any policy year solely as a result of a change in the interest rate during that year",
+      "items": [
+        {
+          "id": "II2-62a",
+          "version": 2,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "A policy's variable loan rate is reset every quarter. Midway through a policy year, a rate increase alone would push the loan balance past the loan value. Under New Jersey rules, the policy:",
+          "options": [
+            "Cannot end that policy year merely because the rate went up",
+            "Terminates once the loan balance exceeds the loan value",
+            "Converts automatically to reduced paid-up insurance",
+            "Terminates after a 10-day notice"
+          ],
+          "answer": 0,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 requires a policy whose loan rate is redetermined more often than annually to state that it will not terminate in any policy year solely because of an interest rate change during that year."
+        }
+      ]
+    },
+    {
+      "id": "II2-63",
+      "statement": "A universal life (account value) policy with a reinstatement provision must offer reinstatement for 3 years from default, and may not charge monthly deductions for the default period beyond the grace period.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "Monthly deductions cannot be charged for the period of default beyond the grace period.",
+      "items": [
+        {
+          "id": "II2-63a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.8,
+          "stem": "A universal life policy lapsed 14 months ago, and the owner now reinstates it. Under New Jersey rules, which charge may the insurer NOT require for reinstatement?",
+          "options": [
+            "The monthly deduction for the grace period",
+            "Monthly deductions for the months of lapse after the grace period",
+            "Monthly deductions paid in advance for a stated number of future months",
+            "Evidence of insurability, if the provision states it"
+          ],
+          "answer": 1,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 lets the insurer require advance monthly deductions and the grace-period deduction, but bars charging monthly deductions for the period of default beyond the grace period. Reinstatement is offered for 3 years from default."
+        }
+      ]
+    },
+    {
+      "id": "II2-64",
+      "statement": "A policy form may not let the insurer arbitrarily refuse premium payments.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "Forms shall not include any provision which permits the insurer to arbitrarily refuse premium payments.",
+      "items": [
+        {
+          "id": "II2-64a",
+          "version": 1,
+          "kind": "recall",
+          "difficulty": 1.2,
+          "stem": "Under New Jersey life policy form standards, which provision is NOT allowed?",
+          "options": [
+            "A provision accepting premiums by credit card",
+            "A provision stating upper and lower premium payment limits",
+            "A provision letting the insurer arbitrarily refuse premium payments",
+            "A provision for automatic premium loans"
+          ],
+          "answer": 2,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 bars any provision that permits the insurer to arbitrarily refuse premium payments, while allowing credit card payment and stated premium limits.",
+          "optionStyle": "category",
+          "retired": "Key gives itself away (only option that is arbitrary). No balanced rewrite."
+        }
+      ]
+    },
+    {
+      "id": "II2-65",
+      "statement": "Premiums may be paid by credit card, and the premium counts as paid when the credit card facility is billed.",
+      "source": "njac-11-4-41-3b2",
+      "quote": "the premium will be considered paid when the credit card facility is billed",
+      "items": [
+        {
+          "id": "II2-65a",
+          "version": 1,
+          "kind": "scenario",
+          "difficulty": 1.5,
+          "stem": "A New Jersey policyholder pays a premium by credit card on the last day of the grace period, and the card issuer settles with the insurer a week later. When is the premium considered paid?",
+          "options": [
+            "When the insurer receives the settled funds",
+            "When the policyholder pays the card bill",
+            "At the next monthly statement",
+            "When the credit card facility is billed"
+          ],
+          "answer": 3,
+          "explanation": "N.J.A.C. 11:4-41.3(b)7-9 allows premium payment by credit card, with the premium considered paid when the credit card facility is billed.",
+          "optionStyle": "category",
+          "enemies": [
+            "II2-50a"
+          ],
+          "retired": "Rule is a filing certification, not a policy provision; low exam value and oddly worded for candidates."
+        }
+      ]
     }
   ]
 }
