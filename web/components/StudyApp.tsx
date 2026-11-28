@@ -9,7 +9,7 @@
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Bank, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
-import { calibration, dueFacts, progress, sessionPick, type SessionStart, remainingEstimate, nextDueAt } from "../../src/session/daily";
+import { calibration, dueFacts, progress, sessionPick, type SessionStart, remainingEstimate, nextDueAt, startOfDay } from "../../src/session/daily";
 import { studyPlan, type StudyPlan } from "../../src/session/plan";
 import { passChance, type CheckName } from "../../src/session/passchance";
 import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus } from "../../src/session/baseline";
@@ -38,6 +38,8 @@ import type { Account } from "../lib/agency";
 import { SiteHeader } from "./brand";
 import { planLine, toInput } from "../lib/words";
 import Onboarding from "./Onboarding";
+import Home from "./Home";
+import { AgencyBox, CalibrationGrid, PassChanceCard, ResultBanner, ResultForm } from "./Panels";
 import { FeedbackCard, QuestionCard, REASON_LABEL as REASONS, SessionBar, SessionDone } from "./Session";
 import { needsOnboarding } from "../../src/session/onboarding";
 import type { ReactNode } from "react";
@@ -215,8 +217,10 @@ export default function StudyApp({
   }
 
   function start(st: StudySettings = settings) {
-    const s = { startAnswers: state.answers, startedAt: Date.now() };
-    const q = studyPlan(state, bank, st, s.startedAt).newPerDay;
+    const t = Date.now();
+    // the new-fact quota counts from the start of the day, so a second sitting doesn't reset it
+    const s = { startAnswers: state.answers, startedAt: t, dayStartedAt: startOfDay(t) };
+    const q = studyPlan(state, bank, st, t).newPerDay;
     setSession(s);
     setQuota(q);
     barMax.current = 0;
@@ -322,20 +326,23 @@ export default function StudyApp({
             }}
           />
         )}
-        {view.kind === "home" && loaded && ready && !needsOnboarding(settings, events) && <Home
+        {view.kind === "home" && loaded && ready && !needsOnboarding(settings, events) && (
+          <Home
+            data={data}
             state={state}
             bank={bank}
             events={events}
             settings={settings}
+            results={results}
+            account={account}
             onSettings={setSettings}
             onStart={() => start()}
             onBaseline={() => nextBaseline(events, state)}
-            results={results}
             onReport={report}
             onMock={beginMock}
-            account={account}
             onOpenMock={(id) => setView({ kind: "mockDone", id })}
-          />}
+          />
+        )}
         {(view.kind === "question" || view.kind === "feedback") && prog && (
           <SessionBar
             fraction={barMax.current}
@@ -425,239 +432,6 @@ export default function StudyApp({
   );
 }
 
-const CHECK_LABELS: Record<CheckName, string> = {
-  coverage: "Every section practiced",
-  certainty: "Enough answers to be sure about you",
-  selfCheck: "Predictions match your results",
-  recency: "Studied in the last week",
-};
-
-/** The pass chance, shown only once the model has earned it for this learner. */
-function PassChanceCard({ bank, events, examAt }: { bank: Bank; events: AnswerEvent[]; examAt?: number }) {
-  const pc = useMemo(() => passChance(events, bank, Date.now(), examAt), [events, bank, examAt]);
-  const onDay = examAt && examAt > Date.now();
-  const title = onDay ? "Chance of passing on exam day" : "Chance of passing today";
-  if (pc.show) {
-    return (
-      <div className="chance">
-        <div className="chanceTitle">{title}</div>
-        <div className="chanceValue">about {pct(pc.chance!)}</div>
-        <p className="chanceNote">
-          Likely score {pc.scoreRange![0]} to {pc.scoreRange![1]} of {pc.scoredItems}. Passing is {pc.passScore}.
-        </p>
-        <p className="chanceNote">
-          How we know: on your last {pc.check.checked} answers the model expected {pct(pc.check.predicted)} correct and you
-          got {pct(pc.check.actual)}.
-        </p>
-      </div>
-    );
-  }
-  const focus = pc.focus ? bank.blueprint.sections.find((s) => s.code === pc.focus) : null;
-  return (
-    <div className="chance locked">
-      <div className="chanceTitle">{title}</div>
-      <div className="chanceValue">Not yet</div>
-      <p className="chanceNote">
-        {pc.needMore === null
-          ? "Your recent results don't match what the model predicted, so it won't guess yet. It adjusts as you keep studying."
-          : `About ${pc.needMore} more answers${focus ? `, mostly in ${focus.code}. ${focus.name}` : ""}, and we can give you a number you can trust.`}
-      </p>
-      <ul className="checks">
-        {pc.checks.map((c) => (
-          <li key={c.name} className={c.ok ? "ok" : ""}>
-            {c.ok ? "✓" : "○"} {CHECK_LABELS[c.name]}
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function Home({
-  state,
-  bank,
-  events,
-  settings,
-  onSettings,
-  onStart,
-  onBaseline,
-  results,
-  onReport,
-  onMock,
-  onOpenMock,
-  account,
-}: {
-  state: LearnerState;
-  bank: Bank;
-  events: AnswerEvent[];
-  settings: StudySettings;
-  onSettings: (s: StudySettings) => void;
-  onStart: () => void;
-  onBaseline: () => void;
-  results: ExamResult[];
-  onReport: (r: ExamResult) => void;
-  onMock: () => void;
-  onOpenMock: (id: string) => void;
-  account?: Account;
-}) {
-  const active = activeMock(settings);
-  const advice = mockAdvice(state, bank, settings, Date.now());
-  const pastMocks = (settings.mocks ?? []).filter((m) => m.submittedAt);
-  const now = Date.now();
-  const ask = shouldAskResult(settings, results, now);
-  const last = latestResult(results);
-  const [manual, setManual] = useState(false);
-  const bStatus = baselineStatus(state, bank, events, settings, Date.now());
-  const due = dueFacts(state, bank, Date.now()).length;
-  const studied = Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length;
-  const totalFacts = bank.factTopic.size;
-  const plan = studyPlan(state, bank, settings, Date.now());
-  return (
-    <section className="home">
-      {ask && (
-        <ResultForm
-          title="How did the exam go?"
-          takenAt={settings.examAt!}
-          onSave={onReport}
-          onLater={() => onSettings(skipResultPrompt(settings, now))}
-        />
-      )}
-      {!ask && last && <ResultBanner r={last} hasDate={!!settings.examAt} />}
-      <h1>{state.answers ? "Ready for today's session" : "Start studying for the NJ Life exam"}</h1>
-      <p className="lede">
-        {state.answers
-          ? `${due} facts due for review, plus up to ${plan.newPerDay} new ones. The session ends when today's list is clear.`
-          : `Each session mixes new material with reviews timed to just before you'd forget.`}
-      </p>
-      <div className="plan">
-        <p className="planLine">{planLine(plan)}</p>
-        {/* Temporary: the exam date moves into onboarding. This writes the same setting. */}
-        <label className="dateField">
-          <span>Exam date (temporary field)</span>
-          <input
-            type="date"
-            value={toInput(settings.examAt)}
-            onChange={(e) => {
-              const v = e.target.value;
-              if (!v) return onSettings({ ...settings, examAt: undefined });
-              const [y, m, d] = v.split("-").map(Number);
-              onSettings({ ...settings, examAt: new Date(y!, m! - 1, d!, 9, 0, 0).getTime() });
-            }}
-          />
-        </label>
-      </div>
-      {bStatus === "needed" || bStatus === "in_progress" ? (
-        <div className="row">
-          <button className="primary" onClick={onBaseline} autoFocus>
-            {bStatus === "needed" ? `Take the baseline test (${BASELINE_LENGTH} questions)` : "Finish the baseline test"}
-          </button>
-          {bStatus === "needed" && (
-            <button className="secondary" onClick={() => onSettings({ ...settings, baselineSkipped: true })}>
-              Skip it
-            </button>
-          )}
-        </div>
-      ) : (
-        <button className="primary" onClick={onStart} autoFocus>
-          {state.answers ? "Start today's session" : "Start first session"}
-        </button>
-      )}
-      {state.answers > 0 && (
-        <div className="stats">
-          <Stat label="Facts studied" value={`${studied} of ${totalFacts}`} />
-        </div>
-      )}
-      {state.answers > 0 && <PassChanceCard bank={bank} events={events} examAt={settings.examAt} />}
-      {state.answers > 0 && <CalibrationGrid events={events} title="How well your confidence matches your answers" />}
-      <div className="mockBox">
-        <div className="chanceTitle">Mock exam</div>
-        {active ? (
-          <>
-            <p className="chanceNote">
-              In progress: {Object.keys(active.answers).length} of {bank.blueprint.scoredItems} answered,{" "}
-              {Math.max(0, Math.ceil((mockDeadline(bank, active) - Date.now()) / 60_000))} minutes left. The clock keeps running.
-            </p>
-            <button className="primary" onClick={onMock}>
-              Resume mock exam
-            </button>
-          </>
-        ) : (
-          <>
-            <p className="chanceNote">
-              {advice === "final"
-                ? "Recommended now: a full rehearsal a few days before the real thing."
-                : advice === "first"
-                  ? "Recommended: you've studied enough for a full practice exam to mean something."
-                  : `${bank.blueprint.scoredItems} questions, ${bank.blueprint.timeMinutes / 60} hours, no feedback until you submit. Same mix as the real exam.`}
-            </p>
-            <button className={advice ? "primary" : "secondary"} onClick={onMock}>
-              Take a mock exam
-            </button>
-          </>
-        )}
-        {pastMocks.length > 0 && (
-          <ul className="pastMocks">
-            {pastMocks.map((m) => (
-              <li key={m.id}>
-                <button className="link" onClick={() => onOpenMock(m.id)}>
-                  {new Date(m.startedAt).toLocaleDateString(undefined, { month: "short", day: "numeric" })}: review
-                </button>
-              </li>
-            ))}
-          </ul>
-        )}
-      </div>
-      {account && <AgencyBox account={account} />}
-      {!ask &&
-        (manual ? (
-          <ResultForm title="Report your exam result" onSave={(r) => (onReport(r), setManual(false))} onLater={() => setManual(false)} />
-        ) : (
-          <button className="link tookExam" onClick={() => setManual(true)}>
-            I took the exam
-          </button>
-        ))}
-    </section>
-  );
-}
-
-function Stat({ label, value, note }: { label: string; value: string; note?: string }) {
-  return (
-    <div className="stat">
-      <div className="statValue">{value}</div>
-      <div className="statLabel">{label}</div>
-      {note && <div className="statNote">{note}</div>}
-    </div>
-  );
-}
-
-
-
-
-function CalibrationGrid({ events, title }: { events: AnswerEvent[]; title: string }) {
-  const c = calibration(events);
-  const cells = [
-    { k: "Sure and right", v: c.sureRight, note: "Solid", cls: "solid" },
-    { k: "Sure and wrong", v: c.sureWrong, note: "Danger zone: you think you know it", cls: "danger" },
-    { k: "Guessing and right", v: c.guessRight, note: "Lucky: needs review", cls: "lucky" },
-    { k: "Guessing and wrong", v: c.guessWrong, note: "Still learning", cls: "learning" },
-  ];
-  if (c.sureRight + c.sureWrong + c.guessRight + c.guessWrong === 0) return null;
-  return (
-    <div className="calib">
-      <div className="calibTitle">{title}</div>
-      <div className="grid">
-        {cells.map((x) => (
-          <div key={x.k} className={`cell ${x.cls}`}>
-            <div className="cellValue">{x.v}</div>
-            <div className="cellLabel">{x.k}</div>
-            <div className="cellNote">{x.note}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 function BaselineDone({ state, bank, events, onStart }: { state: LearnerState; bank: Bank; events: AnswerEvent[]; onStart: () => void }) {
   const r = useMemo(() => baselineResult(state, bank, events), [state, bank, events]);
   return (
@@ -694,79 +468,6 @@ function BaselineDone({ state, bank, events, onStart }: { state: LearnerState; b
         Start your first session
       </button>
     </section>
-  );
-}
-
-function ResultBanner({ r, hasDate }: { r: ExamResult; hasDate: boolean }) {
-  const day = new Date(r.takenAt).toLocaleDateString(undefined, { month: "long", day: "numeric" });
-  return (
-    <div className={`resultBanner ${r.passed ? "passed" : "failed"}`}>
-      {r.passed
-        ? `You passed the NJ Life exam on ${day}${r.score !== undefined ? ` with ${r.score}` : ""}. Congratulations.`
-        : `Not this time (${day}${r.score !== undefined ? `, ${r.score}` : ""}). Your progress carries over.${hasDate ? "" : " Set your retake date below to get a new plan."}`}
-    </div>
-  );
-}
-
-/** Pass or fail, optional score; the date only when reporting by hand. */
-function ResultForm({
-  title,
-  takenAt,
-  onSave,
-  onLater,
-}: {
-  title: string;
-  takenAt?: number;
-  onSave: (r: ExamResult) => void;
-  onLater: () => void;
-}) {
-  const [passed, setPassed] = useState<boolean | null>(null);
-  const [score, setScore] = useState("");
-  const [date, setDate] = useState(toInput(takenAt ?? Date.now()));
-  const n = score.trim() === "" ? undefined : Number(score);
-  const scoreOk = n === undefined || (Number.isInteger(n) && n >= 0 && n <= 100);
-  const when = () => {
-    if (takenAt) return takenAt;
-    const [y, m, d] = date.split("-").map(Number);
-    return new Date(y!, m! - 1, d!, 9).getTime();
-  };
-  return (
-    <div className="resultForm">
-      <div className="chanceTitle">{title}</div>
-      <div className="row">
-        <button className={passed === true ? "primary" : "secondary"} aria-pressed={passed === true} onClick={() => setPassed(true)}>
-          Passed
-        </button>
-        <button className={passed === false ? "primary" : "secondary"} aria-pressed={passed === false} onClick={() => setPassed(false)}>
-          Didn't pass
-        </button>
-      </div>
-      {passed !== null && (
-        <>
-          {!takenAt && (
-            <label className="dateField">
-              <span>Exam date</span>
-              <input type="date" value={date} max={toInput(Date.now())} onChange={(e) => setDate(e.target.value)} />
-            </label>
-          )}
-          <label className="dateField">
-            <span>Score on your report (optional)</span>
-            <input inputMode="numeric" value={score} onChange={(e) => setScore(e.target.value)} placeholder="e.g. 78" />
-          </label>
-          {!scoreOk && <p className="error">Enter a whole number from 0 to 100, or leave it blank.</p>}
-        </>
-      )}
-      <div className="row">
-        {passed !== null && (
-          <button className="primary" disabled={!scoreOk || (!takenAt && !date)} onClick={() => onSave(newResult(when(), passed, n, Date.now()))}>
-            Save result
-          </button>
-        )}
-        <button className="link" onClick={onLater}>
-          {takenAt ? "Ask me later" : "Cancel"}
-        </button>
-      </div>
-    </div>
   );
 }
 
@@ -998,54 +699,5 @@ function MockDone({
         Back to home
       </button>
     </section>
-  );
-}
-
-function AgencyBox({ account }: { account: Account }) {
-  const linked = account.memberships.find((m) => m.role === "learner");
-  const [code, setCode] = useState("");
-  const [error, setError] = useState<string | null>(null);
-  const [busy, setBusy] = useState(false);
-  if (linked) {
-    return (
-      <div className="mockBox">
-        <div className="chanceTitle">Agency</div>
-        <p className="chanceNote">
-          Linked to {linked.orgName}. They can see your progress summary (exam date, pace, pass chance, mock scores), not your
-          individual answers.
-        </p>
-        {error && <p className="error">{error}</p>}
-        <button
-          className="link"
-          onClick={async () => {
-            if (!confirm(`Leave ${linked.orgName}? Your progress stays with you.`)) return;
-            setError(await account.leave(linked.orgId));
-          }}
-        >
-          Leave agency
-        </button>
-      </div>
-    );
-  }
-  return (
-    <form
-      className="mockBox"
-      onSubmit={async (e) => {
-        e.preventDefault();
-        setBusy(true);
-        setError(await account.join(code));
-        setBusy(false);
-      }}
-    >
-      <div className="chanceTitle">Studying with an agency?</div>
-      <label className="dateField">
-        <span>Agency code</span>
-        <input value={code} onChange={(e) => setCode(e.target.value)} placeholder="RDY-XXXX-XXXX" autoCapitalize="characters" />
-      </label>
-      {error && <p className="error">{error}</p>}
-      <button className="secondary" type="submit" disabled={busy || code.trim().length < 8}>
-        {busy ? "Joining..." : "Join"}
-      </button>
-    </form>
   );
 }

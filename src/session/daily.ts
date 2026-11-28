@@ -17,6 +17,17 @@ export interface SessionStart {
   /** learner.answers when the session began */
   startAnswers: number;
   startedAt: number;
+  /**
+   * Start of the learner's day. The new-fact quota counts from here, so a second sitting the
+   * same day doesn't get a fresh quota. Absent: counted from startedAt (one sitting).
+   */
+  dayStartedAt?: number;
+}
+
+/** Local midnight of the day containing t. */
+export function startOfDay(t: number): number {
+  const d = new Date(t);
+  return new Date(d.getFullYear(), d.getMonth(), d.getDate()).getTime();
 }
 
 export interface SessionProgress {
@@ -43,14 +54,14 @@ function sessionEvents(events: AnswerEvent[], start: SessionStart): AnswerEvent[
   return events.filter((e) => e.at >= start.startedAt);
 }
 
-/** Facts first answered during this session. */
+/** Facts first answered today (or this session, without a day start). */
 function newFactsThisSession(events: AnswerEvent[], bank: Bank, start: SessionStart): number {
   const before = new Set<string>();
   const fresh = new Set<string>();
   for (const e of events) {
     const f = bank.items.get(e.itemKey)?.factId;
     if (!f) continue;
-    if (e.at < start.startedAt) before.add(f);
+    if (e.at < (start.dayStartedAt ?? start.startedAt)) before.add(f);
     else if (!before.has(f)) fresh.add(f);
   }
   return fresh.size;

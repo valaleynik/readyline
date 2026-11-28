@@ -19,7 +19,7 @@ const bar = () => screen.getByRole("progressbar");
 describe("study session screens", () => {
   it("bar: starts empty, fills forward, floats a +1 per answer; feedback reads top to bottom", async () => {
     render(<StudyApp data={data} store={store() as unknown as EventStore} />);
-    await act(async () => { fireEvent.click(await screen.findByText("Start first session")); });
+    await act(async () => { fireEvent.click(await screen.findByText("Start today's session")); });
     expect(bar().getAttribute("aria-valuenow")).toBe("0");
     expect(screen.getByText(/About \d+ left/)).not.toBeNull();
     expect(document.querySelector(".ss-bar__plus")).toBeNull();
@@ -46,7 +46,7 @@ describe("study session screens", () => {
 
   it("end of session: stats, what changed, when to come back", async () => {
     render(<StudyApp data={data} store={store() as unknown as EventStore} />);
-    await act(async () => { fireEvent.click(await screen.findByText("Start first session")); });
+    await act(async () => { fireEvent.click(await screen.findByText("Start today's session")); });
     for (let i = 0; i < 80 && !screen.queryByText(/Today's list is clear|enough for one sitting/); i++) {
       fireEvent.click(options()[0]!);
       await act(async () => { fireEvent.click(screen.getByRole("button", { name: "I'm sure" })); });

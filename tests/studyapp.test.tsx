@@ -21,7 +21,7 @@ describe("study loop UI", () => {
     const store = memStore();
     render(<StudyApp data={data} store={store} />);
     fireEvent.click(await screen.findByText("Skip it"));
-    fireEvent.click(await screen.findByText("Start first session"));
+    fireEvent.click(await screen.findByText("Start today's session"));
     let answered = 0;
     for (let i = 0; i < 80; i++) {
       if (screen.queryByText("Today's list is clear") || screen.queryByText("That's enough for one sitting")) break;
@@ -44,20 +44,23 @@ describe("study loop UI", () => {
     expect(screen.queryByText(/^about \d+%$/)).toBeNull();
   });
 
-  it("setting an exam date changes the plan shown on home", async () => {
+  it("setting an exam date on home changes the plan", async () => {
     render(<StudyApp data={data} store={memStore()} />);
     expect(await screen.findByText(/No exam date set/)).not.toBeNull();
+    fireEvent.click(screen.getByText("Set your exam date"));
     const input = document.querySelector('input[type="date"]') as HTMLInputElement;
     const d = new Date(Date.now() + 30 * 86_400_000);
     const v = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
     fireEvent.change(input, { target: { value: v } });
-    expect(await screen.findByText(/Exam in 30 days\. On track at \d+ new facts a day\./)).not.toBeNull();
+    fireEvent.click(screen.getByText("Save"));
+    expect(await screen.findByText(/Your pace: \d+ new facts a day\./)).not.toBeNull();
+    expect(screen.getByText("30 days away")).not.toBeNull();
   });
 
   it("submit stays disabled until an option is chosen", async () => {
     render(<StudyApp data={data} store={memStore()} />);
     fireEvent.click(await screen.findByText("Skip it"));
-    fireEvent.click(await screen.findByText("Start first session"));
+    fireEvent.click(await screen.findByText("Start today's session"));
     expect((screen.getByText("I'm sure") as HTMLButtonElement).disabled).toBe(true);
   });
 
@@ -105,7 +108,7 @@ describe("study loop UI with a synced store", () => {
     };
     render(<StudyApp data={data} store={store} />);
     fireEvent.click(await screen.findByText("Skip it"));
-    fireEvent.click(await screen.findByText("Start first session"));
+    fireEvent.click(await screen.findByText("Start today's session"));
     fireEvent.click(screen.getAllByRole("button").filter((b) => b.classList.contains("rl-option"))[0]!);
     await act(async () => { fireEvent.click(screen.getByText("I'm sure")); });
     await act(async () => { await new Promise((r) => setTimeout(r, 50)); });
@@ -173,7 +176,8 @@ describe("mock exam UI", () => {
     expect(screen.getByText(/5 of 83 answered/)).not.toBeNull();
     expect(document.querySelector(".verdict")).toBeNull();
     fireEvent.click(screen.getByText("Pause (clock keeps running)"));
-    expect(screen.getByText(/In progress: 5 of 83 answered/)).not.toBeNull();
+    expect(screen.getByText("In progress")).not.toBeNull();
+    expect(screen.getByText(/5 of 83 answered/)).not.toBeNull();
     fireEvent.click(screen.getByText("Resume mock exam"));
     fireEvent.click(screen.getByText("All questions"));
     expect(screen.getByText(/78 unanswered/)).not.toBeNull();
@@ -183,6 +187,6 @@ describe("mock exam UI", () => {
     expect(store.events.length).toBe(5);
     expect(store.events.every((e: AnswerEvent) => e.context === "mock")).toBe(true);
     fireEvent.click(screen.getByText("Back to home"));
-    expect(screen.getByText(/: review$/)).not.toBeNull();
+    expect(document.querySelector(".hm-mocks li")?.textContent).toMatch(/\d+\/83/);
   });
 });

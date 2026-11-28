@@ -118,6 +118,7 @@ describe("onboarding", () => {
     await act(async () => { await first; await new Promise((x) => setTimeout(x, 20)); });
     seen.push(r.container.textContent ?? "");
     expect(seen.join(" ")).not.toContain("When is your exam?");
-    expect(screen.getByText(/Ready for today's session/)).not.toBeNull();
+    expect(screen.getByText(/Good (morning|afternoon|evening)/)).not.toBeNull();
+    expect(screen.getByText("Your study")).not.toBeNull();
   });
 });

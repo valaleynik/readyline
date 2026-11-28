@@ -12,6 +12,14 @@ export function planLine(p: StudyPlan): string {
   return `Exam ${when}. On track at ${p.newPerDay} new facts a day.`;
 }
 
+/** the exam card's one line under the date and badge (the card already says how many days) */
+export function paceLine(p: StudyPlan): string {
+  if (p.factsRemaining === 0) return "You've seen every fact. Reviews from here.";
+  if (p.status === "review_only") return "The last days are for review, with no new material.";
+  if (p.status === "behind") return `About ${p.daysBehind} day${p.daysBehind === 1 ? "" : "s"} behind. ${p.newPerDay} new facts a day catches you up.`;
+  return `Your pace: ${p.newPerDay} new facts a day.`;
+}
+
 /** epoch ms to the yyyy-mm-dd a date input wants */
 export const toInput = (t?: number) => {
   if (!t) return "";

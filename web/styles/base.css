@@ -171,3 +171,84 @@ a { color: inherit; text-underline-offset: 4px; }
   .ss-verdict { padding: 16px; margin-bottom: 24px; }
   .sd__num { font-size: 31px; line-height: 36px; }
 }
+
+/* ---------- Home: a briefing, not a dashboard ---------- */
+.hm { max-width: 960px; margin: 0 auto; padding-bottom: 96px; }
+.hm__hello { margin: 4px 0 24px; }
+.hm-today { padding: 32px; border-radius: var(--radius-lg); background: var(--surface); border: 1px solid var(--hairline);
+  box-shadow: inset 4px 0 0 var(--action); margin-bottom: 24px; }
+.hm-today--done { box-shadow: inset 4px 0 0 var(--ontrack-dot); }
+.hm-today__title { margin: 8px 0; font: 700 31px/36px var(--font-sans); letter-spacing: -0.015em; text-wrap: balance; }
+.hm-today__sub { margin: 0 0 24px; color: var(--ink-muted); max-width: 60ch; }
+.hm-today--done .hm-today__sub { margin-bottom: 0; }
+.hm-today__btns { display: flex; flex-wrap: wrap; gap: 16px; }
+.hm__row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 24px 0; align-items: stretch; }
+/* the method note lives in the calibration panel below; home keeps the card short */
+.hm-card .chanceNote + .chanceNote, .hm-card .checks { display: none; }
+.hm-card .locked .chanceValue { color: var(--ink); }
+.hm-card { display: grid; gap: 8px; align-content: start; }
+.hm-card__big { margin: 0; font: 700 25px/32px var(--font-sans); letter-spacing: -0.01em; }
+.hm-card__sub { margin: 0; font: 500 16px/24px var(--font-sans); }
+.hm-card__note { margin: 0; }
+.hm-card .rl-badge { justify-self: start; }
+.hm-card .rl-btn { justify-self: start; margin-top: 8px; }
+.hm-card__link { justify-self: start; font-size: 13px; margin-top: 8px; }
+.hm-card__edit { display: grid; gap: 8px; margin-top: 8px; }
+.hm-card__editBtns { display: flex; flex-wrap: wrap; gap: 8px; }
+.hm-card__material { margin-top: 8px; font-size: 13px; line-height: 20px; color: var(--ink-muted); }
+.hm-bar { display: block; height: 8px; border-radius: 4px; background: var(--hairline); overflow: hidden; }
+.hm-bar > span { display: block; height: 100%; background: var(--ink); border-radius: 4px; }
+.hm-bar--sm { height: 4px; grid-column: 1 / -1; }
+.hm-sections summary, .hm__more summary { cursor: pointer; font: 600 13px/20px var(--font-sans); color: var(--ink); padding: 8px 0; }
+.hm-sections ul { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 12px; }
+.hm-sections li { display: grid; grid-template-columns: 1fr auto; gap: 4px 8px; font-size: 13px; line-height: 20px; }
+.hm-sections__name { color: var(--ink-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.hm-sections__num { font-variant-numeric: tabular-nums; }
+.hm-mocks { list-style: none; margin: 8px 0 0; padding: 8px 0 0; border-top: 1px solid var(--hairline); display: grid; gap: 8px; font-size: 13px; }
+.hm-mocks li { display: flex; align-items: center; gap: 8px; }
+.hm-mocks__score { margin-left: auto; font-variant-numeric: tabular-nums; font-weight: 600; }
+.hm__more { margin: 8px 0 24px; }
+.hm__took { display: block; margin-top: 24px; font-size: 13px; }
+/* the old pass-chance card, inside a home card: no second border */
+.hm-card .chance { border: 0; padding: 0; margin: 0; }
+.hm-card .chanceTitle { display: none; }
+.hm-card .chanceValue { font: 700 25px/32px var(--font-sans); margin: 0 0 4px; }
+
+/* Study grid (GitHub-style), running toward the exam */
+.sg { margin-bottom: 24px; }
+.sg__head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 16px; }
+.sg__stats { margin: 4px 0 0; font-size: 16px; line-height: 24px; }
+.sg__stats strong { font-weight: 700; }
+.sg__best { margin: 0; font: 500 13px/20px var(--font-sans); color: var(--ink-muted); white-space: nowrap; }
+.sg__scroll { overflow-x: auto; padding-bottom: 8px; scrollbar-width: thin; }
+.sg { --sg-col: minmax(12px, 1fr); }
+.sg__grid { display: grid; grid-template-rows: 20px; grid-auto-rows: auto; gap: 4px; width: 100%; max-width: 640px; }
+.sg__month { font: 500 11px/20px var(--font-sans); color: var(--ink-muted); white-space: nowrap; overflow: visible; }
+.sg__day { font: 500 11px/12px var(--font-sans); color: var(--ink-muted); align-self: center; }
+.sg__cell { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.sg__grid .sg__cell { width: 100%; height: auto; aspect-ratio: 1; }
+.sg__l0 { background: var(--neutral-tint); box-shadow: inset 0 0 0 1px var(--hairline); }
+.sg__l1 { background: #BAE6FD; }
+.sg__l2 { background: #7DD3FC; }
+.sg__l3 { background: #38BDF8; }
+.sg__l4 { background: #0284C7; }
+.sg__cell--future { background: transparent; box-shadow: inset 0 0 0 1px var(--hairline); }
+.sg__cell--today { outline: 2px solid var(--ink); outline-offset: 1px; }
+.sg__cell--exam { background: var(--action); }
+.sg__legend { display: flex; align-items: center; gap: 4px; margin-top: 8px; font: 500 11px/16px var(--font-sans); color: var(--ink-muted); }
+.sg__legend > span:first-child { margin-right: 4px; }
+.sg__legend > span:nth-child(7) { margin-left: 4px; }
+.sg__examKey { display: inline-flex; align-items: center; gap: 4px; margin-left: 16px; }
+
+@media (max-width: 880px) { .hm__row { grid-template-columns: 1fr 1fr; } .hm__row > :last-child { grid-column: 1 / -1; } }
+@media (max-width: 600px) {
+  .hm__row { grid-template-columns: 1fr; }
+  .hm-today { padding: 24px; }
+  .hm-today__title { font-size: 25px; line-height: 32px; }
+  .hm-today__go { width: 100%; }
+  .hm-today__btns .rl-btn { flex: 1 1 100%; }
+  .sg__head { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .sg { --sg-col: 12px; }
+  .sg__day, .sg__grid > span:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); }
+  .sg__grid { width: max-content; }
+}
