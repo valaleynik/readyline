@@ -43,10 +43,10 @@
   --on-action: var(--brand-night);
   --ontrack-dot: var(--brand-sky);
   --ontrack-ink: #7DD3FC;
-  --ontrack-tint: #0C4A6E;
+  --ontrack-tint: #12324A;
   --behind-dot: #FBBF24;
   --behind-ink: #FCD34D;
-  --behind-tint: #451A03;
+  --behind-tint: #243044;
   --neutral-tint: #2A3648;
 }
 @media (prefers-color-scheme: dark) {
@@ -69,10 +69,10 @@
     --on-action: var(--brand-night);
     --ontrack-dot: var(--brand-sky);
     --ontrack-ink: #7DD3FC;
-    --ontrack-tint: #0C4A6E;
+    --ontrack-tint: #12324A;
     --behind-dot: #FBBF24;
     --behind-ink: #FCD34D;
-    --behind-tint: #451A03;
+    --behind-tint: #243044;
     --neutral-tint: #2A3648;
   }
 }
