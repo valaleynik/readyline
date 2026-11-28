@@ -8,7 +8,7 @@ async function run(name, width, theme, steps) {
   const p = await b.newPage();
   await p.setViewport({ width, height: width < 600 ? 844 : 900, deviceScaleFactor: 1 });
   await p.emulateMediaFeatures([{ name: "prefers-color-scheme", value: theme }]);
-  await p.goto("http://${process.env.BASE ?? "http://localhost:3101"}/", { waitUntil: "networkidle0" });
+  await p.goto(process.env.BASE ?? "http://localhost:3101/", { waitUntil: "networkidle0" });
   await p.evaluate(() => localStorage.clear());
   await p.reload({ waitUntil: "networkidle0" });
   for (const s of steps) await s(p);
