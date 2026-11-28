@@ -8,6 +8,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
 import StudyApp from "./StudyApp";
 import AgencyDashboard from "./AgencyDashboard";
+import { SiteHeader } from "./brand";
 import { supabase, syncedStore } from "../lib/sync";
 import { joinAgency, leaveAgency, loadDashboard, loadMemberships, removeLearner, rotateCode, type Account, type Membership } from "../lib/agency";
 import type { ExportedBank } from "../../src/content/export";
@@ -64,18 +65,21 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
   if (!db) return view === "agency" ? <p className="lede">Agency view needs an account.</p> : <StudyApp data={data} />;
   if (!ready) return null;
   if (!session || !store) return <SignIn onSend={(email) => sendLink(db, email)} />;
+  const accountLinks = (
+    <>
+      {view === "agency" ? <a href="/">Study</a> : manages ? <a href="/agency">Agency dashboard</a> : null}
+      <span>{session.user.email}</span>
+      <button className="link" onClick={() => db.auth.signOut()}>
+        Sign out
+      </button>
+    </>
+  );
   return (
     <>
-      <div className="account">
-        {view === "agency" ? <a href="/">Study</a> : manages ? <a href="/agency">Agency dashboard</a> : null}
-        <span>{session.user.email}</span>
-        <button className="link" onClick={() => db.auth.signOut()}>
-          Sign out
-        </button>
-      </div>
       {view === "agency" ? (
         <div className="app">
-          <main>
+          <SiteHeader>{accountLinks}</SiteHeader>
+          <main className="main">
             {manages ? (
               <AgencyDashboard
                 load={loadTeam}
@@ -88,7 +92,7 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
           </main>
         </div>
       ) : (
-        <StudyApp key={userId} data={data} store={store} account={account} />
+        <StudyApp key={userId} data={data} store={store} account={account} headerExtra={accountLinks} />
       )}
     </>
   );
@@ -108,7 +112,8 @@ export function SignIn({ onSend }: { onSend: (email: string) => Promise<string |
   const [error, setError] = useState<string | null>(null);
   return (
     <div className="app">
-      <main>
+      <SiteHeader />
+      <main className="main">
         <section className="home">
           <h1>Sign in to Readyline</h1>
           {state === "sent" ? (

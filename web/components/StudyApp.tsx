@@ -35,6 +35,8 @@ import {
 } from "../../src/session/mock";
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 import type { Account } from "../lib/agency";
+import { SiteHeader } from "./brand";
+import type { ReactNode } from "react";
 
 export interface EventStore {
   load(): AnswerEvent[];
@@ -119,7 +121,18 @@ const REASON_LABEL: Record<string, string> = {
   baseline: "Baseline test",
 };
 
-export default function StudyApp({ data, store = localStore, account }: { data: ExportedBank; store?: EventStore; account?: Account }) {
+export default function StudyApp({
+  data,
+  store = localStore,
+  account,
+  headerExtra,
+}: {
+  data: ExportedBank;
+  store?: EventStore;
+  account?: Account;
+  /** account links from the sign-in layer, shown in the shared header */
+  headerExtra?: ReactNode;
+}) {
   const bank = useMemo(() => new Bank(data.blueprint, data.items), [data]);
   const display = useMemo(() => new Map(data.items.map((i) => [i.key, i])), [data]);
   // Load after mount so server-rendered and first client render match.
@@ -284,15 +297,14 @@ export default function StudyApp({ data, store = localStore, account }: { data: 
 
   return (
     <div className="app">
-      <header className="bar">
-        <span className="brand">Readyline</span>
-        <span className="exam">NJ Life Producer</span>
+      <SiteHeader>
         {prog && view.kind !== "home" && (
           <span className="count">
             {prog.answered} answered · {Math.min(prog.newIntroduced, quota)}/{quota} new · {prog.dueRemaining} due
           </span>
         )}
-      </header>
+        {headerExtra}
+      </SiteHeader>
       <main className="main">
         {view.kind === "home" && loaded && <Home
             state={state}
