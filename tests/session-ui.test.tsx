@@ -38,7 +38,7 @@ describe("study session screens", () => {
       const order = ["The answer", "Why", "The law"].map((t) => text.indexOf(t));
       expect(order.every((x) => x >= 0)).toBe(true);
       expect([...order].sort((a, b) => a - b)).toEqual(order);
-      if (pick !== item.answer) expect(screen.getByText(/You picked/)).not.toBeNull();
+      if (pick !== item.answer) expect(screen.getByText(/Your answer:/)).not.toBeNull();
       await act(async () => { fireEvent.click(screen.getByRole("button", { name: "Next question" })); });
     }
     expect(last).toBeGreaterThan(0);
@@ -62,7 +62,6 @@ describe("study session screens", () => {
   it("words: verdicts never shame, and times read naturally", () => {
     expect(verdictFor(true, "guess").note).toMatch(/comes back soon/);
     expect(verdictFor(false, "guess").note).toMatch(/Good call/);
-    expect(verdictFor(false, "sure", "5 days").note).toMatch(/^You picked 5 days\./);
     expect(verdictFor(false, "sure").title).toBe("Not quite");
     const now = new Date(2026, 10, 27, 10).getTime();
     expect(whenLabel(now + 60_000, now)).toBe("now");

@@ -89,15 +89,14 @@ export function QuestionCard({
 }
 
 /** One quiet line under the answer. The screen is about the rule, not the score. */
-export function verdictFor(correct: boolean, confidence: "sure" | "guess", picked?: string): { title: string; note: string } {
+export function verdictFor(correct: boolean, confidence: "sure" | "guess"): { title: string; note: string } {
   if (correct)
     return confidence === "guess"
       ? { title: "Correct", note: "You were guessing, so it comes back soon to make it stick." }
       : { title: "Correct", note: "It comes back right before you'd forget." }
-  const yours = picked ? `You picked ${picked}. ` : "";
   return confidence === "sure"
-    ? { title: "Not quite", note: `${yours}You were sure, so this one is worth a careful read.` }
-    : { title: "Not quite", note: `${yours}Good call marking it as a guess.` };
+    ? { title: "Not quite", note: "You were sure, so this one is worth a careful read." }
+    : { title: "Not quite", note: "Good call marking it as a guess." };
 }
 
 export function FeedbackCard({
@@ -119,33 +118,49 @@ export function FeedbackCard({
   nextRef: React.RefObject<HTMLButtonElement>;
   onNext: () => void;
 }) {
-  const v = verdictFor(correct, confidence, correct ? undefined : item.options[choice]);
+  const v = verdictFor(correct, confidence);
   return (
     <section className="ss" aria-labelledby="ss-answer">
+      <p className="rl-overline">Question</p>
       <p className="ss__stemSmall">{item.stem}</p>
+
+      {/* 1. The answer: the one thing to take away */}
       <div className={`ss-verdict ${correct ? "ss-verdict--right" : "ss-verdict--wrong"}`}>
         <p className="rl-overline">The answer</p>
         <h2 id="ss-answer" className="ss-verdict__answer">
           {item.options[item.answer]}
         </h2>
+        {!correct && (
+          <p className="ss-verdict__yours">
+            <span className="ss-verdict__dot" aria-hidden="true">
+              ✕
+            </span>
+            <span>
+              Your answer: <span className="ss-verdict__picked">{item.options[choice]}</span>
+            </span>
+          </p>
+        )}
         <p className="ss-verdict__note">
-          <span className="ss-verdict__dot" aria-hidden="true">
-            {correct ? "✓" : "✕"}
-          </span>
+          {correct && (
+            <span className="ss-verdict__dot" aria-hidden="true">
+              ✓
+            </span>
+          )}
           <span>
             <strong>{v.title}.</strong> {v.note}
           </span>
         </p>
       </div>
 
-      <div className="ss__section">
-        <p className="rl-overline">Why</p>
+      {/* 2. Why: the explanation, read in full */}
+      <div className="ss__section ss__section--why">
+        <h3 className="ss__h">Why</h3>
         <p className="ss__why">{item.explanation}</p>
       </div>
 
       {fact && (
         <div className="ss__section">
-          <p className="rl-overline">The law</p>
+          <h3 className="ss__h ss__h--sm">The law</h3>
           <figure className="ss-law">
             <blockquote className="ss-law__quote">“{fact.quote}”</blockquote>
             <figcaption className="ss-law__cite">{fact.citation}</figcaption>
@@ -155,7 +170,7 @@ export function FeedbackCard({
 
       {contrasts.length > 0 && fact && (
         <div className="ss__section">
-          <p className="rl-overline">Don't confuse</p>
+          <h3 className="ss__h ss__h--sm">Don't confuse</h3>
           <div className="ss-pair">
             <div className="ss-pair__card ss-pair__card--this">
               <p className="ss-pair__label">This rule</p>
