@@ -21,7 +21,7 @@
   font: 500 13px/20px var(--font-sans); white-space: nowrap; }
 .rl-badge__icon { font-size: 12px; line-height: 1; }
 .rl-badge--ontrack { background: var(--ontrack-tint); color: var(--ontrack-ink); }
-.rl-badge--behind { background: var(--behind-tint); color: var(--behind-ink); }
+.rl-badge--behind { background: var(--surface); color: var(--behind-ink); box-shadow: inset 0 0 0 1px var(--behind-dot); }
 .rl-badge--ready { background: var(--action); color: var(--on-action); }
 .rl-badge--neutral { background: var(--neutral-tint); color: var(--ink-muted); }
 

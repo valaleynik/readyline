@@ -19,9 +19,9 @@
   --ontrack-dot: var(--brand-sky);
   --ontrack-ink: #0369A1;
   --ontrack-tint: #E0F2FE;
-  --behind-dot: var(--brand-amber);
-  --behind-ink: #92400E;
-  --behind-tint: #FEF3C7;
+  --behind-dot: #334155;
+  --behind-ink: #1E293B;
+  --behind-tint: #F1F5F9;
   --neutral-tint: #F1F5F9;
 }
 [data-theme="dark"] {
