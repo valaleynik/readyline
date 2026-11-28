@@ -20,6 +20,8 @@ export const MAX_NEW = 40;
 export interface StudySettings {
   /** epoch ms of the exam; absent means no date set */
   examAt?: number;
+  /** when the learner finished onboarding (epoch ms) */
+  onboardedAt?: number;
 }
 
 export interface StudyPlan {

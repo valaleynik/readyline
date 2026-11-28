@@ -11,7 +11,8 @@ import type { AnswerEvent } from "../src/engine";
 const data = bankJson as unknown as ExportedBank;
 
 function memStore(): EventStore & { events: AnswerEvent[] } {
-  const s = { events: [] as AnswerEvent[], load: () => s.events, save: (e: AnswerEvent[]) => { s.events = e; } };
+  // an existing learner who already finished onboarding (onboarding has its own tests)
+  const s = { events: [] as AnswerEvent[], load: () => s.events, save: (e: AnswerEvent[]) => { s.events = e; }, loadSettings: () => ({ onboardedAt: 1 }), saveSettings: () => {} };
   return s;
 }
 
@@ -87,6 +88,7 @@ describe("study loop UI with a synced store", () => {
     const remote = memoryRemote();
     const m = new Map<string, string>();
     const s = new SyncedStore(remote, { get: (k) => m.get(k) ?? null, set: (k, v) => void m.set(k, v) }, "u");
+    s.saveSettings({ onboardedAt: 1 });
     let calls = 0;
     const origFetch = remote.fetchEvents;
     remote.fetchEvents = async () => (calls++, origFetch());
@@ -114,24 +116,41 @@ describe("study loop UI with a synced store", () => {
 });
 
 describe("sign in", () => {
-  it("sends the link and tells the user to check their email, or shows the error", async () => {
+  it("sends the link, shows the inbox step, and lets you resend after a wait or change the email", async () => {
     const { SignIn } = await import("../web/components/AuthGate");
     const sent: string[] = [];
-    render(<SignIn onSend={async (e) => (sent.push(e), sent.length > 1 ? null : "rate limited")} />);
-    const input = document.querySelector('input[type="email"]') as HTMLInputElement;
+    render(<SignIn onSend={async (e) => (sent.push(e), sent.length > 1 ? null : "Too many links requested. Wait a minute, then try again.")} />);
+    const input = screen.getByPlaceholderText("you@example.com") as HTMLInputElement;
     fireEvent.change(input, { target: { value: " val@example.com " } });
     await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
-    expect(screen.getByText("rate limited")).not.toBeNull();
+    expect(screen.getByText(/Too many links requested/)).not.toBeNull();
     await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
-    expect(screen.getByText(/Check val@example.com/)).not.toBeNull();
+    expect(screen.getByText("Check your email")).not.toBeNull();
+    expect(screen.getByText("val@example.com")).not.toBeNull();
+    const resend = screen.getByText(/Send again in \d+s/) as HTMLButtonElement;
+    expect(resend.disabled).toBe(true);
+    fireEvent.click(screen.getByText("Use a different email"));
+    expect(screen.getByText("Sign in to Readyline")).not.toBeNull();
     expect(sent).toEqual(["val@example.com", "val@example.com"]);
+  });
+
+  it("explains a failed or expired link and turns developer errors into plain words", async () => {
+    const { SignIn, linkErrorFromUrl, friendlyAuthError } = await import("../web/components/AuthGate");
+    expect(linkErrorFromUrl("#error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired", "")).toMatch(/expired/);
+    expect(linkErrorFromUrl("", "?error=access_denied")).toMatch(/didn't work/);
+    expect(linkErrorFromUrl("#access_token=abc&type=magiclink", "")).toBeNull();
+    expect(friendlyAuthError("email rate limit exceeded")).toMatch(/Too many links/);
+    expect(friendlyAuthError("For security purposes, you can only request this after 38 seconds.")).toMatch(/Too many links/);
+    expect(friendlyAuthError("weird internal thing")).toMatch(/Try again/);
+    render(<SignIn onSend={async () => null} linkError="That link expired. Links work for one hour; send yourself a new one." />);
+    expect(screen.getByText(/That link expired/)).not.toBeNull();
   });
 });
 
 describe("exam result UI", () => {
   const withSettings = (st: object) => {
     const s = memoryStore();
-    return Object.assign(s, { loadSettings: () => st, saveSettings: () => {} });
+    return Object.assign(s, { loadSettings: () => ({ onboardedAt: 1, ...st }), saveSettings: () => {} });
   };
   function memoryStore() {
     const results: import("../src/session/results").ExamResult[] = [];
@@ -174,7 +193,7 @@ describe("exam result UI", () => {
 describe("mock exam UI", () => {
   it("start, answer, pause and resume, review, submit, see the breakdown", async () => {
     const store = memStore();
-    let saved: object = { baselineSkipped: true };
+    let saved: object = { baselineSkipped: true, onboardedAt: 1 };
     const s = Object.assign(store, { loadSettings: () => saved, saveSettings: (x: object) => void (saved = x) });
     render(<StudyApp data={data} store={s as unknown as EventStore} />);
     fireEvent.click(await screen.findByText("Take a mock exam"));

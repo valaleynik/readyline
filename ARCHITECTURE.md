@@ -251,3 +251,9 @@ Same app, same sign-in. Individuals study on their own; agencies buy seats and h
    - pull sample lessons first to judge whether fact statements read well as teaching text
 3. Cleanups: V4-64a "whom" to "who" (version bump and re-review), check the primary PSI outline by hand, delete the demo learner (d300d300-0000-4000-8000-000000000001) when no longer needed.
 4. Stripe last, test mode first: one `hasAccess` check gates the app (always true until then); individual purchase and agency seats (creates the organization). Webhook signature checks and idempotency tested before going live.
+
+## Sign in and onboarding
+
+- Sign in (`web/components/AuthGate.tsx`): one screen for sign in and sign up (the email link creates the account). States: email, sending, "check your email" with a 60s resend wait and "use a different email", and a banner for failed or expired links (read from the URL before the Supabase client cleans it). Supabase errors are rewritten in plain words. The session check falls back to the sign-in screen after 5s so the page is never blank.
+- Onboarding (`src/session/onboarding.ts`, `web/components/Onboarding.tsx`): only for a learner with no answers and no `onboardedAt`. Steps: how you study (on your own or agency code; signed-in only), exam date or "not scheduled yet" with a live plan preview, then the baseline test or skip (skipped automatically when the exam is 5 days out or less). Back keeps earlier answers. Finishing sets `onboardedAt` (column `study_settings.onboarded_at`, migration 0005, applied before deploy).
+- A returning learner on a new device must never see onboarding: synced stores expose `whenReady()` (the first pull, or 4s offline) and the study area waits for it before deciding.

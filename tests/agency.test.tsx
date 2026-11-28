@@ -107,7 +107,7 @@ describe("agency screens", () => {
         return null;
       },
     };
-    const store = { load: () => [], save: () => {}, loadSettings: () => ({ baselineSkipped: true }), saveSettings: () => {} };
+    const store = { load: () => [], save: () => {}, loadSettings: () => ({ baselineSkipped: true, onboardedAt: 1 }), saveSettings: () => {} };
     const r = render(<StudyApp data={data} store={store} account={{ ...account }} />);
     rerender = () => r.rerender(<StudyApp data={data} store={store} account={{ ...account, memberships: [...memberships] }} />);
     const input = await screen.findByPlaceholderText("RDY-XXXX-XXXX");

@@ -57,7 +57,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
       return "offline";
     },
     async fetchSettings() {
-      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped,result_prompt_skips,result_prompt_skipped_at,mocks").maybeSingle();
+      const { data, error } = await db.from("study_settings").select("exam_at,baseline_skipped,result_prompt_skips,result_prompt_skipped_at,mocks,onboarded_at").maybeSingle();
       if (error) throw error;
       if (!data) return null;
       return {
@@ -66,6 +66,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
         ...(data.result_prompt_skips ? { resultPromptSkips: data.result_prompt_skips } : {}),
         ...(data.result_prompt_skipped_at ? { resultPromptSkippedAt: Number(data.result_prompt_skipped_at) } : {}),
         ...(Array.isArray(data.mocks) && data.mocks.length ? { mocks: data.mocks } : {}),
+        ...(data.onboarded_at ? { onboardedAt: Number(data.onboarded_at) } : {}),
       };
     },
     async saveSettings(s): Promise<InsertResult> {
@@ -76,6 +77,7 @@ export function supabaseRemote(db: SupabaseClient, userId: string): Remote {
         result_prompt_skips: s.resultPromptSkips ?? 0,
         result_prompt_skipped_at: s.resultPromptSkippedAt ?? null,
         mocks: s.mocks ?? [],
+        onboarded_at: s.onboardedAt ?? null,
         updated_at: new Date().toISOString(),
       });
       return error ? "offline" : "ok";

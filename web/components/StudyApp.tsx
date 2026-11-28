@@ -36,6 +36,9 @@ import {
 import type { ExportedBank, DisplayItem } from "../../src/content/export";
 import type { Account } from "../lib/agency";
 import { SiteHeader } from "./brand";
+import { planLine, toInput } from "../lib/words";
+import Onboarding from "./Onboarding";
+import { needsOnboarding } from "../../src/session/onboarding";
 import type { ReactNode } from "react";
 
 export interface EventStore {
@@ -46,6 +49,8 @@ export interface EventStore {
   /** for stores that sync: refresh from the server and report changes */
   subscribe?(onChange: (events: AnswerEvent[], settings: StudySettings, results: ExamResult[]) => void): () => void;
   loadResults?(): ExamResult[];
+  /** for stores that sync: resolves once the first pull from the server is done (or gave up) */
+  whenReady?(): Promise<void>;
   addResult?(r: ExamResult): void;
 }
 
@@ -141,6 +146,8 @@ export default function StudyApp({
   const state: LearnerState = useMemo(() => replay(events, bank), [events, bank]);
   const [settings, setSettings] = useState<StudySettings>({});
   const [results, setResults] = useState<ExamResult[]>([]);
+  /** false until a synced store has finished its first pull, so onboarding never flashes for returning learners */
+  const [ready, setReady] = useState(!store.whenReady);
   const [session, setSession] = useState<SessionStart | null>(null);
   /** today's quota is fixed when the session starts, so it cannot shift mid-session */
   const [quota, setQuota] = useState(0);
@@ -152,6 +159,7 @@ export default function StudyApp({
     setSettings(store.loadSettings?.() ?? {});
     setResults(store.loadResults?.() ?? []);
     setLoaded(true);
+    void store.whenReady?.().then(() => setReady(true));
     return store.subscribe?.((evs, st, rs) => {
       setEvents(evs);
       setSettings(st);
@@ -211,9 +219,9 @@ export default function StudyApp({
     setView({ kind: "question", item: display.get(pick.item.key)!, reason: pick.reason, choice: null });
   }
 
-  function start() {
+  function start(st: StudySettings = settings) {
     const s = { startAnswers: state.answers, startedAt: Date.now() };
-    const q = studyPlan(state, bank, settings, s.startedAt).newPerDay;
+    const q = studyPlan(state, bank, st, s.startedAt).newPerDay;
     setSession(s);
     setQuota(q);
     nextQuestion(events, state, s, q);
@@ -306,13 +314,27 @@ export default function StudyApp({
         {headerExtra}
       </SiteHeader>
       <main className="main">
-        {view.kind === "home" && loaded && <Home
+        {view.kind === "home" && loaded && !ready && <p className="rl-muted ob">Loading your progress...</p>}
+        {view.kind === "home" && loaded && ready && needsOnboarding(settings, events) && (
+          <Onboarding
+            state={state}
+            bank={bank}
+            settings={settings}
+            account={account}
+            onFinish={(st, next) => {
+              setSettings(st);
+              if (next === "baseline") nextBaseline(events, state);
+              else start(st);
+            }}
+          />
+        )}
+        {view.kind === "home" && loaded && ready && !needsOnboarding(settings, events) && <Home
             state={state}
             bank={bank}
             events={events}
             settings={settings}
             onSettings={setSettings}
-            onStart={start}
+            onStart={() => start()}
             onBaseline={() => nextBaseline(events, state)}
             results={results}
             onReport={report}
@@ -364,7 +386,7 @@ export default function StudyApp({
           />
         )}
         {view.kind === "baselineDone" && (
-          <BaselineDone state={state} bank={bank} events={events} onStart={start} />
+          <BaselineDone state={state} bank={bank} events={events} onStart={() => start()} />
         )}
         {view.kind === "feedback" && (
           <Feedback data={data} view={view} nextRef={nextBtn} onNext={next} />
@@ -424,23 +446,6 @@ function PassChanceCard({ bank, events, examAt }: { bank: Bank; events: AnswerEv
     </div>
   );
 }
-
-function planLine(p: StudyPlan): string {
-  if (!p.hasDate) return "No exam date set, so you get a steady 12 new facts a day.";
-  if (p.status === "past") return "Your exam date has passed. Set a new date to plan again.";
-  const when = p.daysLeft === 0 ? "today" : p.daysLeft === 1 ? "tomorrow" : `in ${p.daysLeft} days`;
-  if (p.factsRemaining === 0) return `Exam ${when}. You've seen every fact, so it's reviews from here.`;
-  if (p.status === "review_only") return `Exam ${when}. These last days are for review only, with no new material.`;
-  if (p.status === "behind")
-    return `Exam ${when}. You're behind by about ${p.daysBehind} day${p.daysBehind === 1 ? "" : "s"}: ${p.newPerDay} new facts a day to catch up.`;
-  return `Exam ${when}. On track at ${p.newPerDay} new facts a day.`;
-}
-
-const toInput = (t?: number) => {
-  if (!t) return "";
-  const d = new Date(t);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
-};
 
 function Home({
   state,

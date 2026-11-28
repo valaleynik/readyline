@@ -33,6 +33,9 @@ const browserCache = {
 
 export function syncedStore(db: SupabaseClient, userId: string): EventStore {
   const s = new SyncedStore(supabaseRemote(db, userId), browserCache, `readyline.sync.v1.${userId}`);
+  // The first pull from the server. Screens that depend on "is this a new learner?" wait for it
+  // (or 4 seconds, if offline) so a returning learner on a new device never sees onboarding.
+  const first = Promise.race([s.sync(), new Promise<void>((r) => setTimeout(r, 4000))]);
   return {
     load: () => s.load(),
     save: (e) => s.save(e),
@@ -40,9 +43,11 @@ export function syncedStore(db: SupabaseClient, userId: string): EventStore {
     saveSettings: (st) => s.saveSettings(st),
     loadResults: () => s.loadResults(),
     addResult: (r) => s.addResult(r),
+    whenReady: () => first,
     subscribe(fn) {
       s.onChange = fn;
-      void s.sync();
+      // The first pull may finish before the screen subscribes: hand over what it loaded.
+      void first.then(() => fn(s.load(), s.loadSettings(), s.loadResults()));
       const again = () => void s.sync();
       globalThis.addEventListener?.("online", again);
       globalThis.addEventListener?.("focus", again);
