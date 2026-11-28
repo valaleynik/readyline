@@ -115,38 +115,6 @@ describe("study loop UI with a synced store", () => {
   });
 });
 
-describe("sign in", () => {
-  it("sends the link, shows the inbox step, and lets you resend after a wait or change the email", async () => {
-    const { SignIn } = await import("../web/components/AuthGate");
-    const sent: string[] = [];
-    render(<SignIn onSend={async (e) => (sent.push(e), sent.length > 1 ? null : "Too many links requested. Wait a minute, then try again.")} />);
-    const input = screen.getByPlaceholderText("you@example.com") as HTMLInputElement;
-    fireEvent.change(input, { target: { value: " val@example.com " } });
-    await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
-    expect(screen.getByText(/Too many links requested/)).not.toBeNull();
-    await act(async () => { fireEvent.click(screen.getByText("Email me a sign-in link")); });
-    expect(screen.getByText("Check your email")).not.toBeNull();
-    expect(screen.getByText("val@example.com")).not.toBeNull();
-    const resend = screen.getByText(/Send again in \d+s/) as HTMLButtonElement;
-    expect(resend.disabled).toBe(true);
-    fireEvent.click(screen.getByText("Use a different email"));
-    expect(screen.getByText("Sign in to Readyline")).not.toBeNull();
-    expect(sent).toEqual(["val@example.com", "val@example.com"]);
-  });
-
-  it("explains a failed or expired link and turns developer errors into plain words", async () => {
-    const { SignIn, linkErrorFromUrl, friendlyAuthError } = await import("../web/components/AuthGate");
-    expect(linkErrorFromUrl("#error=access_denied&error_code=otp_expired&error_description=Email+link+is+invalid+or+has+expired", "")).toMatch(/expired/);
-    expect(linkErrorFromUrl("", "?error=access_denied")).toMatch(/didn't work/);
-    expect(linkErrorFromUrl("#access_token=abc&type=magiclink", "")).toBeNull();
-    expect(friendlyAuthError("email rate limit exceeded")).toMatch(/Too many links/);
-    expect(friendlyAuthError("For security purposes, you can only request this after 38 seconds.")).toMatch(/Too many links/);
-    expect(friendlyAuthError("weird internal thing")).toMatch(/Try again/);
-    render(<SignIn onSend={async () => null} linkError="That link expired. Links work for one hour; send yourself a new one." />);
-    expect(screen.getByText(/That link expired/)).not.toBeNull();
-  });
-});
-
 describe("exam result UI", () => {
   const withSettings = (st: object) => {
     const s = memoryStore();

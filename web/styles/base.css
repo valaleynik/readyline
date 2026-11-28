@@ -81,3 +81,21 @@ a { color: inherit; text-underline-offset: 4px; }
   .si { grid-template-columns: minmax(0, 440px); justify-content: center; padding: 48px 16px 96px; }
   .si__proof { display: none; }
 }
+
+/* Account screens (sign in, create, reset) reuse the .si layout. */
+.au__title { margin: 0 0 16px; }
+.au__lede { margin: 0 0 32px; color: var(--ink-muted); }
+.au__lede strong { color: var(--ink); font-weight: 600; word-break: break-all; }
+.au__fields { display: grid; gap: 24px; }
+.au__submit { width: 100%; }
+.au__alt { margin: 24px 0 0; font-size: 13px; line-height: 20px; }
+.au__banner { margin: 0 0 24px; padding: 12px 16px; border-radius: var(--radius-md); background: var(--behind-tint); color: var(--behind-ink); font-size: 13px; line-height: 20px; }
+.au__actions { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; margin-top: 32px; }
+.au__error { margin: -8px 0 0; }
+.au__pw { position: relative; display: block; }
+.au__pw .rl-input { width: 100%; padding-right: 72px; }
+.au__show { position: absolute; right: 8px; top: 50%; transform: translateY(-50%); background: none; border: 0; padding: 8px; cursor: pointer;
+  font: 600 13px/20px var(--font-sans); color: var(--ink-muted); border-radius: var(--radius-sm); }
+.au__show:hover { color: var(--ink); }
+.au__hint { font: 400 13px/20px var(--font-sans); color: var(--ink-muted); }
+.rl-field .rl-input { width: 100%; }

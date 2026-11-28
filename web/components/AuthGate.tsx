@@ -1,8 +1,7 @@
 "use client";
 /**
- * Sign-in gate. With Supabase configured: email link sign-in, then the study app on the
- * synced store for that user. Without it: the study app on local storage.
- * Bare on purpose: the real signup screens come with onboarding.
+ * Account gate. With Supabase configured: email and password accounts (AuthScreen), then the
+ * study area on the synced store for that user. Without it: the study area on local storage.
  */
 import { useEffect, useMemo, useState } from "react";
 import type { Session } from "@supabase/supabase-js";
@@ -12,6 +11,39 @@ import { SiteHeader } from "./brand";
 import { supabase, syncedStore } from "../lib/sync";
 import { joinAgency, leaveAgency, loadDashboard, loadMemberships, removeLearner, rotateCode, type Account, type Membership } from "../lib/agency";
 import type { ExportedBank } from "../../src/content/export";
+import AuthScreen, { friendlyAuthError, linkErrorFromUrl, type AuthApi } from "./AuthScreen";
+import type { SupabaseClient } from "@supabase/supabase-js";
+
+function authApi(db: SupabaseClient): AuthApi {
+  const back = () => globalThis.location?.origin;
+  return {
+    async signIn(email, password) {
+      const { error } = await db.auth.signInWithPassword({ email, password });
+      if (!error) return { error: null };
+      if (/not confirmed/i.test(error.message)) return { error: null, unconfirmed: true };
+      return { error: friendlyAuthError(error.message) };
+    },
+    async signUp(email, password) {
+      const { data, error } = await db.auth.signUp({ email, password, options: { emailRedirectTo: back() } });
+      if (error) return /already registered/i.test(error.message) ? { error: null, exists: true } : { error: friendlyAuthError(error.message) };
+      // With email confirmation on, an existing address comes back as a user with no identities.
+      if (data.user && data.user.identities?.length === 0) return { error: null, exists: true };
+      return { error: null };
+    },
+    async resendConfirm(email) {
+      const { error } = await db.auth.resend({ type: "signup", email, options: { emailRedirectTo: back() } });
+      return error ? friendlyAuthError(error.message) : null;
+    },
+    async forgot(email) {
+      const { error } = await db.auth.resetPasswordForEmail(email, { redirectTo: back() });
+      return error ? friendlyAuthError(error.message) : null;
+    },
+    async setPassword(password) {
+      const { error } = await db.auth.updateUser({ password });
+      return error ? friendlyAuthError(error.message) : null;
+    },
+  };
+}
 
 // Read a failed-link error before the Supabase client starts: it cleans the URL as it loads.
 const initialLinkError = typeof window === "undefined" ? null : linkErrorFromUrl(window.location.hash, window.location.search);
@@ -20,6 +52,9 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
   const db = useMemo(() => supabase(), []);
   const [session, setSession] = useState<Session | null>(null);
   const [ready, setReady] = useState(!db);
+  /** opened from a reset-password email: ask for the new password before anything else */
+  const [recovering, setRecovering] = useState(false);
+  const api = useMemo(() => (db ? authApi(db) : null), [db]);
 
   useEffect(() => {
     if (!db) return;
@@ -34,7 +69,10 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
         clearTimeout(giveUp);
         setReady(true);
       });
-    const { data: sub } = db.auth.onAuthStateChange((_e, s) => setSession(s));
+    const { data: sub } = db.auth.onAuthStateChange((event, s) => {
+      setSession(s);
+      if (event === "PASSWORD_RECOVERY") setRecovering(true);
+    });
     return () => sub.subscription.unsubscribe();
   }, [db]);
 
@@ -74,13 +112,14 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
 
   if (!db) return view === "agency" ? <p className="lede">Agency view needs an account.</p> : <StudyApp data={data} />;
   if (!ready) return null;
-  if (!session || !store)
+  if (recovering && api)
     return (
-      <SignIn
-        onSend={(email) => sendLink(db, email)}
-        linkError={initialLinkError}
+      <AuthScreen
+        api={{ ...api, setPassword: async (pw) => { const e = await api.setPassword(pw); if (!e) setRecovering(false); return e; } }}
+        initialMode="reset"
       />
     );
+  if (!session || !store) return <AuthScreen api={api!} linkError={initialLinkError} />;
   const accountLinks = (
     <>
       {view === "agency" ? <a href="/">Study</a> : manages ? <a href="/agency">Agency dashboard</a> : null}
@@ -111,143 +150,5 @@ export default function AuthGate({ data, view = "study" }: { data: ExportedBank;
         <StudyApp key={userId} data={data} store={store} account={account} headerExtra={accountLinks} />
       )}
     </>
-  );
-}
-
-async function sendLink(db: NonNullable<ReturnType<typeof supabase>>, email: string): Promise<string | null> {
-  const { error } = await db.auth.signInWithOtp({
-    email,
-    options: { emailRedirectTo: globalThis.location?.origin },
-  });
-  return error ? friendlyAuthError(error.message) : null;
-}
-
-/** Supabase's messages are for developers; these are for people. */
-export function friendlyAuthError(msg: string): string {
-  const m = msg.toLowerCase();
-  if (m.includes("rate limit") || m.includes("security purposes") || m.includes("too many"))
-    return "Too many links requested. Wait a minute, then try again.";
-  if (m.includes("invalid") && m.includes("email")) return "That email address doesn't look right.";
-  if (m.includes("network") || m.includes("fetch")) return "Couldn't reach Readyline. Check your connection and try again.";
-  return "Something went wrong sending your link. Try again in a minute.";
-}
-
-/** A sign-in link that failed (expired, already used) comes back with an error in the URL. */
-export function linkErrorFromUrl(hash: string, search: string): string | null {
-  const p = new URLSearchParams((hash.startsWith("#") ? hash.slice(1) : hash) || search.replace(/^\?/, ""));
-  const code = p.get("error_code") ?? p.get("error");
-  if (!code) return null;
-  if (code.includes("expired")) return "That link expired. Links work for one hour; send yourself a new one.";
-  return "That link didn't work. It may have been used already. Send yourself a new one.";
-}
-
-const RESEND_AFTER = 60;
-
-export function SignIn({ onSend, linkError = null }: { onSend: (email: string) => Promise<string | null>; linkError?: string | null }) {
-  const [email, setEmail] = useState("");
-  const [state, setState] = useState<"idle" | "sending" | "sent">("idle");
-  const [error, setError] = useState<string | null>(null);
-  const [wait, setWait] = useState(0);
-  useEffect(() => {
-    if (wait <= 0) return;
-    const t = setTimeout(() => setWait(wait - 1), 1000);
-    return () => clearTimeout(t);
-  }, [wait]);
-
-  async function send() {
-    setState("sending");
-    const err = await onSend(email.trim());
-    setError(err);
-    setState(err ? "idle" : "sent");
-    if (!err) setWait(RESEND_AFTER);
-  }
-
-  return (
-    <div className="app">
-      <SiteHeader />
-      <main className="si">
-        <section className="si__form" aria-labelledby="si-title">
-          {state === "sent" ? (
-            <>
-              <h1 id="si-title" className="t-h3 si__title">
-                Check your email
-              </h1>
-              <p className="si__lede">
-                We sent a sign-in link to <strong>{email.trim()}</strong>. Open it on the device you want to study on. It works for one hour.
-              </p>
-              <p className="rl-muted">Not there? Check spam, or the Promotions tab in Gmail. It comes from noreply@readylineprep.com.</p>
-              {error && <p className="rl-field__error si__error">▲ {error}</p>}
-              <div className="si__actions">
-                <button className="rl-btn rl-btn--secondary" disabled={wait > 0 || state !== "sent"} onClick={send}>
-                  {wait > 0 ? `Send again in ${wait}s` : "Send the link again"}
-                </button>
-                <button
-                  className="rl-btn rl-btn--ghost"
-                  onClick={() => {
-                    setState("idle");
-                    setError(null);
-                  }}
-                >
-                  Use a different email
-                </button>
-              </div>
-            </>
-          ) : (
-            <>
-              <h1 id="si-title" className="t-h3 si__title">
-                Sign in to Readyline
-              </h1>
-              <p className="si__lede">New here? The same link creates your account. No password to remember.</p>
-              {linkError && <p className="si__banner">▲ {linkError}</p>}
-              <form
-                className="si__fields"
-                onSubmit={(e) => {
-                  e.preventDefault();
-                  void send();
-                }}
-              >
-                <label className="rl-field">
-                  Email
-                  <input
-                    className="rl-input"
-                    type="email"
-                    required
-                    autoComplete="email"
-                    inputMode="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="you@example.com"
-                    autoFocus
-                  />
-                  {error && <span className="rl-field__error">▲ {error}</span>}
-                </label>
-                <button className="rl-btn rl-btn--primary si__submit" type="submit" disabled={state === "sending"}>
-                  {state === "sending" ? "Sending..." : "Email me a sign-in link"}
-                </button>
-              </form>
-              <p className="rl-muted si__fine">
-                Studying with an agency? Sign in first; you'll enter your agency code next.
-              </p>
-            </>
-          )}
-        </section>
-        <aside className="si__proof" aria-hidden="true">
-          <div className="rl-card si__q">
-            <p className="rl-overline">State law · Review</p>
-            <p className="si__stem">A person collects premiums for an out-of-state insurer but never sells a policy. Under New Jersey law, this is:</p>
-            <div className="rl-option rl-option--correct si__opt">
-              <span className="rl-option__key">✓</span>
-              <span>Prohibited: receiving premiums is transacting insurance</span>
-            </div>
-            <p className="si__cite">N.J.S.A. 17B:17-13 · quoted from the statute</p>
-          </div>
-          <div className="rl-card si__chance">
-            <p className="rl-overline">Pass chance on exam day</p>
-            <p className="si__big">Not yet</p>
-            <p className="rl-muted">Unlocks when your own answers back it up. No number on day one.</p>
-          </div>
-        </aside>
-      </main>
-    </div>
   );
 }
