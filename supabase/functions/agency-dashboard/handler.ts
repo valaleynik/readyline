@@ -13,7 +13,7 @@ declare const Deno: { env: { get(k: string): string | undefined }; serve(h: (r: 
 
 const URL_ = Deno.env.get("SUPABASE_URL")!;
 const SERVICE = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-const BANK_URL = Deno.env.get("READYLINE_BANK_URL") ?? "https://readyline-orpin.vercel.app/bank.json";
+const BANK_URL = Deno.env.get("READYLINE_BANK_URL") ?? "https://www.readylineprep.com/bank.json";
 
 const cors = {
   "Access-Control-Allow-Origin": "*",
