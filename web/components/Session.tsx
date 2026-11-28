@@ -88,14 +88,16 @@ export function QuestionCard({
   );
 }
 
-export function verdictFor(correct: boolean, confidence: "sure" | "guess"): { title: string; note: string } {
+/** One quiet line under the answer. The screen is about the rule, not the score. */
+export function verdictFor(correct: boolean, confidence: "sure" | "guess", picked?: string): { title: string; note: string } {
   if (correct)
     return confidence === "guess"
-      ? { title: "Correct", note: "But you were guessing, so this one comes back soon to make it stick." }
-      : { title: "Correct", note: "Nicely done. You'll see it again just before you'd forget." };
+      ? { title: "Correct", note: "You were guessing, so it comes back soon to make it stick." }
+      : { title: "Correct", note: "It comes back right before you'd forget." }
+  const yours = picked ? `You picked ${picked}. ` : "";
   return confidence === "sure"
-    ? { title: "Not quite", note: "You were sure, which makes this one worth a careful read." }
-    : { title: "Not quite", note: "Good call flagging it as a guess. Here's the rule." };
+    ? { title: "Not quite", note: `${yours}You were sure, so this one is worth a careful read.` }
+    : { title: "Not quite", note: `${yours}Good call marking it as a guess.` };
 }
 
 export function FeedbackCard({
@@ -117,39 +119,23 @@ export function FeedbackCard({
   nextRef: React.RefObject<HTMLButtonElement>;
   onNext: () => void;
 }) {
-  const v = verdictFor(correct, confidence);
+  const v = verdictFor(correct, confidence, correct ? undefined : item.options[choice]);
   return (
-    <section className="ss" aria-labelledby="ss-verdict">
-      <div className={`ss-verdict ${correct ? "ss-verdict--right" : "ss-verdict--wrong"}`}>
-        <span className="ss-verdict__icon" aria-hidden="true">
-          {correct ? "✓" : "✕"}
-        </span>
-        <div>
-          <h2 id="ss-verdict" className="ss-verdict__title">
-            {v.title}
-          </h2>
-          <p className="ss-verdict__note">{v.note}</p>
-        </div>
-      </div>
-
+    <section className="ss" aria-labelledby="ss-answer">
       <p className="ss__stemSmall">{item.stem}</p>
-      <div className="ss__answers">
-        <div className="rl-option rl-option--correct ss__static">
-          <span className="rl-option__key">✓</span>
-          <span>
-            {item.options[item.answer]}
-            <span className="rl-option__note">Correct answer</span>
+      <div className={`ss-verdict ${correct ? "ss-verdict--right" : "ss-verdict--wrong"}`}>
+        <p className="rl-overline">The answer</p>
+        <h2 id="ss-answer" className="ss-verdict__answer">
+          {item.options[item.answer]}
+        </h2>
+        <p className="ss-verdict__note">
+          <span className="ss-verdict__dot" aria-hidden="true">
+            {correct ? "✓" : "✕"}
           </span>
-        </div>
-        {!correct && (
-          <div className="rl-option rl-option--wrong ss__static">
-            <span className="rl-option__key">✕</span>
-            <span>
-              {item.options[choice]}
-              <span className="rl-option__note">Your answer</span>
-            </span>
-          </div>
-        )}
+          <span>
+            <strong>{v.title}.</strong> {v.note}
+          </span>
+        </p>
       </div>
 
       <div className="ss__section">
