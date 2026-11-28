@@ -80,3 +80,24 @@ describe("daily session", () => {
     expect(c).toEqual({ sureRight: 1, sureWrong: 1, guessRight: 1, guessWrong: 0 });
   });
 });
+
+describe("session progress for the screen", () => {
+  it("estimates what's left, and reports when the next reviews fall due", async () => {
+    const { remainingEstimate, nextDueAt } = await import("../src/session/daily");
+    const { loadLiveBank } = await import("../src/content/bank");
+    const { initState, applyAnswer } = await import("../src/engine");
+    const { bank } = loadLiveBank();
+    expect(remainingEstimate({ answered: 3, correct: 2, newIntroduced: 3, dueRemaining: 1, done: false }, 12)).toBe(10);
+    expect(remainingEstimate({ answered: 59, correct: 2, newIntroduced: 3, dueRemaining: 9, done: false }, 12)).toBe(1);
+    expect(remainingEstimate({ answered: 5, correct: 5, newIntroduced: 12, dueRemaining: 0, done: false }, 12)).toBe(1);
+    expect(remainingEstimate({ answered: 5, correct: 5, newIntroduced: 12, dueRemaining: 0, done: true }, 12)).toBe(0);
+    const s0 = initState(bank);
+    expect(nextDueAt(s0, bank)).toBeNull();
+    const key = [...bank.items.keys()][0]!;
+    const t = Date.UTC(2026, 10, 1);
+    const right = applyAnswer(s0, bank, { id: 1, itemKey: key, correct: true, at: t });
+    expect(nextDueAt(right, bank)!).toBeGreaterThan(t);
+    const wrong = applyAnswer(s0, bank, { id: 1, itemKey: key, correct: false, at: t });
+    expect(nextDueAt(wrong, bank)).toBe(t);
+  });
+});

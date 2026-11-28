@@ -9,7 +9,7 @@
  */
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Bank, replay, type AnswerEvent, type LearnerState } from "../../src/engine";
-import { calibration, dueFacts, progress, sessionPick, type SessionStart } from "../../src/session/daily";
+import { calibration, dueFacts, progress, sessionPick, type SessionStart, remainingEstimate, nextDueAt } from "../../src/session/daily";
 import { studyPlan, type StudyPlan } from "../../src/session/plan";
 import { passChance, type CheckName } from "../../src/session/passchance";
 import { BASELINE_LENGTH, baselinePick, baselineResult, baselineStatus } from "../../src/session/baseline";
@@ -38,6 +38,7 @@ import type { Account } from "../lib/agency";
 import { SiteHeader } from "./brand";
 import { planLine, toInput } from "../lib/words";
 import Onboarding from "./Onboarding";
+import { FeedbackCard, QuestionCard, REASON_LABEL as REASONS, SessionBar, SessionDone } from "./Session";
 import { needsOnboarding } from "../../src/session/onboarding";
 import type { ReactNode } from "react";
 
@@ -117,14 +118,6 @@ type View =
   | { kind: "mock"; id: string; index: number; review: boolean }
   | { kind: "mockDone"; id: string };
 
-const REASON_LABEL: Record<string, string> = {
-  new_material: "New",
-  relearn: "Missed earlier",
-  due_review: "Review",
-  diagnostic: "Placement",
-  extra_practice: "Extra practice",
-  baseline: "Baseline test",
-};
 
 export default function StudyApp({
   data,
@@ -153,6 +146,8 @@ export default function StudyApp({
   const [quota, setQuota] = useState(0);
   const [view, setView] = useState<View>({ kind: "home" });
   const nextBtn = useRef<HTMLButtonElement>(null);
+  /** the session bar never moves backward, even when a miss adds a relearn */
+  const barMax = useRef(0);
 
   useEffect(() => {
     setEvents(store.load());
@@ -224,6 +219,7 @@ export default function StudyApp({
     const q = studyPlan(state, bank, st, s.startedAt).newPerDay;
     setSession(s);
     setQuota(q);
+    barMax.current = 0;
     nextQuestion(events, state, s, q);
   }
 
@@ -302,17 +298,15 @@ export default function StudyApp({
 
   const now = Date.now();
   const prog = session ? progress(state, bank, events, session, now, SEED, quota) : null;
+  const left = prog ? remainingEstimate(prog, quota) : 0;
+  if (prog && (view.kind === "question" || view.kind === "feedback")) {
+    const f = prog.done ? 1 : prog.answered / (prog.answered + left);
+    if (f > barMax.current) barMax.current = f;
+  }
 
   return (
     <div className="app">
-      <SiteHeader>
-        {prog && view.kind !== "home" && (
-          <span className="count">
-            {prog.answered} answered · {Math.min(prog.newIntroduced, quota)}/{quota} new · {prog.dueRemaining} due
-          </span>
-        )}
-        {headerExtra}
-      </SiteHeader>
+      <SiteHeader>{headerExtra}</SiteHeader>
       <main className="main">
         {view.kind === "home" && loaded && !ready && <p className="rl-muted ob">Loading your progress...</p>}
         {view.kind === "home" && loaded && ready && needsOnboarding(settings, events) && (
@@ -342,25 +336,35 @@ export default function StudyApp({
             account={account}
             onOpenMock={(id) => setView({ kind: "mockDone", id })}
           />}
+        {(view.kind === "question" || view.kind === "feedback") && prog && (
+          <SessionBar
+            fraction={barMax.current}
+            label={prog.done || left === 0 ? "Last one" : `About ${left} left`}
+            bump={prog.answered}
+          />
+        )}
         {view.kind === "question" && (
-          <Question
+          <QuestionCard
             item={view.item}
-            reason={view.reason}
-            topicName={data.topicNames[view.item.topic] ?? view.item.topic}
+            label={REASONS[view.reason] ?? view.reason}
+            topic={data.topicNames[view.item.topic] ?? view.item.topic}
             choice={view.choice}
             onChoose={(c) => setView({ ...view, choice: c })}
             onSubmit={submit}
           />
         )}
         {view.kind === "baseline" && (
-          <Question
-            item={view.item}
-            reason="baseline"
-            topicName={`Question ${view.n} of ${BASELINE_LENGTH} · ${data.topicNames[view.item.topic] ?? view.item.topic}`}
-            choice={view.choice}
-            onChoose={(c) => setView({ ...view, choice: c })}
-            onSubmit={submitBaseline}
-          />
+          <>
+            <SessionBar fraction={(view.n - 1) / BASELINE_LENGTH} label={`${view.n} of ${BASELINE_LENGTH}`} bump={view.n - 1} />
+            <QuestionCard
+              item={view.item}
+              label={`Baseline · Question ${view.n} of ${BASELINE_LENGTH}`}
+              topic={data.topicNames[view.item.topic] ?? view.item.topic}
+              choice={view.choice}
+              onChoose={(c) => setView({ ...view, choice: c })}
+              onSubmit={submitBaseline}
+            />
+          </>
         )}
         {view.kind === "mock" && (settings.mocks ?? []).some((m) => m.id === view.id && !m.submittedAt) && (
           <MockView
@@ -389,10 +393,32 @@ export default function StudyApp({
           <BaselineDone state={state} bank={bank} events={events} onStart={() => start()} />
         )}
         {view.kind === "feedback" && (
-          <Feedback data={data} view={view} nextRef={nextBtn} onNext={next} />
+          <FeedbackCard
+            item={view.item}
+            fact={data.facts[view.item.factId]}
+            contrasts={view.correct ? [] : (data.facts[view.item.factId]?.contrasts ?? []).map((c) => data.facts[c]!).filter(Boolean)}
+            choice={view.choice}
+            correct={view.correct}
+            confidence={view.confidence}
+            nextRef={nextBtn}
+            onNext={next}
+          />
         )}
         {view.kind === "done" && session && (
-          <Done state={state} bank={bank} events={events} session={session} quota={quota} examAt={settings.examAt} onHome={() => setView({ kind: "home" })} />
+          <SessionDone
+            capped={!!prog && prog.doneReason === "cap"}
+            answered={prog?.answered ?? 0}
+            correct={prog?.correct ?? 0}
+            newFacts={prog?.newIntroduced ?? 0}
+            factsSeen={Object.keys(state.facts).filter((f) => bank.factTopic.has(f)).length}
+            factsTotal={bank.factTopic.size}
+            nextDue={nextDueAt(state, bank)}
+            missed={Object.entries(state.facts).filter(([f, m]) => bank.factTopic.has(f) && m.lastCorrect === false).length}
+            onHome={() => setView({ kind: "home" })}
+          >
+            <PassChanceCard bank={bank} events={events} examAt={settings.examAt} />
+            <CalibrationGrid events={events.filter((e) => e.at >= session.startedAt)} title="This session: confidence vs. results" />
+          </SessionDone>
         )}
       </main>
     </div>
@@ -604,157 +630,8 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   );
 }
 
-function Question({
-  item,
-  reason,
-  topicName,
-  choice,
-  onChoose,
-  onSubmit,
-}: {
-  item: DisplayItem;
-  reason: string;
-  topicName: string;
-  choice: number | null;
-  onChoose: (c: number) => void;
-  onSubmit: (c: "sure" | "guess") => void;
-}) {
-  return (
-    <section className="card">
-      <div className="meta">
-        <span className="tag">{REASON_LABEL[reason] ?? reason}</span>
-        <span>{topicName}</span>
-      </div>
-      <h2 className="stem">{item.stem}</h2>
-      <ol className="options">
-        {item.options.map((o, i) => (
-          <li key={i}>
-            <button className={`option ${choice === i ? "selected" : ""}`} onClick={() => onChoose(i)} aria-pressed={choice === i}>
-              <span className="letter">{"ABCD"[i]}</span>
-              <span>{o}</span>
-            </button>
-          </li>
-        ))}
-      </ol>
-      <div className="submit">
-        <span className="hint">How sure are you?</span>
-        <button className="primary" disabled={choice === null} onClick={() => onSubmit("sure")}>
-          I'm sure
-        </button>
-        <button className="secondary" disabled={choice === null} onClick={() => onSubmit("guess")}>
-          I'm guessing
-        </button>
-      </div>
-    </section>
-  );
-}
 
-function Feedback({
-  data,
-  view,
-  nextRef,
-  onNext,
-}: {
-  data: ExportedBank;
-  view: Extract<View, { kind: "feedback" }>;
-  nextRef: React.RefObject<HTMLButtonElement>;
-  onNext: () => void;
-}) {
-  const { item, choice, correct, confidence } = view;
-  const fact = data.facts[item.factId];
-  const contrasts = !correct ? (fact?.contrasts ?? []).map((c) => data.facts[c]).filter(Boolean) : [];
-  const verdict = correct
-    ? confidence === "guess"
-      ? "Right, but you were guessing. This one will come back soon."
-      : "Correct."
-    : confidence === "sure"
-      ? "Not quite, and you were sure. Worth a careful read."
-      : "Not quite.";
-  return (
-    <section className="card">
-      <p className={`verdict ${correct ? "good" : "bad"}`}>{verdict}</p>
-      <h2 className="stem small">{item.stem}</h2>
-      <ol className="options">
-        {item.options.map((o, i) => (
-          <li key={i}>
-            <div className={`option static ${i === item.answer ? "right" : i === choice ? "wrong" : ""}`}>
-              <span className="letter">{"ABCD"[i]}</span>
-              <span>{o}</span>
-            </div>
-          </li>
-        ))}
-      </ol>
-      <p className="explain">{item.explanation}</p>
-      {fact && (
-        <blockquote className="source">
-          <span className="cite">{fact.citation}</span>
-          <span>“{fact.quote}”</span>
-        </blockquote>
-      )}
-      {contrasts.length > 0 && (
-        <div className="contrast">
-          <div className="contrastTitle">Easy to confuse with</div>
-          <div className="pair">
-            <div>
-              <div className="pairLabel">This question</div>
-              <p>{fact!.statement}</p>
-            </div>
-            {contrasts.map((c, i) => (
-              <div key={i}>
-                <div className="pairLabel">The other rule</div>
-                <p>{c!.statement}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      )}
-      <button ref={nextRef} className="primary" onClick={onNext}>
-        Next question
-      </button>
-    </section>
-  );
-}
 
-function Done({
-  state,
-  bank,
-  events,
-  session,
-  quota,
-  examAt,
-  onHome,
-}: {
-  state: LearnerState;
-  bank: Bank;
-  events: AnswerEvent[];
-  session: SessionStart;
-  quota: number;
-  examAt?: number;
-  onHome: () => void;
-}) {
-  const p = progress(state, bank, events, session, Date.now(), SEED, quota);
-  const mine = events.filter((e) => e.at >= session.startedAt);
-  return (
-    <section className="home">
-      <h1>{p.doneReason === "cap" ? "That's enough for one sitting" : "Today's list is clear"}</h1>
-      <p className="lede">
-        {p.doneReason === "cap"
-          ? "You hit the session limit. Anything left over comes back first next time."
-          : "Come back tomorrow: the reviews will be timed to just before you'd forget."}
-      </p>
-      <div className="stats">
-        <Stat label="Answered" value={String(p.answered)} />
-        <Stat label="Correct" value={p.answered ? pct(p.correct / p.answered) : "0%"} />
-        <Stat label="New facts" value={String(p.newIntroduced)} />
-      </div>
-      <PassChanceCard bank={bank} events={events} examAt={examAt} />
-      <CalibrationGrid events={mine} title="This session: confidence vs. results" />
-      <button className="primary" onClick={onHome}>
-        Back to home
-      </button>
-    </section>
-  );
-}
 
 function CalibrationGrid({ events, title }: { events: AnswerEvent[]; title: string }) {
   const c = calibration(events);

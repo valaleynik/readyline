@@ -58,7 +58,7 @@ describe("onboarding", () => {
     fireEvent.click(btn("Continue"));
     expect(screen.getByText("Your exam is close")).not.toBeNull();
     await act(async () => { fireEvent.click(btn("Start studying")); });
-    expect(document.querySelector(".option")).not.toBeNull();
+    expect(document.querySelector(".rl-option")).not.toBeNull();
     expect(store.settings.examAt).toBeGreaterThan(Date.now());
     expect(store.settings.onboardedAt).toBeGreaterThan(0);
   });

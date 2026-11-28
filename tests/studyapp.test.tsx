@@ -25,11 +25,11 @@ describe("study loop UI", () => {
     let answered = 0;
     for (let i = 0; i < 80; i++) {
       if (screen.queryByText("Today's list is clear") || screen.queryByText("That's enough for one sitting")) break;
-      const opts = screen.getAllByRole("button", { pressed: false }).filter((b) => b.classList.contains("option"));
+      const opts = screen.getAllByRole("button", { pressed: false }).filter((b) => b.classList.contains("rl-option"));
       fireEvent.click(opts[i % 4]!);
       fireEvent.click(screen.getByText(i % 3 ? "I'm sure" : "I'm guessing"));
-      expect(document.querySelector(".verdict")).not.toBeNull();
-      expect(document.querySelector(".source")).not.toBeNull();
+      expect(document.querySelector(".ss-verdict")).not.toBeNull();
+      expect(document.querySelector(".ss-law")).not.toBeNull();
       answered++;
       await act(async () => { fireEvent.click(screen.getByText("Next question")); });
     }
@@ -67,17 +67,17 @@ describe("study loop UI", () => {
     fireEvent.click(await screen.findByText(/Take the baseline test/));
     for (let i = 0; i < 20; i++) {
       expect(screen.getByText(new RegExp(`Question ${i + 1} of 20`))).not.toBeNull();
-      const opts = screen.getAllByRole("button").filter((b) => b.classList.contains("option"));
+      const opts = screen.getAllByRole("button").filter((b) => b.classList.contains("rl-option"));
       fireEvent.click(opts[i % 4]!);
       await act(async () => { fireEvent.click(screen.getByText("I'm sure")); });
-      expect(document.querySelector(".verdict")).toBeNull();
+      expect(document.querySelector(".ss-verdict")).toBeNull();
     }
     expect(screen.getByText("Your starting point")).not.toBeNull();
     expect(document.querySelectorAll(".sections tbody tr").length).toBe(data.blueprint.sections.length);
     expect(store.events.length).toBe(20);
     expect(store.events.every((e: AnswerEvent) => e.context === "baseline")).toBe(true);
     fireEvent.click(screen.getByText("Start your first session"));
-    expect(document.querySelector(".option")).not.toBeNull();
+    expect(document.querySelector(".rl-option")).not.toBeNull();
   });
 });
 
@@ -106,7 +106,7 @@ describe("study loop UI with a synced store", () => {
     render(<StudyApp data={data} store={store} />);
     fireEvent.click(await screen.findByText("Skip it"));
     fireEvent.click(await screen.findByText("Start first session"));
-    fireEvent.click(screen.getAllByRole("button").filter((b) => b.classList.contains("option"))[0]!);
+    fireEvent.click(screen.getAllByRole("button").filter((b) => b.classList.contains("rl-option"))[0]!);
     await act(async () => { fireEvent.click(screen.getByText("I'm sure")); });
     await act(async () => { await new Promise((r) => setTimeout(r, 50)); });
     expect(remote.rows.length).toBe(1);

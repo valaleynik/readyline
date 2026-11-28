@@ -4,7 +4,7 @@
  * learner knows; it reads the one learner state every other view reads.
  */
 import { nextItem, type Pick } from "../engine/scheduler";
-import { retrievabilityAt } from "../engine/fsrs";
+import { intervalDays, retrievabilityAt } from "../engine/fsrs";
 import type { Bank } from "../engine/bank";
 import { DEFAULT_CONFIG, type AnswerEvent, type LearnerState } from "../engine/types";
 
@@ -140,4 +140,26 @@ export function calibration(events: AnswerEvent[]): Calibration {
     else e.correct ? c.guessRight++ : c.guessWrong++;
   }
   return c;
+}
+
+/**
+ * About how many questions are left today: the rest of the new-fact quota plus what is due.
+ * An estimate (a miss can add a relearn), never below 1 while the session isn't done.
+ */
+export function remainingEstimate(p: SessionProgress, quota: number): number {
+  if (p.done) return 0;
+  const left = Math.max(0, quota - p.newIntroduced) + p.dueRemaining;
+  return Math.max(1, Math.min(left, MAX_PER_SESSION - p.answered));
+}
+
+/** When the next studied fact will need review (memory falls below target), or null if none studied. */
+export function nextDueAt(state: LearnerState, bank: Bank): number | null {
+  let best: number | null = null;
+  for (const [factId, mem] of Object.entries(state.facts)) {
+    if (!bank.factTopic.has(factId)) continue;
+    // a fact missed last time is due right away; otherwise when memory falls to the target
+    const at = mem.lastCorrect === false ? mem.lastReview : mem.lastReview + intervalDays(mem.stability, DEFAULT_CONFIG.targetRetention) * 86_400_000;
+    if (best === null || at < best) best = at;
+  }
+  return best;
 }
