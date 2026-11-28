@@ -9,7 +9,6 @@ import "../styles/base.css";
 import "../components/study.css";
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { themeScript } from "../components/brand";
 
 export const metadata: Metadata = {
   title: { default: "Readyline: NJ Life Producer exam prep", template: "%s · Readyline" },
@@ -18,18 +17,13 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#F8FAFC" },
-    { media: "(prefers-color-scheme: dark)", color: "#0F172A" },
-  ],
+  // Light only for now (decided 2026-11-27); dark tokens are kept in the design system for later.
+  themeColor: "#F8FAFC",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <head>
-        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
-      </head>
+    <html lang="en" data-theme="light">
       <body>{children}</body>
     </html>
   );

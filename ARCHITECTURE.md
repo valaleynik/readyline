@@ -244,7 +244,7 @@ Same app, same sign-in. Individuals study on their own; agencies buy seats and h
 ## Roadmap (agreed 2026-11-27)
 
 1. Done 2026-11-27: domain readylineprep.com (bought on Vercel, Vercel DNS; apex redirects to www). Resend added its DKIM and sending records via auto-configure; Supabase sends auth email through Resend SMTP as Readyline <noreply@readylineprep.com>. Site URL is https://www.readylineprep.com (vercel.app kept as a redirect URL). Verified end to end on a phone. Not set up yet: inbound mail (free forwarding, e.g. ImprovMX, for support@). The deployed agency-dashboard function still reads the bank from the vercel.app address (works); the source now points at www and ships on the next function deploy.
-2. Design pass and onboarding: real visual design, signup with exam date, baseline screens, plus a Learn tab:
+2. Design pass and onboarding (light mode only for now; the site pins data-theme="light", dark tokens stay in the design system): real visual design, signup with exam date, baseline screens, plus a Learn tab:
    - lessons per topic built only from verified facts (statement, quote, contrasts), no AI-written text
    - each lesson ends with 2 to 3 check questions logged as context "learn"
    - no points or streaks; keep pointing back to the daily session

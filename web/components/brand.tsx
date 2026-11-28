@@ -87,7 +87,6 @@ export function SiteHeader({ children }: { children?: React.ReactNode }) {
         <Logo height={24} />
         <nav className="rl-header__nav">
           {children}
-          <ThemeToggle />
         </nav>
       </div>
     </header>

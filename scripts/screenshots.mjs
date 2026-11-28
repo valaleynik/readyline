@@ -23,8 +23,8 @@ const click = (text) => async (p) => {
 const pick = async (p) => { await p.evaluate(() => document.querySelector(".option").click()); await new Promise((r) => setTimeout(r, 150)); };
 import { mkdirSync } from "node:fs"; mkdirSync(out, { recursive: true });
 await run("home-desktop-light", 1280, "light", []);
-await run("home-phone-dark", 390, "dark", []);
+await run("home-phone-light", 390, "light", []);
 await run("question-phone-light", 390, "light", [click("Skip it"), click("Start first session"), pick]);
-await run("feedback-desktop-dark", 1280, "dark", [click("Skip it"), click("Start first session"), pick, click("I'm sure")]);
+await run("feedback-desktop-light", 1280, "light", [click("Skip it"), click("Start first session"), pick, click("I'm sure")]);
 await b.close();
 console.log(shots.join("\n"));
