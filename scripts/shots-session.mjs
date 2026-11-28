@@ -13,7 +13,7 @@ for (const [w, tag] of [[1280, "desktop"], [390, "phone"]]) {
   await p.goto("http://localhost:3101/", { waitUntil: "networkidle0" });
   await p.evaluate(() => { localStorage.clear(); localStorage.setItem("readyline.settings.v1", JSON.stringify({ onboardedAt: 1, baselineSkipped: true })); });
   await p.reload({ waitUntil: "networkidle0" });
-  await click(p, "Start first session"); await sleep(200);
+  await click(p, "Start today's session"); await sleep(200);
   // answer a few, then find one whose fact has a contrast and miss it
   for (let i = 0; i < 25; i++) {
     const it = await currentItem(p);

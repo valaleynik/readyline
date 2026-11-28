@@ -1,3 +1,5 @@
+import "@fontsource/space-grotesk/500.css";
+import "@fontsource/space-grotesk/700.css";
 import "@fontsource/inter/400.css";
 import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
@@ -18,7 +20,7 @@ export const metadata: Metadata = {
 
 export const viewport: Viewport = {
   // Light only for now (decided 2026-11-27); dark tokens are kept in the design system for later.
-  themeColor: "#F8FAFC",
+  themeColor: "#FFFFFF",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

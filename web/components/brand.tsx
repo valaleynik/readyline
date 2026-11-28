@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 
 /** The wordmark. `height` sets size; below ~96px wide use <Mark /> instead. */
 export function Logo({ height = 28, href = "/" }: { height?: number; href?: string | null }) {
-  const width = Math.round((573 / 126) * height);
+  const width = Math.round((486 / 126) * height);
   const imgs = (
     <>
       <img className="rl-logo rl-logo--light" src="/brand/readyline-logo.svg" alt="Readyline" width={width} height={height} />

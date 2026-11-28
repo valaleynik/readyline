@@ -26,23 +26,21 @@ describe("brand", () => {
     expect(readFileSync("web/styles/components.css", "utf8")).toContain(readFileSync("brand/components.css", "utf8"));
   });
 
-  it("every text pair meets WCAG AA (4.5:1) in both themes", () => {
+  it("every text pair meets WCAG AA (4.5:1)", () => {
     const text: [string, string][] = [
       ["ink", "canvas"], ["ink", "surface"], ["ink-muted", "canvas"], ["ink-muted", "surface"],
-      ["on-action", "action"], ["on-action", "action-hover"],
-      ["ontrack-ink", "ontrack-tint"], ["behind-ink", "behind-tint"], ["ink-muted", "neutral-tint"],
+      ["on-action", "action"], ["on-action", "action-hover"], ["action-ink", "action-tint"],
+      ["ontrack-ink", "ontrack-tint"], ["ontrack-ink", "canvas"], ["behind-ink", "behind-tint"], ["behind-ink", "canvas"],
+      ["ink-muted", "neutral-tint"], ["ink-inverse-muted", "brand-midnight"], ["ink-inverse", "brand-midnight"],
     ];
-    for (const theme of ["light", "dark"] as const)
-      for (const [fg, bg] of text) expect(ratio(hex(fg, theme), hex(bg, theme)), `${fg} on ${bg} (${theme})`).toBeGreaterThanOrEqual(4.5);
+    for (const [fg, bg] of text) expect(ratio(hex(fg, "light"), hex(bg, "light")), `${fg} on ${bg}`).toBeGreaterThanOrEqual(4.5);
   });
 
-  it("controls and focus meet 3:1, and white never sits on copper", () => {
-    for (const theme of ["light", "dark"] as const) {
-      expect(ratio(hex("control-border", theme), hex("surface", theme))).toBeGreaterThanOrEqual(3);
-      expect(ratio(hex("action", theme), hex("canvas", theme))).toBeGreaterThanOrEqual(3);
-    }
-    expect(ratio("#FFFFFF", hex("action", "light"))).toBeLessThan(4.5); // the reason on-action is dark
-    expect(hex("on-action", "light")).not.toBe("#FFFFFF");
+  it("controls and the action color meet 3:1 against where they sit", () => {
+    expect(ratio(hex("control-border", "light"), hex("surface", "light"))).toBeGreaterThanOrEqual(3);
+    expect(ratio(hex("control-border", "light"), hex("field", "light"))).toBeGreaterThanOrEqual(3);
+    expect(ratio(hex("action", "light"), hex("canvas", "light"))).toBeGreaterThanOrEqual(3);
+    expect(ratio(hex("action", "light"), hex("surface", "light"))).toBeGreaterThanOrEqual(3);
   });
 
   it("the site serves the same logo files as the brand folder", () => {
